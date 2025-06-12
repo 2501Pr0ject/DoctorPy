@@ -50,12 +50,27 @@ chroma_db/
 # Data
 data/raw/
 data/processed/
+data/processed_test/
 data/databases/
 
 # Temporary files
 tmp/
 temp/
 .tmp/
+
+# Cache et test
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs étendus
+*.log.*
+prefect_logs/
+
+# Documentation interne/travail
+docs/internal/
 
 # OS
 .DS_Store

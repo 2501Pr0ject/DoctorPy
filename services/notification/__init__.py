@@ -1,5 +1,5 @@
 """
-Service d'Authentification et d'Autorisation pour DoctorPy
+Service Notification pour DoctorPy
 Version simplifiée pour démo
 """
 

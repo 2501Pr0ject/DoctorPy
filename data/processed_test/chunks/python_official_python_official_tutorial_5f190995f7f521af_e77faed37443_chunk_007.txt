@@ -1,1 +1,0 @@
-fib >>> dir() ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys'] Note that it lists all types of names: variables, modules, functions, etc. dir() does not list the names of built-in functions and variables.

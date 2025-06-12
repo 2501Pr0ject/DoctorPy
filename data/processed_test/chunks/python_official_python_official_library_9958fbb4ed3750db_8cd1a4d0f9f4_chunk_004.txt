@@ -1,1 +1,0 @@
-name('foo', bar=1) Equivalent to: def methodcaller(name, /, *args, **kwargs): def caller(obj): return getattr(obj, name)(*args, **kwargs) return caller ## Mapping Operators to Functions¶ This table shows how abstract operations correspond to operator symbols in the Python syntax and the functions in the operator module.

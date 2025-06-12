@@ -1,1 +1,0 @@
-4}' | python -m json. tool Expecting property name enclosed in double quotes: line 1 column 2 (char 1) --sort-keys $ python -m json. tool mp_films. json [ { "title": "And Now for Something Completely Different", "year": 1971 }, { "title": "Monty Python and the Holy Grail", "year": 1975 } ] sys. stdin sys. stdout json. dumps() json email. iterators mailbox.

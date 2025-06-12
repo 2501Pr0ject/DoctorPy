@@ -9,6 +9,23 @@ from typing import Optional, Dict, Any, Tuple
 from datetime import datetime, timedelta
 from dataclasses import asdict
 
+class AuthManager:
+    """Gestionnaire d'authentification (version démo)"""
+    
+    def __init__(self, auth_db, cache, event_bus):
+        self.auth_db = auth_db
+        self.cache = cache  
+        self.event_bus = event_bus
+        print("✅ AuthManager initialisé (mode démo)")
+    
+    async def authenticate(self, username: str, password: str) -> bool:
+        """Authentification utilisateur (mode démo)"""
+        return True  # Toujours valide en mode démo
+    
+    async def create_token(self, user_id: str) -> str:
+        """Créer un token JWT (mode démo)"""
+        return "demo_jwt_token"
+
 from ..shared.config import get_auth_config
 from ..shared.utils import LoggerFactory
 from ..shared.events import EventBus, Event, EventType

@@ -1,0 +1,231 @@
+version: '3.8'
+
+# DoctorPy - Architecture Microservices Docker
+# Orchestration complete des 5 services + infrastructure
+
+services:
+  # Infrastructure - Base de donnees
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: doctorpy
+      POSTGRES_USER: doctorpy
+      POSTGRES_PASSWORD: doctorpy_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U doctorpy"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - doctorpy-network
+
+  # Infrastructure - Cache et Events
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - doctorpy-network
+
+  # Service Auth - Authentification
+  auth-service:
+    build:
+      context: .
+      dockerfile: services/auth/Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=postgresql://doctorpy:doctorpy_dev@postgres:5432/doctorpy
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - SERVICE_NAME=auth
+      - SERVICE_PORT=8001
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - doctorpy-network
+    restart: unless-stopped
+
+  # Service RAG - Intelligence Artificielle
+  rag-service:
+    build:
+      context: .
+      dockerfile: services/rag/Dockerfile
+    ports:
+      - "8002:8002"
+    environment:
+      - DATABASE_URL=postgresql://doctorpy:doctorpy_dev@postgres:5432/doctorpy
+      - REDIS_URL=redis://redis:6379/1
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - SERVICE_NAME=rag
+      - SERVICE_PORT=8002
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      auth-service:
+        condition: service_healthy
+    volumes:
+      - rag_data:/app/data/vector_stores
+      - rag_cache:/app/data/cache
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    networks:
+      - doctorpy-network
+    restart: unless-stopped
+
+  # Service Analytics - Metriques et rapports
+  analytics-service:
+    build:
+      context: .
+      dockerfile: services/analytics/Dockerfile
+    ports:
+      - "8003:8003"
+    environment:
+      - DATABASE_URL=postgresql://doctorpy:doctorpy_dev@postgres:5432/doctorpy
+      - REDIS_URL=redis://redis:6379/2
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - SERVICE_NAME=analytics
+      - SERVICE_PORT=8003
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      auth-service:
+        condition: service_healthy
+    volumes:
+      - analytics_data:/app/data/metrics
+      - analytics_reports:/app/data/reports
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - doctorpy-network
+    restart: unless-stopped
+
+  # Service Quest - Gamification
+  quest-service:
+    build:
+      context: .
+      dockerfile: services/quest/Dockerfile
+    ports:
+      - "8004:8004"
+    environment:
+      - DATABASE_URL=postgresql://doctorpy:doctorpy_dev@postgres:5432/doctorpy
+      - REDIS_URL=redis://redis:6379/3
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - SERVICE_NAME=quest
+      - SERVICE_PORT=8004
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      auth-service:
+        condition: service_healthy
+    volumes:
+      - quest_data:/app/data/quests
+      - quest_progress:/app/data/progress
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - doctorpy-network
+    restart: unless-stopped
+
+  # Service Notification - Notifications multi-canal
+  notification-service:
+    build:
+      context: .
+      dockerfile: services/notification/Dockerfile
+    ports:
+      - "8005:8005"
+    environment:
+      - DATABASE_URL=postgresql://doctorpy:doctorpy_dev@postgres:5432/doctorpy
+      - REDIS_URL=redis://redis:6379/4
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - SERVICE_NAME=notification
+      - SERVICE_PORT=8005
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      auth-service:
+        condition: service_healthy
+    volumes:
+      - notification_templates:/app/data/templates
+      - notification_logs:/app/data/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - doctorpy-network
+    restart: unless-stopped
+
+# Volumes persistants
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  rag_data:
+    driver: local
+  rag_cache:
+    driver: local
+  analytics_data:
+    driver: local
+  analytics_reports:
+    driver: local
+  quest_data:
+    driver: local
+  quest_progress:
+    driver: local
+  notification_templates:
+    driver: local
+  notification_logs:
+    driver: local
+
+# Reseau isole
+networks:
+  doctorpy-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
