@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_001",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "Equivalent to: True False def any(iterable): for element in iterable: if element: return True return False As repr(), return a string containing a printable representation of an object, but escape the non-ASCII characters in the string returned by repr() using \\x, \\u, or \\U escapes. This generates a string similar to that returned by repr() in Python 2. repr() repr() \\x \\u \\U repr() Convert an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If x is not a Python int object, it has to define an index() method that returns an integer. Some examples: int __index__() >>> bin(3) '0b11' >>> bin(-10) '-0b1010' If the prefix “0b” is desired or not, you can use either of the following ways. >>> format(14, '#b'), format(14, 'b') ('0b1110', '1110') >>> f'{14:#b}', f'{14:b}' ('0b1110', '1110') See also format() for more information. format() Return a Boolean value, i. e. one of True or False. The argument is converted using the standard truth testing procedure. If the argument is false or omitted, this returns False; otherwise, it returns True. The bool class is a subclass of int (see Numeric Types — int, float, complex). It cannot be subclassed further. Its only instances are False and True (see Boolean Type - bool). True False False True bool int False True Changed in version 3. 7: The parameter is now positional-only. This function drops you into the debugger at the call site. Specifically, it calls sys. breakpointhook(), passing args and kws straight through. By default, sys. breakpointhook() calls pdb. set_trace() expecting no arguments. In this case, it is purely a convenience function so you don’t have to explicitly import pdb or type as much code to enter the debugger. However, sys. breakpointhook() can be set to some other function and breakpoint() will automatically call that, allowing you to drop into the debugger of choice. If sys. breakpointhook() is not accessible, this function will raise RuntimeError. sys. breakpointhook() args kws sys.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 1,
+  "start_char": 1991,
+  "end_char": 4011,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:30.994822"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_001.txt"
+}

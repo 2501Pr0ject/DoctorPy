@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_028",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "UF_APPEND stat. UF_APPEND stat. UF_APPEND stat. UF_OPAQUE stat. UF_OPAQUE stat. UF_OPAQUE stat. UF_NOUNLINK stat. UF_NOUNLINK stat. UF_NOUNLINK stat. UF_COMPRESSED stat. UF_COMPRESSED stat. UF_COMPRESSED stat. UF_HIDDEN stat. UF_HIDDEN stat. UF_HIDDEN stat. SF_ARCHIVED stat. SF_ARCHIVED stat. SF_ARCHIVED stat. SF_IMMUTABLE stat. SF_IMMUTABLE stat. SF_IMMUTABLE stat. SF_APPEND stat. SF_APPEND stat. SF_APPEND stat. SF_NOUNLINK stat. SF_NOUNLINK stat. SF_NOUNLINK stat. SF_SNAPSHOT stat. SF_SNAPSHOT stat. SF_SNAPSHOT This function can support not following symlinks. Raises an auditing event os. chflags with arguments path, flags. os. chflags path flags Availability: Unix, not WASI. Changed in version 3. 3: Added the follow_symlinks parameter. Changed in version 3. 6: Accepts a path-like object. Change the mode of path to the numeric mode. mode may take one of the following values (as defined in the stat module) or bitwise ORed combinations of them: stat stat. S_ISUID stat. S_ISUID stat. S_ISUID stat. S_ISGID stat. S_ISGID stat. S_ISGID stat. S_ENFMT stat. S_ENFMT stat. S_ENFMT stat. S_ISVTX stat. S_ISVTX stat. S_ISVTX stat. S_IREAD stat. S_IREAD stat. S_IREAD stat. S_IWRITE stat. S_IWRITE stat. S_IWRITE stat. S_IEXEC stat. S_IEXEC stat. S_IEXEC stat. S_IRWXU stat. S_IRWXU stat. S_IRWXU stat. S_IRUSR stat. S_IRUSR stat. S_IRUSR stat. S_IWUSR stat. S_IWUSR stat. S_IWUSR stat. S_IXUSR stat. S_IXUSR stat. S_IXUSR stat. S_IRWXG stat. S_IRWXG stat. S_IRWXG stat. S_IRGRP stat. S_IRGRP stat. S_IRGRP stat. S_IWGRP stat. S_IWGRP stat. S_IWGRP stat. S_IXGRP stat.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 28,
+  "start_char": 60719,
+  "end_char": 62293,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.796099"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_028.txt"
+}

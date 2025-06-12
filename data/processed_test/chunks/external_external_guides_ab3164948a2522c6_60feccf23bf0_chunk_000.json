@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_000",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "Logging HOWTO. 13. 5 Source:  Logging HOWTO¶ Vinay Sajip This page contains tutorial information. For links to reference information and a logging cookbook, please see Other resources. ## Basic Logging Tutorial¶ Logging is a means of tracking events that happen when some software runs. The software’s developer adds logging calls to their code to indicate that certain events have occurred. An event is described by a descriptive message which can optionally contain variable data (i. e. data that is potentially different for each occurrence of the event). Events also have an importance which the developer ascribes to the event; the importance can also be called the level or severity. ### When to use logging¶ You can access logging functionality by creating a logger via logger = getLogger(name), and then calling the logger’s debug(), info(), warning(), error() and critical() methods. To determine when to use logging, and to see which logger methods to use when, see the table below. It states, for each of a set of common tasks, the best tool to use for that task. logger = getLogger(__name__) debug() info() warning() error() critical() Task you want to perform The best tool for the task Display console output for ordinary usage of a command line script or program print() print() Report events that occur during normal operation of a program (e. g. for status monitoring or fault investigation) A logger’s info() (or debug() method for very detailed output for diagnostic purposes) info() debug() Issue a warning regarding a particular runtime event warnings. warn() in library code if the issue is avoidable and the client application should be modified to eliminate the warning warnings. warn() A logger’s warning() method if there is nothing the client application can do about the situation, but the event should still be noted warning() Report an error regarding a particular runtime event Raise an exception Report suppression of an error without raising an exception (e. g. error handler in a long-running server process) A logger’s error(), exception() or critical() method as appropriate for the specific error and application domain error() exception() critical() The logger methods are named after the level or severity of the events they are used to track. The standard levels and their applicability are described below (in increasing order of severity): Level When it’s used DEBUG DEBUG Detailed information, typically of interest only when diagnosing problems. INFO INFO Confirmation that things are working as expected.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2549,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.519731"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_000.txt"
+}

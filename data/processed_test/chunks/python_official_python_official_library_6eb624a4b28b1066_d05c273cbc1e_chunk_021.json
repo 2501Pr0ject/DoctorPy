@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_021",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "If both comparands are aware and have different tzinfo attributes, the comparison acts as comparands were first converted to UTC datetimes except that the implementation never overflows. datetime instances in a repeated interval are never equal to datetime instances in other time zone. datetime objects are equal if they represent the same date and time, taking into account the time zone. datetime Naive and aware datetime objects are never equal. datetime If both comparands are aware, and have the same tzinfo attribute, the tzinfo and fold attributes are ignored and the base datetimes are compared. If both comparands are aware and have different tzinfo attributes, the comparison acts as comparands were first converted to UTC datetimes except that the implementation never overflows. datetime instances in a repeated interval are never equal to datetime instances in other time zone. tzinfo tzinfo fold tzinfo datetime datetime datetime1 is considered less than datetime2 when datetime1 precedes datetime2 in time, taking into account the time zone. Order comparison between naive and aware datetime objects raises TypeError. If both comparands are aware, and have the same tzinfo attribute, the tzinfo and fold attributes are ignored and the base datetimes are compared. If both comparands are aware and have different tzinfo attributes, the comparison acts as comparands were first converted to UTC datetimes except that the implementation never overflows. datetime1 is considered less than datetime2 when datetime1 precedes datetime2 in time, taking into account the time zone. Order comparison between naive and aware datetime objects raises TypeError. datetime TypeError If both comparands are aware, and have the same tzinfo attribute, the tzinfo and fold attributes are ignored and the base datetimes are compared. If both comparands are aware and have different tzinfo attributes, the comparison acts as comparands were first converted to UTC datetimes except that the implementation never overflows. tzinfo tzinfo fold tzinfo Changed in version 3. 3: Equality comparisons between aware and naive datetime instances don’t raise TypeError. datetime TypeError Changed in version 3. 13: Comparison between datetime object and an instance of the date subclass that is not a datetime subclass no longer converts the latter to date, ignoring the time part and the time zone. The default behavior can be changed by overriding the special comparison methods in subclasses. datetime date datetime date Instance methods: Return date object with same year, month and day.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 21,
+  "start_char": 41996,
+  "end_char": 44572,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.399124"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_021.txt"
+}

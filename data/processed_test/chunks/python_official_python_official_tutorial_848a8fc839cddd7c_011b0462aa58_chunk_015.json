@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_015",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "For example: True 'name' >>> foo(1, **{'name': 2}) Traceback (most recent call last): File \"<stdin>\", line 1, in <module> TypeError: foo() got multiple values for argument 'name' >>> But using / (positional only arguments), it is possible since it allows name as a positional argument and 'name' as a key in the keyword arguments: / name 'name' >>> def foo(name, /, **kwds):. return 'name' in kwds. >>> foo(1, **{'name': 2}) True In other words, the names of positional-only parameters can be used in kwds without ambiguity. **kwds #### 4. 9. 3. 5. Recap¶ The use case will determine which parameters to use in the function definition: def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2): As guidance: Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords. Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords. Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed. Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed. For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future. For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future. ### 4. 9. 4. Arbitrary Argument Lists¶ Finally, the least frequently used option is to specify that a function can be called with an arbitrary number of arguments. These arguments will be wrapped up in a tuple (see Tuples and Sequences).",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 15,
+  "start_char": 29042,
+  "end_char": 31219,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.618018"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_015.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_082",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "It can be less than cpu_count() depending on the CPU affinity. None cpu_count() The cpu_count() function can be used to get the number of logical CPUs in the system. cpu_count() If -X cpu_count is given or PYTHON_CPU_COUNT is set, process_cpu_count() returns the overridden value n. -X cpu_count PYTHON_CPU_COUNT process_cpu_count() See also the sched_getaffinity() function. sched_getaffinity() Added in version 3. 13. Return integer-valued system configuration values. If the configuration value specified by name isn’t defined, -1 is returned. The comments regarding the name parameter for confstr() apply here as well; the dictionary that provides information on the known names is given by sysconf_names. -1 confstr() sysconf_names Availability: Unix. Dictionary mapping names accepted by sysconf() to the integer values defined for those names by the host operating system. This can be used to determine the set of names known to the system. sysconf() Availability: Unix. Changed in version 3. 11: Add 'SC_MINSIGSTKSZ' name. 'SC_MINSIGSTKSZ' The following data values are used to support path manipulation operations. These are defined for all platforms. Higher-level operations on pathnames are defined in the os. path module. os. path The constant string used by the operating system to refer to the current directory. This is '. ' for Windows and POSIX. Also available via os. path. '. ' os. path The constant string used by the operating system to refer to the parent directory. This is '. ' for Windows and POSIX. Also available via os. path. '. ' os. path The character used by the operating system to separate pathname components. This is '/' for POSIX and '\\' for Windows. Note that knowing this is not sufficient to be able to parse or concatenate pathnames — use os. path. split() and os. path. join() — but it is occasionally useful. Also available via os. path. '/' '\\\\' os. path. split() os. path. join() os. path An alternative character used by the operating system to separate pathname components, or None if only one separator character exists. This is set to '/' on Windows systems where sep is a backslash. Also available via os. path. None '/' sep os. path The character which separates the base filename from the extension; for example, the '.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 82,
+  "start_char": 175450,
+  "end_char": 177720,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.845155"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_082.txt"
+}

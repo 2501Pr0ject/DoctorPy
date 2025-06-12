@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_000",
+  "original_doc_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061",
+  "content": "random — Generate pseudo-random numbers. 13. 5 Source:  random — Generate pseudo-random numbers¶ random Source code: Lib/random. py This module implements pseudo-random number generators for various distributions. For integers, there is uniform selection from a range. For sequences, there is uniform selection of a random element, a function to generate a random permutation of a list in-place, and a function for random sampling without replacement. On the real line, there are functions to compute uniform, normal (Gaussian), lognormal, negative exponential, gamma, and beta distributions. For generating distributions of angles, the von Mises distribution is available. Almost all module functions depend on the basic function random(), which generates a random float uniformly in the half-open range 0. 0 <= X < 1. 0. Python uses the Mersenne Twister as the core generator. It produces 53-bit precision floats and has a period of 219937-1. The underlying implementation in C is both fast and threadsafe. The Mersenne Twister is one of the most extensively tested random number generators in existence. However, being completely deterministic, it is not suitable for all purposes, and is completely unsuitable for cryptographic purposes. random() 0. 0 <= X < 1. 0 The functions supplied by this module are actually bound methods of a hidden instance of the random. Random class. You can instantiate your own instances of Random to get generators that don’t share state. random. Random Random Class Random can also be subclassed if you want to use a different basic generator of your own devising: see the documentation on that class for more details. Random The random module also provides the SystemRandom class which uses the system function os. urandom() to generate random numbers from sources provided by the operating system. random SystemRandom os. urandom() Warning The pseudo-random generators of this module should not be used for security purposes. For security or cryptographic uses, see the secrets module. secrets See also M. Matsumoto and T. Nishimura, “Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator”, ACM Transactions on Modeling and Computer Simulation Vol. 8, No. 1, January pp. 3–30 1998. Complementary-Multiply-with-Carry recipe for a compatible alternative random number generator with a long period and comparatively simple update operations.",
+  "title": "random — Generate pseudo-random numbers.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2414,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_49df04c24c9ba477.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.607829"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_000.txt"
+}

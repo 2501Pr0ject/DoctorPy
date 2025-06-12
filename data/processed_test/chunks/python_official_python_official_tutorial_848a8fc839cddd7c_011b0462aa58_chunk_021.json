@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_021",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "Function Examples 4. 9. 3. 5. Recap 4. 9. 4. Arbitrary Argument Lists 4. 9. 5. Unpacking Argument Lists 4. 9. 6. Lambda Expressions 4. 9. 7. Documentation Strings 4. 9. 8. Function Annotations 4. 9. 1. Default Argument Values 4. 9. 2. Keyword Arguments 4. 9. 3. Special parameters 4. 9. 3. 1. Positional-or-Keyword Arguments 4. 9. 3. 2. Positional-Only Parameters 4. 9. 3. 3. Keyword-Only Arguments 4. 9. 3. 4. Function Examples 4. 9. 3. 5. Recap 4. 9. 3. 1. Positional-or-Keyword Arguments 4. 9. 3. 2. Positional-Only Parameters 4. 9. 3. 3. Keyword-Only Arguments 4. 9. 3. 4. Function Examples 4. 9. 3. 5. Recap 4. 9. 4. Arbitrary Argument Lists 4. 9. 5. Unpacking Argument Lists 4. 9. 6. Lambda Expressions 4. 9. 7. Documentation Strings 4. 9. 8. Function Annotations 4. 10. Intermezzo: Coding Style #### Previous topic 3. An Informal Introduction to Python #### Next topic 5. Data Structures ### This page Report a bug Show source while if if >>> x = int(input(\"Please enter an integer: \")) Please enter an integer: 42 >>> if x < 0:. x = 0. print('Negative changed to zero'). elif x == 0:. print('Zero'). elif x == 1:. print('Single'). else:. print('More'). More elif else elif if elif elif switch case match for for for >>> # Measure some strings: >>> words = ['cat', 'window', 'defenestrate'] >>> for w in words:. print(w, len(w)).",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 21,
+  "start_char": 41273,
+  "end_char": 42609,
+  "token_count": 476,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.627072"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_021.txt"
+}

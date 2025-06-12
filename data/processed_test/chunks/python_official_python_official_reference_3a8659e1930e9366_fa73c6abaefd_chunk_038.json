@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_038",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "default_name = default_name class AustralianPhilosopher(Philosopher, default_name=\"Bruce\"): pass The default implementation object. init_subclass does nothing, but raises an error if it is called with any arguments. object. __init_subclass__ Note The metaclass hint metaclass is consumed by the rest of the type machinery, and is never passed to init_subclass implementations. The actual metaclass (rather than the explicit hint) can be accessed as type(cls). metaclass __init_subclass__ type(cls) Added in version 3. 6. When a class is created, type. new() scans the class variables and makes callbacks to those with a set_name() hook. type. __new__() __set_name__() Automatically called at the time the owning class owner is created. The object has been assigned to name in that class: class A: x = C() # Automatically calls: x. __set_name__(A, 'x') If the class variable is assigned after the class is created, set_name() will not be called automatically. If needed, set_name() can be called directly: __set_name__() __set_name__() class A: pass c = C() A. x = c # The hook is not called c. __set_name__(A, 'x') # Manually invoke the hook See Creating the class object for more details. Added in version 3. 6. #### 3. 3. 3. 1. Metaclasses¶ By default, classes are constructed using type(). The class body is executed in a new namespace and the class name is bound locally to the result of type(name, bases, namespace). type() type(name, bases, namespace) The class creation process can be customized by passing the metaclass keyword argument in the class definition line, or by inheriting from an existing class that included such an argument. In the following example, both MyClass and MySubclass are instances of Meta: metaclass MyClass MySubclass Meta class Meta(type): pass class MyClass(metaclass=Meta): pass class MySubclass(MyClass): pass Any other keyword arguments that are specified in the class definition are passed through to all metaclass operations described below.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 38,
+  "start_char": 87895,
+  "end_char": 89878,
+  "token_count": 450,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.728812"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_038.txt"
+}

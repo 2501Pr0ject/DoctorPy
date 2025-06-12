@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_006",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "Any pycache directories in the source code tree will be ignored and new. pyc files written within the pycache prefix. Thus if you use compileall as a pre-build step, you must ensure you run it with the same pycache prefix (if any) that you will use at runtime. None. pyc __pycache__ __pycache__. pyc compileall A relative path is interpreted relative to the current working directory. This value is initially set based on the value of the -X pycache_prefix=PATH command-line option or the PYTHONPYCACHEPREFIX environment variable (command-line takes precedence). If neither are set, it is None. -X pycache_prefix=PATH PYTHONPYCACHEPREFIX None Added in version 3. 8. This function prints out a given traceback and exception to sys. stderr. sys. stderr When an exception other than SystemExit is raised and uncaught, the interpreter calls sys. excepthook with three arguments, the exception class, exception instance, and a traceback object. In an interactive session this happens just before control is returned to the prompt; in a Python program this happens just before the program exits. The handling of such top-level exceptions can be customized by assigning another three-argument function to sys. excepthook. SystemExit sys. excepthook sys. excepthook Raise an auditing event sys. excepthook with arguments hook, type, value, traceback when an uncaught exception occurs. If no hook has been set, hook may be None. If any hook raises an exception derived from RuntimeError the call to the hook will be suppressed. Otherwise, the audit hook exception will be reported as unraisable and sys. excepthook will be called. Raise an auditing event sys. excepthook with arguments hook, type, value, traceback when an uncaught exception occurs. If no hook has been set, hook may be None. If any hook raises an exception derived from RuntimeError the call to the hook will be suppressed. Otherwise, the audit hook exception will be reported as unraisable and sys. excepthook will be called. sys. excepthook hook type value traceback hook None RuntimeError sys. excepthook See also The sys. unraisablehook() function handles unraisable exceptions and the threading. excepthook() function handles exception raised by threading. Thread. run(). sys. unraisablehook() threading. excepthook() threading. Thread.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 6,
+  "start_char": 13783,
+  "end_char": 16083,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.424135"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_006.txt"
+}

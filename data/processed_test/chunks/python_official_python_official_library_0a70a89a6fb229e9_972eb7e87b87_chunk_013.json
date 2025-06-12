@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_013",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "5 5 5 101 6 6 6 110 7 7 7 111 8 8 10 1000 9 9 11 1001 10 A 12 1010 11 B 13 1011 ## Template strings¶ Template strings provide simpler string substitutions as described in PEP 292. A primary use case for template strings is for internationalization (i18n) since in that context, the simpler syntax and functionality makes it easier to translate than other built-in string formatting facilities in Python. As an example of a library built on template strings for i18n, see the flufl. i18n package. Template strings support $-based substitutions, using the following rules: $ $$ is an escape; it is replaced with a single $. $$ is an escape; it is replaced with a single $. $$ $ $identifier names a substitution placeholder matching a mapping key of \"identifier\". By default, \"identifier\" is restricted to any case-insensitive ASCII alphanumeric string (including underscores) that starts with an underscore or ASCII letter. The first non-identifier character after the $ character terminates this placeholder specification. $identifier names a substitution placeholder matching a mapping key of \"identifier\". By default, \"identifier\" is restricted to any case-insensitive ASCII alphanumeric string (including underscores) that starts with an underscore or ASCII letter. The first non-identifier character after the $ character terminates this placeholder specification. $identifier \"identifier\" \"identifier\" $ ${identifier} is equivalent to $identifier. It is required when valid identifier characters follow the placeholder but are not part of the placeholder, such as \"${noun}ification\". ${identifier} is equivalent to $identifier. It is required when valid identifier characters follow the placeholder but are not part of the placeholder, such as \"${noun}ification\". ${identifier} $identifier \"${noun}ification\" Any other appearance of $ in the string will result in a ValueError being raised. $ ValueError The string module provides a Template class that implements these rules. The methods of Template are: string Template Template The constructor takes a single argument which is the template string. Performs the template substitution, returning a new string. mapping is any dictionary-like object with keys that match the placeholders in the template. Alternatively, you can provide keyword arguments, where the keywords are the placeholders. When both mapping and kwds are given and there are duplicates, the placeholders from kwds take precedence.",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 13,
+  "start_char": 26156,
+  "end_char": 28611,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.224317"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_013.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_021",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "x == (x//y)*y + (x%y) divmod() divmod(x, y) == (x//y, x%y) In addition to performing the modulo operation on numbers, the % operator is also overloaded by string objects to perform old-style string formatting (also known as interpolation). The syntax for string formatting is described in the Python Library Reference, section printf-style String Formatting. % The modulo operation can be customized using the special mod() and rmod() methods. __mod__() __rmod__() The floor division operator, the modulo operator, and the divmod() function are not defined for complex numbers. Instead, convert to a floating-point number using the abs() function if appropriate. divmod() abs() The + (addition) operator yields the sum of its arguments. The arguments must either both be numbers or both be sequences of the same type. In the former case, the numbers are converted to a common type and then added together. In the latter case, the sequences are concatenated. + This operation can be customized using the special add() and radd() methods. __add__() __radd__() The - (subtraction) operator yields the difference of its arguments. The numeric arguments are first converted to a common type. - This operation can be customized using the special sub() and rsub() methods. __sub__() __rsub__() ## 6. 8. Shifting operations¶ The shifting operations have lower priority than the arithmetic operations: shift_expr ::= a_expr | shift_expr (\"<<\" | \">>\") a_expr a_expr shift_expr a_expr These operators accept integers as arguments. They shift the first argument to the left or right by the number of bits given by the second argument. The left shift operation can be customized using the special lshift() and rlshift() methods. The right shift operation can be customized using the special rshift() and rrshift() methods. __lshift__() __rlshift__() __rshift__() __rrshift__() A right shift by n bits is defined as floor division by pow(2,n). A left shift by n bits is defined as multiplication with pow(2,n). pow(2,n) pow(2,n) ## 6. 9.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 21,
+  "start_char": 49156,
+  "end_char": 51179,
+  "token_count": 458,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.588730"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_021.txt"
+}

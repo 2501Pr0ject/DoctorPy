@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_027",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "If effective_ids is True, access() will perform its access checks using the effective uid/gid instead of the real uid/gid. effective_ids may not be supported on your platform; you can check whether or not it is available using os. supports_effective_ids. If it is unavailable, using it will raise a NotImplementedError. True access() os. supports_effective_ids NotImplementedError Note Using access() to check if a user is authorized to e. g. open a file before actually doing so using open() creates a security hole, because the user might exploit the short time interval between checking and opening the file to manipulate it. It’s preferable to use EAFP techniques. For example: access() open() if os. access(\"myfile\", os. R_OK): with open(\"myfile\") as fp: return fp. read() return \"some default data\" is better written as: try: fp = open(\"myfile\") except PermissionError: return \"some default data\" else: with fp: return fp. read() Note I/O operations may fail even when access() indicates that they would succeed, particularly for operations on network filesystems which may have permissions semantics beyond the usual POSIX permission-bit model. access() Changed in version 3. 3: Added the dir_fd, effective_ids, and follow_symlinks parameters. Changed in version 3. 6: Accepts a path-like object. Values to pass as the mode parameter of access() to test the existence, readability, writability and executability of path, respectively. access() Change the current working directory to path. This function can support specifying a file descriptor. The descriptor must refer to an opened directory, not an open file. This function can raise OSError and subclasses such as FileNotFoundError, PermissionError, and NotADirectoryError. OSError FileNotFoundError PermissionError NotADirectoryError Raises an auditing event os. chdir with argument path. os. chdir path Changed in version 3. 3: Added support for specifying path as a file descriptor on some platforms. Changed in version 3. 6: Accepts a path-like object. Set the flags of path to the numeric flags. flags may take a combination (bitwise OR) of the following values (as defined in the stat module): stat stat. UF_NODUMP stat. UF_NODUMP stat. UF_NODUMP stat. UF_IMMUTABLE stat. UF_IMMUTABLE stat. UF_IMMUTABLE stat.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 27,
+  "start_char": 58442,
+  "end_char": 60719,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.795219"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_027.txt"
+}

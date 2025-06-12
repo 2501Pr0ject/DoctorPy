@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_017",
+  "original_doc_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1",
+  "content": "TypeAliasType For example, the following statement creates a type alias: type Point = tuple[float, float] This code is roughly equivalent to: annotation-def VALUE_OF_Point(): return tuple[float, float] Point = typing. TypeAliasType(\"Point\", VALUE_OF_Point()) annotation-def indicates an annotation scope, which behaves mostly like a function, but with several small differences. annotation-def The value of the type alias is evaluated in the annotation scope. It is not evaluated when the type alias is created, but only when the value is accessed through the type alias’s value attribute (see Lazy evaluation). This allows the type alias to refer to names that are not yet defined. __value__ Type aliases may be made generic by adding a type parameter list after the name. See Generic type aliases for more. type is a soft keyword. type Added in version 3. 12. See also Introduced the type statement and syntax for generic classes and functions. type ### Table of Contents 7. Simple statements 7. 1. Expression statements 7. 2. Assignment statements 7. 2. 1. Augmented assignment statements 7. 2. 2. Annotated assignment statements 7. 3. The assert statement 7. 4. The pass statement 7. 5. The del statement 7. 6. The return statement 7. 7. The yield statement 7. 8. The raise statement 7. 9. The break statement 7. 10. The continue statement 7. 11. The import statement 7. 11. 1. Future statements 7. 12. The global statement 7. 13. The nonlocal statement 7. 14. The type statement 7. 1. Expression statements 7. 2. Assignment statements 7. 2. 1. Augmented assignment statements 7. 2. 2. Annotated assignment statements 7. 2. 1. Augmented assignment statements 7. 2. 2. Annotated assignment statements 7. 3. The assert statement assert 7. 4. The pass statement pass 7. 5. The del statement del 7. 6. The return statement return 7. 7. The yield statement yield 7. 8. The raise statement raise 7. 9.",
+  "title": "7. Simple statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 17,
+  "start_char": 40642,
+  "end_char": 42541,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_086a4fc66c4c8ed9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:05.270283"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_017.txt"
+}

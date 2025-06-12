@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_007",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "real-imag. imag real. imag+imag. real If all arguments are omitted, returns 0j. 0j The complex type is described in Numeric Types — int, float, complex. Changed in version 3. 6: Grouping digits with underscores as in code literals is allowed. Changed in version 3. 8: Falls back to index() if complex() and float() are not defined. __index__() __complex__() __float__() This is a relative of setattr(). The arguments are an object and a string. The string must be the name of one of the object’s attributes. The function deletes the named attribute, provided the object allows it. For example, delattr(x, 'foobar') is equivalent to del x. foobar. name need not be a Python identifier (see setattr()). setattr() delattr(x, 'foobar') del x. foobar setattr() Create a new dictionary. The dict object is the dictionary class. See dict and Mapping Types — dict for documentation about this class. dict dict For other containers see the built-in list, set, and tuple classes, as well as the collections module. list set tuple collections Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object. If the object has a method named dir(), this method will be called and must return the list of attributes. This allows objects that implement a custom getattr() or getattribute() function to customize the way dir() reports their attributes. __dir__() __getattr__() __getattribute__() dir() If the object does not provide dir(), the function tries its best to gather information from the object’s dict attribute, if defined, and from its type object. The resulting list is not necessarily complete and may be inaccurate when the object has a custom getattr(). __dir__() __dict__ __getattr__() The default dir() mechanism behaves differently with different types of objects, as it attempts to produce the most relevant, rather than complete, information: dir() If the object is a module object, the list contains the names of the module’s attributes. If the object is a module object, the list contains the names of the module’s attributes. If the object is a type or class object, the list contains the names of its attributes, and recursively of the attributes of its bases.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 7,
+  "start_char": 14698,
+  "end_char": 16956,
+  "token_count": 482,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.000471"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_007.txt"
+}

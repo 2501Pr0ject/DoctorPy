@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_009",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "is_integer() False Two methods support conversion to and from hexadecimal strings. Since Python’s floats are stored internally as binary numbers, converting a float to or from a decimal string usually involves a small rounding error. In contrast, hexadecimal strings allow exact representation and specification of floating-point numbers. This can be useful when debugging, and in numerical work. Return a representation of a floating-point number as a hexadecimal string. For finite floating-point numbers, this representation will always include a leading 0x and a trailing p and exponent. 0x p Class method to return the float represented by a hexadecimal string s. The string s may have leading and trailing whitespace. Note that float. hex() is an instance method, while float. fromhex() is a class method. float. hex() float. fromhex() A hexadecimal string takes the form: [sign] ['0x'] integer ['. ' fraction] ['p' exponent] where the optional sign may by either + or -, integer and fraction are strings of hexadecimal digits, and exponent is a decimal integer with an optional leading sign. Case is not significant, and there must be at least one hexadecimal digit in either the integer or the fraction. This syntax is similar to the syntax specified in section 6. 4. 4. 2 of the C99 standard, and also to the syntax used in Java 1. 5 onwards. In particular, the output of float. hex() is usable as a hexadecimal floating-point literal in C or Java code, and hexadecimal strings produced by C’s %a format character or Java’s Double. toHexString are accepted by float. fromhex(). sign + - integer fraction exponent float. hex() %a Double. toHexString float. fromhex() Note that the exponent is written in decimal rather than hexadecimal, and that it gives the power of 2 by which to multiply the coefficient. For example, the hexadecimal string 0x3. a7p10 represents the floating-point number (3 + 10. /16 + 7. /162) * 2. 010, or 3740. 0: 0x3. a7p10 (3 + 10. /16 + 7. /16**2) * 2. 0**10 3740. 0 >>> float. fromhex('0x3. a7p10') 3740. 0 Applying the reverse conversion to 3740.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 9,
+  "start_char": 17431,
+  "end_char": 19514,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.187552"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_009.txt"
+}

@@ -1,0 +1,182 @@
+{
+  "id": "python_basics_variables",
+  "title": "Les variables en Python",
+  "description": "Apprenez à créer, utiliser et manipuler des variables en Python. Cette quête couvre les types de base et les bonnes pratiques.",
+  "difficulty": "beginner",
+  "category": "python_basics",
+  "estimated_time": 25,
+  "prerequisites": [],
+  "learning_objectives": [
+    "Comprendre ce qu'est une variable",
+    "Savoir déclarer des variables",
+    "Connaître les types de base (int, float, str, bool)",
+    "Respecter les conventions de nommage",
+    "Comprendre l'assignation et la réassignation"
+  ],
+  "tags": ["variables", "types", "assignation", "python"],
+  "xp_reward": 100,
+  "steps": [
+    {
+      "id": "step_1",
+      "title": "Qu'est-ce qu'une variable ?",
+      "content": "En Python, une variable est comme une boîte qui stocke une valeur. Vous pouvez donner un nom à cette boîte et y mettre différents types de données.",
+      "explanation": "Contrairement à certains langages, Python n'exige pas de déclarer le type d'une variable à l'avance. Le type est déterminé automatiquement selon la valeur assignée.",
+      "example": "nom = \"Alice\"\nage = 25\ntaille = 1.65\nest_etudiant = True",
+      "exercise": {
+        "instruction": "Créez une variable appelée 'message' qui contient le texte 'Bonjour le monde!'",
+        "initial_code": "# Créez votre variable ici\n",
+        "solution": "message = 'Bonjour le monde!'",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "message == 'Bonjour le monde!'",
+            "description": "La variable message doit contenir 'Bonjour le monde!'"
+          }
+        ]
+      },
+      "hints": [
+        "Utilisez le signe = pour assigner une valeur",
+        "N'oubliez pas les guillemets pour les chaînes de caractères",
+        "Les noms de variables sont sensibles à la casse"
+      ]
+    },
+    {
+      "id": "step_2", 
+      "title": "Les types de données de base",
+      "content": "Python a quatre types de données fondamentaux : les entiers (int), les nombres décimaux (float), les chaînes de caractères (str) et les booléens (bool).",
+      "explanation": "Chaque type a ses propres caractéristiques et méthodes. Python détermine automatiquement le type selon la valeur.",
+      "example": "entier = 42          # int\ndecimal = 3.14       # float\ntexte = \"Python\"     # str\nvrai_faux = True     # bool\n\nprint(type(entier))  # <class 'int'>",
+      "exercise": {
+        "instruction": "Créez quatre variables : 'annee' (2024), 'pi' (3.14159), 'langage' (\"Python\") et 'actif' (True)",
+        "initial_code": "# Créez vos quatre variables ici\n",
+        "solution": "annee = 2024\npi = 3.14159\nlangage = \"Python\"\nactif = True",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "type(annee) == int and type(pi) == float and type(langage) == str and type(actif) == bool",
+            "description": "Les quatre variables doivent avoir les bons types"
+          }
+        ]
+      },
+      "hints": [
+        "Les entiers s'écrivent sans guillemets : 42",
+        "Les floats utilisent un point décimal : 3.14",
+        "Les strings sont entre guillemets : \"texte\"",
+        "Les booléens sont True ou False (avec majuscule)"
+      ]
+    },
+    {
+      "id": "step_3",
+      "title": "Conventions de nommage",
+      "content": "En Python, il existe des règles et des conventions pour nommer les variables de manière claire et lisible.",
+      "explanation": "Les bonnes pratiques de nommage rendent le code plus lisible et maintenable. Python utilise la convention 'snake_case' pour les variables.",
+      "example": "# Bon\nnombre_etudiants = 25\nprenom_utilisateur = \"Marie\"\nest_connecte = False\n\n# À éviter\nn = 25\npu = \"Marie\"\nec = False",
+      "exercise": {
+        "instruction": "Refactorisez ces noms de variables selon les bonnes pratiques : 'n' → nombre d'élèves, 'p' → prix total, 'x' → est en promotion",
+        "initial_code": "n = 30\np = 199.99\nx = True\n\n# Renommez les variables ci-dessus",
+        "solution": "nombre_eleves = 30\nprix_total = 199.99\nest_en_promotion = True",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "nombre_eleves == 30 and prix_total == 199.99 and est_en_promotion == True",
+            "description": "Les variables doivent être renommées correctement"
+          }
+        ]
+      },
+      "hints": [
+        "Utilisez des noms descriptifs",
+        "Séparez les mots avec des underscores (_)",
+        "Utilisez le français ou l'anglais de manière cohérente",
+        "Évitez les noms d'une seule lettre sauf pour les compteurs"
+      ]
+    },
+    {
+      "id": "step_4",
+      "title": "Modification des variables",
+      "content": "Les variables peuvent être modifiées après leur création. On peut aussi utiliser leur valeur actuelle pour calculer une nouvelle valeur.",
+      "explanation": "Python permet de réassigner des variables et même de changer leur type. On peut aussi utiliser des opérateurs d'assignation raccourcis.",
+      "example": "compteur = 0\ncompteur = compteur + 1  # compteur vaut maintenant 1\ncompteur += 1            # raccourci, compteur vaut 2\n\nnom = \"Jean\"\nnom = \"Pierre\"          # changement de valeur",
+      "exercise": {
+        "instruction": "Partez de score = 100. Ajoutez 50 points, puis multipliez le total par 2. Utilisez les opérateurs raccourcis.",
+        "initial_code": "score = 100\n# Modifiez le score ici\n",
+        "solution": "score = 100\nscore += 50\nscore *= 2",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "score == 300",
+            "description": "Le score final doit être 300"
+          }
+        ]
+      },
+      "hints": [
+        "Utilisez += pour additionner",
+        "Utilisez *= pour multiplier", 
+        "L'ordre des opérations compte",
+        "Vous pouvez vérifier la valeur avec print(score)"
+      ]
+    },
+    {
+      "id": "step_5",
+      "title": "Projet final : Calculateur d'IMC",
+      "content": "Mettez en pratique tout ce que vous avez appris en créant un calculateur d'IMC (Indice de Masse Corporelle) simple.",
+      "explanation": "L'IMC se calcule avec la formule : poids / (taille * taille). Ce projet combine variables, types et calculs.",
+      "example": "# Exemple de structure\npoids = 70.5\ntaille = 1.75\nimc = poids / (taille * taille)\nprint(f\"Votre IMC est : {imc:.2f}\")",
+      "exercise": {
+        "instruction": "Créez un calculateur d'IMC avec : poids = 68.5 kg, taille = 1.72 m. Calculez l'IMC et stockez le résultat dans une variable 'imc'.",
+        "initial_code": "# Votre calculateur d'IMC\n",
+        "solution": "poids = 68.5\ntaille = 1.72\nimc = poids / (taille * taille)",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "abs(imc - 23.14) < 0.1",
+            "description": "L'IMC doit être approximativement 23.14"
+          }
+        ]
+      },
+      "hints": [
+        "IMC = poids / (taille²)",
+        "En Python, ** signifie 'puissance' : taille ** 2",
+        "Ou utilisez taille * taille",
+        "Vérifiez que vos variables ont les bons types"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Quel est le type de la variable : x = 42 ?",
+      "options": ["str", "int", "float", "bool"],
+      "correct": 1,
+      "explanation": "42 est un nombre entier, donc de type int."
+    },
+    {
+      "question": "Laquelle de ces conventions de nommage est correcte en Python ?",
+      "options": ["nombreEtudiants", "nombre_etudiants", "NombreEtudiants", "NOMBRE_ETUDIANTS"],
+      "correct": 1,
+      "explanation": "Python utilise la convention snake_case pour les variables."
+    },
+    {
+      "question": "Que vaut x après : x = 10; x += 5; x *= 2 ?",
+      "options": ["20", "25", "30", "35"],
+      "correct": 2,
+      "explanation": "x = 10, puis x = 10 + 5 = 15, puis x = 15 * 2 = 30."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Documentation Python - Variables",
+      "url": "https://docs.python.org/fr/3/tutorial/introduction.html",
+      "type": "documentation"
+    },
+    {
+      "title": "PEP 8 - Style Guide",
+      "url": "https://peps.python.org/pep-0008/",
+      "type": "guide"
+    }
+  ],
+  "next_quests": ["python_basics_functions", "python_basics_strings"],
+  "certification_criteria": {
+    "min_score": 80,
+    "required_exercises": ["step_1", "step_2", "step_4", "step_5"],
+    "time_limit_minutes": 45
+  }
+}

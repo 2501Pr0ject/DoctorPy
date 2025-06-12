@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_018",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "Interning strings is useful to gain a little performance on dictionary lookup – if the keys in a dictionary are interned, and the lookup key is interned, the key comparisons (after hashing) can be done by a pointer compare instead of a string compare. Normally, the names used in Python programs are automatically interned, and the dictionaries used to hold module, class or instance attributes have interned keys. Interned strings are not immortal; you must keep a reference to the return value of intern() around to benefit from it. intern() Return True if the GIL is enabled and False if it is disabled. True False Added in version 3. 13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python. Return True if the main Python interpreter is shutting down. Return False otherwise. True False See also the PythonFinalizationError exception. PythonFinalizationError Added in version 3. 5. This variable is not always defined; it is set to the exception instance when an exception is not handled and the interpreter prints an error message and a stack traceback. Its intended use is to allow an interactive user to import a debugger module and engage in post-mortem debugging without having to re-execute the command that caused the error. (Typical use is import pdb; pdb. pm() to enter the post-mortem debugger; see pdb module for more information. ) import pdb; pdb. pm() pdb Added in version 3. 12. Return True if the given string is “interned”, False otherwise. True False Added in version 3. 13. CPython implementation detail: It is not guaranteed to exist in all implementations of Python. These three variables are deprecated; use sys. last_exc instead. They hold the legacy representation of sys. last_exc, as returned from exc_info() above. sys. last_exc sys. last_exc exc_info() An integer giving the maximum value a variable of type Py_ssize_t can take. It’s usually 231 - 1 on a 32-bit platform and 263 - 1 on a 64-bit platform. Py_ssize_t 2**31 - 1 2**63 - 1 An integer giving the value of the largest Unicode code point, i. e. 1114111 (0x10FFFF in hexadecimal). 1114111 0x10FFFF Changed in version 3.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 18,
+  "start_char": 40267,
+  "end_char": 42419,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.434890"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_018.txt"
+}

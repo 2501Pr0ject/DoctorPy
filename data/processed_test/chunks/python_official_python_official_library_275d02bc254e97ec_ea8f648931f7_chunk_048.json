@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_048",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "ST_NODEV ST_NOEXEC ST_SYNCHRONOUS ST_MANDLOCK ST_WRITE ST_APPEND ST_IMMUTABLE ST_NOATIME ST_NODIRATIME ST_RELATIME Changed in version 3. 6: Accepts a path-like object. Changed in version 3. 7: Added the f_fsid attribute. f_fsid A set object indicating which functions in the os module accept an open file descriptor for their dir_fd parameter. Different platforms provide different features, and the underlying functionality Python uses to implement the dir_fd parameter is not available on all platforms Python supports. For consistency’s sake, functions that may support dir_fd always allow specifying the parameter, but will throw an exception if the functionality is used when it’s not locally available. (Specifying None for dir_fd is always supported on all platforms. ) set os None To check whether a particular function accepts an open file descriptor for its dir_fd parameter, use the in operator on supports_dir_fd. As an example, this expression evaluates to True if os. stat() accepts open file descriptors for dir_fd on the local platform: in supports_dir_fd True os. stat() os. stat in os. supports_dir_fd Currently dir_fd parameters only work on Unix platforms; none of them work on Windows. Added in version 3. 3. A set object indicating whether os. access() permits specifying True for its effective_ids parameter on the local platform. (Specifying False for effective_ids is always supported on all platforms. ) If the local platform supports it, the collection will contain os. access(); otherwise it will be empty. set os. access() True False os. access() This expression evaluates to True if os. access() supports effective_ids=True on the local platform: True os. access() effective_ids=True os. access in os. supports_effective_ids Currently effective_ids is only supported on Unix platforms; it does not work on Windows. Added in version 3. 3. A set object indicating which functions in the os module permit specifying their path parameter as an open file descriptor on the local platform. Different platforms provide different features, and the underlying functionality Python uses to accept open file descriptors as path arguments is not available on all platforms Python supports. set os To determine whether a particular function permits specifying an open file descriptor for its path parameter, use the in operator on supports_fd. As an example, this expression evaluates to True if os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 48,
+  "start_char": 102667,
+  "end_char": 105083,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.814095"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_048.txt"
+}

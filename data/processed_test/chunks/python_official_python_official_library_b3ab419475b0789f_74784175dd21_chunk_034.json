@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_034",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "exists() True >>> Path('nonexistentfile'). exists() False True False False follow_symlinks=False True False False follow_symlinks=False True False False True False True path/. path/. c:\\ \\\\server\\share True False False True False False True False False True False False os. path. samefile() os. path. samestat() OSError >>> p = Path('spam') >>> q = Path('eggs') >>> p. samefile(q) False >>> p. samefile('spam') True open() >>> p = Path('setup. py') >>> with p. open() as f:. f. readline(). '#. /usr/bin/env python3\\n' >>> p = Path('my_text_file') >>> p. write_text('Text file contents') 18 >>> p. read_text() 'Text file contents' open() >>> p = Path('my_binary_file') >>> p. write_bytes(b'Binary file contents') 20 >>> p. read_bytes() b'Binary file contents' >>> p = Path('my_text_file') >>> p. write_text('Text file contents') 18 >>> p. read_text() 'Text file contents' open() >>> p = Path('my_binary_file') >>> p. write_bytes(b'Binary file contents') 20 >>> p. read_bytes() b'Binary file contents' >>> p = Path('docs') >>> for child in p. iterdir(): child. PosixPath('docs/conf. py') PosixPath('docs/_templates') PosixPath('docs/make. bat') PosixPath('docs/index. rst') PosixPath('docs/_build') PosixPath('docs/_static') PosixPath('docs/Makefile') '. ' '. ' OSError >>> sorted(Path('. '). glob('*. py')) [PosixPath('pathlib. py'), PosixPath('setup. py'), PosixPath('test_pathlib. py')] >>> sorted(Path('. '). glob('*/*. py')) [PosixPath('docs/conf. py')] >>> sorted(Path('. '). glob('**/*. py')) [PosixPath('build/lib/pathlib. py'), PosixPath('docs/conf. py'), PosixPath('pathlib. py'), PosixPath('setup. py'), PosixPath('test_pathlib. py')] None True False False ** True pathlib. Path. glob self pattern OSError Path. glob() **/ Path. glob() pathlib.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 34,
+  "start_char": 66978,
+  "end_char": 68731,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.517755"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_034.txt"
+}

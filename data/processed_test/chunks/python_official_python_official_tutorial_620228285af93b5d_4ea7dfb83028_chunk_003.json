@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_620228285af93b5d_4ea7dfb83028_chunk_003",
+  "original_doc_id": "python_official_python_official_tutorial_620228285af93b5d_4ea7dfb83028",
+  "content": "2. 1. Source Code Encoding #### Previous topic 1. Whetting Your Appetite #### Next topic 3. An Informal Introduction to Python ### This page Report a bug Show source /usr/local/bin/python3. 13 /usr/local/bin python3. 13 /usr/local/python python3. 13 py quit() ^P python -c command [arg]. -c python -m module [arg]. -i argv sys import sys sys. argv[0] '-' sys. argv[0] '-' -c sys. argv[0] '-c' -m sys. argv[0] -c -m sys. argv >>>. $ python3. 13 Python 3. 13 (default, April 4 2023, 09:25:04) [GCC 10. 2. 0] on linux Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. >>> if >>> the_world_is_flat = True >>> if the_world_is_flat:. print(\"Be careful not to fall off. \"). Be careful not to fall off. # -*- coding: encoding -*- codecs # -*- coding: cp1252 -*- #. /usr/bin/env python3 # -*- coding: cp1252 -*-.",
+  "title": "2. Using the Python Interpreter.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 3,
+  "start_char": 6286,
+  "end_char": 7110,
+  "token_count": 260,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_620228285af93b5d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.675996"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_620228285af93b5d_4ea7dfb83028_chunk_003.txt"
+}

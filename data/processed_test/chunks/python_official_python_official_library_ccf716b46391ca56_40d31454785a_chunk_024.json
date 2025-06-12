@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_024",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "fullmatch(\"dog\") # No match as \"o\" is not at the start of \"dog\". >>> pattern. fullmatch(\"ogre\") # No match as not the full string matches. >>> pattern. fullmatch(\"doggie\", 1, 3) # Matches within given limits. <re. Match object; span=(1, 3), match='og'> Added in version 3. 4. Identical to the split() function, using the compiled pattern. split() Similar to the findall() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search(). findall() search() Similar to the finditer() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search(). finditer() search() Identical to the sub() function, using the compiled pattern. sub() Identical to the subn() function, using the compiled pattern. subn() The regex matching flags. This is a combination of the flags given to compile(), any (. ) inline flags in the pattern, and implicit flags such as UNICODE if the pattern is a Unicode string. compile() (. ) UNICODE The number of capturing groups in the pattern. A dictionary mapping any symbolic group names defined by (. P) to group numbers. The dictionary is empty if no symbolic groups were used in the pattern. (. P<id>) The pattern string from which the pattern object was compiled. Changed in version 3. 7: Added support of copy. copy() and copy. deepcopy(). Compiled regular expression objects are considered atomic. copy. copy() copy. deepcopy() ## Match Objects¶ Match objects always have a boolean value of True. Since match() and search() return None when there is no match, you can test whether there was a match with a simple if statement: True match() search() None if match = re. search(pattern, string) if match: process(match) Match object returned by successful matches and searches. match search Changed in version 3. 9: re. Match supports [] to indicate a Unicode (str) or bytes match. See Generic Alias Type. re. Match [] Return the string obtained by doing backslash substitution on the template string template, as done by the sub() method.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 24,
+  "start_char": 47207,
+  "end_char": 49317,
+  "token_count": 475,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.822750"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_024.txt"
+}

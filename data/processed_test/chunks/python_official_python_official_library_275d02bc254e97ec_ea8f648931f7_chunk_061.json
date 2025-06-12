@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_061",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "If XATTR_CREATE is given and the attribute already exists, the attribute will not be created and EEXISTS will be raised. PathLike XATTR_REPLACE XATTR_CREATE XATTR_REPLACE ENODATA XATTR_CREATE EEXISTS This function can support specifying a file descriptor and not following symlinks. Note A bug in Linux kernel versions less than 2. 6. 39 caused the flags argument to be ignored on some filesystems. Raises an auditing event os. setxattr with arguments path, attribute, value, flags. os. setxattr path attribute value flags Changed in version 3. 6: Accepts a path-like object for path and attribute. The maximum size the value of an extended attribute can be. Currently, this is 64 KiB on Linux. This is a possible value for the flags argument in setxattr(). It indicates the operation must create an attribute. setxattr() This is a possible value for the flags argument in setxattr(). It indicates the operation must replace an existing attribute. setxattr() ## Process Management¶ These functions may be used to create and manage processes. The various exec functions take a list of arguments for the new program loaded into the process. In each case, the first of these arguments is passed to the new program as its own name rather than as an argument a user may have typed on a command line. For the C programmer, this is the argv[0] passed to a program’s main(). For example, os. execv('/bin/echo', ['foo', 'bar']) will only print bar on standard output; foo will seem to be ignored. exec* argv[0] main() os. execv('/bin/echo', ['foo', 'bar']) bar foo Generate a SIGABRT signal to the current process. On Unix, the default behavior is to produce a core dump; on Windows, the process immediately returns an exit code of 3. Be aware that calling this function will not call the Python signal handler registered for SIGABRT with signal. signal(). SIGABRT 3 SIGABRT signal. signal() Add a path to the DLL search path. This search path is used when resolving dependencies for imported extension modules (the module itself is resolved through sys. path), and also by ctypes. sys. path ctypes Remove the directory by calling close() on the returned object or using it in a with statement.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 61,
+  "start_char": 129465,
+  "end_char": 131650,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.826134"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_061.txt"
+}

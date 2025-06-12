@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_020",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "Each item yielded is a (start, end, lineno) tuple: (start, end, lineno) tuple start (an int) represents the offset (inclusive) of the start of the bytecode range start (an int) represents the offset (inclusive) of the start of the bytecode range start int end (an int) represents the offset (exclusive) of the end of the bytecode range end (an int) represents the offset (exclusive) of the end of the bytecode range end int lineno is an int representing the line number of the bytecode range, or None if the bytecodes in the given range have no line number lineno is an int representing the line number of the bytecode range, or None if the bytecodes in the given range have no line number lineno int None The items yielded will have the following properties: The first range yielded will have a start of 0. The first range yielded will have a start of 0. start The (start, end) ranges will be non-decreasing and consecutive. That is, for any pair of tuples, the start of the second will be equal to the end of the first. The (start, end) ranges will be non-decreasing and consecutive. That is, for any pair of tuples, the start of the second will be equal to the end of the first. (start, end) tuple start end No range will be backwards: end >= start for all triples. No range will be backwards: end >= start for all triples. end >= start The last tuple yielded will have end equal to the size of the bytecode. The last tuple yielded will have end equal to the size of the bytecode. tuple end Zero-width ranges, where start == end, are allowed. Zero-width ranges are used for lines that are present in the source code, but have been eliminated by the bytecode compiler. start == end Added in version 3. 10. See also The PEP that introduced the co_lines() method. co_lines() Return a copy of the code object with new values for the specified fields. Code objects are also supported by the generic function copy. replace(). copy. replace() Added in version 3. 8. #### 3. 2. 13. 2. Frame objects¶ Frame objects represent execution frames. They may occur in traceback objects, and are also passed to registered trace functions. ##### 3. 2. 13. 2. 1.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 20,
+  "start_char": 45811,
+  "end_char": 47957,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.711917"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_020.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_053",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters. If omitted or None, the chars argument defaults to removing ASCII whitespace. The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped: None >>> b' spacious '. strip() b'spacious' >>> b'www. example. com'. strip(b'cmowz. ') b'example' The binary sequence of byte values to remove may be any bytes-like object. Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. The following methods on bytes and bytearray objects assume the use of ASCII compatible binary formats and should not be applied to arbitrary binary data. Note that all of the bytearray methods in this section do not operate in place, and instead produce new objects. Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased. Non-ASCII byte values are passed through unchanged. Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. Return a copy of the sequence where all ASCII tab characters are replaced by one or more ASCII spaces, depending on the current column and the given tab size. Tab positions occur every tabsize bytes (default is 8, giving tab positions at columns 0, 8, 16 and so on). To expand the sequence, the current column is set to zero and the sequence is examined byte by byte. If the byte is an ASCII tab character (b'\\t'), one or more space characters are inserted in the result until the current column is equal to the next tab position. (The tab character itself is not copied. ) If the current byte is an ASCII newline (b'\\n') or carriage return (b'\\r'), it is copied and the current column is reset to zero. Any other byte value is copied unchanged and the current column is incremented by one regardless of how the byte value is represented when printed: b'\\t' b'\\n' b'\\r' >>> b'01\\t012\\t0123\\t01234'. expandtabs() b'01 012 0123 01234' >>> b'01\\t012\\t0123\\t01234'.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 53,
+  "start_char": 108581,
+  "end_char": 110784,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.227356"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_053.txt"
+}

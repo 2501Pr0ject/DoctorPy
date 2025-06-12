@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_014",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "2 behaviour, lastResort can be set to None. lastResort None ### Configuring Logging for a Library¶ When developing a library which uses logging, you should take care to document how the library uses logging - for example, the names of loggers used. Some consideration also needs to be given to its logging configuration. If the using application does not use logging, and library code makes logging calls, then (as described in the previous section) events of severity WARNING and greater will be printed to sys. stderr. This is regarded as the best default behaviour. WARNING sys. stderr If for some reason you don’t want these messages printed in the absence of any logging configuration, you can attach a do-nothing handler to the top-level logger for your library. This avoids the message being printed, since a handler will always be found for the library’s events: it just doesn’t produce any output. If the library user configures logging for application use, presumably that configuration will add some handlers, and if levels are suitably configured then logging calls made in library code will send output to those handlers, as normal. A do-nothing handler is included in the logging package: NullHandler (since Python 3. 1). An instance of this handler could be added to the top-level logger of the logging namespace used by the library (if you want to prevent your library’s logged events being output to sys. stderr in the absence of logging configuration). If all logging by a library foo is done using loggers with names matching ‘foo. x’, ‘foo. x. y’, etc. then the code: NullHandler sys. stderr import logging logging. getLogger('foo'). addHandler(logging. NullHandler()) should have the desired effect. If an organisation produces a number of libraries, then the logger name specified can be ‘orgname. foo’ rather than just ‘foo’. Note It is strongly advised that you do not log to the root logger in your library. Instead, use a logger with a unique and easily identifiable name, such as the name for your library’s top-level package or module. Logging to the root logger will make it difficult or impossible for the application developer to configure the logging verbosity or handlers of your library as they wish. __name__ Note It is strongly advised that you do not add any handlers other than NullHandler to your library’s loggers. This is because the configuration of handlers is the prerogative of the application developer who uses your library.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 14,
+  "start_char": 32128,
+  "end_char": 34599,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.532489"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_014.txt"
+}

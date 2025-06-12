@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_051",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "When this class is used in a class pattern with positional arguments, each positional argument will be converted into a keyword argument, using the corresponding value in match_args as the keyword. The absence of this attribute is equivalent to setting it to (). () For example, if MyClass. match_args is (\"left\", \"center\", \"right\") that means that case MyClass(x, y) is equivalent to case MyClass(left=x, center=y). Note that the number of arguments in the pattern must be smaller than or equal to the number of elements in match_args; if it is larger, the pattern match attempt will raise a TypeError. MyClass. __match_args__ (\"left\", \"center\", \"right\") case MyClass(x, y) case MyClass(left=x, center=y) TypeError Added in version 3. 10. See also The specification for the Python match statement. match ### 3. 3. 11. Emulating buffer types¶ The buffer protocol provides a way for Python objects to expose efficient access to a low-level memory array. This protocol is implemented by builtin types such as bytes and memoryview, and third-party libraries may define additional buffer types. bytes memoryview While buffer types are usually implemented in C, it is also possible to implement the protocol in Python. Called when a buffer is requested from self (for example, by the memoryview constructor). The flags argument is an integer representing the kind of buffer requested, affecting for example whether the returned buffer is read-only or writable. inspect. BufferFlags provides a convenient way to interpret the flags. The method must return a memoryview object. memoryview inspect. BufferFlags memoryview Called when a buffer is no longer needed. The buffer argument is a memoryview object that was previously returned by buffer(). The method must release any resources associated with the buffer. This method should return None. Buffer objects that do not need to perform any cleanup are not required to implement this method. memoryview __buffer__() None Added in version 3. 12. See also Introduces the Python buffer and release_buffer methods. __buffer__ __release_buffer__ collections. abc. Buffer ABC for buffer types. ### 3. 3. 12. Special method lookup¶ For custom classes, implicit invocations of special methods are only guaranteed to work correctly if defined on an object’s type, not in the object’s instance dictionary. That behaviour is the reason why the following code raises an exception: >>> class C:. pass.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 51,
+  "start_char": 116459,
+  "end_char": 118892,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.748435"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_051.txt"
+}

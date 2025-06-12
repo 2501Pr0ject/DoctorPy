@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_023",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "8. Class definitions¶ A class definition defines a class object (see section The standard type hierarchy): classdef ::= [decorators] \"class\" classname [type_params] [inheritance] \":\" suite inheritance ::= \"(\" [argument_list] \")\" classname ::= identifier decorators classname type_params inheritance suite argument_list identifier A class definition is an executable statement. The inheritance list usually gives a list of base classes (see Metaclasses for more advanced uses), so each item in the list should evaluate to a class object which allows subclassing. Classes without an inheritance list inherit, by default, from the base class object; hence, object class Foo: pass is equivalent to class Foo(object): pass The class’s suite is then executed in a new execution frame (see Naming and binding), using a newly created local namespace and the original global namespace. (Usually, the suite contains mostly function definitions. ) When the class’s suite finishes execution, its execution frame is discarded but its local namespace is saved. [5] A class object is then created using the inheritance list for the base classes and the saved local namespace for the attribute dictionary. The class name is bound to this class object in the original local namespace. The order in which attributes are defined in the class body is preserved in the new class’s dict. Note that this is reliable only right after the class is created and only for classes that were defined using the definition syntax. __dict__ Class creation can be customized heavily using metaclasses. Classes can also be decorated: just like when decorating functions, @f1(arg) @f2 class Foo: pass is roughly equivalent to class Foo: pass Foo = f1(arg)(f2(Foo)) The evaluation rules for the decorator expressions are the same as for function decorators. The result is then bound to the class name. Changed in version 3. 9: Classes may be decorated with any valid assignment_expression. Previously, the grammar was much more restrictive; see PEP 614 for details. assignment_expression A list of type parameters may be given in square brackets immediately after the class’s name. This indicates to static type checkers that the class is generic. At runtime, the type parameters can be retrieved from the class’s type_params attribute. See Generic classes for more. __type_params__ Changed in version 3. 12: Type parameter lists are new in Python 3. 12.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 23,
+  "start_char": 53985,
+  "end_char": 56402,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.385815"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_023.txt"
+}

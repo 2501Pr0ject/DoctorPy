@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_015",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "This made the function easier to write and much more clear than an approach using instance variables like self. index and self. data. self. index self. data In addition to automatic method creation and saving program state, when generators terminate, they automatically raise StopIteration. In combination, these features make it easy to create iterators with no more effort than writing a regular function. StopIteration ## 9. 10. Generator Expressions¶ Some simple generators can be coded succinctly as expressions using a syntax similar to list comprehensions but with parentheses instead of square brackets. These expressions are designed for situations where the generator is used right away by an enclosing function. Generator expressions are more compact but less versatile than full generator definitions and tend to be more memory friendly than equivalent list comprehensions. Examples: >>> sum(i*i for i in range(10)) # sum of squares 285 >>> xvec = [10, 20, 30] >>> yvec = [7, 5, 3] >>> sum(x*y for x,y in zip(xvec, yvec)) # dot product 260 >>> unique_words = set(word for line in page for word in line. split()) >>> valedictorian = max((student. gpa, student. name) for student in graduates) >>> data = 'golf' >>> list(data[i] for i in range(len(data)-1, -1, -1)) ['f', 'l', 'o', 'g'] Footnotes ### Table of Contents 9. Classes 9. 1. A Word About Names and Objects 9. 2. Python Scopes and Namespaces 9. 2. 1. Scopes and Namespaces Example 9. 3. A First Look at Classes 9. 3. 1. Class Definition Syntax 9. 3. 2. Class Objects 9. 3. 3. Instance Objects 9. 3. 4. Method Objects 9. 3. 5. Class and Instance Variables 9. 4. Random Remarks 9. 5. Inheritance 9. 5. 1. Multiple Inheritance 9. 6. Private Variables 9. 7. Odds and Ends 9. 8. Iterators 9. 9. Generators 9. 10. Generator Expressions 9. 1.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 15,
+  "start_char": 33288,
+  "end_char": 35093,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.100881"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_015.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_002",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "the_answer will remove the attribute the_answer from the object named by modname. modname. the_answer = 42 del del modname. the_answer the_answer modname Namespaces are created at different moments and have different lifetimes. The namespace containing the built-in names is created when the Python interpreter starts up, and is never deleted. The global namespace for a module is created when the module definition is read in; normally, module namespaces also last until the interpreter quits. The statements executed by the top-level invocation of the interpreter, either read from a script file or interactively, are considered part of a module called main, so they have their own global namespace. (The built-in names actually also live in a module; this is called builtins. ) __main__ builtins The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function. (Actually, forgetting would be a better way to describe what actually happens. ) Of course, recursive invocations each have their own local namespace. A scope is a textual region of a Python program where a namespace is directly accessible. “Directly accessible” here means that an unqualified reference to a name attempts to find the name in the namespace. Although scopes are determined statically, they are used dynamically. At any time during execution, there are 3 or 4 nested scopes whose namespaces are directly accessible: the innermost scope, which is searched first, contains the local names the innermost scope, which is searched first, contains the local names the scopes of any enclosing functions, which are searched starting with the nearest enclosing scope, contain non-local, but also non-global names the scopes of any enclosing functions, which are searched starting with the nearest enclosing scope, contain non-local, but also non-global names the next-to-last scope contains the current module’s global names the next-to-last scope contains the current module’s global names the outermost scope (searched last) is the namespace containing built-in names the outermost scope (searched last) is the namespace containing built-in names If a name is declared global, then all references and assignments go directly to the next-to-last scope containing the module’s global names.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 2,
+  "start_char": 4908,
+  "end_char": 7280,
+  "token_count": 456,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.088752"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_002.txt"
+}

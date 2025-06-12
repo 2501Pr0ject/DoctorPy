@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_039",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "m) 0 def myfunc(text, flag=re. NOFLAG): return re. match(text, flag) '. ' '. ' (. s) str ASCII *. (. : (. P<. > (. : *. # # a = re. compile(r\"\"\"\\d + # the integral part \\. # the decimal point \\d * # some fractional digits\"\"\", re. X) b = re. compile(r\"\\d+\\. \\d*\") (. x) match() search() | prog = re. compile(pattern) result = prog. match(string) result = re. match(pattern, string) re. compile() re. compile() Match None | Match None MULTILINE re. match() search() | Match None | >>> re. split(r'\\W+', 'Words, words, words. ') ['Words', 'words', 'words', ''] >>> re. split(r'(\\W+)', 'Words, words, words. ') ['Words', ', ', 'words', ', ', 'words', '. ', ''] >>> re. split(r'\\W+', 'Words, words, words. ', maxsplit=1) ['Words', 'words, words. '] >>> re. split('[a-f]+', '0a3B9', flags=re. IGNORECASE) ['0', '3', '9'] >>> re. split(r'(\\W+)', '. words, words. ') ['', '. ', 'words', ', ', 'words', '. ', ''] >>> re. split(r'\\b', 'Words, words, words. ') ['', 'Words', ', ', 'words', ', ', 'words', '. '] >>> re. split(r'\\W*', '. words. ') ['', '', 'w', 'o', 'r', 'd', 's', '', ''] >>> re. split(r'(\\W*)', '. words. ') ['', '. ', '', '', 'w', '', 'o', '', 'r', '', 'd', '', 's', '. ', '', '', ''] | >>> re. findall(r'\\bf[a-z]*', 'which foot or hand fell fastest') ['foot', 'fell', 'fastest'] >>> re. findall(r'(\\w+)=(\\d+)', 'set width=20 and height=10') [('width', '20'), ('height', '10')] | Match | \\n \\r \\& \\6 >>> re.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 39,
+  "start_char": 71234,
+  "end_char": 72648,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.835991"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_039.txt"
+}

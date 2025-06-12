@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6_chunk_011",
+  "original_doc_id": "python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6",
+  "content": "Classes ### This page Report a bug Show source >>> while True print('Hello world') File \"<stdin>\", line 1 while True print('Hello world') ^^^^^ SyntaxError: invalid syntax print() ':' <stdin> >>> 10 * (1/0) Traceback (most recent call last): File \"<stdin>\", line 1, in <module> 10 * (1/0) ~^~ ZeroDivisionError: division by zero >>> 4 + spam*3 Traceback (most recent call last): File \"<stdin>\", line 1, in <module> 4 + spam*3 ^^^^ NameError: name 'spam' is not defined >>> '2' + 2 Traceback (most recent call last): File \"<stdin>\", line 1, in <module> '2' + 2 ~~~~^~~ TypeError: can only concatenate str (not \"int\") to str ZeroDivisionError NameError TypeError KeyboardInterrupt >>> while True:. try:. x = int(input(\"Please enter a number: \")). break. except ValueError:. print(\"Oops. That was no valid number. Try again. \"). try try except try try except try try try. except (RuntimeError, TypeError, NameError):. pass except class B(Exception): pass class C(B): pass class D(C): pass for cls in [B, C, D]: try: raise cls() except D: print(\"D\") except C: print(\"C\") except B: print(\"B\") except B args __str__(). args >>> try:. raise Exception('spam', 'eggs'). except Exception as inst:. print(type(inst)) # the exception type. print(inst. args) # arguments stored in. args. print(inst) # __str__ allows args to be printed directly,. # but may be overridden in exception subclasses. x, y = inst. args # unpack args. print('x =', x). print('y =', y). <class 'Exception'> ('spam', 'eggs') ('spam', 'eggs') x = spam y = eggs __str__() BaseException Exception Exception SystemExit sys. exit() KeyboardInterrupt Exception Exception import sys try: f = open('myfile. txt') s = f. readline() i = int(s. strip()) except OSError as err: print(\"OS error:\", err) except ValueError: print(\"Could not convert data to an integer.",
+  "title": "8. Errors and Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 11,
+  "start_char": 23010,
+  "end_char": 24825,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_7969fd9e5d06ff1d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.783242"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6_chunk_011.txt"
+}

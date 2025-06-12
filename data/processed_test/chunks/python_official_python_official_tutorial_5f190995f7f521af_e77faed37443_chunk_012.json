@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_012",
+  "original_doc_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443",
+  "content": "import __all__ Although certain modules are designed to export only names that follow certain patterns when you use import , it is still considered bad practice in production code. import * Remember, there is nothing wrong with using from package import specific_submodule. In fact, this is the recommended notation unless the importing module needs to use submodules with the same name from different packages. from package import specific_submodule ### 6. 4. 2. Intra-package References¶ When packages are structured into subpackages (as with the sound package in the example), you can use absolute imports to refer to submodules of siblings packages. For example, if the module sound. filters. vocoder needs to use the echo module in the sound. effects package, it can use from sound. effects import echo. sound sound. filters. vocoder echo sound. effects from sound. effects import echo You can also write relative imports, with the from module import name form of import statement. These imports use leading dots to indicate the current and parent packages involved in the relative import. From the surround module for example, you might use: from module import name surround from. import echo from. import formats from. filters import equalizer Note that relative imports are based on the name of the current module. Since the name of the main module is always \"main\", modules intended for use as the main module of a Python application must always use absolute imports. \"__main__\" ### 6. 4. 3. Packages in Multiple Directories¶ Packages support one more special attribute, path. This is initialized to be a sequence of strings containing the name of the directory holding the package’s init. py before the code in that file is executed. This variable can be modified; doing so affects future searches for modules and subpackages contained in the package. __path__ __init__. py While this feature is not often needed, it can be used to extend the set of modules found in a package. Footnotes ### Table of Contents 6. Modules 6. 1. More on Modules 6. 1. 1. Executing modules as scripts 6. 1. 2. The Module Search Path 6. 1. 3. “Compiled” Python files 6. 2. Standard Modules 6. 3. The dir() Function 6. 4. Packages 6. 4. 1.",
+  "title": "6. Modules.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 12,
+  "start_char": 23071,
+  "end_char": 25298,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_5f190995f7f521af.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.866207"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_012.txt"
+}

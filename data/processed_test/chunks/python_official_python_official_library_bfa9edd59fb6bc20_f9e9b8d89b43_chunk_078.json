@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_078",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "contextmanager contextlib. contextmanager __enter__() __exit__() Note that there is no specific slot for any of these methods in the type structure for Python objects in the Python/C API. Extension types wanting to define these methods must provide them as a normal Python accessible method. Compared to the overhead of setting up the runtime context, the overhead of a single class dictionary lookup is negligible. ## Type Annotation Types — Generic Alias, Union¶ The core built-in types for type annotations are Generic Alias and Union. ### Generic Alias Type¶ GenericAlias objects are generally created by subscripting a class. They are most often used with container classes, such as list or dict. For example, list[int] is a GenericAlias object created by subscripting the list class with the argument int. GenericAlias objects are intended primarily for use with type annotations. GenericAlias list dict list[int] GenericAlias list int GenericAlias Note It is generally only possible to subscript a class if the class implements the special method class_getitem(). __class_getitem__() A GenericAlias object acts as a proxy for a generic type, implementing parameterized generics. GenericAlias For a container class, the argument(s) supplied to a subscription of the class may indicate the type(s) of the elements an object contains. For example, set[bytes] can be used in type annotations to signify a set in which all the elements are of type bytes. set[bytes] set bytes For a class which defines class_getitem() but is not a container, the argument(s) supplied to a subscription of the class will often indicate the return type(s) of one or more methods defined on an object. For example, regular expressions can be used on both the str data type and the bytes data type: __class_getitem__() regular expressions str bytes If x = re. search('foo', 'foo'), x will be a re. Match object where the return values of x. group(0) and x[0] will both be of type str. We can represent this kind of object in type annotations with the GenericAlias re. Match[str]. If x = re. search('foo', 'foo'), x will be a re. Match object where the return values of x. group(0) and x[0] will both be of type str. We can represent this kind of object in type annotations with the GenericAlias re. Match[str]. x = re. search('foo', 'foo') x x.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 78,
+  "start_char": 158886,
+  "end_char": 161211,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.249617"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_078.txt"
+}

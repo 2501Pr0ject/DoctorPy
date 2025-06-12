@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_007",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "This is crucial because the module code may (directly or indirectly) import itself; adding it to sys. modules beforehand prevents unbounded recursion in the worst case and multiple loading in the best. The module will exist in sys. modules before the loader executes the module code. This is crucial because the module code may (directly or indirectly) import itself; adding it to sys. modules beforehand prevents unbounded recursion in the worst case and multiple loading in the best. sys. modules sys. modules If loading fails, the failing module – and only the failing module – gets removed from sys. modules. Any module already in the sys. modules cache, and any module that was successfully loaded as a side-effect, must remain in the cache. This contrasts with reloading where even the failing module is left in sys. modules. If loading fails, the failing module – and only the failing module – gets removed from sys. modules. Any module already in the sys. modules cache, and any module that was successfully loaded as a side-effect, must remain in the cache. This contrasts with reloading where even the failing module is left in sys. modules. sys. modules sys. modules sys. modules After the module is created but before execution, the import machinery sets the import-related module attributes (“_init_module_attrs” in the pseudo-code example above), as summarized in a later section. After the module is created but before execution, the import machinery sets the import-related module attributes (“_init_module_attrs” in the pseudo-code example above), as summarized in a later section. Module execution is the key moment of loading in which the module’s namespace gets populated. Execution is entirely delegated to the loader, which gets to decide what gets populated and how. Module execution is the key moment of loading in which the module’s namespace gets populated. Execution is entirely delegated to the loader, which gets to decide what gets populated and how. The module created during loading and passed to exec_module() may not be the one returned at the end of import [2]. The module created during loading and passed to exec_module() may not be the one returned at the end of import [2]. Changed in version 3. 4: The import system has taken over the boilerplate responsibilities of loaders. These were previously performed by the importlib. abc. Loader. load_module() method. importlib. abc. Loader. load_module() ### 5. 4. 1.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 7,
+  "start_char": 16045,
+  "end_char": 18496,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.008213"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_007.txt"
+}

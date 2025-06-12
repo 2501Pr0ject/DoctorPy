@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_024",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "weekday(), yday, dst)) where yday = d. toordinal() - date(d. year, 1, 1). toordinal() + 1 is the day number within the current year starting with 1 for January 1st. The tm_isdst flag of the result is set according to the dst() method: tzinfo is None or dst() returns None, tm_isdst is set to -1; else if dst() returns a non-zero value, tm_isdst is set to 1; else tm_isdst is set to 0. yday = d. toordinal() - date(d. year, 1, 1). toordinal() + 1 tm_isdst dst() tzinfo None dst() None tm_isdst -1 dst() tm_isdst tm_isdst If datetime instance d is naive, this is the same as d. timetuple() except that tm_isdst is forced to 0 regardless of what d. dst() returns. DST is never in effect for a UTC time. datetime d d. timetuple() tm_isdst d. dst() If d is aware, d is normalized to UTC time, by subtracting d. utcoffset(), and a time. struct_time for the normalized time is returned. tm_isdst is forced to 0. Note that an OverflowError may be raised if d. year was MINYEAR or MAXYEAR and UTC adjustment spills over a year boundary. d d d. utcoffset() time. struct_time tm_isdst OverflowError d. year MINYEAR MAXYEAR Warning Because naive datetime objects are treated by many datetime methods as local times, it is preferred to use aware datetimes to represent times in UTC; as a result, using datetime. utctimetuple() may give misleading results. If you have a naive datetime representing UTC, use datetime. replace(tzinfo=timezone. utc) to make it aware, at which point you can use datetime. timetuple(). datetime datetime datetime. utctimetuple() datetime datetime. replace(tzinfo=timezone. utc) datetime. timetuple() Return the proleptic Gregorian ordinal of the date. The same as self. date(). toordinal(). self. date(). toordinal() Return POSIX timestamp corresponding to the datetime instance. The return value is a float similar to that returned by time. time(). datetime float time.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 24,
+  "start_char": 48626,
+  "end_char": 50512,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.401739"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_024.txt"
+}

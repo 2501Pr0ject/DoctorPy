@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_021",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "assignment_expression A list of type parameters may be given in square brackets between the function’s name and the opening parenthesis for its parameter list. This indicates to static type checkers that the function is generic. At runtime, the type parameters can be retrieved from the function’s type_params attribute. See Generic functions for more. __type_params__ Changed in version 3. 12: Type parameter lists are new in Python 3. 12. When one or more parameters have the form parameter = expression, the function is said to have “default parameter values. ” For a parameter with a default value, the corresponding argument may be omitted from a call, in which case the parameter’s default value is substituted. If a parameter has a default value, all following parameters up until the “” must also have a default value — this is a syntactic restriction that is not expressed by the grammar. = * Default parameter values are evaluated from left to right when the function definition is executed. This means that the expression is evaluated once, when the function is defined, and that the same “pre-computed” value is used for each call. This is especially important to understand when a default parameter value is a mutable object, such as a list or a dictionary: if the function modifies the object (e. g. by appending an item to a list), the default parameter value is in effect modified. This is generally not what was intended. A way around this is to use None as the default, and explicitly test for it in the body of the function, e. g. : None def whats_on_the_telly(penguin=None): if penguin is None: penguin = [] penguin. append(\"property of the zoo\") return penguin Function call semantics are described in more detail in section Calls. A function call always assigns values to all parameters mentioned in the parameter list, either from positional arguments, from keyword arguments, or from default values. If the form “identifier” is present, it is initialized to a tuple receiving any excess positional parameters, defaulting to the empty tuple. If the form “identifier” is present, it is initialized to a new ordered mapping receiving any excess keyword arguments, defaulting to a new empty mapping of the same type. Parameters after “” or “identifier” are keyword-only parameters and may only be passed by keyword arguments. Parameters before “/” are positional-only parameters and may only be passed by positional arguments.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 21,
+  "start_char": 48851,
+  "end_char": 51297,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.384213"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_021.txt"
+}

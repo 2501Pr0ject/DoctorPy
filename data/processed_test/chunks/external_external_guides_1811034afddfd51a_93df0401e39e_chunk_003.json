@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_1811034afddfd51a_93df0401e39e_chunk_003",
+  "original_doc_id": "external_external_guides_1811034afddfd51a_93df0401e39e",
+  "content": "parse_args() echo The variable is some form of ‘magic’ that argparse performs for free (i. e. no need to specify which variable that value is stored in). You will also notice that its name matches the string argument given to the method, echo. The variable is some form of ‘magic’ that argparse performs for free (i. e. no need to specify which variable that value is stored in). You will also notice that its name matches the string argument given to the method, echo. argparse echo Note however that, although the help display looks nice and all, it currently is not as helpful as it can be. For example we see that we got echo as a positional argument, but we don’t know what it does, other than by guessing or by reading the source code. So, let’s make it a bit more useful: echo import argparse parser = argparse. ArgumentParser() parser. add_argument(\"echo\", help=\"echo the string you use here\") args = parser. parse_args() print(args. echo) And we get: $ python prog. py -h usage: prog. py [-h] echo positional arguments: echo echo the string you use here options: -h, --help show this help message and exit Now, how about doing something even more useful: import argparse parser = argparse. ArgumentParser() parser. add_argument(\"square\", help=\"display a square of a given number\") args = parser. parse_args() print(args. square**2) Following is a result of running the code: $ python prog. py 4 Traceback (most recent call last): File \"prog. py\", line 5, in <module> print(args. square**2) TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int' That didn’t go so well. That’s because argparse treats the options we give it as strings, unless we tell it otherwise. So, let’s tell argparse to treat that input as an integer: argparse argparse import argparse parser = argparse. ArgumentParser() parser. add_argument(\"square\", help=\"display a square of a given number\", type=int) args = parser. parse_args() print(args. square**2) Following is a result of running the code: $ python prog. py 4 16 $ python prog. py four usage: prog. py [-h] square prog.",
+  "title": "Argparse Tutorial.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 3,
+  "start_char": 6482,
+  "end_char": 8558,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_1811034afddfd51a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.485855"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_1811034afddfd51a_93df0401e39e_chunk_003.txt"
+}

@@ -1,0 +1,136 @@
+# Configuration pour l'environnement de production
+
+# Configuration de la base de données
+database:
+  url: "${DATABASE_URL}"  # Variable d'environnement obligatoire
+  echo: false  # Pas d'affichage des requêtes en prod
+  pool_size: 20
+  max_overflow: 30
+
+# Configuration des modèles de langage
+llm:
+  provider: "ollama"
+  model_name: "llama3.1"
+  base_url: "${OLLAMA_BASE_URL:-http://ollama:11434}"
+  temperature: 0.7
+  max_tokens: 2000
+  timeout: 60  # Plus de temps en prod pour la stabilité
+
+# Configuration du système RAG
+rag:
+  chunk_size: 1000
+  chunk_overlap: 200
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  vector_store_path: "chroma_db"
+  similarity_threshold: 0.75  # Seuil plus strict en prod
+  max_results: 3  # Moins de résultats pour optimiser
+
+# Configuration de sécurité (production)
+security:
+  secret_key: "${SECRET_KEY}"  # OBLIGATOIRE en production
+  session_lifetime: 3600  # 1 heure
+  rate_limit_requests: 100
+  rate_limit_window: 3600
+  allowed_file_types:
+    - ".pdf"
+    - ".txt"
+    - ".docx"
+    - ".md"
+  max_file_size: 10  # 10MB max en prod
+
+# Configuration de l'interface utilisateur
+ui:
+  title: "Assistant Pédagogique IA"
+  version: "1.0.0"
+  port: 8501
+  address: "0.0.0.0"  # Écouter sur toutes les interfaces
+  theme:
+    primaryColor: "#2E86AB"
+    backgroundColor: "#FFFFFF"
+    secondaryBackgroundColor: "#F0F2F6"
+    textColor: "#262730"
+
+# Configuration des quêtes
+quests:
+  auto_generate: true
+  difficulty_adjustment: true
+  max_attempts: 3
+  hint_system: true
+  categories:
+    - "python_basics"
+    - "python_intermediate"
+    - "python_advanced"
+
+# Configuration des logs (production)
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  console_output: false
+  file_output: true
+  max_size: "100MB"
+  backup_count: 10
+  structured_logging: true  # JSON logs pour parsing
+
+# Configuration du code executor
+code_execution:
+  enabled: true
+  timeout: 15  # Plus strict en prod
+  memory_limit: "128MB"  # Moins de mémoire en prod
+  allowed_imports:
+    - "numpy"
+    - "pandas"
+    - "matplotlib"
+    - "json"
+    - "csv"
+    - "datetime"
+    - "random"
+    - "math"
+
+# Configuration de production spécifique
+production:
+  hot_reload: false
+  debug_mode: false
+  profiling: true  # Monitoring des performances
+  mock_llm: false
+  seed_data: false
+
+# Configuration des agents
+agents:
+  tutor_agent:
+    max_context_length: 3000  # Plus petit en prod
+    response_style: "concise"
+    explanation_depth: "balanced"
+  
+  quest_generator:
+    creativity_level: 0.6  # Plus conservateur
+    difficulty_progression: "linear"
+    
+  code_evaluator:
+    strict_mode: true
+    provide_hints: true
+    auto_fix_suggestions: false
+
+# Configuration de monitoring
+monitoring:
+  enabled: true
+  metrics_endpoint: "/metrics"
+  health_check_endpoint: "/health"
+  log_requests: true
+  alert_thresholds:
+    response_time_ms: 5000
+    error_rate_percent: 5
+    memory_usage_percent: 80
+
+# Configuration de cache
+cache:
+  enabled: true
+  ttl_seconds: 3600
+  max_size: 1000
+  backend: "memory"  # ou "redis" si disponible
+
+# Limites de ressources
+limits:
+  max_concurrent_users: 100
+  max_requests_per_minute: 60
+  max_upload_size_mb: 10
+  max_session_duration_hours: 4

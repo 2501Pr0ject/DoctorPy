@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_016",
+  "original_doc_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061",
+  "content": "] | -i N | -f N] [input. ] choice() randint() uniform() --choice --integer --float random $ # Choose one at random $ python -m random egg bacon sausage spam \"Lobster Thermidor aux crevettes with a Mornay sauce\" Lobster Thermidor aux crevettes with a Mornay sauce $ # Random integer $ python -m random 6 6 $ # Random floating-point number $ python -m random 1. 8 1. 7080016272295635 $ # With explicit arguments $ python -m random --choice egg bacon sausage spam \"Lobster Thermidor aux crevettes with a Mornay sauce\" egg $ python -m random --integer 6 3 $ python -m random --float 1. 8 1. 5666339105010318 $ python -m random --integer 6 5 $ python -m random --float 6 3. 1942323316565915 random fractions statistics.",
+  "title": "random — Generate pseudo-random numbers.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 16,
+  "start_char": 31364,
+  "end_char": 32078,
+  "token_count": 213,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_49df04c24c9ba477.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.622219"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_016.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4_chunk_008",
+  "original_doc_id": "python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4",
+  "content": "__length_hint__() obj(*args, **kwargs) operator map() sorted() itertools. groupby() f = attrgetter('name') f(b) b. name f = attrgetter('name', 'date') f(b) (b. name, b. date) f = attrgetter('name. first', 'name. last') f(b) (b. name. first, b. name. last) def attrgetter(*items): if any(not isinstance(item, str) for item in items): raise TypeError('attribute name must be a string') if len(items) == 1: attr = items[0] def g(obj): return resolve_attr(obj, attr) else: def g(obj): return tuple(resolve_attr(obj, attr) for attr in items) return g def resolve_attr(obj, attr): for name in attr. split(\". \"): obj = getattr(obj, name) return obj __getitem__() f = itemgetter(2) f(r) r[2] g = itemgetter(2, 5, 3) g(r) (r[2], r[5], r[3]) def itemgetter(*items): if len(items) == 1: item = items[0] def g(obj): return obj[item] else: def g(obj): return tuple(obj[item] for item in items) return g __getitem__() >>> itemgetter(1)('ABCDEFG') 'B' >>> itemgetter(1, 3, 5)('ABCDEFG') ('B', 'D', 'F') >>> itemgetter(slice(2, None))('ABCDEFG') 'CDEFG' >>> soldier = dict(rank='captain', name='dotterbart') >>> itemgetter('rank')(soldier) 'captain' itemgetter() >>> inventory = [('apple', 3), ('banana', 2), ('pear', 5), ('orange', 1)] >>> getcount = itemgetter(1) >>> list(map(getcount, inventory)) [3, 2, 5, 1] >>> sorted(inventory, key=getcount) [('orange', 1), ('banana', 2), ('apple', 3), ('pear', 5)] f = methodcaller('name') f(b) b. name() f = methodcaller('name', 'foo', bar=1) f(b) b.",
+  "title": "operator — Standard operators as functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 8,
+  "start_char": 12328,
+  "end_char": 13806,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9958fbb4ed3750db.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.462181"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4_chunk_008.txt"
+}

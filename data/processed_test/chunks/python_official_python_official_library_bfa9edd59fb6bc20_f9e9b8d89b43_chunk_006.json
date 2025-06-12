@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_006",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "Performing these calculations with at least one extra sign extension bit in a finite two’s complement representation (a working bit-width of 1 + max(x. bit_length(), y. bit_length()) or more) is sufficient to get the same result as if there were an infinite number of sign bits. 1 + max(x. bit_length(), y. bit_length()) ### Additional Methods on Integer Types¶ The int type implements the numbers. Integral abstract base class. In addition, it provides a few more methods: numbers. Integral Return the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros: >>> n = -37 >>> bin(n) '-0b100101' >>> n. bit_length() 6 More precisely, if x is nonzero, then x. bit_length() is the unique positive integer k such that 2(k-1) <= abs(x) < 2k. Equivalently, when abs(x) is small enough to have a correctly rounded logarithm, then k = 1 + int(log(abs(x), 2)). If x is zero, then x. bit_length() returns 0. x x. bit_length() k 2**(k-1) <= abs(x) < 2**k abs(x) k = 1 + int(log(abs(x), 2)) x x. bit_length() 0 Equivalent to: def bit_length(self): s = bin(self) # binary representation: bin(-37) --> '-0b100101' s = s. lstrip('-0b') # remove leading zeros and minus sign return len(s) # len('100101') --> 6 Added in version 3. 1. Return the number of ones in the binary representation of the absolute value of the integer. This is also known as the population count. Example: >>> n = 19 >>> bin(n) '0b10011' >>> n. bit_count() 3 >>> (-n). bit_count() 3 Equivalent to: def bit_count(self): return bin(self). count(\"1\") Added in version 3. 10. Return an array of bytes representing an integer. >>> (1024). to_bytes(2, byteorder='big') b'\\x04\\x00' >>> (1024).",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 6,
+  "start_char": 11750,
+  "end_char": 13435,
+  "token_count": 469,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.184792"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_006.txt"
+}

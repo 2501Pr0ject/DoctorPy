@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_037",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "print(\"Execution starts when 'next()' is called for the first time. \"). try:. while True:. try:. value = (yield value). except Exception as e:. value = e. finally:. print(\"Don't forget to clean up when 'close()' is called. \"). >>> generator = echo(1) >>> print(next(generator)) Execution starts when 'next()' is called for the first time. 1 >>> print(next(generator)) None >>> print(generator. send(2)) 2 >>> generator. throw(TypeError, \"spam\") TypeError('spam',) >>> generator. close() Don't forget to clean up when 'close()' is called. yield from async def async for for yield_list __anext__() None asend() break aclose() try try finally aclose() finally aclose() sys. set_asyncgen_hooks() asyncio. Loop. shutdown_asyncgens yield from <expr> __anext__() None yield_list StopIteration StopAsyncIteration async for send() asend() StopIteration StopAsyncIteration asend() None type StopIteration StopAsyncIteration GeneratorExit GeneratorExit StopIteration StopAsyncIteration RuntimeError aclose() primary ::= atom | attributeref | subscription | slicing | call atom attributeref subscription slicing call attributeref ::= primary \".",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 37,
+  "start_char": 80779,
+  "end_char": 81911,
+  "token_count": 254,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.602387"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_037.txt"
+}

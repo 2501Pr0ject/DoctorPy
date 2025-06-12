@@ -1,0 +1,1 @@
+add_argument('-a', metavar='<value>', action='append', type=lambda x: ('-', x)) parser. add_argument('+a', metavar='<value>', action='append', type=lambda x: ('+', x)) args = parser. parse_args() print(args) $ python prog. py -a value1 +a value2 Namespace(a=[('-', 'value1'), ('+', 'value2')]) prefix_chars -a +a type -a +a argparse argparse optparse argparse.

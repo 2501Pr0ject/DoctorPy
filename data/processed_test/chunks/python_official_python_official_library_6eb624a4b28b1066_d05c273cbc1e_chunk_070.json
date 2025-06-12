@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_070",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "For a complete and up-to-date set of DST rules # and timezone definitions, visit the Olson Database (or try pytz): #  #  (might not be up-to-date) # # In the US, since 2007, DST starts at 2am (standard time) on the second # Sunday in March, which is the first Sunday on or after Mar 8. DSTSTART_2007 = datetime(1, 3, 8, 2) # and ends at 2am (DST time) on the first Sunday of Nov. DSTEND_2007 = datetime(1, 11, 1, 2) # From 1987 to 2006, DST used to start at 2am (standard time) on the first # Sunday in April and to end at 2am (DST time) on the last # Sunday of October, which is the first Sunday on or after Oct 25. DSTSTART_1987_2006 = datetime(1, 4, 1, 2) DSTEND_1987_2006 = datetime(1, 10, 25, 2) # From 1967 to 1986, DST used to start at 2am (standard time) on the last # Sunday in April (the one on or after April 24) and to end at 2am (DST time) # on the last Sunday of October, which is the first Sunday # on or after Oct 25. DSTSTART_1967_1986 = datetime(1, 4, 24, 2) DSTEND_1967_1986 = DSTEND_1987_2006 def us_dst_range(year): # Find start and end times for US DST. For years before 1967, return # start = end for no DST.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 70,
+  "start_char": 128480,
+  "end_char": 129611,
+  "token_count": 384,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.447110"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_070.txt"
+}

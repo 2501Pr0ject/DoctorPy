@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_035",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "Splitting an empty string with a specified separator returns ['']. '1,,2'. split(',') ['1', '', '2'] re. split() [''] For example: >>> '1,2,3'. split(',') ['1', '2', '3'] >>> '1,2,3'. split(',', maxsplit=1) ['1', '2,3'] >>> '1,2,,3,'. split(',') ['1', '2', '', '3', ''] >>> '1<>2<>3<4'. split('<>') ['1', '2', '3<4'] If sep is not specified or is None, a different splitting algorithm is applied: runs of consecutive whitespace are regarded as a single separator, and the result will contain no empty strings at the start or end if the string has leading or trailing whitespace. Consequently, splitting an empty string or a string consisting of just whitespace with a None separator returns []. None None [] For example: >>> '1 2 3'. split() ['1', '2', '3'] >>> '1 2 3'. split(maxsplit=1) ['1', '2 3'] >>> ' 1 2 3 '. split() ['1', '2', '3'] If sep is not specified or is None and maxsplit is 0, only leading runs of consecutive whitespace are considered. None 0 For example: >>> \"\". split(None, 0) [] >>> \" \". split(None, 0) [] >>> \" foo \". split(maxsplit=0) ['foo '] Return a list of the lines in the string, breaking at line boundaries. Line breaks are not included in the resulting list unless keepends is given and true. This method splits on the following line boundaries. In particular, the boundaries are a superset of universal newlines.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 35,
+  "start_char": 71301,
+  "end_char": 72646,
+  "token_count": 376,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.210928"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_035.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_007",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "For example: async def def gen(): # defines a generator function yield 123 async def agen(): # defines an asynchronous generator function yield 123 Due to their side effects on the containing scope, yield expressions are not permitted as part of the implicitly defined scopes used to implement comprehensions and generator expressions. yield Changed in version 3. 8: Yield expressions prohibited in the implicitly nested scopes used to implement comprehensions and generator expressions. Generator functions are described below, while asynchronous generator functions are described separately in section Asynchronous generator functions. When a generator function is called, it returns an iterator known as a generator. That generator then controls the execution of the generator function. The execution starts when one of the generator’s methods is called. At that time, the execution proceeds to the first yield expression, where it is suspended again, returning the value of yield_list to the generator’s caller, or None if yield_list is omitted. By suspended, we mean that all local state is retained, including the current bindings of local variables, the instruction pointer, the internal evaluation stack, and the state of any exception handling. When the execution is resumed by calling one of the generator’s methods, the function can proceed exactly as if the yield expression were just another external call. The value of the yield expression after resuming depends on the method which resumed the execution. If __next() is used (typically via either a for or the next() builtin) then the result is None. Otherwise, if send() is used, then the result will be the value passed in to that method. yield_list None yield_list __next__() for next() None send() All of this makes generator functions quite similar to coroutines; they yield multiple times, they have more than one entry point and their execution can be suspended. The only difference is that a generator function cannot control where the execution should continue after it yields; the control is always transferred to the generator’s caller. Yield expressions are allowed anywhere in a try construct. If the generator is not resumed before it is finalized (by reaching a zero reference count or by being garbage collected), the generator-iterator’s close() method will be called, allowing any pending finally clauses to execute. try close() finally When yield from is used, the supplied expression must be an iterable. The values produced by iterating that iterable are passed directly to the caller of the current generator’s methods.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 7,
+  "start_char": 15744,
+  "end_char": 18350,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.576522"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_007.txt"
+}

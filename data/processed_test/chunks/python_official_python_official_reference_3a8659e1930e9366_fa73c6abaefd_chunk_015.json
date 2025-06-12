@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_015",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "Module dictionaries¶ Module objects also have the following special read-only attribute: The module’s namespace as a dictionary object. Uniquely among the attributes listed here, dict cannot be accessed as a global variable from within a module; it can only be accessed as an attribute on module objects. __dict__ CPython implementation detail: Because of the way CPython clears module dictionaries, the module dictionary will be cleared when the module falls out of scope even if the dictionary still has live references. To avoid this, copy the dictionary or keep the module around while using its dictionary directly. ### 3. 2. 10. Custom classes¶ Custom class types are typically created by class definitions (see section Class definitions). A class has a namespace implemented by a dictionary object. Class attribute references are translated to lookups in this dictionary, e. g. , C. x is translated to C. dict[\"x\"] (although there are a number of hooks which allow for other means of locating attributes). When the attribute name is not found there, the attribute search continues in the base classes. This search of the base classes uses the C3 method resolution order which behaves correctly even in the presence of ‘diamond’ inheritance structures where there are multiple inheritance paths leading back to a common ancestor. Additional details on the C3 MRO used by Python can be found at The Python 2. 3 Method Resolution Order. C. x C. __dict__[\"x\"] When a class attribute reference (for class C, say) would yield a class method object, it is transformed into an instance method object whose self attribute is C. When it would yield a staticmethod object, it is transformed into the object wrapped by the static method object. See section Implementing Descriptors for another way in which attributes retrieved from a class may differ from those actually contained in its dict. C __self__ C staticmethod __dict__ Class attribute assignments update the class’s dictionary, never the dictionary of a base class. A class object can be called (see above) to yield a class instance (see below). #### 3. 2. 10. 1. Special attributes¶ Attribute Meaning The class’s name. See also: name attributes. __name__ attributes The class’s qualified name. See also: qualname attributes. __qualname__ attributes The name of the module in which the class was defined. A mapping proxy providing a read-only view of the class’s namespace.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 15,
+  "start_char": 33972,
+  "end_char": 36401,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.707300"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_015.txt"
+}

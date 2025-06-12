@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6_chunk_008",
+  "original_doc_id": "python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6",
+  "content": ">>> f() + Exception Group Traceback (most recent call last): | File \"<stdin>\", line 1, in <module> | f() | ~^^ | File \"<stdin>\", line 3, in f | raise ExceptionGroup('there were problems', excs) | ExceptionGroup: there were problems (2 sub-exceptions) +-+---------------- 1 ---------------- | OSError: error 1 +---------------- 2 ---------------- | SystemError: error 2 +------------------------------------ >>> try:. f(). except Exception as e:. print(f'caught {type(e)}: e'). caught <class 'ExceptionGroup'>: e >>> By using except instead of except, we can selectively handle only the exceptions in the group that match a certain type. In the following example, which shows a nested exception group, each except clause extracts from the group exceptions of a certain type while letting all other exceptions propagate to other clauses and eventually to be reraised. except* except except* >>> def f():. raise ExceptionGroup(. \"group1\",. [. OSError(1),. SystemError(2),. ExceptionGroup(. \"group2\",. [. OSError(3),. RecursionError(4). ]. ). ]. ). >>> try:. f(). except* OSError as e:. print(\"There were OSErrors\"). except* SystemError as e:. print(\"There were SystemErrors\"). There were OSErrors There were SystemErrors + Exception Group Traceback (most recent call last): | File \"<stdin>\", line 2, in <module> | f() | ~^^ | File \"<stdin>\", line 2, in f | raise ExceptionGroup( |. <12 lines>. | ) | ExceptionGroup: group1 (1 sub-exception) +-+---------------- 1 ---------------- | ExceptionGroup: group2 (1 sub-exception) +-+---------------- 1 ---------------- | RecursionError: 4 +------------------------------------ >>> Note that the exceptions nested in an exception group must be instances, not types. This is because in practice the exceptions would typically be ones that have already been raised and caught by the program, along the following pattern: >>> excs = []. for test in tests:. try:. test. run(). except Exception as e:. excs. append(e). >>> if excs:. raise ExceptionGroup(\"Test Failures\", excs). ## 8. 10.",
+  "title": "8. Errors and Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 8,
+  "start_char": 18005,
+  "end_char": 20026,
+  "token_count": 484,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_7969fd9e5d06ff1d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.780803"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_7969fd9e5d06ff1d_1e835a555be6_chunk_008.txt"
+}

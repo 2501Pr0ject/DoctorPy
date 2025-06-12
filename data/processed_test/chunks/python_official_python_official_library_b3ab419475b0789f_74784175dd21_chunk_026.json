@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_026",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "lstat() Path. lstat() Path. lstat() os. listdir() os. listdir() Path. iterdir() Path. iterdir() os. walk() os. walk() Path. walk() [4] Path. walk() os. mkdir(), os. makedirs() os. mkdir() os. makedirs() Path. mkdir() Path. mkdir() os. link() os. link() Path. hardlink_to() Path. hardlink_to() os. symlink() os. symlink() Path. symlink_to() Path. symlink_to() os. readlink() os. readlink() Path. readlink() Path. readlink() os. rename() os. rename() Path. rename() Path. rename() os. replace() os. replace() Path. replace() Path. replace() os. remove(), os. unlink() os. remove() os. unlink() Path. unlink() Path. unlink() os. rmdir() os. rmdir() Path. rmdir() Path. rmdir() os. chmod() os. chmod() Path. chmod() Path. chmod() os. lchmod() os. lchmod() Path. lchmod() Path. lchmod() Footnotes ### Table of Contents pathlib — Object-oriented filesystem paths Basic use Exceptions Pure paths General properties Operators Accessing individual parts Methods and properties Concrete paths Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Renaming and deleting Permissions and ownership Pattern language Comparison to the glob module Comparison to the os and os. path modules Corresponding tools pathlib Basic use Exceptions Pure paths General properties Operators Accessing individual parts Methods and properties General properties Operators Accessing individual parts Methods and properties Concrete paths Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Renaming and deleting Permissions and ownership Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Renaming and deleting Permissions and ownership Pattern language Comparison to the glob module glob Comparison to the os and os. path modules Corresponding tools os os. path Corresponding tools #### Previous topic File and Directory Access #### Next topic os. path — Common pathname manipulations os. path ### This page Report a bug Show source pathlib Path WindowsPath PureWindowsPath os. path >>> from pathlib import Path >>> p = Path('.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 26,
+  "start_char": 52907,
+  "end_char": 55242,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.507595"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_026.txt"
+}

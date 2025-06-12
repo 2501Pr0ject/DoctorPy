@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_022",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "\\^_\\|\\~:]+ >>> operators = ['+', '-', '*', '/', '**'] >>> print('|'. join(map(re. escape, sorted(operators, reverse=True)))) /|\\-|\\+|\\*\\*|\\* This function must not be used for the replacement string in sub() and subn(), only backslashes should be escaped. For example: sub() subn() >>> digits_re = r'\\d+' >>> sample = '/usr/sbin/sendmail - 0 errors, 12 warnings' >>> print(re. sub(digits_re, digits_re. replace('\\\\', r'\\\\'), sample)) /usr/sbin/sendmail - \\d+ errors, \\d+ warnings Changed in version 3. 3: The '_' character is no longer escaped. '_' Changed in version 3. 7: Only characters that can have special meaning in a regular expression are escaped. As a result, '. ', '\"', '%', \"'\", ',', '/', ':', ';', '<', '=', '>', '@', and \"\" are no longer escaped. '. ''\"''%'\"'\"',''/'':'';''<''=''>''@'\"\" Clear the regular expression cache. ### Exceptions¶ Exception raised when a string passed to one of the functions here is not a valid regular expression (for example, it might contain unmatched parentheses) or when some other error occurs during compilation or matching. It is never an error if a string contains no match for a pattern. The PatternError instance has the following additional attributes: PatternError The unformatted error message. The regular expression pattern. The index in pattern where compilation failed (may be None). None The line corresponding to pos (may be None). None The column corresponding to pos (may be None). None Changed in version 3. 5: Added additional attributes. Changed in version 3. 13: PatternError was originally named error; the latter is kept as an alias for backward compatibility. PatternError error ## Regular Expression Objects¶ Compiled regular expression object returned by re. compile(). re. compile() Changed in version 3. 9: re. Pattern supports [] to indicate a Unicode (str) or bytes pattern. See Generic Alias Type. re. Pattern [] Scan through string looking for the first location where this regular expression produces a match, and return a corresponding Match. Return None if no position in the string matches the pattern; note that this is different from finding a zero-length match at some point in the string.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 22,
+  "start_char": 43019,
+  "end_char": 45192,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.820974"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_022.txt"
+}

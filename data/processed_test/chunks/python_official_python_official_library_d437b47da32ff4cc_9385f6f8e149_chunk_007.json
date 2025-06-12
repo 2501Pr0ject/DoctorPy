@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_007",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "run() These objects contain the original values of breakpointhook, displayhook, excepthook, and unraisablehook at the start of the program. They are saved so that breakpointhook, displayhook and excepthook, unraisablehook can be restored in case they happen to get replaced with broken or alternative objects. breakpointhook displayhook excepthook unraisablehook breakpointhook displayhook excepthook unraisablehook Added in version 3. 7: breakpointhook Added in version 3. 8: unraisablehook This function, when called while an exception handler is executing (such as an except or except clause), returns the exception instance that was caught by this handler. When exception handlers are nested within one another, only the exception handled by the innermost handler is accessible. except except* If no exception handler is executing, this function returns None. None Added in version 3. 11. This function returns the old-style representation of the handled exception. If an exception e is currently handled (so exception() would return e), exc_info() returns the tuple (type(e), e, e. traceback). That is, a tuple containing the type of the exception (a subclass of BaseException), the exception itself, and a traceback object which typically encapsulates the call stack at the point where the exception last occurred. e exception() e exc_info() (type(e), e, e. __traceback__) BaseException If no exception is being handled anywhere on the stack, this function return a tuple containing three None values. None Changed in version 3. 11: The type and traceback fields are now derived from the value (the exception instance), so when an exception is modified while it is being handled, the changes are reflected in the results of subsequent calls to exc_info(). type traceback value exc_info() A string giving the site-specific directory prefix where the platform-dependent Python files are installed; by default, this is also '/usr/local'. This can be set at build time with the --exec-prefix argument to the configure script. Specifically, all configuration files (e. g. the pyconfig. h header file) are installed in the directory exec_prefix/lib/pythonX. Y/config, and shared library modules are installed in exec_prefix/lib/pythonX. Y/lib-dynload, where X. Y is the version number of Python, for example 3.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 7,
+  "start_char": 16083,
+  "end_char": 18393,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.425011"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_007.txt"
+}

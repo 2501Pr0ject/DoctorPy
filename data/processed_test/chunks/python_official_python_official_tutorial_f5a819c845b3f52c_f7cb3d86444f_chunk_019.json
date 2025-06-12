@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_019",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "append(item) MappingSubclass __update _Mapping__update Mapping _MappingSubclass__update MappingSubclass exec() eval() global getattr() setattr() delattr() __dict__ dataclasses from dataclasses import dataclass @dataclass class Employee: name: str dept: str salary: int >>> john = Employee('john', 'computer lab', 1000) >>> john. dept 'computer lab' >>> john. salary 1000 read() readline() m. __self__ m() m. __func__ for for element in [1, 2, 3]: print(element) for element in (1, 2, 3): print(element) for key in {'one':1, 'two':2}: print(key) for char in \"123\": print(char) for line in open(\"myfile. txt\"): print(line, end='') for iter() __next__() __next__() StopIteration for __next__() next() >>> s = 'abc' >>> it = iter(s) >>> it <str_iterator object at 0x10c90e650> >>> next(it) 'a' >>> next(it) 'b' >>> next(it) 'c' >>> next(it) Traceback (most recent call last): File \"<stdin>\", line 1, in <module> next(it) StopIteration __iter__() __next__() __next__() __iter__() self class Reverse: \"\"\"Iterator for looping over a sequence backwards. \"\"\" def __init__(self, data): self. data = data self. index = len(data) def __iter__(self): return self def __next__(self): if self. index == 0: raise StopIteration self. index = self. index - 1 return self. data[self. index] >>> rev = Reverse('spam') >>> iter(rev) <__main__. Reverse object at 0x00A1DB50> >>> for char in rev:. print(char). m a p s yield next() def reverse(data): for index in range(len(data)-1, -1, -1): yield data[index] >>> for char in reverse('golf'):. print(char). f l o g __iter__() __next__() self. index self.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 19,
+  "start_char": 39947,
+  "end_char": 41528,
+  "token_count": 455,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.104634"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_019.txt"
+}

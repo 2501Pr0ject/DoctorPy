@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4_chunk_010",
+  "original_doc_id": "python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4",
+  "content": "list(d) sorted(d) in Here is a small example using a dictionary: >>> tel = {'jack': 4098, 'sape': 4139} >>> tel['guido'] = 4127 >>> tel {'jack': 4098, 'sape': 4139, 'guido': 4127} >>> tel['jack'] 4098 >>> del tel['sape'] >>> tel['irv'] = 4127 >>> tel {'jack': 4098, 'guido': 4127, 'irv': 4127} >>> list(tel) ['jack', 'guido', 'irv'] >>> sorted(tel) ['guido', 'irv', 'jack'] >>> 'guido' in tel True >>> 'jack' not in tel False The dict() constructor builds dictionaries directly from sequences of key-value pairs: dict() >>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]) {'sape': 4139, 'guido': 4127, 'jack': 4098} In addition, dict comprehensions can be used to create dictionaries from arbitrary key and value expressions: >>> {x: x**2 for x in (2, 4, 6)} {2: 4, 4: 16, 6: 36} When the keys are simple strings, it is sometimes easier to specify pairs using keyword arguments: >>> dict(sape=4139, guido=4127, jack=4098) {'sape': 4139, 'guido': 4127, 'jack': 4098} ## 5. 6. Looping Techniques¶ When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the items() method. items() >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'} >>> for k, v in knights. items():. print(k, v). gallahad the pure robin the brave When looping through a sequence, the position index and corresponding value can be retrieved at the same time using the enumerate() function. enumerate() >>> for i, v in enumerate(['tic', 'tac', 'toe']):. print(i, v).",
+  "title": "5. Data Structures.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 10,
+  "start_char": 15437,
+  "end_char": 16935,
+  "token_count": 478,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_37d674a620cd8640.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:05.624421"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4_chunk_010.txt"
+}

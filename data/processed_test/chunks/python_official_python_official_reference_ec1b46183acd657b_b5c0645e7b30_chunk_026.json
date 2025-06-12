@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_026",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "type ListOrSet[T] = list[T] | set[T] Semantically, this indicates that the function, class, or type alias is generic over a type variable. This information is primarily used by static type checkers, and at runtime, generic objects behave much like their non-generic counterparts. Type parameters are declared in square brackets ([]) immediately after the name of the function, class, or type alias. The type parameters are accessible within the scope of the generic object, but not elsewhere. Thus, after a declaration def funcT: pass, the name T is not available in the module scope. Below, the semantics of generic objects are described with more precision. The scope of type parameters is modeled with a special function (technically, an annotation scope) that wraps the creation of the generic object. [] def func[T](): pass T Generic functions, classes, and type aliases have a type_params attribute listing their type parameters. __type_params__ Type parameters come in three kinds: typing. TypeVar, introduced by a plain name (e. g. , T). Semantically, this represents a single type to a type checker. typing. TypeVar, introduced by a plain name (e. g. , T). Semantically, this represents a single type to a type checker. typing. TypeVar T typing. TypeVarTuple, introduced by a name prefixed with a single asterisk (e. g. , Ts). Semantically, this stands for a tuple of any number of types. typing. TypeVarTuple, introduced by a name prefixed with a single asterisk (e. g. , Ts). Semantically, this stands for a tuple of any number of types. typing. TypeVarTuple *Ts typing. ParamSpec, introduced by a name prefixed with two asterisks (e. g. , P). Semantically, this stands for the parameters of a callable. typing. ParamSpec, introduced by a name prefixed with two asterisks (e. g. , P). Semantically, this stands for the parameters of a callable. typing. ParamSpec **P typing. TypeVar declarations can define bounds and constraints with a colon (:) followed by an expression. A single expression after the colon indicates a bound (e. g. T: int). Semantically, this means that the typing. TypeVar can only represent types that are a subtype of this bound.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 26,
+  "start_char": 60732,
+  "end_char": 62895,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.388258"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_026.txt"
+}

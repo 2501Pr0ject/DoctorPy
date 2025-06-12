@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_002",
+  "original_doc_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa",
+  "content": "for file upload from HTML forms - see HTML Specification, Form Submission for more details). If you do not pass the data argument, urllib uses a GET request. One way in which GET and POST requests differ is that POST requests often have “side-effects”: they change the state of the system in some way (for example by placing an order with the website for a hundredweight of tinned spam to be delivered to your door). Though the HTTP standard makes it clear that POSTs are intended to always cause side-effects, and GET requests never to cause side-effects, nothing prevents a GET request from having side-effects, nor a POST requests from having no side-effects. Data can also be passed in an HTTP GET request by encoding it in the URL itself. data This is done as follows: >>> import urllib. request >>> import urllib. parse >>> data = {} >>> data['name'] = 'Somebody Here' >>> data['location'] = 'Northampton' >>> data['language'] = 'Python' >>> url_values = urllib. parse. urlencode(data) >>> print(url_values) # The order may differ from below. name=Somebody+Here&language=Python&location=Northampton >>> url = ' >>> full_url = url + '. ' + url_values >>> data = urllib. request. urlopen(full_url) Notice that the full URL is created by adding a. to the URL, followed by the encoded values. ### Headers¶ We’ll discuss here one particular HTTP header, to illustrate how to add headers to your HTTP request. Some websites [1] dislike being browsed by programs, or send different versions to different browsers [2]. By default urllib identifies itself as Python-urllib/x. y (where x and y are the major and minor version numbers of the Python release, e. g. Python-urllib/2. 5), which may confuse the site, or just plain not work. The way a browser identifies itself is through the User-Agent header [3]. When you create a Request object you can pass a dictionary of headers in. The following example makes the same request as above, but identifies itself as a version of Internet Explorer [4]. Python-urllib/x. y x y Python-urllib/2. 5 User-Agent import urllib. parse import urllib. request url = ' user_agent = 'Mozilla/5. 0 (Windows NT 6.",
+  "title": "HOWTO Fetch Internet Resources Using The urllib Package.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 2,
+  "start_char": 4535,
+  "end_char": 6677,
+  "token_count": 489,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_cd1ed077dcaf1642.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.192795"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_002.txt"
+}

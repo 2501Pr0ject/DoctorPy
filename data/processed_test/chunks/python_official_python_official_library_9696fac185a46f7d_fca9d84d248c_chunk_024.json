@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_024",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "append(element) while saved: for element in saved: yield element def dropwhile(predicate, iterable): # dropwhile(lambda x: x<5, [1,4,6,3,8]) → 6 3 8 iterator = iter(iterable) for x in iterator: if not predicate(x): yield x break for x in iterator: yield x None def filterfalse(predicate, iterable): # filterfalse(lambda x: x<5, [1,4,6,3,8]) → 6 8 if predicate is None: predicate = bool for x in iterable: if not predicate(x): yield x None groupby() uniq groupby() groupby() groups = [] uniquekeys = [] data = sorted(data, key=keyfunc) for k, g in groupby(data, keyfunc): groups. append(list(g)) # Store group iterator as a list uniquekeys. append(k) groupby() def groupby(iterable, key=None): # [k for k, g in groupby('AAAABBBCCDAABBB')] → A B C D A B # [list(g) for k, g in groupby('AAAABBBCCD')] → AAAA BBB CC D keyfunc = (lambda x: x) if key is None else key iterator = iter(iterable) exhausted = False def _grouper(target_key): nonlocal curr_value, curr_key, exhausted yield curr_value for curr_value in iterator: curr_key = keyfunc(curr_value) if curr_key. = target_key: return yield curr_value exhausted = True try: curr_value = next(iterator) except StopIteration: return curr_key = keyfunc(curr_value) while not exhausted: target_key = curr_key curr_group = _grouper(target_key) yield curr_key, curr_group if curr_key == target_key: for _ in curr_group: pass None None None def islice(iterable, *args): # islice('ABCDEFG', 2) → A B # islice('ABCDEFG', 2, 4) → C D # islice('ABCDEFG', 2, None) → C D E F G # islice('ABCDEFG', 0, None, 2) → A C E G s = slice(*args) start = 0 if s. start is None else s. start stop = s. stop step = 1 if s. step is None else s.",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 24,
+  "start_char": 39297,
+  "end_char": 40963,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.114557"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_024.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_036",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "chmod() full_match() glob() rglob() ** * *. [seq] [a-z] [a-zA-Z0-9_] [. seq] \"[. ]\" \". \" ** **/* **/*. py. py assets/** assets/ assets/**/* assets/ assets/ ** ** Path. glob() rglob() sep altsep glob Path. glob() Path. rglob() glob include_hidden=True glob. glob() ** recursive=True glob. glob() ** glob. glob() recurse_symlinks=True Path. glob() PurePath Path Path. glob() Path. rglob() path. glob() path. rglob() glob. glob(root_dir=path) path. glob() path. rglob() ** glob. glob(root_dir=path) os os. path PurePath Path os os. path str bytes os os. path bytes str bytes os os. path os. path os. path. abspath(). Path. absolute() Path(\"my_folder/\") Path(\"my_folder\") Path(\". /my_program\") Path(\"my_program\") PATH os. path os PurePath Path os os. path pathlib os. path. dirname() PurePath. parent os. path. basename() PurePath. name os. path. splitext() PurePath. stem PurePath. suffix os. path. join() PurePath. joinpath() os. path. isabs() PurePath. is_absolute() os. path. relpath() PurePath. relative_to() os. path. expanduser() Path. expanduser() os. path. realpath() Path. resolve() os. path. abspath() Path. absolute() os. path. exists() Path. exists() os. path. isfile() Path. is_file() os. path. isdir() Path. is_dir() os. path. islink() Path. is_symlink() os. path. isjunction() Path. is_junction() os. path. ismount() Path. is_mount() os. path. samefile() Path. samefile() os. getcwd() Path. cwd() os. stat() Path. stat() os. lstat() Path. lstat() os. listdir() Path. iterdir() os. walk() Path. walk() os. mkdir() os. makedirs() Path. mkdir() os. link() Path. hardlink_to() os. symlink() Path. symlink_to() os. readlink() Path.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 36,
+  "start_char": 70624,
+  "end_char": 72262,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.520523"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_036.txt"
+}

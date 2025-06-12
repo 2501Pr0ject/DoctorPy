@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_035",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "16g') # conversion changes value '9876543211234568' repr() 'short' x repr(x) float(repr(x)) == x float_repr_style 'legacy' repr(x) _clear_internal_caches() gc. collect() getallocatedblocks() platform. android_ver() 'utf-8' str. encode() dlopen() os RTLD_xxx os. RTLD_LAZY getfilesystemencodeerrors() os. fsencode() os. fsdecode() PyConfig_Read() filesystem_encoding filesystem_errors PyConfig getfilesystemencoding() None 'mbcs' _enablelegacywindowsfsencoding() 'utf-8' getfilesystemencoding() os. fsencode() os. fsdecode() PyConfig_Read() filesystem_encoding filesystem_errors PyConfig set_int_max_str_digits() getrefcount() setrecursionlimit() TypeError getsizeof() __sizeof__ getsizeof() setswitchinterval() ValueError sys. _getframe frame None sys. _getframemodulename depth --with-trace-refs PyInterpreterConfig. use_main_obmalloc Py_NewInterpreter() setprofile() settrace() gettrace() sys. getwindowsversion()[0] sys. getwindowsversion(). major 2 1 2 3 GetVersionEx() OSVERSIONINFOEX() platform namedtuple (firstiter, finalizer) None set_coroutine_origin_tracking_depth() if sys. hexversion >= 0x010502F0: # use some advanced feature. else: # use an alternative implementation or warn the user. hexversion hex() sys. version_info hexversion 'cpython' sys. version_info sys. version_info sys. implementation. version sys. version_info(1, 8, 0, 'final', 0) sys. version_info sys. version_info(2, 7, 2, 'final', 0) sys. hexversion 'cpython-33' cache_tag None sys. implementation sys. implementation 2**int_info. bits_per_digit sys. get_int_max_str_digits() sys. set_int_max_str_digits() PYTHONINTMAXSTRDIGITS -X int_max_str_digits default_max_str_digits str_digits_check_threshold PYTHONSTARTUP site cpython. run_interactivehook intern() True False True False PythonFinalizationError import pdb; pdb. pm() pdb True False sys. last_exc sys.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 35,
+  "start_char": 76662,
+  "end_char": 78504,
+  "token_count": 477,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.449698"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_035.txt"
+}

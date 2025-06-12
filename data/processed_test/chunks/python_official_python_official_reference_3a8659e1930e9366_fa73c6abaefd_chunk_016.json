@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_016",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "See also: dict attributes. mapping proxy __dict__ attributes A tuple containing the class’s bases. In most cases, for a class defined as class X(A, B, C), X. bases will be exactly equal to (A, B, C). tuple class X(A, B, C) X. __bases__ (A, B, C) The class’s documentation string, or None if undefined. Not inherited by subclasses. None A dictionary containing variable annotations collected during class body execution. For best practices on working with annotations, please see Annotations Best Practices. __annotations__ Caution Accessing the annotations attribute of a class object directly may yield incorrect results in the presence of metaclasses. In addition, the attribute may not exist for some classes. Use inspect. get_annotations() to retrieve class annotations safely. __annotations__ inspect. get_annotations() A tuple containing the type parameters of a generic class. tuple Added in version 3. 12. A tuple containing names of attributes of this class which are assigned through self. X from any function in its body. tuple self. X Added in version 3. 13. The line number of the first line of the class definition, including decorators. Setting the module attribute removes the firstlineno item from the type’s dictionary. __module__ __firstlineno__ Added in version 3. 13. The tuple of classes that are considered when looking for base classes during method resolution. tuple #### 3. 2. 10. 2. Special methods¶ In addition to the special attributes described above, all Python classes also have the following two methods available: This method can be overridden by a metaclass to customize the method resolution order for its instances. It is called at class instantiation, and its result is stored in mro. __mro__ Each class keeps a list of weak references to its immediate subclasses. This method returns a list of all those references still alive. The list is in definition order. Example: >>> class A: pass >>> class B(A): pass >>> A. __subclasses__() [<class 'B'>] ### 3. 2. 11. Class instances¶ A class instance is created by calling a class object (see above). A class instance has a namespace implemented as a dictionary which is the first place in which attribute references are searched.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 16,
+  "start_char": 36401,
+  "end_char": 38614,
+  "token_count": 476,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.708271"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_016.txt"
+}

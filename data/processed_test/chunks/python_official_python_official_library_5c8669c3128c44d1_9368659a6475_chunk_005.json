@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5c8669c3128c44d1_9368659a6475_chunk_005",
+  "original_doc_id": "python_official_python_official_library_5c8669c3128c44d1_9368659a6475",
+  "content": "StrEnum Usage: >>> from http import HTTPMethod >>> >>> HTTPMethod. GET <HTTPMethod. GET> >>> HTTPMethod. GET == 'GET' True >>> HTTPMethod. GET. value 'GET' >>> HTTPMethod. GET. description 'Retrieve the target. ' >>> list(HTTPMethod) [<HTTPMethod. CONNECT>, <HTTPMethod. DELETE>, <HTTPMethod. GET>, <HTTPMethod. HEAD>, <HTTPMethod. OPTIONS>, <HTTPMethod. PATCH>, <HTTPMethod. POST>, <HTTPMethod. PUT>, <HTTPMethod. TRACE>] ## HTTP methods¶ Supported, IANA-registered methods available in http. HTTPMethod are: http. HTTPMethod Method Enum Name Details GET GET GET GET HTTP Semantics RFC 9110, Section 9. 3. 1 HEAD HEAD HEAD HEAD HTTP Semantics RFC 9110, Section 9. 3. 2 POST POST POST POST HTTP Semantics RFC 9110, Section 9. 3. 3 PUT PUT PUT PUT HTTP Semantics RFC 9110, Section 9. 3. 4 DELETE DELETE DELETE DELETE HTTP Semantics RFC 9110, Section 9. 3. 5 CONNECT CONNECT CONNECT CONNECT HTTP Semantics RFC 9110, Section 9. 3. 6 OPTIONS OPTIONS OPTIONS OPTIONS HTTP Semantics RFC 9110, Section 9. 3. 7 TRACE TRACE TRACE TRACE HTTP Semantics RFC 9110, Section 9. 3. 8 PATCH PATCH PATCH PATCH HTTP/1. 1 RFC 5789 ### Table of Contents http — HTTP modules HTTP status codes HTTP status category HTTP methods http HTTP status codes HTTP status category HTTP methods #### Previous topic urllib. robotparser — Parser for robots. txt urllib. robotparser #### Next topic http. client — HTTP protocol client http. client ### This page Report a bug Show source http http http. client urllib. request http. server socketserver http. cookies http. cookiejar http enum. IntEnum >>> from http import HTTPStatus >>> HTTPStatus. OK HTTPStatus. OK >>> HTTPStatus. OK == 200 True >>> HTTPStatus. OK. value 200 >>> HTTPStatus. OK. phrase 'OK' >>> HTTPStatus. OK. description 'Request fulfilled, document follows' >>> list(HTTPStatus) [HTTPStatus. CONTINUE, HTTPStatus. SWITCHING_PROTOCOLS,. ] http.",
+  "title": "http — HTTP modules.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 5,
+  "start_char": 8465,
+  "end_char": 10344,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5c8669c3128c44d1.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.596101"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5c8669c3128c44d1_9368659a6475_chunk_005.txt"
+}

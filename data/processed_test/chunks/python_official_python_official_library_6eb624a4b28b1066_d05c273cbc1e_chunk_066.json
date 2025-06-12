@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_066",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "utcoffset()) 4:30:00 >>> # Convert datetime to another time zone >>> dt3 = dt2. astimezone(timezone. utc) >>> dt3 datetime. datetime(2006, 6, 14, 8, 30, tzinfo=datetime. timezone. utc) >>> dt2 datetime. datetime(2006, 6, 14, 13, 0, tzinfo=KabulTz()) >>> dt2 == dt3 True time time tzinfo None tzinfo 0 <= hour < 24 0 <= minute < 60 0 <= second < 60 0 <= microsecond < 1000000 fold in [0, 1] ValueError None time time(0, 0, 0, 0) time time(23, 59, 59, 999999) time timedelta(microseconds=1) time range(24) range(60) range(60) range(1000000) time None [0, 1] time a b a b time time TypeError tzinfo tzinfo fold tzinfo self. utcoffset() time TypeError time time time T >>> from datetime import time >>> time. fromisoformat('04:23:01') datetime. time(4, 23, 1) >>> time. fromisoformat('T04:23:01') datetime. time(4, 23, 1) >>> time. fromisoformat('T042301') datetime. time(4, 23, 1) >>> time. fromisoformat('04:23:01. 000384') datetime. time(4, 23, 1, 384) >>> time. fromisoformat('04:23:01,000384') datetime. time(4, 23, 1, 384) >>> time. fromisoformat('04:23:01+04:00') datetime. time(4, 23, 1, tzinfo=datetime. timezone(datetime. timedelta(seconds=14400))) >>> time. fromisoformat('04:23:01Z') datetime. time(4, 23, 1, tzinfo=datetime. timezone. utc) >>> time. fromisoformat('04:23:01+00:00') datetime. time(4, 23, 1, tzinfo=datetime. timezone. utc) time.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 66,
+  "start_char": 122164,
+  "end_char": 123517,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.443761"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_066.txt"
+}

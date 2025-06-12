@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_059",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "ctime() 'Mon Mar 11 00:00:00 2002' >>> 'The {1} is {0:%d}, the {2} is {0:%B}. '. format(d, \"day\", \"month\") 'The day is 11, the month is March. ' >>> # Methods for to extracting 'components' under different calendars >>> t = d. timetuple() >>> for i in t:. print(i) 2002 # year 3 # month 11 # day 0 0 0 0 # weekday (0 = Monday) 70 # 70th day in the year -1 >>> ic = d. isocalendar() >>> for i in ic:. print(i) 2002 # ISO year 11 # ISO week number 1 # ISO day number ( 1 = Monday ) >>> # A date object is immutable; all operations produce a new object >>> d. replace(year=2005) datetime. date(2005, 3, 11) datetime datetime date time date datetime time datetime None tzinfo MINYEAR <= year <= MAXYEAR 1 <= month <= 12 1 <= day <= number of days in the given month and year 0 <= hour < 24 0 <= minute < 60 0 <= second < 60 0 <= microsecond < 1000000 fold in [0, 1] ValueError tzinfo None datetime. fromtimestamp(time. time()) now() fromtimestamp() now() tz None today() time. time() gettimeofday() None tzinfo today() utcnow() datetime. now() tzinfo None now() datetime datetime. now(timezone. utc) now() datetime datetime datetime. now(timezone. utc) datetime. now() UTC time. time() None datetime None tzinfo fromtimestamp() OverflowError localtime() gmtime() OSError localtime() gmtime() fromtimestamp() datetime utcfromtimestamp() OverflowError ValueError localtime() gmtime() OSError ValueError localtime() gmtime() fromtimestamp() fold datetime tzinfo None OverflowError gmtime() OSError gmtime() datetime fromtimestamp() datetime. fromtimestamp(timestamp, timezone. utc) datetime(1970, 1, 1, tzinfo=timezone. utc) + timedelta(seconds=timestamp) MINYEAR MAXYEAR datetime datetime datetime. fromtimestamp(timestamp, tz=timezone. utc) OverflowError ValueError gmtime() OSError ValueError gmtime() datetime.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 59,
+  "start_char": 111341,
+  "end_char": 113148,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.437552"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_059.txt"
+}

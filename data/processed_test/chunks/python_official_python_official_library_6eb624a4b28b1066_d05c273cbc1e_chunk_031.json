@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_031",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "The remaining arguments must be integers in the following ranges: None tzinfo 0 <= hour < 24, 0 <= hour < 24, 0 <= hour < 24 0 <= minute < 60, 0 <= minute < 60, 0 <= minute < 60 0 <= second < 60, 0 <= second < 60, 0 <= second < 60 0 <= microsecond < 1000000, 0 <= microsecond < 1000000, 0 <= microsecond < 1000000 fold in [0, 1]. fold in [0, 1]. fold in [0, 1] If an argument outside those ranges is given, ValueError is raised. All default to 0 except tzinfo, which defaults to None. ValueError None Class attributes: The earliest representable time, time(0, 0, 0, 0). time time(0, 0, 0, 0) The latest representable time, time(23, 59, 59, 999999). time time(23, 59, 59, 999999) The smallest possible difference between non-equal time objects, timedelta(microseconds=1), although note that arithmetic on time objects is not supported. time timedelta(microseconds=1) time Instance attributes (read-only): In range(24). range(24) In range(60). range(60) In range(60). range(60) In range(1000000). range(1000000) The object passed as the tzinfo argument to the time constructor, or None if none was passed. time None In [0, 1]. Used to disambiguate wall times during a repeated interval. (A repeated interval occurs when clocks are rolled back at the end of daylight saving time or when the UTC offset for the current zone is decreased for political reasons. ) The values 0 and 1 represent, respectively, the earlier and later of the two moments with the same wall time representation. [0, 1] Added in version 3. 6. time objects support equality and order comparisons, where a is considered less than b when a precedes b in time. time a b a b Naive and aware time objects are never equal. Order comparison between naive and aware time objects raises TypeError.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 31,
+  "start_char": 60213,
+  "end_char": 61970,
+  "token_count": 488,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.407909"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_031.txt"
+}

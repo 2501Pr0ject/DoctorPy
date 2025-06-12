@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_002",
+  "original_doc_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b",
+  "content": "For example: month_names = ['Januari', 'Februari', 'Maart', # These are the 'April', 'Mei', 'Juni', # Dutch names 'Juli', 'Augustus', 'September', # for the months 'Oktober', 'November', 'December'] # of the year Implicitly continued lines can carry comments. The indentation of the continuation lines is not important. Blank continuation lines are allowed. There is no NEWLINE token between implicit continuation lines. Implicitly continued lines can also occur within triple-quoted strings (see below); in that case they cannot carry comments. ### 2. 1. 7. Blank lines¶ A logical line that contains only spaces, tabs, formfeeds and possibly a comment, is ignored (i. e. , no NEWLINE token is generated). During interactive input of statements, handling of a blank line may differ depending on the implementation of the read-eval-print loop. In the standard interactive interpreter, an entirely blank logical line (i. e. one containing not even whitespace or a comment) terminates a multi-line statement. ### 2. 1. 8. Indentation¶ Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements. Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line’s indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation. Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the meaning dependent on the worth of a tab in spaces; a TabError is raised in that case. TabError Cross-platform compatibility note: because of the nature of text editors on non-UNIX platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file. It should also be noted that different platforms may explicitly limit the maximum indentation level. A formfeed character may be present at the start of the line; it will be ignored for the indentation calculations above.",
+  "title": "2. Lexical analysis.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 2,
+  "start_char": 4115,
+  "end_char": 6415,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_99fb26420c3873aa.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:25.392760"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_002.txt"
+}

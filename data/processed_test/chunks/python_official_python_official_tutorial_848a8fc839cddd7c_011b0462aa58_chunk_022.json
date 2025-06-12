@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_022",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "cat 3 window 6 defenestrate 12 # Create a sample collection users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'} # Strategy: Iterate over a copy for user, status in users. copy(). items(): if status == 'inactive': del users[user] # Strategy: Create a new collection active_users = {} for user, status in users. items(): if status == 'active': active_users[user] = status range() range() >>> for i in range(5):. print(i). 0 1 2 3 4 range(10) >>> list(range(5, 10)) [5, 6, 7, 8, 9] >>> list(range(0, 10, 3)) [0, 3, 6, 9] >>> list(range(-10, -100, -30)) [-10, -40, -70] range() len() >>> a = ['Mary', 'had', 'a', 'little', 'lamb'] >>> for i in range(len(a)):. print(i, a[i]). 0 Mary 1 had 2 a 3 little 4 lamb enumerate() >>> range(10) range(0, 10) range() for sum() >>> sum(range(4)) # 0 + 1 + 2 + 3 6 list() break continue break for while >>> for n in range(2, 10):. for x in range(2, n):. if n % x == 0:. print(f\"{n} equals {x} * {n//x}\"). break. 4 equals 2 * 2 6 equals 2 * 3 8 equals 2 * 4 9 equals 3 * 3 continue >>> for num in range(2, 10):. if num % 2 == 0:. print(f\"Found an even number {num}\"). continue. print(f\"Found an odd number {num}\").",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 22,
+  "start_char": 42609,
+  "end_char": 43771,
+  "token_count": 429,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.627933"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_022.txt"
+}

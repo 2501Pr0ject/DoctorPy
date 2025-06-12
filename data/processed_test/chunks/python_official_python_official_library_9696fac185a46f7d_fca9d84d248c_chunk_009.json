@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_009",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "step if start < 0 or (stop is not None and stop < 0) or step <= 0: raise ValueError indices = count() if stop is None else range(max(start, stop)) next_i = start for i, element in zip(indices, iterable): if i == next_i: yield element next_i += step If the input is an iterator, then fully consuming the islice advances the input iterator by max(start, stop) steps regardless of the step value. max(start, stop) Return successive overlapping pairs taken from the input iterable. The number of 2-tuples in the output iterator will be one fewer than the number of inputs. It will be empty if the input iterable has fewer than two values. Roughly equivalent to: def pairwise(iterable): # pairwise('ABCDEFG') → AB BC CD DE EF FG iterator = iter(iterable) a = next(iterator, None) for b in iterator: yield a, b a = b Added in version 3. 10. Return successive r length permutations of elements from the iterable. If r is not specified or is None, then r defaults to the length of the iterable and all possible full-length permutations are generated. None The output is a subsequence of product() where entries with repeated elements have been filtered out. The length of the output is given by math. perm() which computes n. / (n - r). when 0 ≤ r ≤ n or zero when r > n. product() math. perm() n. / (n - r). 0 ≤ r ≤ n r > n The permutation tuples are emitted in lexicographic order according to the order of the input iterable. If the input iterable is sorted, the output tuples will be produced in sorted order. Elements are treated as unique based on their position, not on their value. If the input elements are unique, there will be no repeated values within a permutation.",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 9,
+  "start_char": 15501,
+  "end_char": 17171,
+  "token_count": 388,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.101748"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_009.txt"
+}

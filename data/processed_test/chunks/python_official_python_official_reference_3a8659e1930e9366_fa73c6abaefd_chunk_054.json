@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_054",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "The result (return value, StopIteration, or other exception) is the same as when iterating over the await() return value, described above. If the exception is not caught in the coroutine, it propagates back to the caller. throw() StopIteration __await__() Changed in version 3. 12: The second signature (type[, value[, traceback]]) is deprecated and may be removed in a future version of Python. Causes the coroutine to clean itself up and exit. If the coroutine is suspended, this method first delegates to the close() method of the iterator that caused the coroutine to suspend, if it has such a method. Then it raises GeneratorExit at the suspension point, causing the coroutine to immediately clean itself up. Finally, the coroutine is marked as having finished executing, even if it was never started. close() GeneratorExit Coroutine objects are automatically closed using the above process when they are about to be destroyed. ### 3. 4. 3. Asynchronous Iterators¶ An asynchronous iterator can call asynchronous code in its anext method. __anext__ Asynchronous iterators can be used in an async for statement. async for The object class itself does not provide these methods. object Must return an asynchronous iterator object. Must return an awaitable resulting in a next value of the iterator. Should raise a StopAsyncIteration error when the iteration is over. StopAsyncIteration An example of an asynchronous iterable object: class Reader: async def readline(self):. def __aiter__(self): return self async def __anext__(self): val = await self. readline() if val == b'': raise StopAsyncIteration return val Added in version 3. 5. Changed in version 3. 7: Prior to Python 3. 7, aiter() could return an awaitable that would resolve to an asynchronous iterator. __aiter__() Starting with Python 3. 7, aiter() must return an asynchronous iterator object. Returning anything else will result in a TypeError error. __aiter__() TypeError ### 3. 4. 4. Asynchronous Context Managers¶ An asynchronous context manager is a context manager that is able to suspend execution in its aenter and aexit methods. __aenter__ __aexit__ Asynchronous context managers can be used in an async with statement. async with The object class itself does not provide these methods.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 54,
+  "start_char": 123439,
+  "end_char": 125700,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.751138"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_054.txt"
+}

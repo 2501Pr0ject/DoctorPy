@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_002",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "py and parent/one/init. py. Subsequent imports of parent. two or parent. three will execute parent/two/init. py and parent/three/init. py respectively. parent. one parent/__init__. py parent/one/__init__. py parent. two parent. three parent/two/__init__. py parent/three/__init__. py ### 5. 2. 2. Namespace packages¶ A namespace package is a composite of various portions, where each portion contributes a subpackage to the parent package. Portions may reside in different locations on the file system. Portions may also be found in zip files, on the network, or anywhere else that Python searches during import. Namespace packages may or may not correspond directly to objects on the file system; they may be virtual modules that have no concrete representation. Namespace packages do not use an ordinary list for their path attribute. They instead use a custom iterable type which will automatically perform a new search for package portions on the next import attempt within that package if the path of their parent package (or sys. path for a top level package) changes. __path__ sys. path With namespace packages, there is no parent/init. py file. In fact, there may be multiple parent directories found during import search, where each one is provided by a different portion. Thus parent/one may not be physically located next to parent/two. In this case, Python will create a namespace package for the top-level parent package whenever it or one of its subpackages is imported. parent/__init__. py parent parent/one parent/two parent See also PEP 420 for the namespace package specification. ## 5. 3. Searching¶ To begin the search, Python needs the fully qualified name of the module (or package, but for the purposes of this discussion, the difference is immaterial) being imported. This name may come from various arguments to the import statement, or from the parameters to the importlib. import_module() or import() functions. import importlib. import_module() __import__() This name will be used in various phases of the import search, and it may be the dotted path to a submodule, e. g. foo. bar. baz. In this case, Python first tries to import foo, then foo. bar, and finally foo. bar. baz. If any of the intermediate imports fail, a ModuleNotFoundError is raised. foo. bar. baz foo foo. bar foo.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 2,
+  "start_char": 4915,
+  "end_char": 7226,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.003655"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_002.txt"
+}

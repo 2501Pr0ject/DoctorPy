@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_065",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "fork() ssl Warning On macOS the use of this function is unsafe when mixed with using higher-level system APIs, and that includes using urllib. request. urllib. request Changed in version 3. 8: Calling fork() in a subinterpreter is no longer supported (RuntimeError is raised). fork() RuntimeError Changed in version 3. 12: If Python is able to detect that your process has multiple threads, os. fork() now raises a DeprecationWarning. os. fork() DeprecationWarning We chose to surface this as a warning, when detectable, to better inform developers of a design problem that the POSIX platform specifically notes as not supported. Even in code that appears to work, it has never been safe to mix threading with os. fork() on POSIX platforms. The CPython runtime itself has always made API calls that are not safe for use in the child process when threads existed in the parent (such as malloc and free). os. fork() malloc free Users of macOS or users of libc or malloc implementations other than those typically found in glibc to date are among those already more likely to experience deadlocks running such code. See this discussion on fork being incompatible with threads for technical details of why we’re surfacing this longstanding platform compatibility problem to developers. Availability: POSIX, not WASI, not Android, not iOS. Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. Return a pair of (pid, fd), where pid is 0 in the child, the new child’s process id in the parent, and fd is the file descriptor of the master end of the pseudo-terminal. For a more portable approach, use the pty module. If an error occurs OSError is raised. (pid, fd) 0 pty OSError Raises an auditing event os. forkpty with no arguments. os. forkpty Warning On macOS the use of this function is unsafe when mixed with using higher-level system APIs, and that includes using urllib. request. urllib. request Changed in version 3. 8: Calling forkpty() in a subinterpreter is no longer supported (RuntimeError is raised). forkpty() RuntimeError Changed in version 3. 12: If Python is able to detect that your process has multiple threads, this now raises a DeprecationWarning. See the longer explanation on os. fork(). DeprecationWarning os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 65,
+  "start_char": 138361,
+  "end_char": 140622,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.829564"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_065.txt"
+}

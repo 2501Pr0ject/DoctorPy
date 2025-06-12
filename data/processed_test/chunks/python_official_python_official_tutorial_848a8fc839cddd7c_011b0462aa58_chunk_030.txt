@@ -1,0 +1,1 @@
+>>> f('spam') Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>} Arguments: spam eggs 'spam and eggs' a = f(1, 2) + g(3, 4) UpperCamelCase lowercase_with_underscores self if for range() break continue else pass match.

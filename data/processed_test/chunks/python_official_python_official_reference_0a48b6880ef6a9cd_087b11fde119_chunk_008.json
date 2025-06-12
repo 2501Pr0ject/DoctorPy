@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_008",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "Any values passed in with send() and any exceptions passed in with throw() are passed to the underlying iterator if it has the appropriate methods. If this is not the case, then send() will raise AttributeError or TypeError, while throw() will just raise the passed in exception immediately. yield from <expr> send() throw() send() AttributeError TypeError throw() When the underlying iterator is complete, the value attribute of the raised StopIteration instance becomes the value of the yield expression. It can be either set explicitly when raising StopIteration, or automatically when the subiterator is a generator (by returning a value from the subgenerator). value StopIteration StopIteration Changed in version 3. 3: Added yield from to delegate control flow to a subiterator. yield from <expr> The parentheses may be omitted when the yield expression is the sole expression on the right hand side of an assignment statement. See also The proposal for adding generators and the yield statement to Python. yield The proposal to enhance the API and syntax of generators, making them usable as simple coroutines. The proposal to introduce the yield_from syntax, making delegation to subgenerators easy. yield_from The proposal that expanded on PEP 492 by adding generator capabilities to coroutine functions. #### 6. 2. 9. 1. Generator-iterator methods¶ This subsection describes the methods of a generator iterator. They can be used to control the execution of a generator function. Note that calling any of the generator methods below when the generator is already executing raises a ValueError exception. ValueError Starts the execution of a generator function or resumes it at the last executed yield expression. When a generator function is resumed with a next() method, the current yield expression always evaluates to None. The execution then continues to the next yield expression, where the generator is suspended again, and the value of the yield_list is returned to next()’s caller. If the generator exits without yielding another value, a StopIteration exception is raised. __next__() None yield_list __next__() StopIteration This method is normally called implicitly, e. g. by a for loop, or by the built-in next() function. for next() Resumes the execution and “sends” a value into the generator function. The value argument becomes the result of the current yield expression. The send() method returns the next value yielded by the generator, or raises StopIteration if the generator exits without yielding another value.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 8,
+  "start_char": 18350,
+  "end_char": 20891,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.577397"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_008.txt"
+}

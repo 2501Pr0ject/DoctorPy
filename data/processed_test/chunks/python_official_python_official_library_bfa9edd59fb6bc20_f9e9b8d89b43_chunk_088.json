@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_088",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "int_info >>> msg = int('578966293710682886880994035146873798396722250538762761564'. '9252925514383915483333812743580549779436104706260696366600'. '571186405732'). to_bytes(53, 'big'). Added in version 3. 11. ### Affected APIs¶ The limitation only applies to potentially slow conversions between int and str or bytes: int str bytes int(string) with default base 10. int(string) with default base 10. int(string) int(string, base) for all bases that are not a power of 2. int(string, base) for all bases that are not a power of 2. int(string, base) str(integer). str(integer). str(integer) repr(integer). repr(integer). repr(integer) any other string conversion to base 10, for example f\"{integer}\", \"{}\". format(integer), or b\"%d\" % integer. any other string conversion to base 10, for example f\"{integer}\", \"{}\". format(integer), or b\"%d\" % integer. f\"{integer}\" \"{}\". format(integer) b\"%d\" % integer The limitations do not apply to functions with a linear algorithm: int(string, base) with base 2, 4, 8, 16, or 32. int(string, base) with base 2, 4, 8, 16, or 32. int(string, base) int. from_bytes() and int. to_bytes(). int. from_bytes() and int. to_bytes(). int. from_bytes() int. to_bytes() hex(), oct(), bin(). hex(), oct(), bin(). hex() oct() bin() Format Specification Mini-Language for hex, octal, and binary numbers. Format Specification Mini-Language for hex, octal, and binary numbers. str to float. str to float. str float str to decimal. Decimal. str to decimal. Decimal. str decimal. Decimal ### Configuring the limit¶ Before Python starts up you can use an environment variable or an interpreter command line flag to configure the limit: PYTHONINTMAXSTRDIGITS, e. g. PYTHONINTMAXSTRDIGITS=640 python3 to set the limit to 640 or PYTHONINTMAXSTRDIGITS=0 python3 to disable the limitation. PYTHONINTMAXSTRDIGITS, e. g.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 88,
+  "start_char": 181056,
+  "end_char": 182885,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.260282"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_088.txt"
+}

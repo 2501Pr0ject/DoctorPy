@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_007",
+  "original_doc_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa",
+  "content": "Frequently one doesn’t care what the realm is. In that case, it is convenient to use HTTPPasswordMgrWithDefaultRealm. This allows you to specify a default username and password for a URL. This will be supplied in the absence of you providing an alternative combination for a specific realm. We indicate this by providing None as the realm argument to the add_password method. HTTPBasicAuthHandler HTTPPasswordMgr HTTPPasswordMgrWithDefaultRealm None add_password The top-level URL is the first URL that requires authentication. URLs “deeper” than the URL you pass to. add_password() will also match. # create a password manager password_mgr = urllib. request. HTTPPasswordMgrWithDefaultRealm() # Add the username and password. # If we knew the realm, we could use it instead of None. top_level_url = \" password_mgr. add_password(None, top_level_url, username, password) handler = urllib. request. HTTPBasicAuthHandler(password_mgr) # create \"opener\" (OpenerDirector instance) opener = urllib. request. build_opener(handler) # use the opener to fetch a URL opener. open(a_url) # Install the opener. # Now all calls to urllib. request. urlopen use our opener. urllib. request. install_opener(opener) Note In the above example we only supplied our HTTPBasicAuthHandler to build_opener. By default openers have the handlers for normal situations – ProxyHandler (if a proxy setting such as an http_proxy environment variable is set), UnknownHandler, HTTPHandler, HTTPDefaultErrorHandler, HTTPRedirectHandler, FTPHandler, FileHandler, DataHandler, HTTPErrorProcessor. HTTPBasicAuthHandler build_opener ProxyHandler http_proxy UnknownHandler HTTPHandler HTTPDefaultErrorHandler HTTPRedirectHandler FTPHandler FileHandler DataHandler HTTPErrorProcessor top_level_url is in fact either a full URL (including the ‘http:’ scheme component and the hostname and optionally the port number) e. g. \" or an “authority” (i. e. the hostname, optionally including the port number) e. g. \"example. com\" or \"example. com:8080\" (the latter example includes a port number). The authority, if present, must NOT contain the “userinfo” component - for example \"joe:password@example. com\" is not correct. top_level_url \" \"example. com\" \"example. com:8080\" \"joe:password@example.",
+  "title": "HOWTO Fetch Internet Resources Using The urllib Package.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 7,
+  "start_char": 15472,
+  "end_char": 17723,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_cd1ed077dcaf1642.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.197185"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_007.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_000",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "PEP 8 – Style Guide for Python Code | peps. python. org Source:  PEP 8 – Style Guide for Python Code Introduction A Foolish Consistency is the Hobgoblin of Little Minds Code Lay-out Indentation Tabs or Spaces. Maximum Line Length Should a Line Break Before or After a Binary Operator. Blank Lines Source File Encoding Imports Module Level Dunder Names Indentation Tabs or Spaces. Maximum Line Length Should a Line Break Before or After a Binary Operator. Blank Lines Source File Encoding Imports Module Level Dunder Names String Quotes Whitespace in Expressions and Statements Pet Peeves Other Recommendations Pet Peeves Other Recommendations When to Use Trailing Commas Comments Block Comments Inline Comments Documentation Strings Block Comments Inline Comments Documentation Strings Naming Conventions Overriding Principle Descriptive: Naming Styles Prescriptive: Naming Conventions Names to Avoid ASCII Compatibility Package and Module Names Class Names Type Variable Names Exception Names Global Variable Names Function and Variable Names Function and Method Arguments Method Names and Instance Variables Constants Designing for Inheritance Public and Internal Interfaces Overriding Principle Descriptive: Naming Styles Prescriptive: Naming Conventions Names to Avoid ASCII Compatibility Package and Module Names Class Names Type Variable Names Exception Names Global Variable Names Function and Variable Names Function and Method Arguments Method Names and Instance Variables Constants Designing for Inheritance Names to Avoid ASCII Compatibility Package and Module Names Class Names Type Variable Names Exception Names Global Variable Names Function and Variable Names Function and Method Arguments Method Names and Instance Variables Constants Designing for Inheritance Public and Internal Interfaces Programming Recommendations Function Annotations Variable Annotations Function Annotations Variable Annotations References Copyright ## Introduction This document gives coding conventions for the Python code comprising the standard library in the main Python distribution. Please see the companion informational PEP describing style guidelines for the C code in the C implementation of Python. This document and PEP 257 (Docstring Conventions) were adapted from Guido’s original Python Style Guide essay, with some additions from Barry’s style guide [2]. This style guide evolves over time as additional conventions are identified and past conventions are rendered obsolete by changes in the language itself. Many projects have their own coding style guidelines. In the event of any conflicts, such project-specific guides take precedence for that project. ## A Foolish Consistency is the Hobgoblin of Little Minds One of Guido’s key insights is that code is read much more often than it is written. The guidelines provided here are intended to improve the readability of code and make it consistent across the wide spectrum of Python code.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2949,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.766304"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_000.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_013",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "A function definition may look like: def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2): ----------- ---------- ---------- | | | | Positional or keyword | | - Keyword only -- Positional only where / and * are optional. If used, these symbols indicate the kind of parameter by how the arguments may be passed to the function: positional-only, positional-or-keyword, and keyword-only. Keyword parameters are also referred to as named parameters. / * #### 4. 9. 3. 1. Positional-or-Keyword Arguments¶ If / and * are not present in the function definition, arguments may be passed to a function by position or by keyword. / * #### 4. 9. 3. 2. Positional-Only Parameters¶ Looking at this in a bit more detail, it is possible to mark certain parameters as positional-only. If positional-only, the parameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a / (forward-slash). The / is used to logically separate the positional-only parameters from the rest of the parameters. If there is no / in the function definition, there are no positional-only parameters. / / / Parameters following the / may be positional-or-keyword or keyword-only. / #### 4. 9. 3. 3. Keyword-Only Arguments¶ To mark parameters as keyword-only, indicating the parameters must be passed by keyword argument, place an * in the arguments list just before the first keyword-only parameter. * #### 4. 9. 3. 4. Function Examples¶ Consider the following example function definitions paying close attention to the markers / and : / * >>> def standard_arg(arg):. print(arg). >>> def pos_only_arg(arg, /):. print(arg). >>> def kwd_only_arg(*, arg):. print(arg). >>> def combined_example(pos_only, /, standard, *, kwd_only):.",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 13,
+  "start_char": 25451,
+  "end_char": 27193,
+  "token_count": 413,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.616048"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_013.txt"
+}

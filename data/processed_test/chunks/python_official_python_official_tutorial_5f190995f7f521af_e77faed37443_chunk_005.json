@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_005",
+  "original_doc_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443",
+  "content": "pyc The module compileall can create. pyc files for all modules in a directory. The module compileall can create. pyc files for all modules in a directory. compileall There is more detail on this process, including a flow chart of the decisions, in PEP 3147. There is more detail on this process, including a flow chart of the decisions, in PEP 3147. ## 6. 2. Standard Modules¶ Python comes with a library of standard modules, described in a separate document, the Python Library Reference (“Library Reference” hereafter). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls. The set of such modules is a configuration option which also depends on the underlying platform. For example, the winreg module is only provided on Windows systems. One particular module deserves some attention: sys, which is built into every Python interpreter. The variables sys. ps1 and sys. ps2 define the strings used as primary and secondary prompts: winreg sys sys. ps1 sys. ps2 >>> import sys >>> sys. ps1 '>>> ' >>> sys. ps2 '. ' >>> sys. ps1 = 'C> ' C> print('Yuck. ') Yuck. C> These two variables are only defined if the interpreter is in interactive mode. The variable sys. path is a list of strings that determines the interpreter’s search path for modules. It is initialized to a default path taken from the environment variable PYTHONPATH, or from a built-in default if PYTHONPATH is not set. You can modify it using standard list operations: sys. path PYTHONPATH PYTHONPATH >>> import sys >>> sys. path. append('/ufs/guido/lib/python') ## 6. 3. The dir() Function¶ dir() The built-in function dir() is used to find out which names a module defines.",
+  "title": "6. Modules.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 5,
+  "start_char": 10402,
+  "end_char": 12242,
+  "token_count": 411,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_5f190995f7f521af.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.860050"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_005.txt"
+}

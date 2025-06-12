@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_007",
+  "original_doc_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1",
+  "content": "The assignment target is considered “simple” if it consists of a single name that is not enclosed in parentheses. For simple assignment targets, if in class or module scope, the annotations are evaluated and stored in a special class or module attribute annotations that is a dictionary mapping from variable names (mangled if private) to evaluated annotations. This attribute is writable and is automatically created at the start of class or module body execution, if annotations are found statically. __annotations__ If the assignment target is not simple (an attribute, subscript node, or parenthesized name), the annotation is evaluated if in class or module scope, but not stored. If a name is annotated in a function scope, then this name is local for that scope. Annotations are never evaluated and stored in function scopes. If the right hand side is present, an annotated assignment performs the actual assignment before evaluating annotations (where applicable). If the right hand side is not present for an expression target, then the interpreter evaluates the target except for the last setitem() or setattr() call. __setitem__() __setattr__() See also The proposal that added syntax for annotating the types of variables (including class variables and instance variables), instead of expressing them through comments. The proposal that added the typing module to provide a standard syntax for type annotations that can be used in static analysis tools and IDEs. typing Changed in version 3. 8: Now annotated assignments allow the same expressions in the right hand side as regular assignments. Previously, some expressions (like un-parenthesized tuple expressions) caused a syntax error. ## 7. 3. The assert statement¶ assert Assert statements are a convenient way to insert debugging assertions into a program: assert_stmt ::= \"assert\" expression [\",\" expression] expression expression The simple form, assert expression, is equivalent to assert expression if __debug__: if not expression: raise AssertionError The extended form, assert expression1, expression2, is equivalent to assert expression1, expression2 if __debug__: if not expression1: raise AssertionError(expression2) These equivalences assume that debug and AssertionError refer to the built-in variables with those names. In the current implementation, the built-in variable debug is True under normal circumstances, False when optimization is requested (command line option -O). The current code generator emits no code for an assert statement when optimization is requested at compile time.",
+  "title": "7. Simple statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 7,
+  "start_char": 16409,
+  "end_char": 18979,
+  "token_count": 476,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_086a4fc66c4c8ed9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:05.261617"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_007.txt"
+}

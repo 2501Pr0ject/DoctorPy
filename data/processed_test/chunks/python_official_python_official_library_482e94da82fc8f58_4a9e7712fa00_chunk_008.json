@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_008",
+  "original_doc_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00",
+  "content": "_exit() function can be used if it is absolutely positively necessary to exit immediately (for example, in the child process after a call to os. fork()). sys. exit() finally try os. _exit() os. fork() The exit status or error message that is passed to the constructor. (Defaults to None. ) None Raised when an operation or function is applied to an object of inappropriate type. The associated value is a string giving details about the type mismatch. This exception may be raised by user code to indicate that an attempted operation on an object is not supported, and is not meant to be. If an object is meant to support a given operation but has not yet provided an implementation, NotImplementedError is the proper exception to raise. NotImplementedError Passing arguments of the wrong type (e. g. passing a list when an int is expected) should result in a TypeError, but passing arguments with the wrong value (e. g. a number outside expected boundaries) should result in a ValueError. list int TypeError ValueError Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable. This is a subclass of NameError. NameError Raised when a Unicode-related encoding or decoding error occurs. It is a subclass of ValueError. ValueError UnicodeError has attributes that describe the encoding or decoding error. For example, err. object[err. start:err. end] gives the particular invalid input that the codec failed on. UnicodeError err. object[err. start:err. end] The name of the encoding that raised the error. A string describing the specific codec error. The object the codec was attempting to encode or decode. The first index of invalid data in object. object The index after the last invalid data in object. object Raised when a Unicode-related error occurs during encoding. It is a subclass of UnicodeError. UnicodeError Raised when a Unicode-related error occurs during decoding. It is a subclass of UnicodeError. UnicodeError Raised when a Unicode-related error occurs during translating. It is a subclass of UnicodeError. UnicodeError Raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError. IndexError Raised when the second argument of a division or modulo operation is zero. The associated value is a string indicating the type of the operands and the operation.",
+  "title": "Built-in Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 8,
+  "start_char": 19618,
+  "end_char": 22086,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_482e94da82fc8f58.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:34.392904"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_008.txt"
+}

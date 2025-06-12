@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_013",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "\" NAME name_or_attr ::= attr | NAME attr name_or_attr attr The dotted name in the pattern is looked up using standard Python name resolution rules. The pattern succeeds if the value found compares equal to the subject value (using the == equality operator). == In simple terms NAME1. NAME2 will succeed only if == NAME1. NAME2 NAME1. NAME2 <subject> == NAME1. NAME2 Note If the same value occurs multiple times in the same match statement, the interpreter may cache the first value found and reuse it rather than repeat the same lookup. This cache is strictly tied to a given execution of a given match statement. #### 8. 6. 4. 7. Group Patterns¶ A group pattern allows users to add parentheses around patterns to emphasize the intended grouping. Otherwise, it has no additional syntax. Syntax: group_pattern ::= \"(\" pattern \")\" pattern In simple terms (P) has the same effect as P. (P) P #### 8. 6. 4. 8. Sequence Patterns¶ A sequence pattern contains several subpatterns to be matched against sequence elements. The syntax is similar to the unpacking of a list or tuple. sequence_pattern ::= \"[\" [maybe_sequence_pattern] \"]\" | \"(\" [open_sequence_pattern] \")\" open_sequence_pattern ::= maybe_star_pattern \",\" [maybe_sequence_pattern] maybe_sequence_pattern ::= \",\". maybe_star_pattern+ \",\". maybe_star_pattern ::= star_pattern | pattern star_pattern ::= \"*\" (capture_pattern | wildcard_pattern) maybe_sequence_pattern open_sequence_pattern maybe_star_pattern maybe_sequence_pattern maybe_star_pattern star_pattern pattern capture_pattern wildcard_pattern There is no difference if parentheses or square brackets are used for sequence patterns (i. e. (. ) vs [. ] ). (. ) [. ] Note A single pattern enclosed in parentheses without a trailing comma (e. g. (3 | 4)) is a group pattern. While a single pattern enclosed in square brackets (e. g. [3 | 4]) is still a sequence pattern. (3 | 4) [3 | 4] At most one star subpattern may be in a sequence pattern. The star subpattern may occur in any position. If no star subpattern is present, the sequence pattern is a fixed-length sequence pattern; otherwise it is a variable-length sequence pattern. The following is the logical flow for matching a sequence pattern against a subject value: If the subject value is not a sequence [2], the sequence pattern fails.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 13,
+  "start_char": 29930,
+  "end_char": 32236,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.377571"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_013.txt"
+}

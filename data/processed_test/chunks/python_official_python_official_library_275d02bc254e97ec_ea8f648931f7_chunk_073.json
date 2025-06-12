@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_073",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "ShellExecute() startfile() returns as soon as the associated application is launched. There is no option to wait for the application to close, and no way to retrieve the application’s exit status. The path parameter is relative to the current directory or cwd. If you want to use an absolute path, make sure the first character is not a slash ('/') Use pathlib or the os. path. normpath() function to ensure that paths are properly encoded for Win32. startfile() '/' pathlib os. path. normpath() To reduce interpreter startup overhead, the Win32 ShellExecute() function is not resolved until this function is first called. If the function cannot be resolved, NotImplementedError will be raised. ShellExecute() NotImplementedError Raises an auditing event os. startfile with arguments path, operation. os. startfile path operation Raises an auditing event os. startfile/2 with arguments path, operation, arguments, cwd, show_cmd. os. startfile/2 path operation arguments cwd show_cmd Availability: Windows. Changed in version 3. 10: Added the arguments, cwd and show_cmd arguments, and the os. startfile/2 audit event. os. startfile/2 Execute the command (a string) in a subshell. This is implemented by calling the Standard C function system(), and has the same limitations. Changes to sys. stdin, etc. are not reflected in the environment of the executed command. If command generates any output, it will be sent to the interpreter standard output stream. The C standard does not specify the meaning of the return value of the C function, so the return value of the Python function is system-dependent. system() sys. stdin On Unix, the return value is the exit status of the process encoded in the format specified for wait(). wait() On Windows, the return value is that returned by the system shell after running command. The shell is given by the Windows environment variable COMSPEC: it is usually cmd. exe, which returns the exit status of the command run; on systems using a non-native shell, consult your shell documentation. COMSPEC The subprocess module provides more powerful facilities for spawning new processes and retrieving their results; using that module is preferable to using this function. See the Replacing Older Functions with the subprocess Module section in the subprocess documentation for some helpful recipes. subprocess subprocess On Unix, waitstatus_to_exitcode() can be used to convert the result (exit status) into an exit code.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 73,
+  "start_char": 155759,
+  "end_char": 158218,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.837422"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_073.txt"
+}

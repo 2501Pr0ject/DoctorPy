@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_037",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "readlink() os. rename() Path. rename() os. replace() Path. replace() os. remove() os. unlink() Path. unlink() os. rmdir() Path. rmdir() os. chmod() Path. chmod() os. lchmod() Path. lchmod() pathlib glob os os. path os. path.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 37,
+  "start_char": 72262,
+  "end_char": 72486,
+  "token_count": 69,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.522131"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_037.txt"
+}

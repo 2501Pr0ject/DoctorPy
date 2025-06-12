@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_057",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "upper() b'HELLO WORLD' Lowercase ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyz'. Uppercase ASCII characters are those byte values in the sequence b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'. b'abcdefghijklmnopqrstuvwxyz' b'ABCDEFGHIJKLMNOPQRSTUVWXYZ' Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. Return a copy of the sequence left filled with ASCII b'0' digits to make a sequence of length width. A leading sign prefix (b'+'/ b'-') is handled by inserting the padding after the sign character rather than before. For bytes objects, the original sequence is returned if width is less than or equal to len(seq). b'0' b'+' b'-' bytes len(seq) For example: >>> b\"42\". zfill(5) b'00042' >>> b\"-42\". zfill(5) b'-0042' Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. ### printf-style Bytes Formatting¶ printf Note The formatting operations described here exhibit a variety of quirks that lead to a number of common errors (such as failing to display tuples and dictionaries correctly). If the value being printed may be a tuple or dictionary, wrap it in a tuple. Bytes objects (bytes/bytearray) have one unique built-in operation: the % operator (modulo). This is also known as the bytes formatting or interpolation operator. Given format % values (where format is a bytes object), % conversion specifications in format are replaced with zero or more elements of values. The effect is similar to using the sprintf() in the C language. bytes bytearray % format % values % sprintf() If format requires a single argument, values may be a single non-tuple object. [5] Otherwise, values must be a tuple with exactly the number of items specified by the format bytes object, or a single mapping object (for example, a dictionary). A conversion specifier contains two or more characters and has the following components, which must occur in this order: The '%' character, which marks the start of the specifier. The '%' character, which marks the start of the specifier. '%' Mapping key (optional), consisting of a parenthesised sequence of characters (for example, (somename)). Mapping key (optional), consisting of a parenthesised sequence of characters (for example, (somename)).",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 57,
+  "start_char": 117477,
+  "end_char": 119842,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.230790"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_057.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_027",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "1' __author__ = 'Cardinal Biggles' import os import sys # Correct: spam(ham[1], {eggs: 2}) # Wrong: spam( ham[ 1 ], { eggs: 2 } ) # Correct: foo = (0,) # Wrong: bar = (0, ) # Correct: if x == 4: print(x, y); x, y = y, x # Wrong: if x == 4 : print(x , y) ; x , y = y , x # Correct: ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:] ham[lower:upper], ham[lower:upper:], ham[lower::step] ham[lower+offset : upper+offset] ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)] ham[lower + offset : upper + offset] # Wrong: ham[lower + offset:upper + offset] ham[1: 9], ham[1 :9], ham[1:9 :3] ham[lower : : step] ham[ : upper] # Correct: spam(1) # Wrong: spam (1) # Correct: dct['key'] = lst[index] # Wrong: dct ['key'] = lst [index] # Correct: x = 1 y = 2 long_variable = 3 # Wrong: x = 1 y = 2 long_variable = 3 = += -= == < >. = <= >= in not in is is not and or not # Correct: i = i + 1 submitted += 1 x = x*2 - 1 hypot2 = x*x + y*y c = (a+b) * (a-b) # Wrong: i=i+1 submitted +=1 x = x * 2 - 1 hypot2 = x * x + y * y c = (a + b) * (a - b) -> # Correct: def munge(input: AnyStr):. def munge() -> PosInt:. # Wrong: def munge(input:AnyStr):. def munge()->PosInt:. = # Correct: def complex(real, imag=0. 0): return magic(r=real, i=imag) # Wrong: def complex(real, imag = 0.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 27,
+  "start_char": 57713,
+  "end_char": 58981,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.790173"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_027.txt"
+}

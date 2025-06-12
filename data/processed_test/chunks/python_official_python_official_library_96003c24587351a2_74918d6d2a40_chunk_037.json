@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_037",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "Its output is the same as regular zip(): >>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True)) [('a', 1), ('b', 2), ('c', 3)] Unlike the default behavior, it raises a ValueError if one iterable is exhausted before the others: >>> for item in zip(range(3), ['fee', 'fi', 'fo', 'fum'], strict=True):. print(item). (0, 'fee') (1, 'fi') (2, 'fo') Traceback (most recent call last):. ValueError: zip() argument 2 is longer than argument 1 Without the strict=True argument, any bug that results in iterables of different lengths will be silenced, possibly manifesting as a hard-to-find bug in another part of the program. zip() is often used in cases where the iterables are assumed to be of equal length. In such cases, it’s recommended to use the strict=True option. Its output is the same as regular zip(): zip() strict=True zip() >>> list(zip(('a', 'b', 'c'), (1, 2, 3), strict=True)) [('a', 1), ('b', 2), ('c', 3)] Unlike the default behavior, it raises a ValueError if one iterable is exhausted before the others: ValueError >>> for item in zip(range(3), ['fee', 'fi', 'fo', 'fum'], strict=True):. print(item). (0, 'fee') (1, 'fi') (2, 'fo') Traceback (most recent call last):. ValueError: zip() argument 2 is longer than argument 1 Without the strict=True argument, any bug that results in iterables of different lengths will be silenced, possibly manifesting as a hard-to-find bug in another part of the program. strict=True Shorter iterables can be padded with a constant value to make all the iterables have the same length. This is done by itertools. zip_longest(). Shorter iterables can be padded with a constant value to make all the iterables have the same length. This is done by itertools. zip_longest(). itertools. zip_longest() Edge cases: With a single iterable argument, zip() returns an iterator of 1-tuples. With no arguments, it returns an empty iterator.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 37,
+  "start_char": 79592,
+  "end_char": 81465,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.027026"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_037.txt"
+}

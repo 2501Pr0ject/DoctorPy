@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_001",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": ") 0 False 1 True or and ## Boolean Operations — and, or, not¶ and or not These are the Boolean operations, ordered by ascending priority: Operation Result Notes x or y x or y if x is true, then x, else y (1) x and y x and y if x is false, then x, else y (2) not x not x if x is false, then True, else False True False (3) Notes: This is a short-circuit operator, so it only evaluates the second argument if the first one is false. This is a short-circuit operator, so it only evaluates the second argument if the first one is false. This is a short-circuit operator, so it only evaluates the second argument if the first one is true. This is a short-circuit operator, so it only evaluates the second argument if the first one is true. not has a lower priority than non-Boolean operators, so not a == b is interpreted as not (a == b), and a == not b is a syntax error. not has a lower priority than non-Boolean operators, so not a == b is interpreted as not (a == b), and a == not b is a syntax error. not not a == b not (a == b) a == not b ## Comparisons¶ There are eight comparison operations in Python. They all have the same priority (which is higher than that of the Boolean operations). Comparisons can be chained arbitrarily; for example, x < y <= z is equivalent to x < y and y <= z, except that y is evaluated only once (but in both cases z is not evaluated at all when x < y is found to be false). x < y <= z x < y and y <= z x < y This table summarizes the comparison operations: Operation Meaning < < strictly less than <= <= less than or equal > > strictly greater than >= >= greater than or equal == == equal. =. = not equal is is object identity is not is not negated object identity Objects of different types, except different numeric types, never compare equal. The == operator is always defined but for some object types (for example, class objects) is equivalent to is. The <, <=, > and >= operators are only defined where they make sense; for example, they raise a TypeError exception when one of the arguments is a complex number.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 1,
+  "start_char": 1871,
+  "end_char": 3922,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.180193"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_001.txt"
+}

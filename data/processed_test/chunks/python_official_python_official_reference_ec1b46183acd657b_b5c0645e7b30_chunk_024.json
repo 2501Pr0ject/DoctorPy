@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_024",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "Programmer’s note: Variables defined in the class definition are class attributes; they are shared by instances. Instance attributes can be set in a method with self. name = value. Both class and instance attributes are accessible through the notation “self. name”, and an instance attribute hides a class attribute with the same name when accessed in this way. Class attributes can be used as defaults for instance attributes, but using mutable values there can lead to unexpected results. Descriptors can be used to create instance variables with different implementation details. self. name = value self. name See also The proposal that changed the declaration of metaclasses to the current syntax, and the semantics for how classes with metaclasses are constructed. The proposal that added class decorators. Function and method decorators were introduced in PEP 318. ## 8. 9. Coroutines¶ Added in version 3. 5. ### 8. 9. 1. Coroutine function definition¶ async_funcdef ::= [decorators] \"async\" \"def\" funcname \"(\" [parameter_list] \")\" [\"->\" expression] \":\" suite decorators funcname parameter_list expression suite Execution of Python coroutines can be suspended and resumed at many points (see coroutine). await expressions, async for and async with can only be used in the body of a coroutine function. await async for async with Functions defined with async def syntax are always coroutine functions, even if they do not contain await or async keywords. async def await async It is a SyntaxError to use a yield from expression inside the body of a coroutine function. SyntaxError yield from An example of a coroutine function: async def func(param1, param2): do_stuff() await some_coroutine() Changed in version 3. 7: await and async are now keywords; previously they were only treated as such inside the body of a coroutine function. await async ### 8. 9. 2. The async for statement¶ async for async_for_stmt ::= \"async\" for_stmt for_stmt An asynchronous iterable provides an aiter method that directly returns an asynchronous iterator, which can call asynchronous code in its anext method. __aiter__ __anext__ The async for statement allows convenient iteration over asynchronous iterables. async for The following code: async for TARGET in ITER: SUITE else: SUITE2 Is semantically equivalent to: iter = (ITER) iter = type(iter).",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 24,
+  "start_char": 56402,
+  "end_char": 58739,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.386600"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_024.txt"
+}

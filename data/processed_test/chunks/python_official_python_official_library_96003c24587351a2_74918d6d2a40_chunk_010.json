@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_010",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "__builtins__ builtins __builtins__ eval() eval() eval() nonlocal Example: >>> x = 1 >>> eval('x+1') 2 This function can also be used to execute arbitrary code objects (such as those created by compile()). In this case, pass a code object instead of a string. If the code object has been compiled with 'exec' as the mode argument, eval()'s return value will be None. compile() 'exec' eval() None Hints: dynamic execution of statements is supported by the exec() function. The globals() and locals() functions return the current global and local dictionary, respectively, which may be useful to pass around for use by eval() or exec(). exec() globals() locals() eval() exec() If the given source is a string, then leading and trailing spaces and tabs are stripped. See ast. literal_eval() for a function that can safely evaluate strings with expressions containing only literals. ast. literal_eval() Raises an auditing event exec with the code object as the argument. Code compilation events may also be raised. Raises an auditing event exec with the code object as the argument. Code compilation events may also be raised. exec Changed in version 3. 13: The globals and locals arguments can now be passed as keywords. Changed in version 3. 13: The semantics of the default locals namespace have been adjusted as described for the locals() builtin. locals() Warning This function executes arbitrary code. Calling it with user-supplied input may lead to security vulnerabilities. This function supports dynamic execution of Python code. source must be either a string or a code object. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs). [1] If it is a code object, it is simply executed. In all cases, the code that’s executed is expected to be valid as file input (see the section File input in the Reference Manual). Be aware that the nonlocal, yield, and return statements may not be used outside of function definitions even within the context of code passed to the exec() function. The return value is None. nonlocal yield return exec() None In all cases, if the optional parts are omitted, the code is executed in the current scope. If only globals is provided, it must be a dictionary (and not a subclass of dictionary), which will be used for both the global and the local variables.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 10,
+  "start_char": 21159,
+  "end_char": 23523,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.003116"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_010.txt"
+}

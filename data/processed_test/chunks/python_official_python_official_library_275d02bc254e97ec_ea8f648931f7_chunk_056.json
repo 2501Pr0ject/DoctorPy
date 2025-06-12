@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_056",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "10. Read value from an eventfd() file descriptor and return a 64 bit unsigned int. The function does not verify that fd is an eventfd(). eventfd() eventfd() Availability: Linux >= 2. 6. 27 Added in version 3. 10. Add value to an eventfd() file descriptor. value must be a 64 bit unsigned int. The function does not verify that fd is an eventfd(). eventfd() eventfd() Availability: Linux >= 2. 6. 27 Added in version 3. 10. Set close-on-exec flag for new eventfd() file descriptor. eventfd() Availability: Linux >= 2. 6. 27 Added in version 3. 10. Set O_NONBLOCK status flag for new eventfd() file descriptor. O_NONBLOCK eventfd() Availability: Linux >= 2. 6. 27 Added in version 3. 10. Provide semaphore-like semantics for reads from an eventfd() file descriptor. On read the internal counter is decremented by one. eventfd() Availability: Linux >= 2. 6. 30 Added in version 3. 10. ### Timer File Descriptors¶ Added in version 3. 13. These functions provide support for Linux’s timer file descriptor API. Naturally, they are all only available on Linux. Create and return a timer file descriptor (timerfd). The file descriptor returned by timerfd_create() supports: timerfd_create() read() read() read() select() select() select() poll() poll() poll() The file descriptor’s read() method can be called with a buffer size of 8. If the timer has already expired one or more times, read() returns the number of expirations with the host’s endianness, which may be converted to an int by int. from_bytes(x, byteorder=sys. byteorder). read() read() int int. from_bytes(x, byteorder=sys. byteorder) select() and poll() can be used to wait until timer expires and the file descriptor is readable. select() poll() clockid must be a valid clock ID, as defined in the time module: time time. CLOCK_REALTIME time. CLOCK_REALTIME time. CLOCK_REALTIME time. CLOCK_MONOTONIC time. CLOCK_MONOTONIC time. CLOCK_MONOTONIC time. CLOCK_BOOTTIME (Since Linux 3.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 56,
+  "start_char": 119524,
+  "end_char": 121465,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.821167"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_056.txt"
+}

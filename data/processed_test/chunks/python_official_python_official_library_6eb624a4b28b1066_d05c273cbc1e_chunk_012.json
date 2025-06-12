@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_012",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "ctime() invokes, but which date. ctime() does not invoke) conforms to the C standard. ctime() time. ctime() date. ctime() Return a string representing the date, controlled by an explicit format string. Format codes referring to hours, minutes or seconds will see 0 values. See also strftime() and strptime() Behavior and date. isoformat(). date. isoformat() Same as date. strftime(). This makes it possible to specify a format string for a date object in formatted string literals and when using str. format(). See also strftime() and strptime() Behavior and date. isoformat(). date. strftime() date str. format() date. isoformat() ### Examples of Usage: date¶ date Example of counting days to an event: >>> import time >>> from datetime import date >>> today = date. today() >>> today datetime. date(2007, 12, 5) >>> today == date. fromtimestamp(time. time()) True >>> my_birthday = date(today. year, 6, 24) >>> if my_birthday < today:. my_birthday = my_birthday. replace(year=today. year + 1). >>> my_birthday datetime. date(2008, 6, 24) >>> time_to_birthday = abs(my_birthday - today) >>> time_to_birthday. days 202 More examples of working with date: date >>> from datetime import date >>> d = date. fromordinal(730920) # 730920th day after 1. 1. 0001 >>> d datetime. date(2002, 3, 11) >>> # Methods related to formatting string output >>> d. isoformat() '2002-03-11' >>> d. strftime(\"%d/%m/%y\") '11/03/02' >>> d. strftime(\"%A %d. %B %Y\") 'Monday 11. March 2002' >>> d. ctime() 'Mon Mar 11 00:00:00 2002' >>> 'The {1} is {0:%d}, the {2} is {0:%B}. '. format(d, \"day\", \"month\") 'The day is 11, the month is March. ' >>> # Methods for to extracting 'components' under different calendars >>> t = d. timetuple() >>> for i in t:.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 12,
+  "start_char": 24155,
+  "end_char": 25884,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.390069"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_012.txt"
+}

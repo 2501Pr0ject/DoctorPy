@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Vector stores
+vector_stores/
+chroma_db/
+
+# Environment variables
+.env
+
+# Data
+data/raw/
+data/processed/
+data/databases/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore

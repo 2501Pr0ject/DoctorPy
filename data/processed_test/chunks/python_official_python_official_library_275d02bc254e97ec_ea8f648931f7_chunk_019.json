@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_019",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "The oflag argument is used to set file status flags and file access modes as specified in the manual page of posix_openpt() of your system. posix_openpt() posix_openpt() The returned file descriptor is non-inheritable. If the value O_CLOEXEC is available on the system, it is added to oflag. O_CLOEXEC Availability: Unix, not WASI. Added in version 3. 13. Read from a file descriptor fd at a position of offset into mutable bytes-like objects buffers, leaving the file offset unchanged. Transfer data into each buffer until it is full and then move on to the next buffer in the sequence to hold the rest of the data. The flags argument contains a bitwise OR of zero or more of the following flags: RWF_HIPRI RWF_HIPRI RWF_HIPRI RWF_NOWAIT RWF_NOWAIT RWF_NOWAIT Return the total number of bytes actually read which can be less than the total capacity of all the objects. The operating system may set a limit (sysconf() value 'SC_IOV_MAX') on the number of buffers that can be used. sysconf() 'SC_IOV_MAX' Combine the functionality of os. readv() and os. pread(). os. readv() os. pread() Availability: Linux >= 2. 6. 30, FreeBSD >= 6. 0, OpenBSD >= 2. 7, AIX >= 7. 1. Using flags requires Linux >= 4. 6. Added in version 3. 7. Do not wait for data which is not immediately available. If this flag is specified, the system call will return instantly if it would have to read data from the backing storage or wait for a lock. If some data was successfully read, it will return the number of bytes read. If no bytes were read, it will return -1 and set errno to errno. EAGAIN. -1 errno. EAGAIN Availability: Linux >= 4. 14. Added in version 3. 7. High priority read/write. Allows block-based filesystems to use polling of the device, which provides lower latency, but may use additional resources. Currently, on Linux, this feature is usable only on a file descriptor opened using the O_DIRECT flag. O_DIRECT Availability: Linux >= 4. 6. Added in version 3. 7.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 19,
+  "start_char": 40916,
+  "end_char": 42871,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.788498"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_019.txt"
+}

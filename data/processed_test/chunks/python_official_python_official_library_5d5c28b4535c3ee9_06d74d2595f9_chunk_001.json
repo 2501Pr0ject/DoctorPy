@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_001",
+  "original_doc_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9",
+  "content": "real, 'imag': obj. imag}. raise TypeError(f'Cannot serialize object of {type(obj)}'). >>> json. dumps(1 + 2j, default=custom_json) '{\"__complex__\": true, \"real\": 1. 0, \"imag\": 2. 0}' Decoding JSON: >>> import json >>> json. loads('[\"foo\", {\"bar\":[\"baz\", null, 1. 0, 2]}]') ['foo', {'bar': ['baz', None, 1. 0, 2]}] >>> json. loads('\"\\\\\"foo\\\\bar\"') '\"foo\\x08ar' >>> from io import StringIO >>> io = StringIO('[\"streaming API\"]') >>> json. load(io) ['streaming API'] Customizing JSON object decoding: >>> import json >>> def as_complex(dct):. if '__complex__' in dct:. return complex(dct['real'], dct['imag']). return dct. >>> json. loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',. object_hook=as_complex) (1+2j) >>> import decimal >>> json. loads('1. 1', parse_float=decimal. Decimal) Decimal('1. 1') Extending JSONEncoder: JSONEncoder >>> import json >>> class ComplexEncoder(json. JSONEncoder):. def default(self, obj):. if isinstance(obj, complex):. return [obj. real, obj. imag]. # Let the base class default method raise the TypeError. return super(). default(obj). >>> json. dumps(2 + 1j, cls=ComplexEncoder) '[2. 0, 1. 0]' >>> ComplexEncoder(). encode(2 + 1j) '[2. 0, 1. 0]' >>> list(ComplexEncoder(). iterencode(2 + 1j)) ['[2. 0', ', 1. 0', ']'] Using json. tool from the shell to validate and pretty-print: json. tool $ echo '{\"json\":\"obj\"}' | python -m json. tool { \"json\": \"obj\" } $ echo '{1. 2:3. 4}' | python -m json. tool Expecting property name enclosed in double quotes: line 1 column 2 (char 1) See Command Line Interface for detailed documentation.",
+  "title": "json — JSON encoder and decoder.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 1,
+  "start_char": 1796,
+  "end_char": 3365,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5d5c28b4535c3ee9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.138697"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_001.txt"
+}

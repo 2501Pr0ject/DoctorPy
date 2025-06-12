@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_006",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "Its syntax is the same as for comprehensions, except that it is enclosed in parentheses instead of brackets or curly braces. Variables used in the generator expression are evaluated lazily when the next() method is called for the generator object (in the same fashion as normal generators). However, the iterable expression in the leftmost for clause is immediately evaluated, so that an error produced by it will be emitted at the point where the generator expression is defined, rather than at the point where the first value is retrieved. Subsequent for clauses and any filter condition in the leftmost for clause cannot be evaluated in the enclosing scope as they may depend on the values obtained from the leftmost iterable. For example: (xy for x in range(10) for y in range(x, x+10)). __next__() for for for (x*y for x in range(10) for y in range(x, x+10)) The parentheses can be omitted on calls with only one argument. See section Calls for details. To avoid interfering with the expected operation of the generator expression itself, yield and yield from expressions are prohibited in the implicitly defined generator. yield yield from If a generator expression contains either async for clauses or await expressions it is called an asynchronous generator expression. An asynchronous generator expression returns a new asynchronous generator object, which is an asynchronous iterator (see Asynchronous Iterators). async for await Added in version 3. 6: Asynchronous generator expressions were introduced. Changed in version 3. 7: Prior to Python 3. 7, asynchronous generator expressions could only appear in async def coroutines. Starting with 3. 7, any function can use asynchronous generator expressions. async def Changed in version 3. 8: yield and yield from prohibited in the implicitly nested scope. yield yield from ### 6. 2. 9. Yield expressions¶ yield_atom ::= \"(\" yield_expression \")\" yield_from ::= \"yield\" \"from\" expression yield_expression ::= \"yield\" yield_list | yield_from yield_expression expression yield_list yield_from The yield expression is used when defining a generator function or an asynchronous generator function and thus can only be used in the body of a function definition. Using a yield expression in a function’s body causes that function to be a generator function, and using it in an async def function’s body causes that coroutine function to be an asynchronous generator function.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 6,
+  "start_char": 13317,
+  "end_char": 15744,
+  "token_count": 480,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.575644"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_006.txt"
+}

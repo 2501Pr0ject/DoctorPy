@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_011",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "Rather not: # Wrong: if foo == 'blah': do_blah_thing() for x in lst: total += x while t < 10: t = delay() Definitely not: # Wrong: if foo == 'blah': do_blah_thing() else: do_non_blah_thing() try: something() finally: cleanup() do_one(); do_two(); do_three(long, argument, list, like, this) if foo == 'blah': one(); two(); three() Rather not: # Wrong: if foo == 'blah': do_blah_thing() for x in lst: total += x while t < 10: t = delay() Definitely not: # Wrong: if foo == 'blah': do_blah_thing() else: do_non_blah_thing() try: something() finally: cleanup() do_one(); do_two(); do_three(long, argument, list, like, this) if foo == 'blah': one(); two(); three() ## When to Use Trailing Commas Trailing commas are usually optional, except they are mandatory when making a tuple of one element. For clarity, it is recommended to surround the latter in (technically redundant) parentheses: # Correct: FILES = ('setup. cfg',) # Wrong: FILES = 'setup. cfg', When trailing commas are redundant, they are often helpful when a version control system is used, when a list of values, arguments or imported items is expected to be extended over time. The pattern is to put each value (etc. ) on a line by itself, always adding a trailing comma, and add the close parenthesis/bracket/brace on the next line. However it does not make sense to have a trailing comma on the same line as the closing delimiter (except in the above case of singleton tuples): # Correct: FILES = [ 'setup. cfg', 'tox. ini', ] initialize(FILES, error=True, ) # Wrong: FILES = ['setup. cfg', 'tox. ini',] initialize(FILES, error=True,) ## Comments Comments that contradict the code are worse than no comments. Always make a priority of keeping the comments up-to-date when the code changes. Comments should be complete sentences. The first word should be capitalized, unless it is an identifier that begins with a lower case letter (never alter the case of identifiers. ).",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 11,
+  "start_char": 22147,
+  "end_char": 24080,
+  "token_count": 484,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.776345"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_011.txt"
+}

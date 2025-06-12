@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_004",
+  "original_doc_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443",
+  "content": "3 the compiled version of spam. py would be cached as pycache/spam. cpython-33. pyc. This naming convention allows compiled modules from different releases and different versions of Python to coexist. __pycache__ module. version. pyc __pycache__/spam. cpython-33. pyc Python checks the modification date of the source against the compiled version to see if it’s out of date and needs to be recompiled. This is a completely automatic process. Also, the compiled modules are platform-independent, so the same library can be shared among systems with different architectures. Python does not check the cache in two circumstances. First, it always recompiles and does not store the result for the module that’s loaded directly from the command line. Second, it does not check the cache if there is no source module. To support a non-source (compiled only) distribution, the compiled module must be in the source directory, and there must not be a source module. Some tips for experts: You can use the -O or -OO switches on the Python command to reduce the size of a compiled module. The -O switch removes assert statements, the -OO switch removes both assert statements and doc strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an opt- tag and are usually smaller. Future releases may change the effects of optimization. You can use the -O or -OO switches on the Python command to reduce the size of a compiled module. The -O switch removes assert statements, the -OO switch removes both assert statements and doc strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an opt- tag and are usually smaller. Future releases may change the effects of optimization. -O -OO -O -OO opt- A program doesn’t run any faster when it is read from a. pyc file than when it is read from a. py file; the only thing that’s faster about. pyc files is the speed with which they are loaded. A program doesn’t run any faster when it is read from a. pyc file than when it is read from a. py file; the only thing that’s faster about. pyc files is the speed with which they are loaded. pyc. py.",
+  "title": "6. Modules.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 4,
+  "start_char": 8134,
+  "end_char": 10402,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_5f190995f7f521af.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.859136"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_004.txt"
+}

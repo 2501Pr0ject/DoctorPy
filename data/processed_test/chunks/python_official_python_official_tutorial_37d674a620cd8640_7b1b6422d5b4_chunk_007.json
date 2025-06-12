@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4_chunk_007",
+  "original_doc_id": "python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4",
+  "content": "Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of namedtuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list. namedtuples A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these. Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses). Ugly, but effective. For example: >>> empty = () >>> singleton = 'hello', # <-- note trailing comma >>> len(empty) 0 >>> len(singleton) 1 >>> singleton ('hello',) The statement t = 12345, 54321, 'hello. ' is an example of tuple packing: the values 12345, 54321 and 'hello. ' are packed together in a tuple. The reverse operation is also possible: t = 12345, 54321, 'hello. ' 12345 54321 'hello. ' >>> x, y, z = t This is called, appropriately enough, sequence unpacking and works for any sequence on the right-hand side. Sequence unpacking requires that there are as many variables on the left side of the equals sign as there are elements in the sequence. Note that multiple assignment is really just a combination of tuple packing and sequence unpacking. ## 5. 4. Sets¶ Python also includes a data type for sets. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference. Curly braces or the set() function can be used to create sets. Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary, a data structure that we discuss in the next section.",
+  "title": "5. Data Structures.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 7,
+  "start_char": 10990,
+  "end_char": 12915,
+  "token_count": 423,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_37d674a620cd8640.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:05.621464"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_37d674a620cd8640_7b1b6422d5b4_chunk_007.txt"
+}

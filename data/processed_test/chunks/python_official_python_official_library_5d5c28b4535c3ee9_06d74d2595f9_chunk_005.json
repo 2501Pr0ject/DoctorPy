@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_005",
+  "original_doc_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9",
+  "content": "read() cls (a JSONDecoder subclass) – If set, a custom JSON decoder. Additional keyword arguments to load() will be passed to the constructor of cls. If None (the default), JSONDecoder is used. cls (a JSONDecoder subclass) – If set, a custom JSON decoder. Additional keyword arguments to load() will be passed to the constructor of cls. If None (the default), JSONDecoder is used. JSONDecoder load() None JSONDecoder object_hook (callable | None) – If set, a function that is called with the result of any JSON object literal decoded (a dict). The return value of this function will be used instead of the dict. This feature can be used to implement custom decoders, for example JSON-RPC class hinting. Default None. object_hook (callable | None) – If set, a function that is called with the result of any JSON object literal decoded (a dict). The return value of this function will be used instead of the dict. This feature can be used to implement custom decoders, for example JSON-RPC class hinting. Default None. dict dict None object_pairs_hook (callable | None) – If set, a function that is called with the result of any JSON object literal decoded with an ordered list of pairs. The return value of this function will be used instead of the dict. This feature can be used to implement custom decoders. If object_hook is also set, object_pairs_hook takes priority. Default None. object_pairs_hook (callable | None) – If set, a function that is called with the result of any JSON object literal decoded with an ordered list of pairs. The return value of this function will be used instead of the dict. This feature can be used to implement custom decoders. If object_hook is also set, object_pairs_hook takes priority. Default None. dict None parse_float (callable | None) – If set, a function that is called with the string of every JSON float to be decoded. If None (the default), it is equivalent to float(num_str). This can be used to parse JSON floats into custom datatypes, for example decimal. Decimal. parse_float (callable | None) – If set, a function that is called with the string of every JSON float to be decoded. If None (the default), it is equivalent to float(num_str). This can be used to parse JSON floats into custom datatypes, for example decimal. Decimal.",
+  "title": "json — JSON encoder and decoder.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 5,
+  "start_char": 9777,
+  "end_char": 12058,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5d5c28b4535c3ee9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.143223"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_005.txt"
+}

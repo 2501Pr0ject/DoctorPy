@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_1811034afddfd51a_93df0401e39e_chunk_020",
+  "original_doc_id": "external_external_guides_1811034afddfd51a_93df0401e39e",
+  "content": "add_argument(\"-v\", \"--verbosity\", action=\"count\", default=0) args = parser. parse_args() answer = args. x**args. y if args. verbosity >= 2: print(f\"Running '{__file__}'\") if args. verbosity >= 1: print(f\"{args. x}^{args. y} == \", end=\"\") print(answer) $ python prog. py 4 2 16 $ python prog. py 4 2 -v 4^2 == 16 $ python prog. py 4 2 -vv Running 'prog. py' 4^2 == 16 -- parse_args() >>> parser = argparse. ArgumentParser(prog='PROG') >>> parser. add_argument('-n', nargs='+') >>> parser. add_argument('args', nargs='*') >>> # ambiguous, so parse_args assumes it's an option >>> parser. parse_args(['-f']) usage: PROG [-h] [-n N [N. ]] [args. ] PROG: error: unrecognized arguments: -f >>> parser. parse_args(['--', '-f']) Namespace(args=['-f'], n=None) >>> # ambiguous, so the -n option greedily accepts arguments >>> parser. parse_args(['-n', '1', '2', '3']) Namespace(args=[], n=['1', '2', '3']) >>> parser. parse_args(['-n', '1', '--', '2', '3']) Namespace(args=['2', '3'], n=['1']) argparse. ArgumentParser add_mutually_exclusive_group() --quiet --verbose import argparse parser = argparse. ArgumentParser() group = parser. add_mutually_exclusive_group() group. add_argument(\"-v\", \"--verbose\", action=\"store_true\") group. add_argument(\"-q\", \"--quiet\", action=\"store_true\") parser. add_argument(\"x\", type=int, help=\"the base\") parser. add_argument(\"y\", type=int, help=\"the exponent\") args = parser. parse_args() answer = args. x**args. y if args. quiet: print(answer) elif args. verbose: print(f\"{args. x} to the power {args. y} equals {answer}\") else: print(f\"{args. x}^{args. y} == {answer}\") $ python prog. py 4 2 4^2 == 16 $ python prog.",
+  "title": "Argparse Tutorial.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 20,
+  "start_char": 40045,
+  "end_char": 41688,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_1811034afddfd51a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.500859"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_1811034afddfd51a_93df0401e39e_chunk_020.txt"
+}

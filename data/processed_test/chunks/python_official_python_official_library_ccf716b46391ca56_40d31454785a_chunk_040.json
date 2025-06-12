@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_040",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "sub(r'def\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\(\\s*\\):',. r'static PyObject*\\npy_\\1(void)\\n{',. 'def myfunc():') 'static PyObject*\\npy_myfunc(void)\\n{' Match >>> def dashrepl(matchobj):. if matchobj. group(0) == '-': return ' '. else: return '-'. >>> re. sub('-{1,2}', dashrepl, 'pro----gram-files') 'pro--gram files' >>> re. sub(r'\\sAND\\s', ' & ', 'Baked Beans And Spam', flags=re. IGNORECASE) 'Baked Beans & Spam' Pattern sub('x*', '-', 'abxd') '-a-b--d-' '-a-b-d-' \\g<name> name (. P<name>. ) \\g<number> \\g<2> \\2 \\g<2>0 \\20 '0' \\g<0> | '\\' '\\' bytes b'\\x00' b'\\x7f' sub() (new_string, number_of_subs_made) | >>> print(re. escape('  >>> legal_chars = string. ascii_lowercase + string. digits + \". #$%&'*+-. ^_|~:\" >>> print('[%s]+' % re. escape(legal_chars)) [abcdefghijklmnopqrstuvwxyz0123456789. \\#\\$%\\&'\\*\\+\\-\\. \\^_\\|\\~:]+ >>> operators = ['+', '-', '*', '/', '**'] >>> print('|'. join(map(re. escape, sorted(operators, reverse=True)))) /|\\-|\\+|\\*\\*|\\* sub() subn() >>> digits_re = r'\\d+' >>> sample = '/usr/sbin/sendmail - 0 errors, 12 warnings' >>> print(re. sub(digits_re, digits_re. replace('\\\\', r'\\\\'), sample)) /usr/sbin/sendmail - \\d+ errors, \\d+ warnings '_' \" are no longer escaped. \" PatternError None None None PatternError error re. compile() re. Pattern [] Match None 0 '^' endpos - 1 rx. search(string, 0, 50) rx. search(string[:50], 0) >>> pattern = re. compile(\"d\") >>> pattern. search(\"dog\") # Match at index 0 <re.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 40,
+  "start_char": 72648,
+  "end_char": 74079,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.836867"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_040.txt"
+}

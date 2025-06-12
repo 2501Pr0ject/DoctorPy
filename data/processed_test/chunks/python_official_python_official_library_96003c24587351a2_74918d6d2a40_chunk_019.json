@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_019",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "Changes made through the mapping object returned from locals() will be visible as assigned, reassigned, or deleted local variables, and assigning, reassigning, or deleting local variables will immediately affect the contents of the returned mapping object. locals() locals() In an optimized scope (including functions, generators, and coroutines), each call to locals() instead returns a fresh dictionary containing the current bindings of the function’s local variables and any nonlocal cell references. In this case, name binding changes made via the returned dict are not written back to the corresponding local variables or nonlocal cell references, and assigning, reassigning, or deleting local variables and nonlocal cell references does not affect the contents of previously returned dictionaries. locals() Calling locals() as part of a comprehension in a function, generator, or coroutine is equivalent to calling it in the containing scope, except that the comprehension’s initialised iteration variables will be included. In other scopes, it behaves as if the comprehension were running as a nested function. locals() Calling locals() as part of a generator expression is equivalent to calling it in a nested generator function. locals() Changed in version 3. 12: The behaviour of locals() in a comprehension has been updated as described in PEP 709. locals() Changed in version 3. 13: As part of PEP 667, the semantics of mutating the mapping objects returned from this function are now defined. The behavior in optimized scopes is now as described above. Aside from being defined, the behaviour in other scopes remains unchanged from previous versions. Return an iterator that applies function to every item of iterable, yielding the results. If additional iterables arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. With multiple iterables, the iterator stops when the shortest iterable is exhausted. For cases where the function inputs are already arranged into argument tuples, see itertools. starmap(). itertools. starmap() Return the largest item in an iterable or the largest of two or more arguments. If one positional argument is provided, it should be an iterable. The largest item in the iterable is returned. If two or more positional arguments are provided, the largest of the positional arguments is returned. There are two optional keyword-only arguments. The key argument specifies a one-argument ordering function like that used for list. sort(). The default argument specifies an object to return if the provided iterable is empty.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 19,
+  "start_char": 40619,
+  "end_char": 43250,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.011092"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_019.txt"
+}

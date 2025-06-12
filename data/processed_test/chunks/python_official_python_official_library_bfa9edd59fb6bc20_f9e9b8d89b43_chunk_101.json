@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_101",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "\") \"They're Bill's Friends. \" __getitem__() None LookupError str. maketrans() codecs s. upper(). isupper() False s '0' '+' '-' len(s) >>> \"42\". zfill(5) '00042' >>> \"-42\". zfill(5) '-0042' await async for = f F {} str. format() str >>> who = 'nobody' >>> nationality = 'Spanish' >>> f'{who. title()} expects the {nationality} Inquisition. ' 'Nobody expects the Spanish Inquisition. ' >>> f'''This is a string. on two lines''' 'This is a string\\non two lines' '{' >>> nationality = 'Spanish' >>> f'The {nationality} Inquisition. ' 'The Spanish Inquisition. ' { } >>> x = 42 >>> f'{{x}} is {x}' '{x} is 42' >>> from math import sqrt >>> f'√2 \\N{ALMOST EQUAL TO} {sqrt(2):. 5f}' '√2 ≈ 1. 41421' str() >>> from fractions import Fraction >>> f'{Fraction(1, 3)}' '1/3'. a ascii(). r repr(). s str() >>> from fractions import Fraction >>> f'{Fraction(1, 3). s}' '1/3' >>> f'{Fraction(1, 3). r}' 'Fraction(1, 3)' >>> question = '¿Dónde está el Presidente. ' >>> print(f'{question. a}') '\\xbfD\\xf3nde est\\xe1 el Presidente. ' = repr(). r >>> from fractions import Fraction >>> calculation = Fraction(1, 3) >>> f'{calculation=}' 'calculation=Fraction(1, 3)' >>> f'{calculation = }' 'calculation = Fraction(1, 3)' >>> f'{calculation =. s}' 'calculation = 1/3' ':' __format__() >>> from fractions import Fraction >>> f'{Fraction(1, 7):. 6f}' '0. 142857' >>> f'{Fraction(1, 7):_^+10}' '___+1/7___' printf str. format() % format % values % sprintf() >>> print('%s has %d quote types.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 101,
+  "start_char": 202684,
+  "end_char": 204153,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.272065"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_101.txt"
+}

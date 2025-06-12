@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_006",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "basicConfig() ### Logging Flow¶ The flow of log event information in loggers and handlers is illustrated in the following diagram. ### Loggers¶ Logger objects have a threefold job. First, they expose several methods to application code so that applications can log messages at runtime. Second, logger objects determine which log messages to act upon based upon severity (the default filtering facility) or filter objects. Third, logger objects pass along relevant log messages to all interested log handlers. Logger The most widely used methods on logger objects fall into two categories: configuration and message sending. These are the most common configuration methods: Logger. setLevel() specifies the lowest-severity log message a logger will handle, where debug is the lowest built-in severity level and critical is the highest built-in severity. For example, if the severity level is INFO, the logger will handle only INFO, WARNING, ERROR, and CRITICAL messages and will ignore DEBUG messages. Logger. setLevel() specifies the lowest-severity log message a logger will handle, where debug is the lowest built-in severity level and critical is the highest built-in severity. For example, if the severity level is INFO, the logger will handle only INFO, WARNING, ERROR, and CRITICAL messages and will ignore DEBUG messages. Logger. setLevel() Logger. addHandler() and Logger. removeHandler() add and remove handler objects from the logger object. Handlers are covered in more detail in Handlers. Logger. addHandler() and Logger. removeHandler() add and remove handler objects from the logger object. Handlers are covered in more detail in Handlers. Logger. addHandler() Logger. removeHandler() Logger. addFilter() and Logger. removeFilter() add and remove filter objects from the logger object. Filters are covered in more detail in Filter Objects. Logger. addFilter() and Logger. removeFilter() add and remove filter objects from the logger object. Filters are covered in more detail in Filter Objects. Logger. addFilter() Logger. removeFilter() You don’t need to always call these methods on every logger you create. See the last two paragraphs in this section. With the logger object configured, the following methods create log messages: Logger. debug(), Logger. info(), Logger. warning(), Logger. error(), and Logger. critical() all create log records with a message and a level that corresponds to their respective method names.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 6,
+  "start_char": 14088,
+  "end_char": 16527,
+  "token_count": 476,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.525616"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_006.txt"
+}

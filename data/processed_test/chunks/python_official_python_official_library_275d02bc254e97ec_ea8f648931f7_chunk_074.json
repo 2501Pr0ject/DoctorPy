@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_074",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "On Windows, the result is directly the exit code. waitstatus_to_exitcode() Raises an auditing event os. system with argument command. os. system command Availability: Unix, Windows, not WASI, not Android, not iOS. Returns the current global process times. The return value is an object with five attributes: user - user time user - user time user system - system time system - system time system children_user - user time of all child processes children_user - user time of all child processes children_user children_system - system time of all child processes children_system - system time of all child processes children_system elapsed - elapsed real time since a fixed point in the past elapsed - elapsed real time since a fixed point in the past elapsed For backwards compatibility, this object also behaves like a five-tuple containing user, system, children_user, children_system, and elapsed in that order. user system children_user children_system elapsed See the Unix manual page times(2) and times(3) manual page on Unix or the GetProcessTimes MSDN on Windows. On Windows, only user and system are known; the other attributes are zero. user system Availability: Unix, Windows. Changed in version 3. 3: Return type changed from a tuple to a tuple-like object with named attributes. Wait for completion of a child process, and return a tuple containing its pid and exit status indication: a 16-bit number, whose low byte is the signal number that killed the process, and whose high byte is the exit status (if the signal number is zero); the high bit of the low byte is set if a core file was produced. If there are no children that could be waited for, ChildProcessError is raised. ChildProcessError waitstatus_to_exitcode() can be used to convert the exit status into an exit code. waitstatus_to_exitcode() Availability: Unix, not WASI, not Android, not iOS. See also The other wait() functions documented below can be used to wait for the completion of a specific child process and have more options. waitpid() is the only one also available on Windows. wait*() waitpid() Wait for the completion of a child process. idtype can be P_PID, P_PGID, P_ALL, or (on Linux) P_PIDFD. The interpretation of id depends on it; see their individual descriptions. P_PID P_PGID P_ALL P_PIDFD options is an OR combination of flags.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 74,
+  "start_char": 158218,
+  "end_char": 160544,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.838252"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_074.txt"
+}

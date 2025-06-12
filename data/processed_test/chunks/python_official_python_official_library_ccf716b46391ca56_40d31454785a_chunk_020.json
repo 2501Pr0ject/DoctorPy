@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_020",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement repl. If the pattern isn’t found, string is returned unchanged. repl can be a string or a function; if it is a string, any backslash escapes in it are processed. That is, \\n is converted to a single newline character, \\r is converted to a carriage return, and so forth. Unknown escapes of ASCII letters are reserved for future use and treated as errors. Other unknown escapes such as \\& are left alone. Backreferences, such as \\6, are replaced with the substring matched by group 6 in the pattern. For example: \\n \\r \\& \\6 >>> re. sub(r'def\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\(\\s*\\):',. r'static PyObject*\\npy_\\1(void)\\n{',. 'def myfunc():') 'static PyObject*\\npy_myfunc(void)\\n{' If repl is a function, it is called for every non-overlapping occurrence of pattern. The function takes a single Match argument, and returns the replacement string. For example: Match >>> def dashrepl(matchobj):. if matchobj. group(0) == '-': return ' '. else: return '-'. >>> re. sub('-{1,2}', dashrepl, 'pro----gram-files') 'pro--gram files' >>> re. sub(r'\\sAND\\s', ' & ', 'Baked Beans And Spam', flags=re. IGNORECASE) 'Baked Beans & Spam' The pattern may be a string or a Pattern. Pattern The optional argument count is the maximum number of pattern occurrences to be replaced; count must be a non-negative integer. If omitted or zero, all occurrences will be replaced. Adjacent empty matches are not possible, but an empty match can occur immediately after a non-empty match. As a result, sub('x', '-', 'abxd') returns '-a-b--d-' instead of '-a-b-d-'. sub('x*', '-', 'abxd') '-a-b--d-' '-a-b-d-' In string-type repl arguments, in addition to the character escapes and backreferences described above, \\g will use the substring matched by the group named name, as defined by the (. P. ) syntax.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 20,
+  "start_char": 39138,
+  "end_char": 41031,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.819306"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_020.txt"
+}

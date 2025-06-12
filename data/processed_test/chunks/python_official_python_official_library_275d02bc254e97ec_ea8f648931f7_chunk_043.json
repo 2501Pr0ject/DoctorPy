@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_043",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "Perform the equivalent of a stat() system call on the given path. path may be specified as either a string or bytes – directly or indirectly through the PathLike interface – or as an open file descriptor. Return a stat_result object. stat() PathLike stat_result This function normally follows symlinks; to stat a symlink add the argument follow_symlinks=False, or use lstat(). follow_symlinks=False lstat() This function can support specifying a file descriptor and not following symlinks. On Windows, passing follow_symlinks=False will disable following all name-surrogate reparse points, which includes symlinks and directory junctions. Other types of reparse points that do not resemble links or that the operating system is unable to follow will be opened directly. When following a chain of multiple links, this may result in the original link being returned instead of the non-link that prevented full traversal. To obtain stat results for the final path in this case, use the os. path. realpath() function to resolve the path name as far as possible and call lstat() on the result. This does not apply to dangling symlinks or junction points, which will raise the usual exceptions. follow_symlinks=False os. path. realpath() lstat() Example: >>> import os >>> statinfo = os. stat('somefile. txt') >>> statinfo os. stat_result(st_mode=33188, st_ino=7876932, st_dev=234881026, st_nlink=1, st_uid=501, st_gid=501, st_size=264, st_atime=1297230295, st_mtime=1297230027, st_ctime=1297230027) >>> statinfo. st_size 264 See also fstat() and lstat() functions. fstat() lstat() Changed in version 3. 3: Added the dir_fd and follow_symlinks parameters, specifying a file descriptor instead of a path. Changed in version 3. 6: Accepts a path-like object. Changed in version 3. 8: On Windows, all reparse points that can be resolved by the operating system are now followed, and passing follow_symlinks=False disables following all name surrogate reparse points.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 43,
+  "start_char": 92239,
+  "end_char": 94196,
+  "token_count": 464,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.809097"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_043.txt"
+}

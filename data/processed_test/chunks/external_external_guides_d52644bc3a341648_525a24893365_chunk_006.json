@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_006",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "yourclass import YourClass If this spelling causes local name clashes, then spell them explicitly: import myclass import foo. bar. yourclass and use myclass. MyClass and foo. bar. yourclass. YourClass. myclass. MyClass foo. bar. yourclass. YourClass Wildcard imports (from import ) should be avoided, as they make it unclear which names are present in the namespace, confusing both readers and many automated tools. There is one defensible use case for a wildcard import, which is to republish an internal interface as part of a public API (for example, overwriting a pure Python implementation of an interface with the definitions from an optional accelerator module and exactly which definitions will be overwritten isn’t known in advance). When republishing names this way, the guidelines below regarding public and internal interfaces still apply. from <module> import * When republishing names this way, the guidelines below regarding public and internal interfaces still apply. ### Module Level Dunder Names Module level “dunders” (i. e. names with two leading and two trailing underscores) such as all, author, version, etc. should be placed after the module docstring but before any import statements except from future imports. Python mandates that future-imports must appear in the module before any other code except docstrings: __all__ __author__ __version__ from __future__ \"\"\"This is the example module. This module does stuff. \"\"\" from __future__ import barry_as_FLUFL __all__ = ['a', 'b', 'c'] __version__ = '0. 1' __author__ = 'Cardinal Biggles' import os import sys ## String Quotes In Python, single-quoted strings and double-quoted strings are the same. This PEP does not make a recommendation for this. Pick a rule and stick to it. When a string contains single or double quote characters, however, use the other one to avoid backslashes in the string. It improves readability. For triple-quoted strings, always use double quote characters to be consistent with the docstring convention in PEP 257.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 6,
+  "start_char": 14572,
+  "end_char": 16591,
+  "token_count": 433,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.772306"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_006.txt"
+}

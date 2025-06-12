@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_020",
+  "original_doc_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b",
+  "content": "backslashes or newline characters. ' 'This string will not include backslashes or newline characters. ' 0o377 DeprecationWarning 0o377 SyntaxWarning SyntaxError DeprecationWarning SyntaxWarning SyntaxError r\"\\\"\" r\"\\\" \"hello\" 'world' \"helloworld\" re. compile(\"[A-Za-z_]\" # letter or underscore \"[A-Za-z0-9_]*\" # letter, digit or underscore ) 'f' 'F' {} f_string ::= (literal_char | \"{{\" | \"}}\" | replacement_field)* replacement_field ::= \"{\" f_expression [\"=\"] [\". \" conversion] [\":\" format_spec] \"}\" f_expression ::= (conditional_expression | \"*\" or_expr) (\",\" conditional_expression | \",\" \"*\" or_expr)* [\",\"] | yield_expression conversion ::= \"s\" | \"r\" | \"a\" format_spec ::= (literal_char | replacement_field)* literal_char ::= <any code point except \"{\", \"}\" or NULL> literal_char replacement_field f_expression conversion format_spec conditional_expression or_expr conditional_expression or_expr yield_expression literal_char replacement_field '{{' '}}' '{' '=' '. ' ':' '}' lambda := # >>> f\"abc{a # This is a comment }\". + 3}\" 'abc5' await async for '=' '=' '{' '=' '=' repr() str() '. r' '=' '. s' str() '. r' repr() '. a' ascii() format() __format__() str. format() >>> name = \"Fred\" >>> f\"He said his name is {name. r}. \" \"He said his name is 'Fred'. \" >>> f\"He said his name is {repr(name)}. \" # repr() is equivalent to. r \"He said his name is 'Fred'. \" >>> width = 10 >>> precision = 4 >>> value = decimal. Decimal(\"12. 34567\") >>> f\"result: {value:{width}. {precision}}\" # nested fields 'result: 12.",
+  "title": "2. Lexical analysis.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 20,
+  "start_char": 39126,
+  "end_char": 40636,
+  "token_count": 404,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_99fb26420c3873aa.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:25.409528"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_020.txt"
+}

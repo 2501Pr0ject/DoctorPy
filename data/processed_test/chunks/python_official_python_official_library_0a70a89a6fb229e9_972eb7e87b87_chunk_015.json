@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_015",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "The default value is $. Note that this should not be a regular expression, as the implementation will call re. escape() on this string as needed. Note further that you cannot change the delimiter after class creation (i. e. a different delimiter must be set in the subclass’s class namespace). $ re. escape() idpattern – This is the regular expression describing the pattern for non-braced placeholders. The default value is the regular expression (. a:[_a-z][_a-z0-9]). If this is given and braceidpattern is None this pattern will also apply to braced placeholders. Note Since default flags is re. IGNORECASE, pattern [a-z] can match with some non-ASCII characters. That’s why we use the local a flag here. Changed in version 3. 7: braceidpattern can be used to define separate patterns used inside and outside the braces. idpattern – This is the regular expression describing the pattern for non-braced placeholders. The default value is the regular expression (. a:[_a-z][_a-z0-9]*). If this is given and braceidpattern is None this pattern will also apply to braced placeholders. (. a:[_a-z][_a-z0-9]*) None Note Since default flags is re. IGNORECASE, pattern [a-z] can match with some non-ASCII characters. That’s why we use the local a flag here. re. IGNORECASE [a-z] a Changed in version 3. 7: braceidpattern can be used to define separate patterns used inside and outside the braces. braceidpattern – This is like idpattern but describes the pattern for braced placeholders. Defaults to None which means to fall back to idpattern (i. e. the same pattern is used both inside and outside braces). If given, this allows you to define different patterns for braced and unbraced placeholders. Added in version 3. 7. braceidpattern – This is like idpattern but describes the pattern for braced placeholders. Defaults to None which means to fall back to idpattern (i. e. the same pattern is used both inside and outside braces). If given, this allows you to define different patterns for braced and unbraced placeholders. None Added in version 3. 7. flags – The regular expression flags that will be applied when compiling the regular expression used for recognizing substitutions. The default value is re. IGNORECASE.",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 15,
+  "start_char": 31100,
+  "end_char": 33320,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.226006"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_015.txt"
+}

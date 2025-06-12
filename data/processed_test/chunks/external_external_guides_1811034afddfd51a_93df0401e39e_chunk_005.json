@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_1811034afddfd51a_93df0401e39e_chunk_005",
+  "original_doc_id": "external_external_guides_1811034afddfd51a_93df0401e39e",
+  "content": "add_argument(\"--verbose\", help=\"increase output verbosity\", action=\"store_true\") args = parser. parse_args() if args. verbose: print(\"verbosity turned on\") And the output: $ python prog. py --verbose verbosity turned on $ python prog. py --verbose 1 usage: prog. py [-h] [--verbose] prog. py: error: unrecognized arguments: 1 $ python prog. py --help usage: prog. py [-h] [--verbose] options: -h, --help show this help message and exit --verbose increase output verbosity Here is what is happening: The option is now more of a flag than something that requires a value. We even changed the name of the option to match that idea. Note that we now specify a new keyword, action, and give it the value \"store_true\". This means that, if the option is specified, assign the value True to args. verbose. Not specifying it implies False. The option is now more of a flag than something that requires a value. We even changed the name of the option to match that idea. Note that we now specify a new keyword, action, and give it the value \"store_true\". This means that, if the option is specified, assign the value True to args. verbose. Not specifying it implies False. action \"store_true\" True args. verbose False It complains when you specify a value, in true spirit of what flags actually are. It complains when you specify a value, in true spirit of what flags actually are. Notice the different help text. Notice the different help text. ### Short options¶ If you are familiar with command line usage, you will notice that I haven’t yet touched on the topic of short versions of the options. It’s quite simple: import argparse parser = argparse. ArgumentParser() parser. add_argument(\"-v\", \"--verbose\", help=\"increase output verbosity\", action=\"store_true\") args = parser. parse_args() if args. verbose: print(\"verbosity turned on\") And here goes: $ python prog. py -v verbosity turned on $ python prog. py --help usage: prog. py [-h] [-v] options: -h, --help show this help message and exit -v, --verbose increase output verbosity Note that the new ability is also reflected in the help text. ## Combining Positional and Optional arguments¶ Our program keeps growing in complexity: import argparse parser = argparse. ArgumentParser() parser.",
+  "title": "Argparse Tutorial.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 5,
+  "start_char": 10834,
+  "end_char": 13074,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_1811034afddfd51a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.487796"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_1811034afddfd51a_93df0401e39e_chunk_005.txt"
+}

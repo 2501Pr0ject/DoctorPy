@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_037",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "name async_funcdef ::= [decorators] \"async\" \"def\" funcname \"(\" [parameter_list] \")\" [\"->\" expression] \":\" suite decorators funcname parameter_list expression suite await async for async with async def await async SyntaxError yield from async def func(param1, param2): do_stuff() await some_coroutine() await async async for async_for_stmt ::= \"async\" for_stmt for_stmt __aiter__ __anext__ async for async for TARGET in ITER: SUITE else: SUITE2 iter = (ITER) iter = type(iter). __aiter__(iter) running = True while running: try: TARGET = await type(iter). __anext__(iter) except StopAsyncIteration: running = False else: SUITE else: SUITE2 __aiter__() __anext__() SyntaxError async for async with async_with_stmt ::= \"async\" with_stmt with_stmt async with EXPRESSION as TARGET: SUITE manager = (EXPRESSION) aenter = type(manager). __aenter__ aexit = type(manager). __aexit__ value = await aenter(manager) hit_except = False try: TARGET = value SUITE except: hit_except = True if not await aexit(manager, *sys. exc_info()): raise finally: if not hit_except: await aexit(manager, None, None, None) __aenter__() __aexit__() SyntaxError async with type_params ::= \"[\" type_param (\",\" type_param)* \"]\" type_param ::= typevar | typevartuple | paramspec typevar ::= identifier (\":\" expression). (\"=\" expression). typevartuple ::= \"*\" identifier (\"=\" expression). paramspec ::= \"**\" identifier (\"=\" expression). type_param type_param typevar typevartuple paramspec identifier expression expression identifier expression identifier expression def maxT -> T:. async def amaxT -> T:. class Bag[T]: def __iter__(self) -> Iterator[T]:. def add(self, arg: T) -> None:. type ListOrSet[T] = list[T] | set[T] [] def func[T](): pass T __type_params__ typing. TypeVar T typing. TypeVarTuple *Ts typing. ParamSpec **P typing. TypeVar : T: int typing. TypeVar T: (str, bytes) typing. TypeVar __bound__ __constraints__ typing. TypeVarTuple typing. ParamSpec = __default__ __default__ typing.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 37,
+  "start_char": 81315,
+  "end_char": 83283,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.397760"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_037.txt"
+}

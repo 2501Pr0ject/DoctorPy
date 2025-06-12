@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_022",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "foo' from '/tmp/imports/spam/foo. py'> >>> spam. Foo <class 'spam. foo. Foo'> sys. modules['spam'] sys. modules['spam. foo'] foo module. __spec__ __spec__ __main__ __spec__ ModuleSpec __path__ __path__ __path__ sys. path __path__ sys. path sys. path __path__ sys. path_hooks __path__ __init__. py __path__ __init__. py __path__ __path__ __spec__ module. __name__ module. __file__ module. __loader__ __spec__ __file__ __file__ __loader__ None __name__ module_repr(). pyc. py. pyc. pyc. pyc. pyc --check-hash-based-pycs. pyc PathFinder. py. pyc. so zipimport sys. meta_path sys. meta_path find_spec() sys. path sys. path_hooks sys. path_importer_cache __path__ sys. path PYTHONPATH sys. path site sys. path find_spec() path find_spec() __path__ path None sys. path PathEntryFinder stat() sys. path_importer_cache sys. path_importer_cache sys. path_hooks ImportError ImportError ImportError sys. path_hooks find_spec() None sys. path_importer_cache None sys. path_hooks sys. path sys. path_importer_cache sys. path_importer_cache importlib. machinery. PathFinder. find_spec() find_spec() find_spec() find_spec() submodule_search_locations find_spec() find_loader() find_module() find_spec() find_spec() find_spec() find_loader() find_loader() find_module() find_module() path find_module() find_loader() find_module() find_loader() find_module() find_module() find_loader() ImportWarning find_module() find_loader() sys. meta_path __import__() ModuleNotFoundError find_spec() None package/ __init__. py subpackage1/ __init__. py moduleX. py moduleY. py subpackage2/ __init__. py moduleZ. py moduleA. py subpackage1/moduleX. py subpackage1/__init__. py from. moduleY import spam from. moduleY import spam as ham from. import moduleY from. subpackage1 import moduleY from. subpackage2. moduleZ import eggs from. moduleA import foo import <> from <> import <> import XXX. YYY. ZZZ XXX. YYY.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 22,
+  "start_char": 48675,
+  "end_char": 50559,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.021947"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_022.txt"
+}

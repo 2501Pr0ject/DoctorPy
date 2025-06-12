@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_045",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "1254', '155 Elm Street'], ['Ronald', 'Heathmore', '892. 345. 3428', '436 Finley Avenue'], ['Frank', 'Burger', '925. 541. 7625', '662 South Dogwood Way'], ['Heather', 'Albrecht', '548. 326. 4584', '919 Park Place']] :. maxsplit 4 >>> [re. split(\":. \", entry, maxsplit=4) for entry in entries] [['Ross', 'McFluff', '834. 345. 1254', '155', 'Elm Street'], ['Ronald', 'Heathmore', '892. 345. 3428', '436', 'Finley Avenue'], ['Frank', 'Burger', '925. 541. 7625', '662', 'South Dogwood Way'], ['Heather', 'Albrecht', '548. 326. 4584', '919', 'Park Place']] sub() sub() >>> def repl(m):. inner_word = list(m. group(2)). random. shuffle(inner_word). return m. group(1) + \"\". join(inner_word) + m. group(3). >>> text = \"Professor Abdolmalek, please report your absences promptly. \" >>> re. sub(r\"(\\w)(\\w+)(\\w)\", repl, text) 'Poefsrosr Aealmlobdk, pslaee reorpt your abnseces plmrptoy. ' >>> re. sub(r\"(\\w)(\\w+)(\\w)\", repl, text) 'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy. ' findall() search() findall() >>> text = \"He was carefully disguised but captured quickly by police. \" >>> re. findall(r\"\\w+ly\\b\", text) ['carefully', 'quickly'] finditer() Match finditer() >>> text = \"He was carefully disguised but captured quickly by police. \" >>> for m in re. finditer(r\"\\w+ly\\b\", text):. print('%02d-%02d: %s' % (m. start(), m. end(), m.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 45,
+  "start_char": 79728,
+  "end_char": 81068,
+  "token_count": 482,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.841450"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_045.txt"
+}

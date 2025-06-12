@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_010",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "Let’s say you have the following directory structure: importlib import import-from __import__() spam foo spam. foo spam foo spam/ __init__. py foo. py and spam/init. py has the following line in it: spam/__init__. py from. foo import Foo then executing the following puts name bindings for foo and Foo in the spam module: foo Foo spam >>> import spam >>> spam. foo <module 'spam. foo' from '/tmp/imports/spam/foo. py'> >>> spam. Foo <class 'spam. foo. Foo'> Given Python’s familiar name binding rules this might seem surprising, but it’s actually a fundamental feature of the import system. The invariant holding is that if you have sys. modules['spam'] and sys. modules['spam. foo'] (as you would after the above import), the latter must appear as the foo attribute of the former. sys. modules['spam'] sys. modules['spam. foo'] foo ### 5. 4. 3. Module specs¶ The import machinery uses a variety of information about each module during import, especially before loading. Most of the information is common to all modules. The purpose of a module’s spec is to encapsulate this import-related information on a per-module basis. Using a spec during import allows state to be transferred between import system components, e. g. between the finder that creates the module spec and the loader that executes it. Most importantly, it allows the import machinery to perform the boilerplate operations of loading, whereas without a module spec the loader had that responsibility. The module’s spec is exposed as module. spec. Setting spec appropriately applies equally to modules initialized during interpreter startup. The one exception is main, where spec is set to None in some cases. module. __spec__ __spec__ __main__ __spec__ See ModuleSpec for details on the contents of the module spec. ModuleSpec Added in version 3. 4. ### 5. 4. 4. path attributes on modules¶ The path attribute should be a (possibly empty) sequence of strings enumerating the locations where the package’s submodules will be found. By definition, if a module has a path attribute, it is a package. __path__ __path__ A package’s path attribute is used during imports of its subpackages. Within the import machinery, it functions much the same as sys. path, i. e.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 10,
+  "start_char": 23122,
+  "end_char": 25350,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.011166"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_010.txt"
+}

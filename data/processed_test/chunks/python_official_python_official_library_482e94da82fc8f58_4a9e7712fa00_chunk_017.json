@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_017",
+  "original_doc_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00",
+  "content": "exit_code) ExceptionGroup BaseExceptionGroup Exception Exception BaseException ├── BaseExceptionGroup ├── GeneratorExit ├── KeyboardInterrupt ├── SystemExit └── Exception ├── ArithmeticError │ ├── FloatingPointError │ ├── OverflowError │ └── ZeroDivisionError ├── AssertionError ├── AttributeError ├── BufferError ├── EOFError ├── ExceptionGroup [BaseExceptionGroup] ├── ImportError │ └── ModuleNotFoundError ├── LookupError │ ├── IndexError │ └── KeyError ├── MemoryError ├── NameError │ └── UnboundLocalError ├── OSError │ ├── BlockingIOError │ ├── ChildProcessError │ ├── ConnectionError │ │ ├── BrokenPipeError │ │ ├── ConnectionAbortedError │ │ ├── ConnectionRefusedError │ │ └── ConnectionResetError │ ├── FileExistsError │ ├── FileNotFoundError │ ├── InterruptedError │ ├── IsADirectoryError │ ├── NotADirectoryError │ ├── PermissionError │ ├── ProcessLookupError │ └── TimeoutError ├── ReferenceError ├── RuntimeError │ ├── NotImplementedError │ ├── PythonFinalizationError │ └── RecursionError ├── StopAsyncIteration ├── StopIteration ├── SyntaxError │ └── IndentationError │ └── TabError ├── SystemError ├── TypeError ├── ValueError │ └── UnicodeError │ ├── UnicodeDecodeError │ ├── UnicodeEncodeError │ └── UnicodeTranslateError └── Warning ├── BytesWarning ├── DeprecationWarning ├── EncodingWarning ├── FutureWarning ├── ImportWarning ├── PendingDeprecationWarning ├── ResourceWarning ├── RuntimeWarning ├── SyntaxWarning ├── UnicodeWarning └── UserWarning.",
+  "title": "Built-in Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 17,
+  "start_char": 38624,
+  "end_char": 40094,
+  "token_count": 302,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_482e94da82fc8f58.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:34.400675"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_017.txt"
+}

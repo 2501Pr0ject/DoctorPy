@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_031",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "chown(path, uid, gid, follow_symlinks=False) Raises an auditing event os. chown with arguments path, uid, gid, dir_fd. os. chown path uid gid dir_fd Availability: Unix. Changed in version 3. 6: Accepts a path-like object. Create a hard link pointing to src named dst. This function can support specifying src_dir_fd and/or dst_dir_fd to supply paths relative to directory descriptors, and not following symlinks. Raises an auditing event os. link with arguments src, dst, src_dir_fd, dst_dir_fd. os. link src dst src_dir_fd dst_dir_fd Availability: Unix, Windows. Changed in version 3. 2: Added Windows support. Changed in version 3. 3: Added the src_dir_fd, dst_dir_fd, and follow_symlinks parameters. Changed in version 3. 6: Accepts a path-like object for src and dst. Return a list containing the names of the entries in the directory given by path. The list is in arbitrary order, and does not include the special entries '. ' and '. ' even if they are present in the directory. If a file is removed from or added to the directory during the call of this function, whether a name for that file be included is unspecified. '. ' '. ' path may be a path-like object. If path is of type bytes (directly or indirectly through the PathLike interface), the filenames returned will also be of type bytes; in all other circumstances, they will be of type str. bytes PathLike bytes str This function can also support specifying a file descriptor; the file descriptor must refer to a directory. Raises an auditing event os. listdir with argument path. os. listdir path Note To encode str filenames to bytes, use fsencode(). str bytes fsencode() See also The scandir() function returns directory entries along with file attribute information, giving better performance for many common use cases. scandir() Changed in version 3. 2: The path parameter became optional. Changed in version 3. 3: Added support for specifying path as an open file descriptor. Changed in version 3. 6: Accepts a path-like object. Return a list containing the names of drives on a Windows system. A drive name typically looks like 'C:\\'.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 31,
+  "start_char": 66261,
+  "end_char": 68367,
+  "token_count": 481,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.798698"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_031.txt"
+}

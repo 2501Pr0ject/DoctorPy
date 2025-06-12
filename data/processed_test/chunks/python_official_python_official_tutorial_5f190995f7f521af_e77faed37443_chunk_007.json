@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_007",
+  "original_doc_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443",
+  "content": "fib >>> dir() ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys'] Note that it lists all types of names: variables, modules, functions, etc. dir() does not list the names of built-in functions and variables.",
+  "title": "6. Modules.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 7,
+  "start_char": 13956,
+  "end_char": 14167,
+  "token_count": 56,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_5f190995f7f521af.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.861717"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_007.txt"
+}

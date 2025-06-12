@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_064",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "Exit code that means the command was used incorrectly, such as when the wrong number of arguments are given. Availability: Unix, not WASI. Exit code that means the input data was incorrect. Availability: Unix, not WASI. Exit code that means an input file did not exist or was not readable. Availability: Unix, not WASI. Exit code that means a specified user did not exist. Availability: Unix, not WASI. Exit code that means a specified host did not exist. Availability: Unix, not WASI. Exit code that means that a required service is unavailable. Availability: Unix, not WASI. Exit code that means an internal software error was detected. Availability: Unix, not WASI. Exit code that means an operating system error was detected, such as the inability to fork or create a pipe. Availability: Unix, not WASI. Exit code that means some system file did not exist, could not be opened, or had some other kind of error. Availability: Unix, not WASI. Exit code that means a user specified output file could not be created. Availability: Unix, not WASI. Exit code that means that an error occurred while doing I/O on some file. Availability: Unix, not WASI. Exit code that means a temporary failure occurred. This indicates something that may not really be an error, such as a network connection that couldn’t be made during a retryable operation. Availability: Unix, not WASI. Exit code that means that a protocol exchange was illegal, invalid, or not understood. Availability: Unix, not WASI. Exit code that means that there were insufficient permissions to perform the operation (but not intended for file system problems). Availability: Unix, not WASI. Exit code that means that some kind of configuration error occurred. Availability: Unix, not WASI. Exit code that means something like “an entry was not found”. Availability: Unix, not WASI. Fork a child process. Return 0 in the child and the child’s process id in the parent. If an error occurs OSError is raised. 0 OSError Note that some platforms including FreeBSD <= 6. 3 and Cygwin have known issues when using fork() from a thread. fork() Raises an auditing event os. fork with no arguments. os. fork Warning If you use TLS sockets in an application calling fork(), see the warning in the ssl documentation.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 64,
+  "start_char": 136098,
+  "end_char": 138361,
+  "token_count": 489,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.828710"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_064.txt"
+}

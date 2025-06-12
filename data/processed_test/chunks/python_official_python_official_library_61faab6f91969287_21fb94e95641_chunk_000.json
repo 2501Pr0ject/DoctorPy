@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_61faab6f91969287_21fb94e95641_chunk_000",
+  "original_doc_id": "python_official_python_official_library_61faab6f91969287_21fb94e95641",
+  "content": "Built-in Constants. 13. 5 Source:  Built-in Constants¶ A small number of constants live in the built-in namespace. They are: The false value of the bool type. Assignments to False are illegal and raise a SyntaxError. bool False SyntaxError The true value of the bool type. Assignments to True are illegal and raise a SyntaxError. bool True SyntaxError An object frequently used to represent the absence of a value, as when default arguments are not passed to a function. Assignments to None are illegal and raise a SyntaxError. None is the sole instance of the NoneType type. None SyntaxError None NoneType A special value which should be returned by the binary special methods (e. g. eq(), lt(), add(), rsub(), etc. ) to indicate that the operation is not implemented with respect to the other type; may be returned by the in-place binary special methods (e. g. imul(), iand(), etc. ) for the same purpose. It should not be evaluated in a boolean context. NotImplemented is the sole instance of the types. NotImplementedType type. __eq__() __lt__() __add__() __rsub__() __imul__() __iand__() NotImplemented types. NotImplementedType Note When a binary (or in-place) method returns NotImplemented the interpreter will try the reflected operation on the other type (or some other fallback, depending on the operator). If all attempts return NotImplemented, the interpreter will raise an appropriate exception. Incorrectly returning NotImplemented will result in a misleading error message or the NotImplemented value being returned to Python code. NotImplemented NotImplemented NotImplemented NotImplemented See Implementing the arithmetic operations for examples. Caution NotImplemented and NotImplementedError are not interchangeable. This constant should only be used as described above; see NotImplementedError for details on correct usage of the exception. NotImplemented NotImplementedError NotImplementedError Changed in version 3. 9: Evaluating NotImplemented in a boolean context is deprecated. While it currently evaluates as true, it will emit a DeprecationWarning. It will raise a TypeError in a future version of Python. NotImplemented DeprecationWarning TypeError The same as the ellipsis literal “. ”. Special value used mostly in conjunction with extended slicing syntax for user-defined container data types. Ellipsis is the sole instance of the types. EllipsisType type. Ellipsis types. EllipsisType This constant is true if Python was not started with an -O option. See also the assert statement.",
+  "title": "Built-in Constants.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2514,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_61faab6f91969287.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.929657"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_61faab6f91969287_21fb94e95641_chunk_000.txt"
+}

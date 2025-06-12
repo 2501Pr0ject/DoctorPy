@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_013",
+  "original_doc_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b",
+  "content": "The format specifier is passed to the format() method of the expression or conversion result. An empty string is passed when the format specifier is omitted. The formatted result is then included in the final value of the whole string. format() __format__() Top-level format specifiers may include nested replacement fields. These nested fields may include their own conversion fields and format specifiers, but may not include more deeply nested replacement fields. The format specifier mini-language is the same as that used by the str. format() method. str. format() Formatted string literals may be concatenated, but replacement fields cannot be split across literals. Some examples of formatted string literals: >>> name = \"Fred\" >>> f\"He said his name is {name. r}. \" \"He said his name is 'Fred'. \" >>> f\"He said his name is {repr(name)}. \" # repr() is equivalent to. r \"He said his name is 'Fred'. \" >>> width = 10 >>> precision = 4 >>> value = decimal. Decimal(\"12. 34567\") >>> f\"result: {value:{width}. {precision}}\" # nested fields 'result: 12. 35' >>> today = datetime(year=2017, month=1, day=27) >>> f\"{today:%B %d, %Y}\" # using date format specifier 'January 27, 2017' >>> f\"{today=:%B %d, %Y}\" # using date format specifier and debugging 'today=January 27, 2017' >>> number = 1024 >>> f\"{number:#0x}\" # using integer format specifier '0x400' >>> foo = \"bar\" >>> f\"{ foo = }\" # preserves whitespace \" foo = 'bar'\" >>> line = \"The mill's closed\" >>> f\"{line = }\" 'line = \"The mill\\'s closed\"' >>> f\"{line = :20}\" \"line = The mill's closed \" >>> f\"{line =. r:20}\" 'line = \"The mill\\'s closed\" ' Reusing the outer f-string quoting type inside a replacement field is permitted: >>> a = dict(x=2) >>> f\"abc {a[\"x\"]} def\" 'abc 2 def' Changed in version 3. 12: Prior to Python 3. 12, reuse of the same quoting type of the outer f-string inside a replacement field was not possible.",
+  "title": "2. Lexical analysis.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 13,
+  "start_char": 26963,
+  "end_char": 28850,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_99fb26420c3873aa.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:25.402959"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_013.txt"
+}

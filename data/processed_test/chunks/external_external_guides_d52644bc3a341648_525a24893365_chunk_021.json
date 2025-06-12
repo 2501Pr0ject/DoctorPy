@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_021",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "raise X from Y When deliberately replacing an inner exception (using raise X from None), ensure that relevant details are transferred to the new exception (such as preserving the attribute name when converting KeyError to AttributeError, or embedding the text of the original exception in the new exception message). raise X from None When catching exceptions, mention specific exceptions whenever possible instead of using a bare except: clause:try: import platform_specific_module except ImportError: platform_specific_module = None A bare except: clause will catch SystemExit and KeyboardInterrupt exceptions, making it harder to interrupt a program with Control-C, and can disguise other problems. If you want to catch all exceptions that signal program errors, use except Exception: (bare except is equivalent to except BaseException:). A good rule of thumb is to limit use of bare ‘except’ clauses to two cases: If the exception handler will be printing out or logging the traceback; at least the user will be aware that an error has occurred. If the code needs to do some cleanup work, but then lets the exception propagate upwards with raise. try. finally can be a better way to handle this case. except: try: import platform_specific_module except ImportError: platform_specific_module = None A bare except: clause will catch SystemExit and KeyboardInterrupt exceptions, making it harder to interrupt a program with Control-C, and can disguise other problems. If you want to catch all exceptions that signal program errors, use except Exception: (bare except is equivalent to except BaseException:). except: except Exception: except BaseException: A good rule of thumb is to limit use of bare ‘except’ clauses to two cases: If the exception handler will be printing out or logging the traceback; at least the user will be aware that an error has occurred. If the code needs to do some cleanup work, but then lets the exception propagate upwards with raise. try. finally can be a better way to handle this case. raise try. finally When catching operating system errors, prefer the explicit exception hierarchy introduced in Python 3. 3 over introspection of errno values. errno Additionally, for all try/except clauses, limit the try clause to the absolute minimum amount of code necessary. Again, this avoids masking bugs:# Correct: try: value = collection[key] except KeyError: return key_not_found(key) else: return handle_value(value) # Wrong: try: # Too broad.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 21,
+  "start_char": 45514,
+  "end_char": 47987,
+  "token_count": 479,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.784730"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_021.txt"
+}

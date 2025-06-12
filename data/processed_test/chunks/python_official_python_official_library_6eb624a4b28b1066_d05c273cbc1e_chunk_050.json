@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_050",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "Changed in version 3. 2: In previous versions, strftime() method was restricted to years >= 1900. Changed in version 3. 3: In version 3. 2, strftime() method was restricted to years >= 1000. The strptime() method can parse years in the full [1, 9999] range, but years < 1000 must be zero-filled to 4-digit width. strptime() Changed in version 3. 2: In previous versions, strftime() method was restricted to years >= 1900. strftime() Changed in version 3. 3: In version 3. 2, strftime() method was restricted to years >= 1000. strftime() When used with the strptime() method, the %p directive only affects the output hour field if the %I directive is used to parse the hour. When used with the strptime() method, the %p directive only affects the output hour field if the %I directive is used to parse the hour. strptime() %p %I Unlike the time module, the datetime module does not support leap seconds. Unlike the time module, the datetime module does not support leap seconds. time datetime When used with the strptime() method, the %f directive accepts from one to six digits and zero pads on the right. %f is an extension to the set of format characters in the C standard (but implemented separately in datetime objects, and therefore always available). When used with the strptime() method, the %f directive accepts from one to six digits and zero pads on the right. %f is an extension to the set of format characters in the C standard (but implemented separately in datetime objects, and therefore always available). strptime() %f %f For a naive object, the %z, %:z and %Z format codes are replaced by empty strings. For an aware object: %zutcoffset() is transformed into a string of the form ±HHMM[SS[. ffffff]], where HH is a 2-digit string giving the number of UTC offset hours, MM is a 2-digit string giving the number of UTC offset minutes, SS is a 2-digit string giving the number of UTC offset seconds and ffffff is a 6-digit string giving the number of UTC offset microseconds.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 50,
+  "start_char": 95309,
+  "end_char": 97299,
+  "token_count": 481,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.427187"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_050.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_016",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "A Word About Names and Objects 9. 2. Python Scopes and Namespaces 9. 2. 1. Scopes and Namespaces Example 9. 2. 1. Scopes and Namespaces Example 9. 3. A First Look at Classes 9. 3. 1. Class Definition Syntax 9. 3. 2. Class Objects 9. 3. 3. Instance Objects 9. 3. 4. Method Objects 9. 3. 5. Class and Instance Variables 9. 3. 1. Class Definition Syntax 9. 3. 2. Class Objects 9. 3. 3. Instance Objects 9. 3. 4. Method Objects 9. 3. 5. Class and Instance Variables 9. 4. Random Remarks 9. 5. Inheritance 9. 5. 1. Multiple Inheritance 9. 5. 1. Multiple Inheritance 9. 6. Private Variables 9. 7. Odds and Ends 9. 8. Iterators 9. 9. Generators 9. 10. Generator Expressions #### Previous topic 8. Errors and Exceptions #### Next topic 10. Brief Tour of the Standard Library ### This page Report a bug Show source abs() maximize z. real real z modname. funcname modname funcname modname. the_answer = 42 del del modname. the_answer the_answer modname __main__ builtins nonlocal global nonlocal del x x import global nonlocal global nonlocal def scope_test(): def do_local(): spam = \"local spam\" def do_nonlocal(): nonlocal spam spam = \"nonlocal spam\" def do_global(): global spam spam = \"global spam\" spam = \"test spam\" do_local() print(\"After local assignment:\", spam) do_nonlocal() print(\"After nonlocal assignment:\", spam) do_global() print(\"After global assignment:\", spam) scope_test() print(\"In global scope:\", spam) After local assignment: test spam After nonlocal assignment: nonlocal spam After global assignment: nonlocal spam In global scope: global spam nonlocal global global class ClassName: <statement-1>. <statement-N> def if ClassName obj.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 16,
+  "start_char": 35093,
+  "end_char": 36741,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.101804"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_016.txt"
+}

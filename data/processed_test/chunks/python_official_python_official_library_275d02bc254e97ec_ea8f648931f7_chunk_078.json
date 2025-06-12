@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_078",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "waitid() Availability: Unix, not WASI, not Android, not iOS. This options flag causes waitpid(), wait3(), wait4(), and waitid() to return right away if no child process status is available immediately. waitpid() wait3() wait4() waitid() Availability: Unix, not WASI, not Android, not iOS. This options flag causes waitid() to leave the child in a waitable state, so that a later wait() call can be used to retrieve the child status information again. waitid() wait*() This option is not available for the other wait functions. wait* Availability: Unix, not WASI, not Android, not iOS. These are the possible values for si_code in the result returned by waitid(). si_code waitid() Availability: Unix, not WASI, not Android, not iOS. Added in version 3. 3. Changed in version 3. 9: Added CLD_KILLED and CLD_STOPPED values. CLD_KILLED CLD_STOPPED Convert a wait status to an exit code. On Unix: If the process exited normally (if WIFEXITED(status) is true), return the process exit status (return WEXITSTATUS(status)): result greater than or equal to 0. If the process exited normally (if WIFEXITED(status) is true), return the process exit status (return WEXITSTATUS(status)): result greater than or equal to 0. WIFEXITED(status) WEXITSTATUS(status) If the process was terminated by a signal (if WIFSIGNALED(status) is true), return -signum where signum is the number of the signal that caused the process to terminate (return -WTERMSIG(status)): result less than 0. If the process was terminated by a signal (if WIFSIGNALED(status) is true), return -signum where signum is the number of the signal that caused the process to terminate (return -WTERMSIG(status)): result less than 0. WIFSIGNALED(status) -signum -WTERMSIG(status) Otherwise, raise a ValueError. Otherwise, raise a ValueError. ValueError On Windows, return status shifted right by 8 bits. On Unix, if the process is being traced or if waitpid() was called with WUNTRACED option, the caller must first check if WIFSTOPPED(status) is true.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 78,
+  "start_char": 166718,
+  "end_char": 168718,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.841748"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_078.txt"
+}

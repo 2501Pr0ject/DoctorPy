@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_041",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "True False If follow_symlinks is False, return True only if this entry is a directory (without following symlinks); return False if the entry is any other kind of file or if it doesn’t exist anymore. False True False The result is cached on the os. DirEntry object, with a separate cache for follow_symlinks True and False. Call os. stat() along with stat. S_ISDIR() to fetch up-to-date information. os. DirEntry True False os. stat() stat. S_ISDIR() On the first, uncached call, no system call is required in most cases. Specifically, for non-symlinks, neither Windows or Unix require a system call, except on certain Unix file systems, such as network file systems, that return dirent. d_type == DT_UNKNOWN. If the entry is a symlink, a system call will be required to follow the symlink unless follow_symlinks is False. dirent. d_type == DT_UNKNOWN False This method can raise OSError, such as PermissionError, but FileNotFoundError is caught and not raised. OSError PermissionError FileNotFoundError Return True if this entry is a file or a symbolic link pointing to a file; return False if the entry is or points to a directory or other non-file entry, or if it doesn’t exist anymore. True False If follow_symlinks is False, return True only if this entry is a file (without following symlinks); return False if the entry is a directory or other non-file entry, or if it doesn’t exist anymore. False True False The result is cached on the os. DirEntry object. Caching, system calls made, and exceptions raised are as per is_dir(). os. DirEntry is_dir() Return True if this entry is a symbolic link (even if broken); return False if the entry points to a directory or any kind of file, or if it doesn’t exist anymore. True False The result is cached on the os. DirEntry object. Call os. path. islink() to fetch up-to-date information. os. DirEntry os. path. islink() On the first, uncached call, no system call is required in most cases. Specifically, neither Windows or Unix require a system call, except on certain Unix file systems, such as network file systems, that return dirent. d_type == DT_UNKNOWN. dirent.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 41,
+  "start_char": 88000,
+  "end_char": 90119,
+  "token_count": 481,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.807406"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_041.txt"
+}

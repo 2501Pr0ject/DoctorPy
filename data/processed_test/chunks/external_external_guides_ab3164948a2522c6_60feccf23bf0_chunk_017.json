@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_017",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "4, Unix domain sockets are also supported. DatagramHandler SMTPHandler instances send messages to a designated email address. SMTPHandler instances send messages to a designated email address. SMTPHandler SysLogHandler instances send messages to a Unix syslog daemon, possibly on a remote machine. SysLogHandler instances send messages to a Unix syslog daemon, possibly on a remote machine. SysLogHandler NTEventLogHandler instances send messages to a Windows NT/2000/XP event log. NTEventLogHandler instances send messages to a Windows NT/2000/XP event log. NTEventLogHandler MemoryHandler instances send messages to a buffer in memory, which is flushed whenever specific criteria are met. MemoryHandler instances send messages to a buffer in memory, which is flushed whenever specific criteria are met. MemoryHandler HTTPHandler instances send messages to an HTTP server using either GET or POST semantics. HTTPHandler instances send messages to an HTTP server using either GET or POST semantics. HTTPHandler GET POST WatchedFileHandler instances watch the file they are logging to. If the file changes, it is closed and reopened using the file name. This handler is only useful on Unix-like systems; Windows does not support the underlying mechanism used. WatchedFileHandler instances watch the file they are logging to. If the file changes, it is closed and reopened using the file name. This handler is only useful on Unix-like systems; Windows does not support the underlying mechanism used. WatchedFileHandler QueueHandler instances send messages to a queue, such as those implemented in the queue or multiprocessing modules. QueueHandler instances send messages to a queue, such as those implemented in the queue or multiprocessing modules. QueueHandler queue multiprocessing NullHandler instances do nothing with error messages. They are used by library developers who want to use logging, but want to avoid the ‘No handlers could be found for logger XXX’ message which can be displayed if the library user has not configured logging. See Configuring Logging for a Library for more information. NullHandler instances do nothing with error messages. They are used by library developers who want to use logging, but want to avoid the ‘No handlers could be found for logger XXX’ message which can be displayed if the library user has not configured logging. See Configuring Logging for a Library for more information. NullHandler Added in version 3. 1: The NullHandler class. NullHandler Added in version 3. 2: The QueueHandler class.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 17,
+  "start_char": 39693,
+  "end_char": 42233,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.535053"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_017.txt"
+}

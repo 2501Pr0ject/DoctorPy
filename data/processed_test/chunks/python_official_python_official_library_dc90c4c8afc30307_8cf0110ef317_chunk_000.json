@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317_chunk_000",
+  "original_doc_id": "python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317",
+  "content": "math — Mathematical functions. 13. 5 Source:  math — Mathematical functions¶ math This module provides access to common mathematical functions and constants, including those defined by the C standard. These functions cannot be used with complex numbers; use the functions of the same name from the cmath module if you require support for complex numbers. The distinction between functions which support complex numbers and those which don’t is made since most users do not want to learn quite as much mathematics as required to understand complex numbers. Receiving an exception instead of a complex result allows earlier detection of the unexpected complex number used as a parameter, so that the programmer can determine how and why it was generated in the first place. cmath The following functions are provided by this module. Except when explicitly noted otherwise, all return values are floats.",
+  "title": "math — Mathematical functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 900,
+  "token_count": 163,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_dc90c4c8afc30307.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.586609"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317_chunk_000.txt"
+}

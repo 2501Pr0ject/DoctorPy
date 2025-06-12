@@ -1,0 +1,485 @@
+/* 
+DoctorPy - Dark Mode CSS
+Interface moderne et élégante pour l'assistant pédagogique
+*/
+
+/* Variables CSS pour le thème dark */
+:root {
+    --primary-color: #00D4AA;
+    --primary-dark: #00B894;
+    --secondary-color: #6C5CE7;
+    --background-dark: #0F1419;
+    --background-card: #1A1D23;
+    --background-sidebar: #151821;
+    --text-primary: #E8E9F3;
+    --text-secondary: #9DA3AE;
+    --text-muted: #6B7280;
+    --border-color: #2D3748;
+    --success-color: #00D4AA;
+    --warning-color: #FDCB6E;
+    --error-color: #E17055;
+    --gradient-primary: linear-gradient(135deg, #00D4AA 0%, #6C5CE7 100%);
+    --gradient-secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --shadow-light: 0 2px 10px rgba(0, 212, 170, 0.1);
+    --shadow-medium: 0 4px 20px rgba(0, 212, 170, 0.15);
+    --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset et styles de base */
+* {
+    box-sizing: border-box;
+}
+
+/* Streamlit App Container */
+.main .block-container {
+    background-color: var(--background-dark) !important;
+    color: var(--text-primary) !important;
+    padding: 2rem 1rem !important;
+    max-width: 100% !important;
+}
+
+/* Sidebar styling */
+.css-1d391kg, .css-1lcbmhc {
+    background: var(--background-sidebar) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+.sidebar .sidebar-content {
+    background: var(--background-sidebar) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Header avec gradient */
+.main-header {
+    background: var(--gradient-primary);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Cards et conteneurs */
+.doctor-card {
+    background: var(--background-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 1rem 0 !important;
+    box-shadow: var(--shadow-light) !important;
+    transition: all 0.3s ease !important;
+}
+
+.doctor-card:hover {
+    border-color: var(--primary-color) !important;
+    box-shadow: var(--shadow-medium) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Chat interface */
+.chat-container {
+    background: var(--background-card);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.chat-message.user {
+    background: var(--gradient-secondary);
+    color: white;
+    margin-left: 20%;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-message.assistant {
+    background: var(--background-sidebar);
+    border: 1px solid var(--border-color);
+    margin-right: 20%;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-message .message-header {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.chat-message .message-content {
+    line-height: 1.6;
+}
+
+/* Quest cards */
+.quest-card {
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.quest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+}
+
+.quest-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+}
+
+.quest-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.quest-difficulty {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.quest-difficulty.beginner {
+    background: rgba(0, 212, 170, 0.2);
+    color: var(--success-color);
+    border: 1px solid var(--success-color);
+}
+
+.quest-difficulty.intermediate {
+    background: rgba(253, 203, 110, 0.2);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+}
+
+.quest-difficulty.advanced {
+    background: rgba(225, 112, 85, 0.2);
+    color: var(--error-color);
+    border: 1px solid var(--error-color);
+}
+
+/* Progress bars */
+.progress-container {
+    background: var(--background-sidebar);
+    border-radius: 8px;
+    padding: 0.3rem;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--gradient-primary);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Buttons */
+.stButton > button {
+    background: var(--gradient-primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: var(--shadow-light) !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-medium) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0) !important;
+}
+
+/* Secondary button */
+.stButton.secondary > button {
+    background: transparent !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.stButton.secondary > button:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Input fields */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background-color: var(--background-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+    padding: 0.75rem !important;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px rgba(0, 212, 170, 0.2) !important;
+}
+
+/* Select boxes */
+.stSelectbox > div > div {
+    background-color: var(--background-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+}
+
+/* Metrics */
+.metric-container {
+    background: var(--background-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.metric-container:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-light);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Sidebar navigation */
+.nav-item {
+    padding: 0.8rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-secondary);
+}
+
+.nav-item:hover {
+    background: var(--background-card);
+    color: var(--primary-color);
+}
+
+.nav-item.active {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+/* Code blocks */
+.stCode {
+    background: var(--background-sidebar) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+}
+
+/* Alerts et messages */
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid;
+}
+
+.alert.success {
+    background: rgba(0, 212, 170, 0.1);
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.alert.warning {
+    background: rgba(253, 203, 110, 0.1);
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+}
+
+.alert.error {
+    background: rgba(225, 112, 85, 0.1);
+    border-color: var(--error-color);
+    color: var(--error-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-sidebar);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .chat-message.user {
+        margin-left: 10%;
+    }
+    
+    .chat-message.assistant {
+        margin-right: 10%;
+    }
+    
+    .doctor-card {
+        padding: 1rem !important;
+    }
+}
+
+/* Hide Streamlit elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Custom loading spinner */
+.loading-spinner {
+    border: 3px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Status indicators */
+.status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.online {
+    background: var(--success-color);
+    box-shadow: 0 0 8px rgba(0, 212, 170, 0.6);
+}
+
+.status-indicator.offline {
+    background: var(--error-color);
+}
+
+.status-indicator.loading {
+    background: var(--warning-color);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-card);
+    color: var(--text-primary);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    border: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}

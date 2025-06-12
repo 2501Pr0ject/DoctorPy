@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_039",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "01 0. 0 ZeroDivisionError complex ValueError __pow__() __rpow__() u_expr ::= power | \"-\" u_expr | \"+\" u_expr | \"~\" u_expr power u_expr u_expr u_expr - __neg__() + __pos__() ~ x -(x+1) __invert__() TypeError m_expr ::= u_expr | m_expr \"*\" u_expr | m_expr \"@\" m_expr | m_expr \"//\" u_expr | m_expr \"/\" u_expr | m_expr \"%\" u_expr a_expr ::= m_expr | a_expr \"+\" m_expr | a_expr \"-\" m_expr u_expr m_expr u_expr m_expr m_expr m_expr u_expr m_expr u_expr m_expr u_expr m_expr a_expr m_expr a_expr m_expr * __mul__() __rmul__() @ __matmul__() __rmatmul__() / // ZeroDivisionError __truediv__() __rtruediv__() __floordiv__() __rfloordiv__() % ZeroDivisionError 3. 14%0. 7 0. 34 3. 14 4*0. 7 + 0. 34 x == (x//y)*y + (x%y) divmod() divmod(x, y) == (x//y, x%y) % __mod__() __rmod__() divmod() abs() + __add__() __radd__() - __sub__() __rsub__() shift_expr ::= a_expr | shift_expr (\"<<\" | \">>\") a_expr a_expr shift_expr a_expr __lshift__() __rlshift__() __rshift__() __rrshift__() pow(2,n) pow(2,n) and_expr ::= shift_expr | and_expr \"&\" shift_expr xor_expr ::= and_expr | xor_expr \"^\" and_expr or_expr ::= xor_expr | or_expr \"|\" xor_expr shift_expr and_expr shift_expr and_expr xor_expr and_expr xor_expr or_expr xor_expr & __and__() __rand__() ^ __xor__() __rxor__() | __or__() __ror__() a < b < c comparison ::= or_expr (comp_operator or_expr)* comp_operator ::= \"<\" | \">\" | \"==\" | \">=\" | \"<=\" | \". =\" | \"is\" [\"not\"] | [\"not\"] \"in\" or_expr comp_operator or_expr True False bool() x < y <= z x < y and y <= z y z x < y a op1 b op2 c.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 39,
+  "start_char": 84313,
+  "end_char": 85834,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.604101"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_039.txt"
+}

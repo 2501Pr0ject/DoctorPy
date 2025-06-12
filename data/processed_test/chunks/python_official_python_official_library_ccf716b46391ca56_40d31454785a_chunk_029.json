@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_029",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "match(\"717ak\")) # Pair of 7s. \"<Match: '717', groups=('7',)>\" >>> displaymatch(pair. match(\"718ak\")) # No pairs. >>> displaymatch(pair. match(\"354aa\")) # Pair of aces. \"<Match: '354aa', groups=('a',)>\" To find out what card the pair consists of, one could use the group() method of the match object in the following manner: group() >>> pair = re. compile(r\". *(. ). *\\1\") >>> pair. match(\"717ak\"). group(1) '7' # Error because re. match() returns None, which doesn't have a group() method: >>> pair. match(\"718ak\"). group(1) Traceback (most recent call last): File \"<pyshell#23>\", line 1, in <module> re. match(r\". *(. ). *\\1\", \"718ak\"). group(1) AttributeError: 'NoneType' object has no attribute 'group' >>> pair. match(\"354aa\"). group(1) 'a' ### Simulating scanf()¶ Python does not currently have an equivalent to scanf(). Regular expressions are generally more powerful, though also more verbose, than scanf() format strings. The table below offers some more-or-less equivalent mappings between scanf() format tokens and regular expressions. scanf() scanf() scanf() scanf() Token scanf() Regular Expression %c %c. %5c %5c. {5}. {5} %d %d [-+]. \\d+ [-+]. \\d+ %e, %E, %f, %g %e %E %f %g [-+]. (\\d+(. \\d). |. \\d+)([eE][-+]. \\d+). [-+]. (\\d+(\\. \\d*). |\\. \\d+)([eE][-+]. \\d+). %i %i [-+]. (0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+) [-+]. (0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+) %o %o [-+]. [0-7]+ [-+].",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 29,
+  "start_char": 56610,
+  "end_char": 57990,
+  "token_count": 466,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.826890"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_029.txt"
+}

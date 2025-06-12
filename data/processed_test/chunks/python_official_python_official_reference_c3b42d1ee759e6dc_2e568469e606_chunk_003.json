@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606_chunk_003",
+  "original_doc_id": "python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606",
+  "content": "type Annotation scopes are used in the following contexts: Type parameter lists for generic type aliases. Type parameter lists for generic type aliases. Type parameter lists for generic functions. A generic function’s annotations are executed within the annotation scope, but its defaults and decorators are not. Type parameter lists for generic functions. A generic function’s annotations are executed within the annotation scope, but its defaults and decorators are not. Type parameter lists for generic classes. A generic class’s base classes and keyword arguments are executed within the annotation scope, but its decorators are not. Type parameter lists for generic classes. A generic class’s base classes and keyword arguments are executed within the annotation scope, but its decorators are not. The bounds, constraints, and default values for type parameters (lazily evaluated). The bounds, constraints, and default values for type parameters (lazily evaluated). The value of type aliases (lazily evaluated). The value of type aliases (lazily evaluated). Annotation scopes differ from function scopes in the following ways: Annotation scopes have access to their enclosing class namespace. If an annotation scope is immediately within a class scope, or within another annotation scope that is immediately within a class scope, the code in the annotation scope can use names defined in the class scope as if it were executed directly within the class body. This contrasts with regular functions defined within classes, which cannot access names defined in the class scope. Annotation scopes have access to their enclosing class namespace. If an annotation scope is immediately within a class scope, or within another annotation scope that is immediately within a class scope, the code in the annotation scope can use names defined in the class scope as if it were executed directly within the class body. This contrasts with regular functions defined within classes, which cannot access names defined in the class scope. Expressions in annotation scopes cannot contain yield, yield from, await, or := expressions. (These expressions are allowed in other scopes contained within the annotation scope. ) Expressions in annotation scopes cannot contain yield, yield from, await, or := expressions. (These expressions are allowed in other scopes contained within the annotation scope. ) yield yield from await := Names defined in annotation scopes cannot be rebound with nonlocal statements in inner scopes. This includes only type parameters, as no other syntactic elements that can appear within annotation scopes can introduce new names. Names defined in annotation scopes cannot be rebound with nonlocal statements in inner scopes.",
+  "title": "4. Execution model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 3,
+  "start_char": 7221,
+  "end_char": 9959,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_c3b42d1ee759e6dc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.211277"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606_chunk_003.txt"
+}

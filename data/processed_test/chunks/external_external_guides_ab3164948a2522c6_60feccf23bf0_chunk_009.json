@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_009",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "The setLevel() method, just as in logger objects, specifies the lowest severity that will be dispatched to the appropriate destination. Why are there two setLevel() methods. The level set in the logger determines which severity of messages it will pass to its handlers. The level set in each handler determines which messages that handler will send on. setLevel() setLevel() setFormatter() selects a Formatter object for this handler to use. setFormatter() selects a Formatter object for this handler to use. setFormatter() addFilter() and removeFilter() respectively configure and deconfigure filter objects on handlers. addFilter() and removeFilter() respectively configure and deconfigure filter objects on handlers. addFilter() removeFilter() Application code should not directly instantiate and use instances of Handler. Instead, the Handler class is a base class that defines the interface that all handlers should have and establishes some default behavior that child classes can use (or override). Handler Handler ### Formatters¶ Formatter objects configure the final order, structure, and contents of the log message. Unlike the base logging. Handler class, application code may instantiate formatter classes, although you could likely subclass the formatter if your application needs special behavior. The constructor takes three optional arguments – a message format string, a date format string and a style indicator. logging. Handler If there is no message format string, the default is to use the raw message. If there is no date format string, the default date format is: %Y-%m-%d %H:%M:%S with the milliseconds tacked on at the end. The style is one of '%', '{', or '$'. If one of these is not specified, then '%' will be used. style '%' '{' '$' '%' If the style is '%', the message format string uses %()s styled string substitution; the possible keys are documented in LogRecord attributes. If the style is '{', the message format string is assumed to be compatible with str. format() (using keyword arguments), while if the style is '$' then the message format string should conform to what is expected by string. Template. substitute(). style '%' %(<dictionary key>)s '{' str. format() '$' string. Template. substitute() Changed in version 3. 2: Added the style parameter.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 9,
+  "start_char": 21428,
+  "end_char": 23720,
+  "token_count": 461,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.528180"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_009.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_080",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "For example, the following code is discouraged, but will run without errors: GenericAlias >>> t = list[str] >>> t([1, 2, 3]) [1, 2, 3] Furthermore, parameterized generics erase type parameters during object creation: >>> t = list[str] >>> type(t) <class 'types. GenericAlias'> >>> l = t() >>> type(l) <class 'list'> Calling repr() or str() on a generic shows the parameterized type: repr() str() >>> repr(list[int]) 'list[int]' >>> str(list[int]) 'list[int]' The getitem() method of generic containers will raise an exception to disallow mistakes like dict[str][str]: __getitem__() dict[str][str] >>> dict[str][str] Traceback (most recent call last):. TypeError: dict[str] is not a generic class However, such expressions are valid when type variables are used. The index must have as many elements as there are type variable items in the GenericAlias object’s args. GenericAlias __args__ >>> from typing import TypeVar >>> Y = TypeVar('Y') >>> dict[str, Y][int] dict[str, int] #### Standard Generic Classes¶ The following standard library classes support parameterized generics. This list is non-exhaustive. tuple tuple tuple list list list dict dict dict set set set frozenset frozenset frozenset type type type asyncio. Future asyncio. Future asyncio. Future asyncio. Task asyncio. Task asyncio. Task collections. deque collections. deque collections. deque collections. defaultdict collections. defaultdict collections. defaultdict collections. OrderedDict collections. OrderedDict collections. OrderedDict collections. Counter collections. Counter collections. Counter collections. ChainMap collections. ChainMap collections. ChainMap collections. abc. Awaitable collections. abc. Awaitable collections. abc. Awaitable collections. abc. Coroutine collections. abc. Coroutine collections. abc. Coroutine collections. abc. AsyncIterable collections. abc. AsyncIterable collections. abc. AsyncIterable collections. abc. AsyncIterator collections. abc. AsyncIterator collections. abc. AsyncIterator collections. abc. AsyncGenerator collections. abc. AsyncGenerator collections. abc. AsyncGenerator collections. abc. Iterable collections. abc. Iterable collections. abc. Iterable collections. abc. Iterator collections. abc. Iterator collections. abc. Iterator collections. abc. Generator collections. abc. Generator collections. abc. Generator collections. abc. Reversible collections. abc.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 80,
+  "start_char": 163228,
+  "end_char": 165619,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.251333"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_080.txt"
+}

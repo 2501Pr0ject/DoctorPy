@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_002",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "The standard type hierarchy¶ Below is a list of the types that are built into Python. Extension modules (written in C, Java, or other languages, depending on the implementation) can define additional types. Future versions of Python may add types to the type hierarchy (e. g. , rational numbers, efficiently stored arrays of integers, etc. ), although such additions will often be provided via the standard library instead. Some of the type descriptions below contain a paragraph listing ‘special attributes. ’ These are attributes that provide access to the implementation and are not intended for general use. Their definition may change in the future. ### 3. 2. 1. None¶ This type has a single value. There is a single object with this value. This object is accessed through the built-in name None. It is used to signify the absence of a value in many situations, e. g. , it is returned from functions that don’t explicitly return anything. Its truth value is false. None ### 3. 2. 2. NotImplemented¶ This type has a single value. There is a single object with this value. This object is accessed through the built-in name NotImplemented. Numeric methods and rich comparison methods should return this value if they do not implement the operation for the operands provided. (The interpreter will then try the reflected operation, or some other fallback, depending on the operator. ) It should not be evaluated in a boolean context. NotImplemented See Implementing the arithmetic operations for more details. Changed in version 3. 9: Evaluating NotImplemented in a boolean context is deprecated. While it currently evaluates as true, it will emit a DeprecationWarning. It will raise a TypeError in a future version of Python. NotImplemented DeprecationWarning TypeError ### 3. 2. 3. Ellipsis¶ This type has a single value. There is a single object with this value. This object is accessed through the literal. or the built-in name Ellipsis. Its truth value is true. Ellipsis ### 3. 2. 4. numbers. Number¶ numbers. Number These are created by numeric literals and returned as results by arithmetic operators and arithmetic built-in functions. Numeric objects are immutable; once created their value never changes. Python numbers are of course strongly related to mathematical numbers, but subject to the limitations of numerical representation in computers.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 2,
+  "start_char": 4858,
+  "end_char": 7216,
+  "token_count": 479,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.695347"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_002.txt"
+}

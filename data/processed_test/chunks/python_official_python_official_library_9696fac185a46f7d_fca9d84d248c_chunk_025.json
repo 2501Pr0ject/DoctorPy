@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_025",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "step if start < 0 or (stop is not None and stop < 0) or step <= 0: raise ValueError indices = count() if stop is None else range(max(start, stop)) next_i = start for i, element in zip(indices, iterable): if i == next_i: yield element next_i += step max(start, stop) def pairwise(iterable): # pairwise('ABCDEFG') → AB BC CD DE EF FG iterator = iter(iterable) a = next(iterator, None) for b in iterator: yield a, b a = b None product() math. perm() n. / (n - r).",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 25,
+  "start_char": 40963,
+  "end_char": 41423,
+  "token_count": 129,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.115226"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_025.txt"
+}

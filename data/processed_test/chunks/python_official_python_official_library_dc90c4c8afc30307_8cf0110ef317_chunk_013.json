@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317_chunk_013",
+  "original_doc_id": "python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317",
+  "content": "### Table of Contents math — Mathematical functions Number-theoretic functions Floating point arithmetic Floating point manipulation functions Power, exponential and logarithmic functions Summation and product functions Angular conversion Trigonometric functions Hyperbolic functions Special functions Constants math Number-theoretic functions Floating point arithmetic Floating point manipulation functions Power, exponential and logarithmic functions Summation and product functions Angular conversion Trigonometric functions Hyperbolic functions Special functions Constants #### Previous topic numbers — Numeric abstract base classes numbers #### Next topic cmath — Mathematical functions for complex numbers cmath ### This page Report a bug Show source math cmath comb(n, k) factorial(n) gcd(*integers) isqrt(n) lcm(*integers) perm(n, k) ceil(x) fabs(x) floor(x) fma(x, y, z) (x * y) + z fmod(x, y) x / y modf(x) remainder(x, y) trunc(x) copysign(x, y) frexp(x) isclose(a, b, rel_tol, abs_tol) isfinite(x) isinf(x) isnan(x) ldexp(x, i) x * (2**i) frexp() nextafter(x, y, steps) ulp(x) cbrt(x) exp(x) exp2(x) expm1(x) log(x, base) log1p(x) log2(x) log10(x) pow(x, y) sqrt(x) dist(p, q) fsum(iterable) hypot(*coordinates) prod(iterable, start) sumprod(p, q) degrees(x) radians(x) acos(x) asin(x) atan(x) atan2(y, x) atan(y / x) cos(x) sin(x) tan(x) acosh(x) asinh(x) atanh(x) cosh(x) sinh(x) tanh(x) erf(x) erfc(x) gamma(x) lgamma(x) pi e tau inf nan n. / (k. * (n - k). ) k <= n k > n (1 + x)ⁿ TypeError ValueError 5. 0 0 gcd() 0 a = 1 + isqrt(n - 1) 0 lcm() 1 n. / (n - k). k <= n k > n None n. TypeError ValueError x. __ceil__ Integral x.",
+  "title": "math — Mathematical functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 13,
+  "start_char": 24780,
+  "end_char": 26423,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_dc90c4c8afc30307.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.599024"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_dc90c4c8afc30307_8cf0110ef317_chunk_013.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_784843e7386f7884_76a86e9eaed4_chunk_000",
+  "original_doc_id": "python_official_python_official_library_784843e7386f7884_76a86e9eaed4",
+  "content": "urllib — URL handling modules.13.5 Source:  urllib — URL handling modules¶ urllib Source code: Lib/urllib/ urllib is a package that collects several modules for working with URLs: urllib urllib.request for opening and reading URLs urllib.request for opening and reading URLs urllib.request urllib.error containing the exceptions raised by urllib.request urllib.error containing the exceptions raised by urllib.request urllib.error urllib.request urllib.parse for parsing URLs urllib.parse for parsing URLs urllib.parse urllib.robotparser for parsing robots.txt files urllib.robotparser for parsing robots.txt files urllib.robotparser robots.txt #### Previous topic wsgiref — WSGI Utilities and Reference Implementation wsgiref #### Next topic urllib.request — Extensible library for opening URLs urllib.request ### This page Report a bug Show source urllib urllib urllib.request urllib.error urllib.request urllib.parse urllib.robotparser robots.txt wsgiref urllib.request",
+  "title": "urllib — URL handling modules.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 972,
+  "token_count": 175,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_784843e7386f7884.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.459269"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_784843e7386f7884_76a86e9eaed4_chunk_000.txt"
+}

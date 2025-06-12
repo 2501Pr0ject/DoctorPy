@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_023",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "This is like passing include_hidden=True to glob. glob(). Files beginning with a dot are not special in pathlib. This is like passing include_hidden=True to glob. glob(). include_hidden=True glob. glob() “” pattern components are always recursive in pathlib. This is like passing recursive=True to glob. glob(). “” pattern components are always recursive in pathlib. This is like passing recursive=True to glob. glob(). ** recursive=True glob. glob() “” pattern components do not follow symlinks by default in pathlib. This behaviour has no equivalent in glob. glob(), but you can pass recurse_symlinks=True to Path. glob() for compatible behaviour. “” pattern components do not follow symlinks by default in pathlib. This behaviour has no equivalent in glob. glob(), but you can pass recurse_symlinks=True to Path. glob() for compatible behaviour. ** glob. glob() recurse_symlinks=True Path. glob() Like all PurePath and Path objects, the values returned from Path. glob() and Path. rglob() don’t include trailing slashes. Like all PurePath and Path objects, the values returned from Path. glob() and Path. rglob() don’t include trailing slashes. PurePath Path Path. glob() Path. rglob() The values returned from pathlib’s path. glob() and path. rglob() include the path as a prefix, unlike the results of glob. glob(root_dir=path). The values returned from pathlib’s path. glob() and path. rglob() include the path as a prefix, unlike the results of glob. glob(root_dir=path). path. glob() path. rglob() glob. glob(root_dir=path) The values returned from pathlib’s path. glob() and path. rglob() may include path itself, for example when globbing “”, whereas the results of glob. glob(root_dir=path) never include an empty string that would correspond to path. The values returned from pathlib’s path. glob() and path. rglob() may include path itself, for example when globbing “”, whereas the results of glob. glob(root_dir=path) never include an empty string that would correspond to path. path. glob() path. rglob() ** glob. glob(root_dir=path) ## Comparison to the os and os. path modules¶ os os. path pathlib implements path operations using PurePath and Path objects, and so it’s said to be object-oriented.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 23,
+  "start_char": 46663,
+  "end_char": 48878,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.504737"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_023.txt"
+}

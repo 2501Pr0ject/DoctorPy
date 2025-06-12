@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_072",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "spawnlp() spawnlpe() spawnvp() spawnvpe() spawnle() spawnve() subprocess Changed in version 3. 6: Accepts a path-like object. Possible values for the mode parameter to the spawn family of functions. If either of these values is given, the spawn functions will return as soon as the new process has been created, with the process id as the return value. spawn* spawn* Availability: Unix, Windows. Possible value for the mode parameter to the spawn family of functions. If this is given as mode, the spawn functions will not return until the new process has run to completion and will return the exit code of the process the run is successful, or -signal if a signal kills the process. spawn* spawn* -signal Availability: Unix, Windows. Possible values for the mode parameter to the spawn family of functions. These are less portable than those listed above. P_DETACH is similar to P_NOWAIT, but the new process is detached from the console of the calling process. If P_OVERLAY is used, the current process will be replaced; the spawn function will not return. spawn* P_DETACH P_NOWAIT P_OVERLAY spawn* Availability: Windows. Start a file with its associated application. When operation is not specified, this acts like double-clicking the file in Windows Explorer, or giving the file name as an argument to the start command from the interactive command shell: the file is opened with whatever application (if any) its extension is associated. When another operation is given, it must be a “command verb” that specifies what should be done with the file. Common verbs documented by Microsoft are 'open', 'print' and 'edit' (to be used on files) as well as 'explore' and 'find' (to be used on directories). 'open' 'print' 'edit' 'explore' 'find' When launching an application, specify arguments to be passed as a single string. This argument may have no effect when using this function to launch a document. The default working directory is inherited, but may be overridden by the cwd argument. This should be an absolute path. A relative path will be resolved against this argument. Use show_cmd to override the default window style. Whether this has any effect will depend on the application being launched. Values are integers as supported by the Win32 ShellExecute() function.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 72,
+  "start_char": 153481,
+  "end_char": 155759,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.836539"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_072.txt"
+}

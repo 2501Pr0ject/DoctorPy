@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_083",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "' in os. py. Also available via os. path. '. ' os. py os. path The character conventionally used by the operating system to separate search path components (as in PATH), such as ':' for POSIX or ';' for Windows. Also available via os. path. PATH ':' ';' os. path The default search path used by execp and spawnp if the environment doesn’t have a 'PATH' key. Also available via os. path. exec*p* spawn*p* 'PATH' os. path The string used to separate (or, rather, terminate) lines on the current platform. This may be a single character, such as '\\n' for POSIX, or multiple characters, for example, '\\r\\n' for Windows. Do not use os. linesep as a line terminator when writing files opened in text mode (the default); use a single '\\n' instead, on all platforms. '\\n' '\\r\\n' '\\n' The file path of the null device. For example: '/dev/null' for POSIX, 'nul' for Windows. Also available via os. path. '/dev/null' 'nul' os. path Flags for use with the setdlopenflags() and getdlopenflags() functions. See the Unix manual page dlopen(3) for what the different flags mean. setdlopenflags() getdlopenflags() Added in version 3. 3. ## Random numbers¶ Get up to size random bytes. The function can return less bytes than requested. These bytes can be used to seed user-space random number generators or for cryptographic purposes. getrandom() relies on entropy gathered from device drivers and other sources of environmental noise. Unnecessarily reading large quantities of data will have a negative impact on other users of the /dev/random and /dev/urandom devices. getrandom() /dev/random /dev/urandom The flags argument is a bit mask that can contain zero or more of the following values ORed together: os. GRND_RANDOM and GRND_NONBLOCK. os. GRND_RANDOM GRND_NONBLOCK See also the Linux getrandom() manual page. Availability: Linux >= 3. 17. Added in version 3. 6. Return a bytestring of size random bytes suitable for cryptographic use. This function returns random bytes from an OS-specific randomness source.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 83,
+  "start_char": 177720,
+  "end_char": 179721,
+  "token_count": 484,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.846026"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_083.txt"
+}

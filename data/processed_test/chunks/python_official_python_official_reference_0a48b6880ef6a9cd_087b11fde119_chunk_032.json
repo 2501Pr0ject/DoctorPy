@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_032",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "11: Any item in an expression list may be starred. See PEP 646. A trailing comma is required only to create a one-item tuple, such as 1,; it is optional in all other cases. A single expression without a trailing comma doesn’t create a tuple, but rather yields the value of that expression. (To create an empty tuple, use an empty pair of parentheses: (). ) 1, () ## 6. 16. Evaluation order¶ Python evaluates expressions from left to right. Notice that while evaluating an assignment, the right-hand side is evaluated before the left-hand side. In the following lines, expressions will be evaluated in the arithmetic order of their suffixes: expr1, expr2, expr3, expr4 (expr1, expr2, expr3, expr4) {expr1: expr2, expr3: expr4} expr1 + expr2 * (expr3 - expr4) expr1(expr2, expr3, *expr4, **expr5) expr3, expr4 = expr1, expr2 ## 6. 17. Operator precedence¶ The following table summarizes the operator precedence in Python, from highest precedence (most binding) to lowest precedence (least binding). Operators in the same box have the same precedence. Unless the syntax is explicitly given, operators are binary. Operators in the same box group left to right (except for exponentiation and conditional expressions, which group from right to left). Note that comparisons, membership tests, and identity tests, all have the same precedence and have a left-to-right chaining feature as described in the Comparisons section. Operator Description (expressions. ), (expressions. ) [expressions. ], {key: value. }, {expressions. } [expressions. ] {key: value. } {expressions. } Binding or parenthesized expression, list display, dictionary display, set display x[index], x[index:index], x(arguments. ), x. attribute x[index] x[index:index] x(arguments. ) x.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 32,
+  "start_char": 72551,
+  "end_char": 74298,
+  "token_count": 416,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.598049"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_032.txt"
+}

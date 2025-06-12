@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_010",
+  "original_doc_id": "external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa",
+  "content": "urlopen(full_url). Python-urllib/x. y x y Python-urllib/2. 5 User-Agent import urllib. parse import urllib. request url = ' user_agent = 'Mozilla/5. 0 (Windows NT 6. 1; Win64; x64)' values = {'name': 'Michael Foord', 'location': 'Northampton', 'language': 'Python' } headers = {'User-Agent': user_agent} data = urllib. parse. urlencode(values) data = data. encode('ascii') req = urllib. request. Request(url, data, headers) with urllib. request. urlopen(req) as response: the_page = response. read() URLError ValueError TypeError HTTPError URLError urllib. error >>> req = urllib. request. Request(' >>> try: urllib. request. urlopen(req). except urllib. error. URLError as e:. print(e. reason). (4, 'getaddrinfo failed') HTTPError HTTPError http. server. BaseHTTPRequestHandler. responses responses = {. <HTTPStatus. OK: 200>: ('OK', 'Request fulfilled, document follows'),. <HTTPStatus. FORBIDDEN: 403>: ('Forbidden', 'Request forbidden -- authorization will ' 'not help'), <HTTPStatus. NOT_FOUND: 404>: ('Not Found', 'Nothing matches the given URI'),. <HTTPStatus. IM_A_TEAPOT: 418>: (\"I'm a Teapot\", 'Server refuses to brew coffee because ' 'it is a teapot'),. <HTTPStatus. SERVICE_UNAVAILABLE: 503>: ('Service Unavailable', 'The server cannot process the ' 'request due to a high load'),. } HTTPError urllib. response >>> req = urllib. request. Request(' >>> try:. urllib. request. urlopen(req). except urllib. error. HTTPError as e:. print(e. code). print(e. read()). 404 b'<. DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1. 0 Transitional//EN\" \". <title>Page Not Found</title>\\n. HTTPError URLError from urllib. request import Request, urlopen from urllib. error import URLError, HTTPError req = Request(someurl) try: response = urlopen(req) except HTTPError as e: print('The server couldn\\'t fulfill the request. ') print('Error code: ', e.",
+  "title": "HOWTO Fetch Internet Resources Using The urllib Package.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 10,
+  "start_char": 21773,
+  "end_char": 23615,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_cd1ed077dcaf1642.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.199779"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_cd1ed077dcaf1642_1f1c3dd548aa_chunk_010.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_034",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "exc_info()): raise finally: if not hit_except: exit(manager, None, None, None) with with A() as a, B() as b: SUITE with A() as a: with B() as b: SUITE with ( A() as a, B() as b, ): SUITE with match match_stmt ::= 'match' subject_expr \":\" NEWLINE INDENT case_block+ DEDENT subject_expr ::= star_named_expression \",\" star_named_expressions. | named_expression case_block ::= 'case' patterns [guard] \":\" block subject_expr case_block patterns guard case match match case subject_expr case_block block case_block case_block >>> flag = False >>> match (100, 200):. case (100, 300): # Mismatch: 200. = 300. print('Case 1'). case (100, 200) if flag: # Successful match, but guard fails. print('Case 2'). case (100, y): # Matches and binds y to 200. print(f'Case 3, y: {y}'). case _: # Pattern not attempted. print('Case 4, I match anything. '). Case 3, y: 200 if flag guard ::= \"if\" named_expression guard case case if case guard case guard case guard guard guard guard SEP. RULE+ RULE (SEP RULE)*. RULE patterns patterns ::= open_sequence_pattern | pattern pattern ::= as_pattern | or_pattern closed_pattern ::= | literal_pattern | capture_pattern | wildcard_pattern | value_pattern | group_pattern | sequence_pattern | mapping_pattern | class_pattern open_sequence_pattern pattern as_pattern or_pattern literal_pattern capture_pattern wildcard_pattern value_pattern group_pattern sequence_pattern mapping_pattern class_pattern | or_pattern ::= \"|\". closed_pattern+ closed_pattern P1 | P2 |. P1 P2 as as_pattern ::= or_pattern \"as\" capture_pattern or_pattern capture_pattern capture_pattern _ P as NAME P NAME = <subject> literal_pattern ::= signed_number | signed_number \"+\" NUMBER | signed_number \"-\" NUMBER | strings | \"None\" | \"True\" | \"False\" signed_number ::= [\"-\"] NUMBER signed_number signed_number signed_number strings NUMBER signed_number '+' NUMBER signed_number '-' NUMBER 3 + 4j LITERAL <subject> == LITERAL None True False is capture_pattern ::=. '_' NAME _. '_' wildcard_pattern case x, x:. case [x] | x:.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 34,
+  "start_char": 74963,
+  "end_char": 76978,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.395284"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_034.txt"
+}

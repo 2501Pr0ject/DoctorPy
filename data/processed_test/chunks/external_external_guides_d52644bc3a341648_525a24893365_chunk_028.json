@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_028",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "0): return magic(r = real, i = imag) = # Correct: def munge(sep: AnyStr = None):. def munge(input: AnyStr, sep: AnyStr = None, limit=1000):. # Wrong: def munge(input: AnyStr=None):. def munge(input: AnyStr, limit = 1000):. # Correct: if foo == 'blah': do_blah_thing() do_one() do_two() do_three() # Wrong: if foo == 'blah': do_blah_thing() do_one(); do_two(); do_three() # Wrong: if foo == 'blah': do_blah_thing() for x in lst: total += x while t < 10: t = delay() # Wrong: if foo == 'blah': do_blah_thing() else: do_non_blah_thing() try: something() finally: cleanup() do_one(); do_two(); do_three(long, argument, list, like, this) if foo == 'blah': one(); two(); three() # Correct: FILES = ('setup. cfg',) # Wrong: FILES = 'setup. cfg', # Correct: FILES = [ 'setup. cfg', 'tox. ini', ] initialize(FILES, error=True, ) # Wrong: FILES = ['setup. cfg', 'tox. ini',] initialize(FILES, error=True,) # # x = x + 1 # Increment x x = x + 1 # Compensate for border def \"\"\" \"\"\"Return a foobang Optional plotz says to frobnicate the bizbaz first. \"\"\" \"\"\" \"\"\"Return an ex-parrot. \"\"\" b B lowercase lower_case_with_underscores UPPERCASE UPPER_CASE_WITH_UNDERSCORES CapitalizedWords mixedCase Capitalized_Words_With_Underscores os. stat() st_mode st_size st_mtime _single_leading_underscore from M import * single_trailing_underscore_ tkinter.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 28,
+  "start_char": 58981,
+  "end_char": 60312,
+  "token_count": 407,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.791070"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_028.txt"
+}

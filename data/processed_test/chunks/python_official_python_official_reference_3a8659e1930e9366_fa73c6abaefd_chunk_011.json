@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_011",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "These objects normally act as factories for new instances of themselves, but variations are possible for class types that override new(). The arguments of the call are passed to new() and, in the typical case, to init() to initialize the new instance. __new__() __new__() __init__() #### 3. 2. 8. 9. Class Instances¶ Instances of arbitrary classes can be made callable by defining a call() method in their class. __call__() ### 3. 2. 9. Modules¶ Modules are a basic organizational unit of Python code, and are created by the import system as invoked either by the import statement, or by calling functions such as importlib. import_module() and built-in import(). A module object has a namespace implemented by a dictionary object (this is the dictionary referenced by the globals attribute of functions defined in the module). Attribute references are translated to lookups in this dictionary, e. g. , m. x is equivalent to m. dict[\"x\"]. A module object does not contain the code object used to initialize the module (since it isn’t needed once the initialization is done). import importlib. import_module() __import__() dictionary __globals__ m. x m. __dict__[\"x\"] Attribute assignment updates the module’s namespace dictionary, e. g. , m. x = 1 is equivalent to m. dict[\"x\"] = 1. m. x = 1 m. __dict__[\"x\"] = 1 #### 3. 2. 9. 1. Import-related attributes on module objects¶ Module objects have the following attributes that relate to the import system. When a module is created using the machinery associated with the import system, these attributes are filled in based on the module’s spec, before the loader executes and loads the module. To create a module dynamically rather than using the import system, it’s recommended to use importlib. util. module_from_spec(), which will set the various import-controlled attributes to appropriate values. It’s also possible to use the types. ModuleType constructor to create modules directly, but this technique is more error-prone, as most attributes must be manually set on the module object after it has been created when using this approach. importlib. util. module_from_spec() types.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 11,
+  "start_char": 25053,
+  "end_char": 27186,
+  "token_count": 468,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.703537"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_011.txt"
+}

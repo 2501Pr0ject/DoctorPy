@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_085",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "GRND_NONBLOCK getrandom() BlockingIOError Added in version 3. 6. If this bit is set, then random bytes are drawn from the /dev/random pool instead of the /dev/urandom pool. /dev/random /dev/urandom Added in version 3. 6. ### Table of Contents os — Miscellaneous operating system interfaces File Names, Command Line Arguments, and Environment Variables Python UTF-8 Mode Process Parameters File Object Creation File Descriptor Operations Querying the size of a terminal Inheritance of File Descriptors Files and Directories Timer File Descriptors Linux extended attributes Process Management Interface to the scheduler Miscellaneous System Information Random numbers os File Names, Command Line Arguments, and Environment Variables Python UTF-8 Mode Process Parameters File Object Creation File Descriptor Operations Querying the size of a terminal Inheritance of File Descriptors Querying the size of a terminal Inheritance of File Descriptors Files and Directories Timer File Descriptors Linux extended attributes Timer File Descriptors Linux extended attributes Process Management Interface to the scheduler Miscellaneous System Information Random numbers #### Previous topic Generic Operating System Services #### Next topic io — Core tools for working with streams io ### This page Report a bug Show source os open() os. path fileinput tempfile shutil os. stat(path) os os fork() execve() nice() getuid() getpid() kill() wait() OSError OSError 'posix' 'nt' 'java' sys. platform os. uname() platform sys. getfilesystemencoding() PyConfig_Read() filesystem_encoding filesystem_errors PyConfig UnicodeError sys. getfilesystemencoding() 'utf-8' locale. getpreferredencoding() 'utf-8' sys. stdin sys. stdout sys. stderr surrogateescape sys. stdin sys. stdout sys. stderr backslashreplace os. device_encoding() 'utf-8' PYTHONIOENCODING os. fsdecode() os. fsencode() open() io. open() codecs. open() C POSIX PyConfig_Read() -X utf8 PYTHONUTF8 PYTHONUTF8 PYTHONCOERCECLOCALE sys. flags. utf8_mode environ['HOME'] getenv(\"HOME\") os site. py os. environ os. environ putenv() sys. getfilesystemencoding() 'surrogateescape' environb environ['monty'] = 'python' 'MONTY' 'python' putenv() os. environ os. environ environ putenv() unsetenv() os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 85,
+  "start_char": 181869,
+  "end_char": 184103,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.847740"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_085.txt"
+}

@@ -1,0 +1,3 @@
+"""
+Service RAG pour DoctorPy
+"""

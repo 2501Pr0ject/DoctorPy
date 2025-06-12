@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_026",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "append(a) return L kwarg=value def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'): print(\"-- This parrot wouldn't\", action, end=' ') print(\"if you put\", voltage, \"volts through it. \") print(\"-- Lovely plumage, the\", type) print(\"-- It's\", state, \". \") voltage state action type parrot(1000) # 1 positional argument parrot(voltage=1000) # 1 keyword argument parrot(voltage=1000000, action='VOOOOOM') # 2 keyword arguments parrot(action='VOOOOOM', voltage=1000000) # 2 keyword arguments parrot('a million', 'bereft of life', 'jump') # 3 positional arguments parrot('a thousand', state='pushing up the daisies') # 1 positional, 1 keyword parrot() # required argument missing parrot(voltage=5. 0, 'dead') # non-keyword argument after a keyword argument parrot(110, voltage=220) # duplicate value for the same argument parrot(actor='John Cleese') # unknown keyword argument actor parrot parrot(voltage=1000) >>> def function(a):. pass. >>> function(0, a=0) Traceback (most recent call last): File \"<stdin>\", line 1, in <module> TypeError: function() got multiple values for argument 'a' **name *name *name **name def cheeseshop(kind, *arguments, **keywords): print(\"-- Do you have any\", kind, \". \") print(\"-- I'm sorry, we're all out of\", kind) for arg in arguments: print(arg) print(\"-\" * 40) for kw in keywords: print(kw, \":\", keywords[kw]) cheeseshop(\"Limburger\", \"It's very runny, sir. \", \"It's really very, VERY runny, sir. \", shopkeeper=\"Michael Palin\", client=\"John Cleese\", sketch=\"Cheese Shop Sketch\") -- Do you have any Limburger. -- I'm sorry, we're all out of Limburger It's very runny, sir. It's really very, VERY runny, sir.",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 26,
+  "start_char": 47906,
+  "end_char": 49563,
+  "token_count": 468,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.631520"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_026.txt"
+}

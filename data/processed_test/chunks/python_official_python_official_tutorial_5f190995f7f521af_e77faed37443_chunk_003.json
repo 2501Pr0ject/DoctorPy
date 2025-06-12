@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_003",
+  "original_doc_id": "python_official_python_official_tutorial_5f190995f7f521af_e77faed37443",
+  "content": "py 50 0 1 1 2 3 5 8 13 21 34 If the module is imported, the code is not run: >>> import fibo >>> This is often used either to provide a convenient user interface to a module, or for testing purposes (running the module as a script executes a test suite). ### 6. 1. 2. The Module Search Path¶ When a module named spam is imported, the interpreter first searches for a built-in module with that name. These module names are listed in sys. builtin_module_names. If not found, it then searches for a file named spam. py in a list of directories given by the variable sys. path. sys. path is initialized from these locations: spam sys. builtin_module_names spam. py sys. path sys. path The directory containing the input script (or the current directory when no file is specified). The directory containing the input script (or the current directory when no file is specified). PYTHONPATH (a list of directory names, with the same syntax as the shell variable PATH). PYTHONPATH (a list of directory names, with the same syntax as the shell variable PATH). PYTHONPATH PATH The installation-dependent default (by convention including a site-packages directory, handled by the site module). The installation-dependent default (by convention including a site-packages directory, handled by the site module). site-packages site More details are at The initialization of the sys. path module search path. Note On file systems which support symlinks, the directory containing the input script is calculated after the symlink is followed. In other words the directory containing the symlink is not added to the module search path. After initialization, Python programs can modify sys. path. The directory containing the script being run is placed at the beginning of the search path, ahead of the standard library path. This means that scripts in that directory will be loaded instead of modules of the same name in the library directory. This is an error unless the replacement is intended. See section Standard Modules for more information. sys. path ### 6. 1. 3. “Compiled” Python files¶ To speed up loading modules, Python caches the compiled version of each module in the pycache directory under the name module. version. pyc, where the version encodes the format of the compiled file; it generally contains the Python version number. For example, in CPython release 3.",
+  "title": "6. Modules.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 3,
+  "start_char": 5773,
+  "end_char": 8134,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_5f190995f7f521af.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.858229"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_5f190995f7f521af_e77faed37443_chunk_003.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_028",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "For example, the expressions (a)b, ((a)(b)), and ((ab)) will have lastindex == 1 if applied to the string 'ab', while the expression (a)(b) will have lastindex == 2, if applied to the same string. None (a)b ((a)(b)) ((ab)) lastindex == 1 'ab' (a)(b) lastindex == 2 The name of the last matched capturing group, or None if the group didn’t have a name, or if no group was matched at all. None The regular expression object whose match() or search() method produced this match instance. match() search() The string passed to match() or search(). match() search() Changed in version 3. 7: Added support of copy. copy() and copy. deepcopy(). Match objects are considered atomic. copy. copy() copy. deepcopy() ## Regular Expression Examples¶ ### Checking for a Pair¶ In this example, we’ll use the following helper function to display match objects a little more gracefully: def displaymatch(match): if match is None: return None return '<Match: %r, groups=%r>' % (match. group(), match. groups()) Suppose you are writing a poker program where a player’s hand is represented as a 5-character string with each character representing a card, “a” for ace, “k” for king, “q” for queen, “j” for jack, “t” for 10, and “2” through “9” representing the card with that value. To see if a given string is a valid hand, one could do the following: >>> valid = re. compile(r\"^[a2-9tjqk]{5}$\") >>> displaymatch(valid. match(\"akt5q\")) # Valid. \"<Match: 'akt5q', groups=()>\" >>> displaymatch(valid. match(\"akt5e\")) # Invalid. >>> displaymatch(valid. match(\"akt\")) # Invalid. >>> displaymatch(valid. match(\"727ak\")) # Valid. \"<Match: '727ak', groups=()>\" That last hand, \"727ak\", contained a pair, or two of the same valued cards. To match this with a regular expression, one could use backreferences as such: \"727ak\" >>> pair = re. compile(r\". *(. ). *\\1\") >>> displaymatch(pair.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 28,
+  "start_char": 54751,
+  "end_char": 56610,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.826064"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_028.txt"
+}

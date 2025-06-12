@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_028",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "\" # prepend(1, [2, 3, 4]) → 1 2 3 4 return chain([value], iterable) def tabulate(function, start=0): \"Return function(0), function(1),. \" return map(function, count(start)) def repeatfunc(function, times=None, *args): \"Repeat calls to a function with specified arguments. \" if times is None: return starmap(function, repeat(args)) return starmap(function, repeat(args, times)) def flatten(list_of_lists): \"Flatten one level of nesting. \" return chain. from_iterable(list_of_lists) def ncycles(iterable, n): \"Returns the sequence elements n times. \" return chain. from_iterable(repeat(tuple(iterable), n)) def loops(n): \"Loop n times. Like range(n) but without creating integers. \" # for _ in loops(100):. return repeat(None, n) def tail(n, iterable): \"Return an iterator over the last n items. \" # tail(3, 'ABCDEFG') → E F G return iter(deque(iterable, maxlen=n)) def consume(iterator, n=None): \"Advance the iterator n-steps ahead. If n is None, consume entirely. \" # Use functions that consume iterators at C speed. if n is None: deque(iterator, maxlen=0) else: next(islice(iterator, n, n), None) def nth(iterable, n, default=None): \"Returns the nth item or a default value. \" return next(islice(iterable, n, None), default) def quantify(iterable, predicate=bool): \"Given a predicate that returns True or False, count the True results. \" return sum(map(predicate, iterable)) def first_true(iterable, default=False, predicate=None): \"Returns the first true value or the *default* if there is no true value. \" # first_true([a,b,c], x) → a or b or c or x # first_true([a,b], x, f) → a if f(a) else b if f(b) else x return next(filter(predicate, iterable), default) def all_equal(iterable, key=None): \"Returns True if all the elements are equal to each other.",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 28,
+  "start_char": 45136,
+  "end_char": 46892,
+  "token_count": 465,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.117776"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_028.txt"
+}

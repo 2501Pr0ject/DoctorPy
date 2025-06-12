@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5c8669c3128c44d1_9368659a6475_chunk_007",
+  "original_doc_id": "python_official_python_official_library_5c8669c3128c44d1_9368659a6475",
+  "content": "description 'Retrieve the target. ' >>> list(HTTPMethod) [<HTTPMethod. CONNECT>, <HTTPMethod. DELETE>, <HTTPMethod. GET>, <HTTPMethod. HEAD>, <HTTPMethod. OPTIONS>, <HTTPMethod. PATCH>, <HTTPMethod. POST>, <HTTPMethod. PUT>, <HTTPMethod. TRACE>] http. HTTPMethod GET GET HEAD HEAD POST POST PUT PUT DELETE DELETE CONNECT CONNECT OPTIONS OPTIONS TRACE TRACE PATCH PATCH http urllib. robotparser http. client.",
+  "title": "http — HTTP modules.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 7,
+  "start_char": 12228,
+  "end_char": 12635,
+  "token_count": 97,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5c8669c3128c44d1.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.597794"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5c8669c3128c44d1_9368659a6475_chunk_007.txt"
+}

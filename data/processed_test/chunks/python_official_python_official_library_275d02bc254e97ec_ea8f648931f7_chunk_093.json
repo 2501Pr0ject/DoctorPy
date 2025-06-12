@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_093",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "unlink(name, dir_fd=rootfd) for name in dirs: os. rmdir(name, dir_fd=rootfd) os. fwalk top topdown onerror follow_symlinks dir_fd bytes os. MFD_* /proc/self/fd/ memfd: memfd_create() MFD_HUGE* read() write() select() poll() EFD_CLOEXEC EFD_NONBLOCK EFD_SEMAPHORE EFD_SEMAPHORE eventfd_read() EFD_SEMAPHORE eventfd_read() EFD_NONBLOCK eventfd_read() eventfd_write() import os # semaphore with start value '1' fd = os. eventfd(1, os. EFD_SEMAPHORE | os. EFC_CLOEXEC) try: # acquire semaphore v = os. eventfd_read(fd) try: do_work() finally: # release semaphore os. eventfd_write(fd, v) finally: os. close(fd) eventfd() eventfd() eventfd() eventfd() eventfd() O_NONBLOCK eventfd() eventfd() timerfd_create() read() select() poll() read() read() int int. from_bytes(x, byteorder=sys. byteorder) select() poll() time time. CLOCK_REALTIME time. CLOCK_MONOTONIC time. CLOCK_BOOTTIME time. CLOCK_REALTIME TFD_TIMER_CANCEL_ON_SET time. CLOCK_MONOTONIC time. CLOCK_BOOTTIME time. CLOCK_MONOTONIC | TFD_NONBLOCK TFD_CLOEXEC TFD_NONBLOCK read() read() read() OSError errno errno. EAGAIN TFD_CLOEXEC os. close() timerfd_settime_ns() | TFD_TIMER_ABSTIME TFD_TIMER_CANCEL_ON_SET 0 OSError errno errno. EINVAL TFD_TIMER_ABSTIME timerfd_create() float OSError errno errno. EINVAL TFD_TIMER_CANCEL_ON_SET TFD_TIMER_ABSTIME time. CLOCK_REALTIME settimeofday clock_settime date next_expiration interval timerfd_settime() timerfd_settime() next_expiration interval next_expiration TFD_TIMER_ABSTIME interval next_expiration timerfd_gettime() timerfd_create() O_NONBLOCK TFD_NONBLOCK read() timerfd_create() TFD_CLOEXEC timerfd_settime() timerfd_settime_ns() timerfd_settime() timerfd_settime_ns() TFD_TIMER_ABSTIME PathLike os. getxattr path attribute None listxattr() os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 93,
+  "start_char": 196268,
+  "end_char": 198019,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.854618"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_093.txt"
+}

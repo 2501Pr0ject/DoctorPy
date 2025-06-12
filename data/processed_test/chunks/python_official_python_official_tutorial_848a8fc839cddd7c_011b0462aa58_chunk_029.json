@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_029",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": ">>> concat(\"earth\", \"mars\", \"venus\") 'earth/mars/venus' >>> concat(\"earth\", \"mars\", \"venus\", sep=\". \") 'earth. mars. venus' range() * >>> list(range(3, 6)) # normal call with separate arguments [3, 4, 5] >>> args = [3, 6] >>> list(range(*args)) # call with arguments unpacked from a list [3, 4, 5] ** >>> def parrot(voltage, state='a stiff', action='voom'):. print(\"-- This parrot wouldn't\", action, end=' '). print(\"if you put\", voltage, \"volts through it. \", end=' '). print(\"E's\", state, \". \"). >>> d = {\"voltage\": \"four million\", \"state\": \"bleedin' demised\", \"action\": \"VOOM\"} >>> parrot(**d) -- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised. lambda lambda a, b: a+b >>> def make_incrementor(n):. return lambda x: x + n. >>> f = make_incrementor(42) >>> f(0) 42 >>> f(1) 43 list. sort() >>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')] >>> pairs. sort(key=lambda pair: pair[1]) >>> pairs [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')] >>> def my_function():. \"\"\"Do nothing, but document it. No, really, it doesn't do anything. \"\"\". pass. >>> print(my_function. __doc__) Do nothing, but document it. No, really, it doesn't do anything. __annotations__ -> def >>> def f(ham: str, eggs: str = 'eggs') -> str:. print(\"Annotations:\", f. __annotations__). print(\"Arguments:\", ham, eggs). return ham + ' and ' + eggs.",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 29,
+  "start_char": 51612,
+  "end_char": 52989,
+  "token_count": 439,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.633980"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_029.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_017",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "join() None ### Table of Contents string — Common string operations String constants Custom String Formatting Format String Syntax Format Specification Mini-Language Format examples Template strings Helper functions string String constants Custom String Formatting Format String Syntax Format Specification Mini-Language Format examples Format Specification Mini-Language Format examples Template strings Helper functions #### Previous topic Text Processing Services #### Next topic re — Regular expression operations re ### This page Report a bug Show source string ascii_lowercase ascii_uppercase 'abcdefghijklmnopqrstuvwxyz' 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' '0123456789' '0123456789abcdefABCDEF' '01234567' {|}~. {|}~ digits ascii_letters punctuation whitespace string. printable. isprintable() False string. printable format() Formatter string format() Formatter vformat() *args **kwargs vformat() Formatter vformat() None parse() vformat() get_value() vformat() get_value() name get_value() getattr() IndexError KeyError check_unused_args() format_field() format() get_field() parse() str. format() Formatter Formatter {} {{ }} replacement_field ::= \"{\" [field_name] [\". \" conversion] [\":\" format_spec] \"}\" field_name ::= arg_name (\". \" attribute_name | \"[\" element_index \"]\")* arg_name ::= [identifier | digit+] attribute_name ::= identifier element_index ::= digit+ | index_string index_string ::= <any source character except \"]\"> + conversion ::= \"r\" | \"s\" | \"a\" format_spec ::= format-spec:format_spec field_name conversion format_spec arg_name attribute_name element_index identifier digit identifier digit index_string format-spec:format_spec '. ' ':' str. isdecimal() '10' ':-]' '. name' getattr() '[index]' __getitem__() str. format() '{} {}'. format(a, b) '{0} {1}'. format(a, b) Formatter \"First, thou shalt count to {0}\" # References first positional argument \"Bring me a {}\" # Implicitly references the first positional argument \"From {} to {}\" # Same as \"From {0} to {1}\" \"My quest is {name}\" # References keyword argument 'name' \"Weight in tons {0. weight}\" # 'weight' attribute of first positional arg \"Units destroyed: {players[0]}\" # First element of keyword argument 'players'. __format__() __format__() '. s' str() '. r' repr() '. a' ascii() \"Harold's a clever {0.",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 17,
+  "start_char": 35659,
+  "end_char": 37944,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.227666"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_017.txt"
+}

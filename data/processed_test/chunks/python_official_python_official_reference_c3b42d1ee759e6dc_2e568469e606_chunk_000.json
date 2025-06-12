@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606_chunk_000",
+  "original_doc_id": "python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606",
+  "content": "4. Execution model. 13. 5 Source:  4. Execution model¶ ## 4. 1. Structure of a program¶ A Python program is constructed from code blocks. A block is a piece of Python program text that is executed as a unit. The following are blocks: a module, a function body, and a class definition. Each command typed interactively is a block. A script file (a file given as standard input to the interpreter or specified as a command line argument to the interpreter) is a code block. A script command (a command specified on the interpreter command line with the -c option) is a code block. A module run as a top level script (as module main) from the command line using a -m argument is also a code block. The string argument passed to the built-in functions eval() and exec() is a code block. -c __main__ -m eval() exec() A code block is executed in an execution frame. A frame contains some administrative information (used for debugging) and determines where and how execution continues after the code block’s execution has completed. ## 4. 2. Naming and binding¶ ### 4. 2. 1. Binding of names¶ Names refer to objects. Names are introduced by name binding operations. The following constructs bind names: formal parameters to functions, formal parameters to functions, class definitions, class definitions, function definitions, function definitions, assignment expressions, assignment expressions, targets that are identifiers if occurring in an assignment: for loop header, after as in a with statement, except clause, except clause, or in the as-pattern in structural pattern matching, in a capture pattern in structural pattern matching targets that are identifiers if occurring in an assignment: for loop header, for loop header, for after as in a with statement, except clause, except clause, or in the as-pattern in structural pattern matching, after as in a with statement, except clause, except* clause, or in the as-pattern in structural pattern matching, as with except except* in a capture pattern in structural pattern matching in a capture pattern in structural pattern matching import statements. import statements. import type statements. type statements. type type parameter lists. type parameter lists. The import statement of the form from. import * binds all names defined in the imported module, except those beginning with an underscore. This form may only be used at the module level. import from.",
+  "title": "4. Execution model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2412,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_c3b42d1ee759e6dc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.208001"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_c3b42d1ee759e6dc_2e568469e606_chunk_000.txt"
+}

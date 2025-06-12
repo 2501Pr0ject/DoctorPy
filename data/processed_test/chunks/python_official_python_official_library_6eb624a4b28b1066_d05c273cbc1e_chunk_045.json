@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_045",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "It is updated periodically to reflect changes made by political bodies to time zone boundaries, UTC offsets, and daylight-saving rules. ## timezone Objects¶ timezone The timezone class is a subclass of tzinfo, each instance of which represents a time zone defined by a fixed offset from UTC. timezone tzinfo Objects of this class cannot be used to represent time zone information in the locations where different offsets are used in different days of the year or where historical changes have been made to civil time. The offset argument must be specified as a timedelta object representing the difference between the local time and UTC. It must be strictly between -timedelta(hours=24) and timedelta(hours=24), otherwise ValueError is raised. timedelta -timedelta(hours=24) timedelta(hours=24) ValueError The name argument is optional. If specified it must be a string that will be used as the value returned by the datetime. tzname() method. datetime. tzname() Added in version 3. 2. Changed in version 3. 7: The UTC offset is not restricted to a whole number of minutes. Return the fixed value specified when the timezone instance is constructed. timezone The dt argument is ignored. The return value is a timedelta instance equal to the difference between the local time and UTC. timedelta Changed in version 3. 7: The UTC offset is not restricted to a whole number of minutes. Return the fixed value specified when the timezone instance is constructed. timezone If name is not provided in the constructor, the name returned by tzname(dt) is generated from the value of the offset as follows. If offset is timedelta(0), the name is “UTC”, otherwise it is a string in the format UTC±HH:MM, where ± is the sign of offset, HH and MM are two digits of offset. hours and offset. minutes respectively. tzname(dt) offset timedelta(0) UTC±HH:MM offset offset. hours offset. minutes Changed in version 3. 6: Name generated from offset=timedelta(0) is now plain 'UTC', not 'UTC+00:00'. offset=timedelta(0) 'UTC' 'UTC+00:00' Always returns None. None Return dt + offset. The dt argument must be an aware datetime instance, with tzinfo set to self. dt + offset datetime tzinfo self Class attributes: The UTC time zone, timezone(timedelta(0)).",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 45,
+  "start_char": 85903,
+  "end_char": 88137,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.422211"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_045.txt"
+}

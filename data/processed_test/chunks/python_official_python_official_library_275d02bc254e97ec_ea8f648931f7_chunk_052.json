@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_052",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "If topdown is False, the triple for a directory is generated after the triples for all of its subdirectories (directories are generated bottom-up). No matter the value of topdown, the list of subdirectories is retrieved before the tuples for the directory and its subdirectories are generated. True False When topdown is True, the caller can modify the dirnames list in-place (perhaps using del or slice assignment), and walk() will only recurse into the subdirectories whose names remain in dirnames; this can be used to prune the search, impose a specific order of visiting, or even to inform walk() about directories the caller creates or renames before it resumes walk() again. Modifying dirnames when topdown is False has no effect on the behavior of the walk, because in bottom-up mode the directories in dirnames are generated before dirpath itself is generated. True del walk() walk() walk() False By default, errors from the scandir() call are ignored. If optional argument onerror is specified, it should be a function; it will be called with one argument, an OSError instance. It can report the error to continue with the walk, or raise the exception to abort the walk. Note that the filename is available as the filename attribute of the exception object. scandir() OSError filename By default, walk() will not walk down into symbolic links that resolve to directories. Set followlinks to True to visit directories pointed to by symlinks, on systems that support them. walk() True Note Be aware that setting followlinks to True can lead to infinite recursion if a link points to a parent directory of itself. walk() does not keep track of the directories it visited already. True walk() Note If you pass a relative pathname, don’t change the current working directory between resumptions of walk(). walk() never changes the current directory, and assumes that its caller doesn’t either. walk() walk() This example displays the number of bytes taken by non-directory files in each directory under the starting directory, except that it doesn’t look under any pycache subdirectory: __pycache__ import os from os. path import join, getsize for root, dirs, files in os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 52,
+  "start_char": 111530,
+  "end_char": 113707,
+  "token_count": 446,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.817654"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_052.txt"
+}

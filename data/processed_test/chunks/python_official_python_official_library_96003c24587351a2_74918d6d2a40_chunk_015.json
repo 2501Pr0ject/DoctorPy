@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_015",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "Some examples: int __index__() >>> hex(255) '0xff' >>> hex(-42) '-0x2a' If you want to convert an integer number to an uppercase or lower hexadecimal string with prefix or not, you can use either of the following ways: >>> '%#x' % 255, '%x' % 255, '%X' % 255 ('0xff', 'ff', 'FF') >>> format(255, '#x'), format(255, 'x'), format(255, 'X') ('0xff', 'ff', 'FF') >>> f'{255:#x}', f'{255:x}', f'{255:X}' ('0xff', 'ff', 'FF') See also format() for more information. format() See also int() for converting a hexadecimal string to an integer using a base of 16. int() Note To obtain a hexadecimal string representation for a float, use the float. hex() method. float. hex() Return the “identity” of an object. This is an integer which is guaranteed to be unique and constant for this object during its lifetime. Two objects with non-overlapping lifetimes may have the same id() value. id() CPython implementation detail: This is the address of the object in memory. Raises an auditing event builtins. id with argument id. builtins. id id If the prompt argument is present, it is written to standard output without a trailing newline. The function then reads a line from input, converts it to a string (stripping a trailing newline), and returns that. When EOF is read, EOFError is raised. Example: EOFError >>> s = input('--> ') --> Monty Python's Flying Circus >>> s \"Monty Python's Flying Circus\" If the readline module was loaded, then input() will use it to provide elaborate line editing and history features. readline input() Raises an auditing event builtins. input with argument prompt before reading input Raises an auditing event builtins. input with argument prompt before reading input builtins. input prompt Raises an auditing event builtins. input/result with the result after successfully reading input. Raises an auditing event builtins. input/result with the result after successfully reading input. builtins. input/result Return an integer object constructed from a number or a string, or return 0 if no arguments are given. 0 Examples: >>> int(123.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 15,
+  "start_char": 32644,
+  "end_char": 34703,
+  "token_count": 488,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.007611"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_015.txt"
+}

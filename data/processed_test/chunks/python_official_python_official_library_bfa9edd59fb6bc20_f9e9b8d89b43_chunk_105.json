@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_105",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "splitlines(keepends=True) [b'ab c\\n', b'\\n', b'de fg\\r', b'kl\\r\\n'] split() >>> b\"\". split(b'\\n'), b\"Two lines\\n\". split(b'\\n') ([b''], [b'Two lines', b'']) >>> b\"\". splitlines(), b\"One line\\n\". splitlines() ([], [b'One line']) >>> b'Hello World'. swapcase() b'hELLO wORLD' b'abcdefghijklmnopqrstuvwxyz' b'ABCDEFGHIJKLMNOPQRSTUVWXYZ' str. swapcase() bin. swapcase(). swapcase() == bin >>> b'Hello world'. title() b'Hello World' b'abcdefghijklmnopqrstuvwxyz' b'ABCDEFGHIJKLMNOPQRSTUVWXYZ' >>> b\"they're bill's friends from the UK\". title() b\"They'Re Bill'S Friends From The Uk\" >>> import re >>> def titlecase(s):. return re. sub(rb\"[A-Za-z]+('[A-Za-z]+). \",. lambda mo: mo. group(0)[0:1]. upper() +. mo. group(0)[1:]. lower(),. s). >>> titlecase(b\"they're bill's friends. \") b\"They're Bill's Friends. \" >>> b'Hello World'. upper() b'HELLO WORLD' b'abcdefghijklmnopqrstuvwxyz' b'ABCDEFGHIJKLMNOPQRSTUVWXYZ' b'0' b'+' b'-' bytes len(seq) >>> b\"42\". zfill(5) b'00042' >>> b\"-42\". zfill(5) b'-0042' printf bytes bytearray % format % values % sprintf() '%' (somename) '*' '. ' '*' '%' >>> print(b'%(language)s has %(number)03d quote types. ' %. {b'language': b\"Python\", b\"number\": 2}) b'Python has 002 quote types. ' * '#' '0' '-' '0' ' ' '+' '+' '-' h l L %ld %d 'd' 'i' 'o' 'u' 'd' 'x' 'X' 'e' 'E' 'f' 'F' 'g' 'G' 'c' 'b' __bytes__() 's' 's' 'b' 'a' repr(obj).",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 105,
+  "start_char": 208264,
+  "end_char": 209621,
+  "token_count": 461,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.275703"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_105.txt"
+}

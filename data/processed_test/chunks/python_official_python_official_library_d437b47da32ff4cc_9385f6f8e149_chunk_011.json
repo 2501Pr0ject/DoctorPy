@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_011",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "dig significant digits, this isn’t always true: sys. float_info. dig >>> s = '9876543211234567' # 16 significant digits is too many. >>> format(float(s), '. 16g') # conversion changes value '9876543211234568' A string indicating how the repr() function behaves for floats. If the string has value 'short' then for a finite float x, repr(x) aims to produce a short string with the property that float(repr(x)) == x. This is the usual behaviour in Python 3. 1 and later. Otherwise, float_repr_style has value 'legacy' and repr(x) behaves in the same way as it did in versions of Python prior to 3. 1. repr() 'short' x repr(x) float(repr(x)) == x float_repr_style 'legacy' repr(x) Added in version 3. 1. Return the number of memory blocks currently allocated by the interpreter, regardless of their size. This function is mainly useful for tracking and debugging memory leaks. Because of the interpreter’s internal caches, the result can vary from call to call; you may have to call _clear_internal_caches() and gc. collect() to get more predictable results. _clear_internal_caches() gc. collect() If a Python build or implementation cannot reasonably compute this information, getallocatedblocks() is allowed to return 0 instead. getallocatedblocks() Added in version 3. 4. Return the number of unicode objects that have been interned. Added in version 3. 12. Return the build-time API level of Android as an integer. This represents the minimum version of Android this build of Python can run on. For runtime version information, see platform. android_ver(). platform. android_ver() Availability: Android. Added in version 3. 7. Return 'utf-8'. This is the name of the default string encoding, used in methods like str. encode(). 'utf-8' str. encode() Return the current value of the flags that are used for dlopen() calls. Symbolic names for the flag values can be found in the os module (RTLD_xxx constants, e. g. os. RTLD_LAZY). dlopen() os RTLD_xxx os. RTLD_LAZY Availability: Unix.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 11,
+  "start_char": 24326,
+  "end_char": 26311,
+  "token_count": 480,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.428556"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_011.txt"
+}

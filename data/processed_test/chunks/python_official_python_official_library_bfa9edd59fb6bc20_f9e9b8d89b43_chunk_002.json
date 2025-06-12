@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_002",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "== is < <= > >= TypeError Non-identical instances of a class normally compare as non-equal unless the class defines the eq() method. __eq__() Instances of a class cannot be ordered with respect to other instances of the same class, or other types of object, unless the class defines enough of the methods lt(), le(), gt(), and ge() (in general, lt() and eq() are sufficient, if you want the conventional meanings of the comparison operators). __lt__() __le__() __gt__() __ge__() __lt__() __eq__() The behavior of the is and is not operators cannot be customized; also they can be applied to any two objects and never raise an exception. is is not Two more operations with the same syntactic priority, in and not in, are supported by types that are iterable or implement the contains() method. in not in __contains__() ## Numeric Types — int, float, complex¶ int float complex There are three distinct numeric types: integers, floating-point numbers, and complex numbers. In addition, Booleans are a subtype of integers. Integers have unlimited precision. Floating-point numbers are usually implemented using double in C; information about the precision and internal representation of floating-point numbers for the machine on which your program is running is available in sys. float_info. Complex numbers have a real and imaginary part, which are each a floating-point number. To extract these parts from a complex number z, use z. real and z. imag. (The standard library includes the additional numeric types fractions. Fraction, for rationals, and decimal. Decimal, for floating-point numbers with user-definable precision. ) sys. float_info z. real z. imag fractions. Fraction decimal. Decimal Numbers are created by numeric literals or as the result of built-in functions and operators. Unadorned integer literals (including hex, octal and binary numbers) yield integers. Numeric literals containing a decimal point or an exponent sign yield floating-point numbers. Appending 'j' or 'J' to a numeric literal yields an imaginary number (a complex number with a zero real part) which you can add to an integer or float to get a complex number with real and imaginary parts.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 2,
+  "start_char": 3922,
+  "end_char": 6097,
+  "token_count": 450,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.181174"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_002.txt"
+}

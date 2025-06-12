@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_003",
+  "original_doc_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c",
+  "content": "r' repr() >>> animals = 'eels' >>> print(f'My hovercraft is full of {animals}. ') My hovercraft is full of eels. >>> print(f'My hovercraft is full of {animals. r}. ') My hovercraft is full of 'eels'. The = specifier can be used to expand an expression to the text of the expression, an equal sign, then the representation of the evaluated expression: = >>> bugs = 'roaches' >>> count = 13 >>> area = 'living room' >>> print(f'Debugging {bugs=} {count=} {area=}') Debugging bugs='roaches' count=13 area='living room' See self-documenting expressions for more information on the = specifier. For a reference on these format specifications, see the reference guide for the Format Specification Mini-Language. = ### 7. 1. 2. The String format() Method¶ Basic usage of the str. format() method looks like this: str. format() >>> print('We are the {} who say \"{}. \"'. format('knights', 'Ni')) We are the knights who say \"Ni. \" The brackets and characters within them (called format fields) are replaced with the objects passed into the str. format() method. A number in the brackets can be used to refer to the position of the object passed into the str. format() method. str. format() str. format() >>> print('{0} and {1}'. format('spam', 'eggs')) spam and eggs >>> print('{1} and {0}'. format('spam', 'eggs')) eggs and spam If keyword arguments are used in the str. format() method, their values are referred to by using the name of the argument. str. format() >>> print('This {food} is {adjective}. '. format(. food='spam', adjective='absolutely horrible')) This spam is absolutely horrible. Positional and keyword arguments can be arbitrarily combined: >>> print('The story of {0}, {1}, and {other}. '. format('Bill', 'Manfred',. other='Georg')) The story of Bill, Manfred, and Georg. If you have a really long format string that you don’t want to split up, it would be nice if you could reference the variables to be formatted by name instead of by position.",
+  "title": "7. Input and Output.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 3,
+  "start_char": 6230,
+  "end_char": 8187,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_b08b74d25282ad3e.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.884715"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_003.txt"
+}

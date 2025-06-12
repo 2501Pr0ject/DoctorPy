@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_008",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "Exception: when a slice parameter is omitted, the space is omitted:# Correct: ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:] ham[lower:upper], ham[lower:upper:], ham[lower::step] ham[lower+offset : upper+offset] ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)] ham[lower + offset : upper + offset] # Wrong: ham[lower + offset:upper + offset] ham[1: 9], ham[1 :9], ham[1:9 :3] ham[lower : : step] ham[ : upper] # Correct: ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:] ham[lower:upper], ham[lower:upper:], ham[lower::step] ham[lower+offset : upper+offset] ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)] ham[lower + offset : upper + offset] # Wrong: ham[lower + offset:upper + offset] ham[1: 9], ham[1 :9], ham[1:9 :3] ham[lower : : step] ham[ : upper] Immediately before the open parenthesis that starts the argument list of a function call:# Correct: spam(1) # Wrong: spam (1) # Correct: spam(1) # Wrong: spam (1) Immediately before the open parenthesis that starts an indexing or slicing:# Correct: dct['key'] = lst[index] # Wrong: dct ['key'] = lst [index] # Correct: dct['key'] = lst[index] # Wrong: dct ['key'] = lst [index] More than one space around an assignment (or other) operator to align it with another:# Correct: x = 1 y = 2 long_variable = 3 # Wrong: x = 1 y = 2 long_variable = 3 # Correct: x = 1 y = 2 long_variable = 3 # Wrong: x = 1 y = 2 long_variable = 3 ### Other Recommendations Avoid trailing whitespace anywhere. Because it’s usually invisible, it can be confusing: e. g.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 8,
+  "start_char": 17532,
+  "end_char": 19049,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.773918"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_008.txt"
+}

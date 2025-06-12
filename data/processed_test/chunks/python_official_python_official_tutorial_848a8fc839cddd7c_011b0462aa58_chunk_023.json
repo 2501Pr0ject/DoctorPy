@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_023",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "Found an even number 2 Found an odd number 3 Found an even number 4 Found an odd number 5 Found an even number 6 Found an odd number 7 Found an even number 8 Found an odd number 9 else for while break else break else for else while else break return else for >>> for n in range(2, 10):. for x in range(2, n):. if n % x == 0:. print(n, 'equals', x, '*', n//x). break. else:. # loop fell through without finding a factor. print(n, 'is a prime number'). 2 is a prime number 3 is a prime number 4 equals 2 * 2 5 is a prime number 6 equals 2 * 3 7 is a prime number 8 equals 2 * 4 9 equals 3 * 3 else for if if if break else else else try if try else else break try pass pass >>> while True:. pass # Busy-wait for keyboard interrupt (Ctrl+C). >>> class MyEmptyClass:. pass. pass pass >>> def initlog(*args):. pass # Remember to implement this. match match def http_error(status): match status: case 400: return \"Bad request\" case 404: return \"Not found\" case 418: return \"I'm a teapot\" case _: return \"Something's wrong with the internet\" _ | case 401 | 403 | 404: return \"Not allowed\" # point is an (x, y) tuple match point: case (0, 0): print(\"Origin\") case (0, y): print(f\"Y={y}\") case (x, 0): print(f\"X={x}\") case (x, y): print(f\"X={x}, Y={y}\") case _: raise ValueError(\"Not a point\") point (x, y) = point class Point: def __init__(self, x, y): self. x = x self.",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 23,
+  "start_char": 43771,
+  "end_char": 45132,
+  "token_count": 416,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.628789"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_023.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_001",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "addaudithook RuntimeError See the audit events table for all events raised by CPython, and PEP 578 for the original design discussion. Added in version 3. 8. Changed in version 3. 8. 1: Exceptions derived from Exception but not RuntimeError are no longer suppressed. Exception RuntimeError CPython implementation detail: When tracing is enabled (see settrace()), Python hooks are only traced if the callable has a cantrace member that is set to a true value. Otherwise, trace functions will skip the hook. settrace() __cantrace__ The list of command line arguments passed to a Python script. argv[0] is the script name (it is operating system dependent whether this is a full pathname or not). If the command was executed using the -c command line option to the interpreter, argv[0] is set to the string '-c'. If no script name was passed to the Python interpreter, argv[0] is the empty string. argv[0] -c argv[0] '-c' argv[0] To loop over the standard input, or the list of files given on the command line, see the fileinput module. fileinput See also sys. orig_argv. sys. orig_argv Note On Unix, command line arguments are passed by bytes from OS. Python decodes them with filesystem encoding and “surrogateescape” error handler. When you need original bytes, you can get it by [os. fsencode(arg) for arg in sys. argv]. [os. fsencode(arg) for arg in sys. argv] Raise an auditing event and trigger any active auditing hooks. event is a string identifying the event, and args may contain optional arguments with more information about the event. The number and types of arguments for a given event are considered a public and stable API and should not be modified between releases. For example, one auditing event is named os. chdir. This event has one argument called path that will contain the requested new working directory. os. chdir sys. audit() will call the existing auditing hooks, passing the event name and arguments, and will re-raise the first exception from any hook. In general, if an exception is raised, it should not be handled and the process should be terminated as quickly as possible. This allows hook implementations to decide how to respond to particular events: they can merely log the event or abort the operation by raising an exception. sys.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 1,
+  "start_char": 2455,
+  "end_char": 4724,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.419451"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_001.txt"
+}

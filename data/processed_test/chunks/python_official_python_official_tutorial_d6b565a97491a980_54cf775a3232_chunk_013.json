@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_013",
+  "original_doc_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232",
+  "content": "format() % >>> squares = [1, 4, 9, 16, 25] >>> squares [1, 4, 9, 16, 25] >>> squares[0] # indexing returns the item 1 >>> squares[-1] 25 >>> squares[-3:] # slicing returns a new list [9, 16, 25] >>> squares + [36, 49, 64, 81, 100] [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] >>> cubes = [1, 8, 27, 65, 125] # something's wrong here >>> 4 ** 3 # the cube of 4 is 64, not 65. 64 >>> cubes[3] = 64 # replace the wrong value >>> cubes [1, 8, 27, 64, 125] list. append() >>> cubes. append(216) # add the cube of 6 >>> cubes. append(7 ** 3) # and the cube of 7 >>> cubes [1, 8, 27, 64, 125, 216, 343] >>> rgb = [\"Red\", \"Green\", \"Blue\"] >>> rgba = rgb >>> id(rgb) == id(rgba) # they reference the same object True >>> rgba.",
+  "title": "3. An Informal Introduction to Python.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 13,
+  "start_char": 23260,
+  "end_char": 23971,
+  "token_count": 293,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_d6b565a97491a980.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.169866"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_013.txt"
+}

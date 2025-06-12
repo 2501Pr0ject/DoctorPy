@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_064",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "real z. imag len() a[i] a[-2] a[n-2] n a[i:j] <= < a[i:j:k] x = i + n*k >= 0 <= < U+0000 - U+10FFFF 1 ord() 0 - 10FFFF chr() 0 - 10FFFF 1 str. encode() str bytes bytes. decode() b'abc' bytes() decode() del collections array bytearray() bytes len() 1 1. 0 set() add() frozenset() a[k] k a del len() 1 1. 0 {} dbm. ndbm dbm. gnu collections dictionary None tuple co_freevars code object cell_contents None __name__ attributes __qualname__ attributes None tuple None __dict__ attributes dictionary 'return' dictionary tuple __code__ method. __func__. __doc__ string None method. __func__. __name__ None classmethod __self__ __func__ classmethod __self__ __func__ __func__ __self__ C f() x C x. f(1) C. f(x, 1) classmethod __self__ x. f(1) C. f(1) f(C,1) f yield iterator. __next__() yield return StopIteration async def await async with async for async def yield async for aiterator. __anext__ yield return StopAsyncIteration len() math. sin() math __doc__ None function. __doc__ __name__ function. __name__ __self__ None __module__ None function. __module__ alist. append() __self__ other instance methods __new__() __new__() __init__() __call__() import importlib. import_module() __import__() dictionary __globals__ m. x m. __dict__[\"x\"] m. x = 1 m. __dict__[\"x\"] = 1 importlib. util. module_from_spec() types. ModuleType __name__ __spec__ __spec__ >>> import typing >>> typing. __name__, typing. __spec__. name ('typing', 'typing') >>> typing. __spec__. name = 'spelling' >>> typing. __name__, typing. __spec__. name ('typing', 'spelling') >>> typing. __name__ = 'keyboard_smashing' >>> typing. __name__, typing. __spec__.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 64,
+  "start_char": 136553,
+  "end_char": 138176,
+  "token_count": 487,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.760547"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_064.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_036",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "match() Making a Phonebook Text Munging Finding all Adverbs Finding all Adverbs and their Positions Raw String Notation Writing a Tokenizer Checking for a Pair Simulating scanf() search() vs. match() Making a Phonebook Text Munging Finding all Adverbs Finding all Adverbs and their Positions Raw String Notation Writing a Tokenizer #### Previous topic string — Common string operations string #### Next topic difflib — Helpers for computing deltas difflib ### This page Report a bug Show source re str bytes '\\' '\\\\\\\\' \\\\ \\\\ SyntaxWarning SyntaxError 'r' r\"\\n\" '\\' 'n' \"\\n\" re 'A' 'a' '0' last 'last' this special style 'in single quotes' '|' '(' * +. {m,n}. (. :a{6})* 'a'. DOTALL (. s:. ) ^ MULTILINE $ MULTILINE foo foo$ foo. $ 'foo1\\nfoo2\\n' MULTILINE $ 'foo\\n' * ab* + ab+. ab. *. +. '*' '+' '. ' <. *> '<a> b <c>' '<a>'. <. *. > '<a>' *+ ++. + '*' '+' '. ' '+' a*a 'aaaa' a* 'a' 'a' a* 'a' 'a' 'a' a*+a 'aaaa' a*+ 'a' 'a' x*+ x++ x. + (. >x*) (. >x+) (. >x. ) {m} a{6} 'a' {m,n} a{3,5} 'a' a{4,}b 'aaaab' 'a' 'b' 'aaab' {m,n}. 'aaaaaa' a{3,5} 'a' a{3,5}. {m,n}+ 'aaaaaa' a{3,5}+aa 'a' 'a' a{3,5}aa a{3,5} 'a' 'a' aa x{m,n}+ (. >x{m,n}) \\ '*' '.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 36,
+  "start_char": 67952,
+  "end_char": 69102,
+  "token_count": 433,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.833270"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_036.txt"
+}

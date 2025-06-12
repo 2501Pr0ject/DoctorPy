@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_010",
+  "original_doc_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9",
+  "content": "encode({\"foo\": [\"bar\", \"baz\"]}) '{\"foo\": [\"bar\", \"baz\"]}' Encode the given object, o, and yield each string representation as available. For example: for chunk in json. JSONEncoder(). iterencode(bigobject): mysocket. write(chunk) ## Exceptions¶ Subclass of ValueError with the following additional attributes: ValueError The unformatted error message. The JSON document being parsed. The start index of doc where parsing failed. The line corresponding to pos. The column corresponding to pos. Added in version 3. 5. ## Standard Compliance and Interoperability¶ The JSON format is specified by RFC 7159 and by ECMA-404. This section details this module’s level of compliance with the RFC. For simplicity, JSONEncoder and JSONDecoder subclasses, and parameters other than those explicitly mentioned, are not considered. JSONEncoder JSONDecoder This module does not comply with the RFC in a strict fashion, implementing some extensions that are valid JavaScript but not valid JSON. In particular: Infinite and NaN number values are accepted and output; Infinite and NaN number values are accepted and output; Repeated names within an object are accepted, and only the value of the last name-value pair is used. Repeated names within an object are accepted, and only the value of the last name-value pair is used. Since the RFC permits RFC-compliant parsers to accept input texts that are not RFC-compliant, this module’s deserializer is technically RFC-compliant under default settings. ### Character Encodings¶ The RFC requires that JSON be represented using either UTF-8, UTF-16, or UTF-32, with UTF-8 being the recommended default for maximum interoperability. As permitted, though not required, by the RFC, this module’s serializer sets ensure_ascii=True by default, thus escaping the output so that the resulting strings only contain ASCII characters. Other than the ensure_ascii parameter, this module is defined strictly in terms of conversion between Python objects and Unicode strings, and thus does not otherwise directly address the issue of character encodings. Unicode strings The RFC prohibits adding a byte order mark (BOM) to the start of a JSON text, and this module’s serializer does not add a BOM to its output. The RFC permits, but does not require, JSON deserializers to ignore an initial BOM in their input. This module’s deserializer raises a ValueError when an initial BOM is present.",
+  "title": "json — JSON encoder and decoder.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 10,
+  "start_char": 20866,
+  "end_char": 23271,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5d5c28b4535c3ee9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.147696"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_010.txt"
+}

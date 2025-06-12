@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_005",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "The original local scope (the one in effect just before the class definition was entered) is reinstated, and the class object is bound here to the class name given in the class definition header (ClassName in the example). ClassName ### 9. 3. 2. Class Objects¶ Class objects support two kinds of operations: attribute references and instantiation. Attribute references use the standard syntax used for all attribute references in Python: obj. name. Valid attribute names are all the names that were in the class’s namespace when the class object was created. So, if the class definition looked like this: obj. name class MyClass: \"\"\"A simple example class\"\"\" i = 12345 def f(self): return 'hello world' then MyClass. i and MyClass. f are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of MyClass. i by assignment. doc is also a valid attribute, returning the docstring belonging to the class: \"A simple example class\". MyClass. i MyClass. f MyClass. i __doc__ \"A simple example class\" Class instantiation uses function notation. Just pretend that the class object is a parameterless function that returns a new instance of the class. For example (assuming the above class): x = MyClass() creates a new instance of the class and assigns this object to the local variable x. x The instantiation operation (“calling” a class object) creates an empty object. Many classes like to create objects with instances customized to a specific initial state. Therefore a class may define a special method named init(), like this: __init__() def __init__(self): self. data = [] When a class defines an init() method, class instantiation automatically invokes init() for the newly created class instance. So in this example, a new, initialized instance can be obtained by: __init__() __init__() x = MyClass() Of course, the init() method may have arguments for greater flexibility. In that case, arguments given to the class instantiation operator are passed on to init(). For example, __init__() __init__() >>> class Complex:. def __init__(self, realpart, imagpart):. self. r = realpart. self. i = imagpart. >>> x = Complex(3. 0, -4. 5) >>> x. r, x. i (3. 0, -4.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 5,
+  "start_char": 11557,
+  "end_char": 13814,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.091755"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_005.txt"
+}

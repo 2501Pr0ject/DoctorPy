@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_047",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "Note Using these ASCII based operations to manipulate binary data that is not stored in an ASCII based format may lead to data corruption. The following methods on bytes and bytearray objects can be used with arbitrary binary data. Return the number of non-overlapping occurrences of subsequence sub in the range [start, end]. Optional arguments start and end are interpreted as in slice notation. The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255. If sub is empty, returns the number of empty slices between characters which is the length of the bytes object plus one. Changed in version 3. 3: Also accept an integer in the range 0 to 255 as the subsequence. If the binary data starts with the prefix string, return bytes[len(prefix):]. Otherwise, return a copy of the original binary data: bytes[len(prefix):] >>> b'TestHook'. removeprefix(b'Test') b'Hook' >>> b'BaseTestCase'. removeprefix(b'Test') b'BaseTestCase' The prefix may be any bytes-like object. Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. Added in version 3. 9. If the binary data ends with the suffix string and that suffix is not empty, return bytes[:-len(suffix)]. Otherwise, return a copy of the original binary data: bytes[:-len(suffix)] >>> b'MiscTests'. removesuffix(b'Tests') b'Misc' >>> b'TmpDirMixin'. removesuffix(b'Tests') b'TmpDirMixin' The suffix may be any bytes-like object. Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made. Added in version 3. 9. Return the bytes decoded to a str. str encoding defaults to 'utf-8'; see Standard Encodings for possible values. 'utf-8' errors controls how decoding errors are handled. If 'strict' (the default), a UnicodeError exception is raised. Other possible values are 'ignore', 'replace', and any other name registered via codecs. register_error(). See Error Handlers for details. 'strict' UnicodeError 'ignore' 'replace' codecs.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 47,
+  "start_char": 95898,
+  "end_char": 97963,
+  "token_count": 468,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.222152"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_047.txt"
+}

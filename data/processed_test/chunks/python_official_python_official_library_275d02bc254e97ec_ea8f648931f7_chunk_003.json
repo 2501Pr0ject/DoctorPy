@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_003",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "However, they still use the strict error handler by default so that attempting to open a binary file in text mode is likely to raise an exception rather than producing nonsense data. open(), io. open(), and codecs. open() use the UTF-8 encoding by default. However, they still use the strict error handler by default so that attempting to open a binary file in text mode is likely to raise an exception rather than producing nonsense data. open() io. open() codecs. open() The Python UTF-8 Mode is enabled if the LC_CTYPE locale is C or POSIX at Python startup (see the PyConfig_Read() function). C POSIX PyConfig_Read() It can be enabled or disabled using the -X utf8 command line option and the PYTHONUTF8 environment variable. -X utf8 PYTHONUTF8 If the PYTHONUTF8 environment variable is not set at all, then the interpreter defaults to using the current locale settings, unless the current locale is identified as a legacy ASCII-based locale (as described for PYTHONCOERCECLOCALE), and locale coercion is either disabled or fails. In such legacy locales, the interpreter will default to enabling UTF-8 mode unless explicitly instructed not to do so. PYTHONUTF8 PYTHONCOERCECLOCALE The Python UTF-8 Mode can only be enabled at the Python startup. Its value can be read from sys. flags. utf8_mode. sys. flags. utf8_mode See also the UTF-8 mode on Windows and the filesystem encoding and error handler. See also Python 3. 15 will make Python UTF-8 Mode default. ## Process Parameters¶ These functions and data items provide information and operate on the current process and user. Return the filename corresponding to the controlling terminal of the process. Availability: Unix, not WASI. A mapping object where keys and values are strings that represent the process environment. For example, environ['HOME'] is the pathname of your home directory (on some platforms), and is equivalent to getenv(\"HOME\") in C. environ['HOME'] getenv(\"HOME\") This mapping is captured the first time the os module is imported, typically during Python startup as part of processing site. py. Changes to the environment made after this time are not reflected in os. environ, except for changes made by modifying os. environ directly. os site. py os. environ os. environ This mapping may be used to modify the environment as well as query the environment.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 3,
+  "start_char": 6827,
+  "end_char": 9162,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.774350"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_003.txt"
+}

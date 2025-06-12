@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_008",
+  "original_doc_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c",
+  "content": "readline() returns an empty string, the end of the file has been reached, while a blank line is represented by '\\n', a string containing only a single newline. f. readline() \\n f. readline() '\\n' >>> f. readline() 'This is the first line of the file. \\n' >>> f. readline() 'Second line of the file\\n' >>> f. readline() '' For reading lines from a file, you can loop over the file object. This is memory efficient, fast, and leads to simple code: >>> for line in f:. print(line, end=''). This is the first line of the file. Second line of the file If you want to read all the lines of a file in a list you can also use list(f) or f. readlines(). list(f) f. readlines() f. write(string) writes the contents of string to the file, returning the number of characters written. f. write(string) >>> f. write('This is a test\\n') 15 Other types of objects need to be converted – either to a string (in text mode) or a bytes object (in binary mode) – before writing them: >>> value = ('the answer', 42) >>> s = str(value) # convert the tuple to string >>> f. write(s) 18 f. tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode. f. tell() To change the file object’s position, use f. seek(offset, whence). The position is computed from adding offset to a reference point; the reference point is selected by the whence argument. A whence value of 0 measures from the beginning of the file, 1 uses the current file position, and 2 uses the end of the file as the reference point. whence can be omitted and defaults to 0, using the beginning of the file as the reference point. f. seek(offset, whence) >>> f = open('workfile', 'rb+') >>> f. write(b'0123456789abcdef') 16 >>> f. seek(5) # Go to the 6th byte in the file 5 >>> f. read(1) b'5' >>> f.",
+  "title": "7. Input and Output.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 8,
+  "start_char": 15436,
+  "end_char": 17318,
+  "token_count": 481,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_b08b74d25282ad3e.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.888973"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_008.txt"
+}

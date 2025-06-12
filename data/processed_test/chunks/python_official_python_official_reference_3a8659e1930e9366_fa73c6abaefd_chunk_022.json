@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_022",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "A traceback object is implicitly created when an exception occurs, and may also be explicitly created by calling types. TracebackType. types. TracebackType Changed in version 3. 7: Traceback objects can now be explicitly instantiated from Python code. For implicitly created tracebacks, when the search for an exception handler unwinds the execution stack, at each unwound level a traceback object is inserted in front of the current traceback. When an exception handler is entered, the stack trace is made available to the program. (See section The try statement. ) It is accessible as the third item of the tuple returned by sys. exc_info(), and as the traceback attribute of the caught exception. sys. exc_info() __traceback__ When the program contains no suitable handler, the stack trace is written (nicely formatted) to the standard error stream; if the interpreter is interactive, it is also made available to the user as sys. last_traceback. sys. last_traceback For explicitly created tracebacks, it is up to the creator of the traceback to determine how the tb_next attributes should be linked to form a full stack trace. tb_next Special read-only attributes: Points to the execution frame of the current level. Accessing this attribute raises an auditing event object. getattr with arguments obj and \"tb_frame\". object. __getattr__ obj \"tb_frame\" Gives the line number where the exception occurred Indicates the “precise instruction”. The line number and last instruction in the traceback may differ from the line number of its frame object if the exception occurred in a try statement with no matching except clause or with a finally clause. try finally The special writable attribute tb_next is the next level in the stack trace (towards the frame where the exception occurred), or None if there is no next level. tb_next None Changed in version 3. 7: This attribute is now writable #### 3. 2. 13. 4. Slice objects¶ Slice objects are used to represent slices for getitem() methods. They are also created by the built-in slice() function. __getitem__() slice() Special read-only attributes: start is the lower bound; stop is the upper bound; step is the step value; each is None if omitted. These attributes can have any type.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 22,
+  "start_char": 50239,
+  "end_char": 52476,
+  "token_count": 463,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.713766"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_022.txt"
+}

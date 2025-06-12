@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_018",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "s}\" # Calls str() on the argument first \"Bring out the holy {name. r}\" # Calls repr() on the argument first \"More {. a}\" # Calls ascii() on the argument first format() str() format_spec ::= [options][width][grouping][\". \" precision][type] options ::= [[fill]align][sign][\"z\"][\"#\"][\"0\"] fill ::= <any character> align ::= \"<\" | \">\" | \"=\" | \"^\" sign ::= \"+\" | \"-\" | \" \" width ::= digit+ grouping ::= \",\" | \"_\" precision ::= digit+ type ::= \"b\" | \"c\" | \"d\" | \"e\" | \"E\" | \"f\" | \"F\" | \"g\" | \"G\" | \"n\" | \"o\" | \"s\" | \"x\" | \"X\" | \"%\" options width grouping precision type fill align sign digit digit { } str. format() format() '<' '>' '=' complex '^' '+' '-' 'z' 'z' '#' '0b' '0o' '0x' '0X' 'g' 'G' '0' complex '0' '=' '0' ',' 'd' 'n' '_' 'd' 'n' 'b' 'o' 'x' 'X' 'n' ',' '_' 'f' 'F' 'g' 'G' 's' 's' 'b' 'c' 'd' 'o' 'x' 'X' '#' '0x' '0X' 'n' 'd' 'd' 'n' None float() float Decimal 'e' p p p + 1 6 float Decimal p=0 # 'E' 'e' 'f' p p 6 float Decimal p=0 # 'F' 'f' nan NAN inf INF 'g' p >= 1 p 0 1 'e' p-1 exp m <= exp < p m Decimals 'f' p-1-exp 'e' p-1 '#' 6 float Decimal 1e-6 inf -inf 0 -0 nan 'G' 'g' 'E' 'n' 'g' '%' 'f' float 'g' exp >= p - 1 Decimal 'g' 'G' context. capitals str() p float round() Decimal complex float '%' j str() str.",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 18,
+  "start_char": 37944,
+  "end_char": 39175,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.228656"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_018.txt"
+}

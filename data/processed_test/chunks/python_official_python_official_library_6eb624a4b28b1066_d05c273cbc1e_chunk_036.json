@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_036",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "' ## tzinfo Objects¶ tzinfo This is an abstract base class, meaning that this class should not be instantiated directly. Define a subclass of tzinfo to capture information about a particular time zone. tzinfo An instance of (a concrete subclass of) tzinfo can be passed to the constructors for datetime and time objects. The latter objects view their attributes as being in local time, and the tzinfo object supports methods revealing offset of local time from UTC, the name of the time zone, and DST offset, all relative to a date or time object passed to them. tzinfo datetime time tzinfo You need to derive a concrete subclass, and (at least) supply implementations of the standard tzinfo methods needed by the datetime methods you use. The datetime module provides timezone, a simple concrete subclass of tzinfo which can represent time zones with fixed offset from UTC such as UTC itself or North American EST and EDT. tzinfo datetime datetime timezone tzinfo Special requirement for pickling: A tzinfo subclass must have an init() method that can be called with no arguments, otherwise it can be pickled but possibly not unpickled again. This is a technical requirement that may be relaxed in the future. tzinfo __init__() A concrete subclass of tzinfo may need to implement the following methods. Exactly which methods are needed depends on the uses made of aware datetime objects. If in doubt, simply implement all of them. tzinfo datetime Return offset of local time from UTC, as a timedelta object that is positive east of UTC. If local time is west of UTC, this should be negative. timedelta This represents the total offset from UTC; for example, if a tzinfo object represents both time zone and DST adjustments, utcoffset() should return their sum. If the UTC offset isn’t known, return None. Else the value returned must be a timedelta object strictly between -timedelta(hours=24) and timedelta(hours=24) (the magnitude of the offset must be less than one day). Most implementations of utcoffset() will probably look like one of these two: tzinfo utcoffset() None timedelta -timedelta(hours=24) timedelta(hours=24) utcoffset() return CONSTANT # fixed-offset class return CONSTANT + self. dst(dt) # daylight-aware class If utcoffset() does not return None, dst() should not return None either. utcoffset() None dst() None The default implementation of utcoffset() raises NotImplementedError.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 36,
+  "start_char": 69167,
+  "end_char": 71571,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.413567"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_036.txt"
+}

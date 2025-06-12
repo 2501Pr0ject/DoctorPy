@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_007",
+  "original_doc_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6",
+  "content": "def _(arg: int, verbose=False):. if verbose:. print(\"Strength in numbers, eh. \", end=\" \"). print(arg). >>> @fun. register. def _(arg: list, verbose=False):. if verbose:. print(\"Enumerate this:\"). for i, elem in enumerate(arg):. print(i, elem) types. UnionType and typing. Union can also be used: types. UnionType typing. Union >>> @fun. register. def _(arg: int | float, verbose=False):. if verbose:. print(\"Strength in numbers, eh. \", end=\" \"). print(arg). >>> from typing import Union >>> @fun. register. def _(arg: Union[list, set], verbose=False):. if verbose:. print(\"Enumerate this:\"). for i, elem in enumerate(arg):. print(i, elem). For code which doesn’t use type annotations, the appropriate type argument can be passed explicitly to the decorator itself: >>> @fun. register(complex). def _(arg, verbose=False):. if verbose:. print(\"Better than complicated. \", end=\" \"). print(arg. real, arg. imag). For code that dispatches on a collections type (e. g. , list), but wants to typehint the items of the collection (e. g. , list[int]), the dispatch type should be passed explicitly to the decorator itself with the typehint going into the function definition: list list[int] >>> @fun. register(list). def _(arg: list[int], verbose=False):. if verbose:. print(\"Enumerate this:\"). for i, elem in enumerate(arg):. print(i, elem) Note At runtime the function will dispatch on an instance of a list regardless of the type contained within the list i. e. [1,2,3] will be dispatched the same as [\"foo\", \"bar\", \"baz\"]. The annotation provided in this example is for static type checkers only and has no runtime impact. [1,2,3] [\"foo\", \"bar\", \"baz\"] To enable registering lambdas and pre-existing functions, the register() attribute can also be used in a functional form: register() >>> def nothing(arg, verbose=False):. print(\"Nothing. \"). >>> fun. register(type(None), nothing) The register() attribute returns the undecorated function.",
+  "title": "functools — Higher-order functions and operations on callable objects.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 7,
+  "start_char": 15754,
+  "end_char": 17690,
+  "token_count": 477,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_8bb6cc8251877a19.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.503208"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_007.txt"
+}

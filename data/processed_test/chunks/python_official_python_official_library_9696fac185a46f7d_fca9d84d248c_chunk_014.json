@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_014",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "Currently, the sliding_window(), iter_index(), and sieve() recipes are being tested to see whether they prove their worth. accumulate() compress() pairwise() sliding_window() iter_index() sieve() Substantially all of these recipes and many, many others can be installed from the more-itertools project found on the Python Package Index: python -m pip install more-itertools Many of the recipes offer the same high performance as the underlying toolset. Superior memory performance is kept by processing elements one at a time rather than bringing the whole iterable into memory all at once. Code volume is kept small by linking the tools together in a functional style. High speed is retained by preferring “vectorized” building blocks over the use of for-loops and generators which incur interpreter overhead. from collections import Counter, deque from contextlib import suppress from functools import reduce from math import comb, prod, sumprod, isqrt from operator import itemgetter, getitem, mul, neg def take(n, iterable): \"Return first n items of the iterable as a list. \" return list(islice(iterable, n)) def prepend(value, iterable): \"Prepend a single value in front of an iterable. \" # prepend(1, [2, 3, 4]) → 1 2 3 4 return chain([value], iterable) def tabulate(function, start=0): \"Return function(0), function(1),. \" return map(function, count(start)) def repeatfunc(function, times=None, *args): \"Repeat calls to a function with specified arguments. \" if times is None: return starmap(function, repeat(args)) return starmap(function, repeat(args, times)) def flatten(list_of_lists): \"Flatten one level of nesting. \" return chain. from_iterable(list_of_lists) def ncycles(iterable, n): \"Returns the sequence elements n times. \" return chain. from_iterable(repeat(tuple(iterable), n)) def loops(n): \"Loop n times. Like range(n) but without creating integers. \" # for _ in loops(100):. return repeat(None, n) def tail(n, iterable): \"Return an iterator over the last n items. \" # tail(3, 'ABCDEFG') → E F G return iter(deque(iterable, maxlen=n)) def consume(iterator, n=None): \"Advance the iterator n-steps ahead. If n is None, consume entirely.",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 14,
+  "start_char": 24487,
+  "end_char": 26642,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.105989"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_014.txt"
+}

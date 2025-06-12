@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_020",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "format('left aligned') 'left aligned ' >>> '{:>30}'. format('right aligned') ' right aligned' >>> '{:^30}'. format('centered') ' centered ' >>> '{:*^30}'. format('centered') # use '*' as a fill char '***********centered***********' %+f %-f % f >>> '{:+f}; {:+f}'. format(3. 14, -3. 14) # show it always '+3. 140000; -3. 140000' >>> '{: f}; {: f}'. format(3. 14, -3. 14) # show a space for positive numbers ' 3. 140000; -3. 140000' >>> '{:-f}; {:-f}'. format(3. 14, -3. 14) # show only the minus -- same as '{:f}; {:f}' '3. 140000; -3. 140000' %x %o >>> # format also supports binary numbers >>> \"int: {0:d}; hex: {0:x}; oct: {0:o}; bin: {0:b}\". format(42) 'int: 42; hex: 2a; oct: 52; bin: 101010' >>> # with 0x, 0o, or 0b as prefix: >>> \"int: {0:d}; hex: {0:#x}; oct: {0:#o}; bin: {0:#b}\". format(42) 'int: 42; hex: 0x2a; oct: 0o52; bin: 0b101010' >>> '{:,}'. format(1234567890) '1,234,567,890' >>> '{:_}'. format(1234567890) '1_234_567_890' >>> '{:_b}'. format(1234567890) '100_1001_1001_0110_0000_0010_1101_0010' >>> '{:_x}'. format(1234567890) '4996_02d2' >>> points = 19 >>> total = 22 >>> 'Correct answers: {:. 2%}'. format(points/total) 'Correct answers: 86. 36%' >>> import datetime >>> d = datetime.",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 20,
+  "start_char": 40471,
+  "end_char": 41678,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.230560"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_020.txt"
+}

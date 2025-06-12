@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_040",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "9: When the command line options -E or -I are being used, the environment variable PYTHONCASEOK is now ignored. -E -I PYTHONCASEOK Footnotes #### Previous topic Introduction #### Next topic Built-in Constants ### This page Report a bug Show source abs() aiter() all() anext() any() ascii() bin() bool() breakpoint() bytearray() bytes() callable() chr() classmethod() compile() complex() delattr() dict() dir() divmod() enumerate() eval() exec() filter() float() format() frozenset() getattr() globals() hasattr() hash() help() hex() id() input() int() isinstance() issubclass() iter() len() list() locals() map() max() memoryview() min() next() object() oct() open() ord() pow() print() property() range() repr() reversed() round() set() setattr() slice() sorted() staticmethod() str() sum() super() tuple() type() vars() zip() __import__() __abs__() x. __aiter__() iter() aiter() True def all(iterable): for element in iterable: if not element: return False return True next() __anext__() StopAsyncIteration True False def any(iterable): for element in iterable: if element: return True return False repr() repr() \\x \\u \\U repr() int __index__() >>> bin(3) '0b11' >>> bin(-10) '-0b1010' >>> format(14, '#b'), format(14, 'b') ('0b1110', '1110') >>> f'{14:#b}', f'{14:b}' ('0b1110', '1110') format() True False False True bool int False True sys. breakpointhook() args kws sys. breakpointhook() pdb. set_trace() pdb sys. breakpointhook() breakpoint() sys. breakpointhook() RuntimeError breakpoint() PYTHONBREAKPOINT sys. breakpointhook() sys. breakpointhook() builtins. breakpoint breakpointhook bytearray bytes bytearray() str.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 40,
+  "start_char": 85571,
+  "end_char": 87198,
+  "token_count": 441,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.029463"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_040.txt"
+}

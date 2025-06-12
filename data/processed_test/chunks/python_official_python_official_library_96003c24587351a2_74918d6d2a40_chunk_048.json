@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_048",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "ValueError: zip() argument 2 is longer than argument 1 strict=True itertools. zip_longest() zip() zip(*[iter(s)]*n, strict=True) n n zip() * >>> x = [1, 2, 3] >>> y = [4, 5, 6] >>> list(zip(x, y)) [(1, 4), (2, 5), (3, 6)] >>> x2, y2 = zip(*zip(x, y)) >>> x == list(x2) and y == list(y2) True strict importlib. import_module() import builtins builtins. __import__ import __import__() importlib. import_module() import 0 __import__() package. module import spam spam = __import__('spam', globals(), locals(), [], 0) import spam. ham spam = __import__('spam. ham', globals(), locals(), [], 0) __import__() import from spam. ham import eggs, sausage as saus _temp = __import__('spam. ham', globals(), locals(), ['eggs', 'sausage'], 0) eggs = _temp. eggs saus = _temp. sausage spam. ham __import__() importlib. import_module() -E -I PYTHONCASEOK.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 48,
+  "start_char": 97631,
+  "end_char": 98472,
+  "token_count": 265,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.036653"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_048.txt"
+}

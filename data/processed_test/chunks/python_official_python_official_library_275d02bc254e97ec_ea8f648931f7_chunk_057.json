@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_057",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "15 for timerfd_create) time. CLOCK_BOOTTIME (Since Linux 3. 15 for timerfd_create) time. CLOCK_BOOTTIME If clockid is time. CLOCK_REALTIME, a settable system-wide real-time clock is used. If system clock is changed, timer setting need to be updated. To cancel timer when system clock is changed, see TFD_TIMER_CANCEL_ON_SET. time. CLOCK_REALTIME TFD_TIMER_CANCEL_ON_SET If clockid is time. CLOCK_MONOTONIC, a non-settable monotonically increasing clock is used. Even if the system clock is changed, the timer setting will not be affected. time. CLOCK_MONOTONIC If clockid is time. CLOCK_BOOTTIME, same as time. CLOCK_MONOTONIC except it includes any time that the system is suspended. time. CLOCK_BOOTTIME time. CLOCK_MONOTONIC The file descriptor’s behaviour can be modified by specifying a flags value. Any of the following variables may used, combined using bitwise OR (the | operator): | TFD_NONBLOCK TFD_NONBLOCK TFD_NONBLOCK TFD_CLOEXEC TFD_CLOEXEC TFD_CLOEXEC If TFD_NONBLOCK is not set as a flag, read() blocks until the timer expires. If it is set as a flag, read() doesn’t block, but If there hasn’t been an expiration since the last call to read, read() raises OSError with errno is set to errno. EAGAIN. TFD_NONBLOCK read() read() read() OSError errno errno. EAGAIN TFD_CLOEXEC is always set by Python automatically. TFD_CLOEXEC The file descriptor must be closed with os. close() when it is no longer needed, or else the file descriptor will be leaked. os. close() See also The timerfd_create(2) man page. Availability: Linux >= 2. 6. 27 with glibc >= 2. 8 Added in version 3. 13. Alter a timer file descriptor’s internal timer. This function operates the same interval timer as timerfd_settime_ns(). timerfd_settime_ns() fd must be a valid timer file descriptor. The timer’s behaviour can be modified by specifying a flags value.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 57,
+  "start_char": 121465,
+  "end_char": 123308,
+  "token_count": 459,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.822569"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_057.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_008",
+  "original_doc_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232",
+  "content": "On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right. The first line contains a multiple assignment: the variables a and b simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right. a b The while loop executes as long as the condition (here: a < 10) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: < (less than), > (greater than), == (equal to), <= (less than or equal to), >= (greater than or equal to) and. = (not equal to). The while loop executes as long as the condition (here: a < 10) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: < (less than), > (greater than), == (equal to), <= (less than or equal to), >= (greater than or equal to) and. = (not equal to). while a < 10 < > == <= >=. = The body of the loop is indented: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space(s) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion (since the parser cannot guess when you have typed the last line).",
+  "title": "3. An Informal Introduction to Python.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 8,
+  "start_char": 14422,
+  "end_char": 16597,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_d6b565a97491a980.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.165481"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_008.txt"
+}

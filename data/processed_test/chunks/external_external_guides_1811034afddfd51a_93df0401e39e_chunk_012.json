@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_1811034afddfd51a_93df0401e39e_chunk_012",
+  "original_doc_id": "external_external_guides_1811034afddfd51a_93df0401e39e",
+  "content": "py [-h] [-v | -q] x y prog. py: error: argument -q/--quiet: not allowed with argument -v/--verbose $ python prog. py 4 2 -v --quiet usage: prog. py [-h] [-v | -q] x y prog. py: error: argument -q/--quiet: not allowed with argument -v/--verbose That should be easy to follow. I’ve added that last output so you can see the sort of flexibility you get, i. e. mixing long form options with short form ones. Before we conclude, you probably want to tell your users the main purpose of your program, just in case they don’t know: import argparse parser = argparse. ArgumentParser(description=\"calculate X to the power of Y\") group = parser. add_mutually_exclusive_group() group. add_argument(\"-v\", \"--verbose\", action=\"store_true\") group. add_argument(\"-q\", \"--quiet\", action=\"store_true\") parser. add_argument(\"x\", type=int, help=\"the base\") parser. add_argument(\"y\", type=int, help=\"the exponent\") args = parser. parse_args() answer = args. x**args. y if args. quiet: print(answer) elif args. verbose: print(f\"{args. x} to the power {args. y} equals {answer}\") else: print(f\"{args. x}^{args. y} == {answer}\") Note that slight difference in the usage text. Note the [-v | -q], which tells us that we can either use -v or -q, but not both at the same time: [-v | -q] -v -q $ python prog. py --help usage: prog. py [-h] [-v | -q] x y calculate X to the power of Y positional arguments: x the base y the exponent options: -h, --help show this help message and exit -v, --verbose -q, --quiet ## How to translate the argparse output¶ The output of the argparse module such as its help text and error messages are all made translatable using the gettext module. This allows applications to easily localize messages produced by argparse. See also Internationalizing your programs and modules. argparse gettext argparse For instance, in this argparse output: argparse $ python prog. py --help usage: prog.",
+  "title": "Argparse Tutorial.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 12,
+  "start_char": 24441,
+  "end_char": 26334,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_1811034afddfd51a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.493871"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_1811034afddfd51a_93df0401e39e_chunk_012.txt"
+}

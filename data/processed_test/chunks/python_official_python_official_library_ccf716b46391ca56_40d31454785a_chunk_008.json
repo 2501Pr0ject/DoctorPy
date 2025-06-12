@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_008",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "aiLmsux) (One or more letters from the set 'a', 'i', 'L', 'm', 's', 'u', 'x'. ) The group matches the empty string; the letters set the corresponding flags for the entire regular expression: 'a' 'i' 'L' 'm' 's' 'u' 'x' re. A (ASCII-only matching) re. A (ASCII-only matching) re. A re. I (ignore case) re. I (ignore case) re. I re. L (locale dependent) re. L (locale dependent) re. L re. M (multi-line) re. M (multi-line) re. M re. S (dot matches all) re. S (dot matches all) re. S re. U (Unicode matching) re. U (Unicode matching) re. U re. X (verbose) re. X (verbose) re. X (The flags are described in Module Contents. ) This is useful if you wish to include the flags as part of the regular expression, instead of passing a flag argument to the re. compile() function. Flags should be used first in the expression string. re. compile() Changed in version 3. 11: This construction can only be used at the start of the expression. (. :. ) A non-capturing version of regular parentheses. Matches whatever regular expression is inside the parentheses, but the substring matched by the group cannot be retrieved after performing a match or referenced later in the pattern. (. aiLmsux-imsx:. ) (Zero or more letters from the set 'a', 'i', 'L', 'm', 's', 'u', 'x', optionally followed by '-' followed by one or more letters from the 'i', 'm', 's', 'x'. ) The letters set or remove the corresponding flags for the part of the expression: 'a' 'i' 'L' 'm' 's' 'u' 'x' '-' 'i' 'm' 's' 'x' re. A (ASCII-only matching) re. A (ASCII-only matching) re. A re. I (ignore case) re. I (ignore case) re. I re. L (locale dependent) re. L (locale dependent) re. L re. M (multi-line) re. M (multi-line) re.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 8,
+  "start_char": 15734,
+  "end_char": 17419,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.809024"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_008.txt"
+}

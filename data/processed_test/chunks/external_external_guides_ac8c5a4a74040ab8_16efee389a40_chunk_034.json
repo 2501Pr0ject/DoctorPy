@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ac8c5a4a74040ab8_16efee389a40_chunk_034",
+  "original_doc_id": "external_external_guides_ac8c5a4a74040ab8_16efee389a40",
+  "content": "* > > '<' '<html>' '>' '</title>' *. +. {m,n}. '>' '<' '>' >>> print(re. match('<. *. >', s). group()) <html> re. VERBOSE re. VERBOSE dog | cat dog|cat [a b] 'a' 'b' # pat = re. compile(r\"\"\" \\s* # Skip leading whitespace (. P<header>[^:]+) # Header name \\s* : # Whitespace, and a colon (. P<value>. *. ) # The header's value -- *. used to # lose the following trailing whitespace \\s*$ # Trailing whitespace to end-of-line \"\"\", re. VERBOSE) pat = re. compile(r\"\\s*(. P<header>[^:]+)\\s*:(. P<value>. *. )\\s*$\") regex.",
+  "title": "Regular Expression HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 34,
+  "start_char": 64739,
+  "end_char": 65254,
+  "token_count": 171,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ac8c5a4a74040ab8.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.059128"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ac8c5a4a74040ab8_16efee389a40_chunk_034.txt"
+}

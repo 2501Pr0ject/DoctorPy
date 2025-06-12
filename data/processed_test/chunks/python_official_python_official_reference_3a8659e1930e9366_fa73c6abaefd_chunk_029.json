@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_029",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "Example: hash() set frozenset dict __hash__() def __hash__(self): return hash((self. name, self. nick, self. color)) Note hash() truncates the value returned from an object’s custom hash() method to the size of a Py_ssize_t. This is typically 8 bytes on 64-bit builds and 4 bytes on 32-bit builds. If an object’s hash() must interoperate on builds of different bit sizes, be sure to check the width on all supported builds. An easy way to do this is with python -c \"import sys; print(sys. hash_info. width)\". hash() __hash__() Py_ssize_t __hash__() python -c \"import sys; print(sys. hash_info. width)\" If a class does not define an eq() method it should not define a hash() operation either; if it defines eq() but not hash(), its instances will not be usable as items in hashable collections. If a class defines mutable objects and implements an eq() method, it should not implement hash(), since the implementation of hashable collections requires that a key’s hash value is immutable (if the object’s hash value changes, it will be in the wrong hash bucket). __eq__() __hash__() __eq__() __hash__() __eq__() __hash__() User-defined classes have eq() and hash() methods by default (inherited from the object class); with them, all objects compare unequal (except with themselves) and x. hash() returns an appropriate value such that x == y implies both that x is y and hash(x) == hash(y). __eq__() __hash__() object x. __hash__() x == y x is y hash(x) == hash(y) A class that overrides eq() and does not define hash() will have its hash() implicitly set to None. When the hash() method of a class is None, instances of the class will raise an appropriate TypeError when a program attempts to retrieve their hash value, and will also be correctly identified as unhashable when checking isinstance(obj, collections. abc. Hashable). __eq__() __hash__() __hash__() None __hash__() None TypeError isinstance(obj, collections. abc. Hashable) If a class that overrides eq() needs to retain the implementation of hash() from a parent class, the interpreter must be told this explicitly by setting hash =. hash.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 29,
+  "start_char": 66699,
+  "end_char": 68803,
+  "token_count": 488,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.720522"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_029.txt"
+}

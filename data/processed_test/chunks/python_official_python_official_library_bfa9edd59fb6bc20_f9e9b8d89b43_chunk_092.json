@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_092",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "0 0j Decimal(0) Fraction(0, 1) '' () [] {} set() range(0) 0 False 1 True or and and or not x or y x and y not x True False not not a == b not (a == b) a == not b x < y <= z x < y and y <= z x < y < <= > >= ==. = is is not == is < <= > >= TypeError __eq__() __lt__() __le__() __gt__() __ge__() __lt__() __eq__() is is not in not in __contains__() int float complex sys. float_info z. real z. imag fractions. Fraction decimal. Decimal 'j' 'J' int() float() complex() x + y x - y x * y x / y x // y x % y x / y -x +x abs(x) abs() int(x) int() float(x) float() complex(re, im) complex() c. conjugate() divmod(x, y) (x // y, x % y) divmod() pow(x, y) pow() x ** y int int float float int 1//2 0 (-1)//2 -1 1//(-2) -1 (-1)//(-2) 0 abs() float int math. floor() math. ceil() pow(0, 0) 0 ** 0 1 0 9 Nd Nd numbers. Real int float math. trunc(x) Integral round(x[, n]) math. floor(x) Integral math. ceil(x) Integral math cmath ~ + - x | y x ^ y x & y x << n x >> n ~x ValueError pow(2, n) pow(2, n) 1 + max(x. bit_length(), y. bit_length()) numbers. Integral >>> n = -37 >>> bin(n) '-0b100101' >>> n. bit_length() 6 x x. bit_length() k 2**(k-1) <= abs(x) < 2**k abs(x) k = 1 + int(log(abs(x), 2)) x x. bit_length() 0 def bit_length(self): s = bin(self) # binary representation: bin(-37) --> '-0b100101' s = s.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 92,
+  "start_char": 190311,
+  "end_char": 191610,
+  "token_count": 479,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.264033"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_092.txt"
+}

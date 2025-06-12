@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_009",
+  "original_doc_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232",
+  "content": "Note that each line within a basic block must be indented by the same amount. The body of the loop is indented: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space(s) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion (since the parser cannot guess when you have typed the last line). Note that each line within a basic block must be indented by the same amount. The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating-point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this: >>> i = 256256 >>> print('The value of i is', i) The value of i is 65536 The keyword argument end can be used to avoid the newline after the output, or end the output with a different string: >>> a, b = 0, 1 >>> while a < 1000:. print(a, end=','). a, b = b, a+b. 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987, The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating-point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this: print() >>> i = 256*256 >>> print('The value of i is', i) The value of i is 65536 The keyword argument end can be used to avoid the newline after the output, or end the output with a different string: >>> a, b = 0, 1 >>> while a < 1000:. print(a, end=','). a, b = b, a+b.",
+  "title": "3. An Informal Introduction to Python.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 9,
+  "start_char": 16597,
+  "end_char": 18584,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_d6b565a97491a980.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.166360"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_009.txt"
+}

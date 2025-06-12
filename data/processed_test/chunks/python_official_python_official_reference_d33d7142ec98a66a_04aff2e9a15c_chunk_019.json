@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_019",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "These changes allow the deprecation of several APIs in the import system and also addition of new methods to finders and loaders. Footnotes ### Table of Contents 5. The import system 5. 1. importlib 5. 2. Packages 5. 2. 1. Regular packages 5. 2. 2. Namespace packages 5. 3. Searching 5. 3. 1. The module cache 5. 3. 2. Finders and loaders 5. 3. 3. Import hooks 5. 3. 4. The meta path 5. 4. Loading 5. 4. 1. Loaders 5. 4. 2. Submodules 5. 4. 3. Module specs 5. 4. 4. path attributes on modules 5. 4. 5. Module reprs 5. 4. 6. Cached bytecode invalidation 5. 5. The Path Based Finder 5. 5. 1. Path entry finders 5. 5. 2. Path entry finder protocol 5. 6. Replacing the standard import system 5. 7. Package Relative Imports 5. 8. Special considerations for main 5. 8. 1. main. spec 5. 9. References 5. 1. importlib importlib 5. 2. Packages 5. 2. 1. Regular packages 5. 2. 2. Namespace packages 5. 2. 1. Regular packages 5. 2. 2. Namespace packages 5. 3. Searching 5. 3. 1. The module cache 5. 3. 2. Finders and loaders 5. 3. 3. Import hooks 5. 3. 4. The meta path 5. 3. 1. The module cache 5. 3. 2. Finders and loaders 5. 3. 3. Import hooks 5. 3. 4. The meta path 5. 4. Loading 5. 4. 1. Loaders 5. 4. 2. Submodules 5. 4. 3. Module specs 5.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 19,
+  "start_char": 43679,
+  "end_char": 44913,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.019283"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_019.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_003",
+  "original_doc_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9",
+  "content": "check_circular (bool) – If False, the circular reference check for container types is skipped and a circular reference will result in a RecursionError (or worse). Default True. False RecursionError True allow_nan (bool) – If False, serialization of out-of-range float values (nan, inf, -inf) will result in a ValueError, in strict compliance with the JSON specification. If True (the default), their JavaScript equivalents (NaN, Infinity, -Infinity) are used. allow_nan (bool) – If False, serialization of out-of-range float values (nan, inf, -inf) will result in a ValueError, in strict compliance with the JSON specification. If True (the default), their JavaScript equivalents (NaN, Infinity, -Infinity) are used. False float nan inf -inf ValueError True NaN Infinity -Infinity cls (a JSONEncoder subclass) – If set, a custom JSON encoder with the default() method overridden, for serializing into custom datatypes. If None (the default), JSONEncoder is used. cls (a JSONEncoder subclass) – If set, a custom JSON encoder with the default() method overridden, for serializing into custom datatypes. If None (the default), JSONEncoder is used. JSONEncoder default() None JSONEncoder indent (int | str | None) – If a positive integer or string, JSON array elements and object members will be pretty-printed with that indent level. A positive integer indents that many spaces per level; a string (such as \"\\t\") is used to indent each level. If zero, negative, or \"\" (the empty string), only newlines are inserted. If None (the default), the most compact representation is used. indent (int | str | None) – If a positive integer or string, JSON array elements and object members will be pretty-printed with that indent level. A positive integer indents that many spaces per level; a string (such as \"\\t\") is used to indent each level. If zero, negative, or \"\" (the empty string), only newlines are inserted. If None (the default), the most compact representation is used. \"\\t\" \"\" None separators (tuple | None) – A two-tuple: (item_separator, key_separator). If None (the default), separators defaults to (', ', ': ') if indent is None, and (',', ': ') otherwise.",
+  "title": "json — JSON encoder and decoder.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 3,
+  "start_char": 5492,
+  "end_char": 7653,
+  "token_count": 488,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5d5c28b4535c3ee9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.141424"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_003.txt"
+}

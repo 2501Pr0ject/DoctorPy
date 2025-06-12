@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_029",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "Return True if the string ends with the specified suffix, otherwise return False. suffix can also be a tuple of suffixes to look for. With optional start, test beginning at that position. With optional end, stop comparing at that position. True False Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size. Tab positions occur every tabsize characters (default is 8, giving tab positions at columns 0, 8, 16 and so on). To expand the string, the current column is set to zero and the string is examined character by character. If the character is a tab (\\t), one or more space characters are inserted in the result until the current column is equal to the next tab position. (The tab character itself is not copied. ) If the character is a newline (\\n) or return (\\r), it is copied and the current column is reset to zero. Any other character is copied unchanged and the current column is incremented by one regardless of how the character is represented when printed. \\t \\n \\r >>> '01\\t012\\t0123\\t01234'. expandtabs() '01 012 0123 01234' >>> '01\\t012\\t0123\\t01234'. expandtabs(4) '01 012 0123 01234' Return the lowest index in the string where substring sub is found within the slice s[start:end]. Optional arguments start and end are interpreted as in slice notation. Return -1 if sub is not found. s[start:end] -1 Note The find() method should be used only if you need to know the position of sub. To check if sub is a substring or not, use the in operator: find() in >>> 'Py' in 'Python' True Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces {}. Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument. Returns a copy of the string where each replacement field is replaced with the string value of the corresponding argument. {} >>> \"The sum of 1 + 2 is {0}\". format(1+2) 'The sum of 1 + 2 is 3' See Format String Syntax for a description of the various formatting options that can be specified in format strings.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 29,
+  "start_char": 58153,
+  "end_char": 60319,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.205630"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_029.txt"
+}

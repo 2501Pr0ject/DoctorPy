@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_003",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "For flowing long blocks of text with fewer structural restrictions (docstrings or comments), the line length should be limited to 72 characters. Limiting the required editor window width makes it possible to have several files open side by side, and works well when using code review tools that present the two versions in adjacent columns. The default wrapping in most tools disrupts the visual structure of the code, making it more difficult to understand. The limits are chosen to avoid wrapping in editors with the window width set to 80, even if the tool places a marker glyph in the final column when wrapping lines. Some web based tools may not offer dynamic line wrapping at all. Some teams strongly prefer a longer line length. For code maintained exclusively or primarily by a team that can reach agreement on this issue, it is okay to increase the line length limit up to 99 characters, provided that comments and docstrings are still wrapped at 72 characters. The Python standard library is conservative and requires limiting lines to 79 characters (and docstrings/comments to 72). The preferred way of wrapping long lines is by using Python’s implied line continuation inside parentheses, brackets and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in preference to using a backslash for line continuation. Backslashes may still be appropriate at times. For example, long, multiple with-statements could not use implicit continuation before Python 3. 10, so backslashes were acceptable for that case: with with open('/path/to/some/file/you/want/to/read') as file_1, \\ open('/path/to/some/file/being/written', 'w') as file_2: file_2. write(file_1. read()) (See the previous discussion on multiline if-statements for further thoughts on the indentation of such multiline with-statements. ) with Another such case is with assert statements. assert Make sure to indent the continued line appropriately. ### Should a Line Break Before or After a Binary Operator. For decades the recommended style was to break after binary operators. But this can hurt readability in two ways: the operators tend to get scattered across different columns on the screen, and each operator is moved away from its operand and onto the previous line.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 3,
+  "start_char": 7427,
+  "end_char": 9731,
+  "token_count": 458,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.769678"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_003.txt"
+}

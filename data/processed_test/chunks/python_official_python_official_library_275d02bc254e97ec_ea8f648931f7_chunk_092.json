@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_092",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "utime path times ns dir_fd (dirpath, dirnames, filenames) '. ' '. ' os. path. join(dirpath, name) True False True del walk() walk() walk() False scandir() OSError filename walk() True True walk() walk() walk() __pycache__ import os from os. path import join, getsize for root, dirs, files in os. walk('python/Lib/xml'): print(root, \"consumes\", end=\" \") print(sum(getsize(join(root, name)) for name in files), end=\" \") print(\"bytes in\", len(files), \"non-directory files\") if '__pycache__' in dirs: dirs. remove('__pycache__') # don't visit __pycache__ directories shutil. rmtree() rmdir() # Delete everything reachable from the directory named in \"top\", # assuming there are no symbolic links. # CAUTION: This is dangerous. For example, if top == '/', it # could delete all your disk files. import os for root, dirs, files in os. walk(top, topdown=False): for name in files: os. remove(os. path. join(root, name)) for name in dirs: os. rmdir(os. path. join(root, name)) os. rmdir(top) os. walk top topdown onerror followlinks os. scandir() os. listdir() os. stat() walk() (dirpath, dirnames, filenames, dirfd) dir_fd walk() fwalk() False fwalk() dup() __pycache__ import os for root, dirs, files, rootfd in os. fwalk('python/Lib/xml'): print(root, \"consumes\", end=\"\") print(sum([os. stat(name, dir_fd=rootfd). st_size for name in files]), end=\"\") print(\"bytes in\", len(files), \"non-directory files\") if '__pycache__' in dirs: dirs. remove('__pycache__') # don't visit __pycache__ directories rmdir() # Delete everything reachable from the directory named in \"top\", # assuming there are no symbolic links. # CAUTION: This is dangerous. For example, if top == '/', it # could delete all your disk files. import os for root, dirs, files, rootfd in os. fwalk(top, topdown=False): for name in files: os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 92,
+  "start_char": 194471,
+  "end_char": 196268,
+  "token_count": 489,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.853800"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_092.txt"
+}

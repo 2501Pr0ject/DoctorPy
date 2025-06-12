@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_005",
+  "original_doc_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6",
+  "content": "Note This decorator makes no attempt to override methods that have been declared in the class or its superclasses. Meaning that if a superclass defines a comparison operator, total_ordering will not implement it again, even if the original method is abstract. Added in version 3. 2. Changed in version 3. 4: Returning NotImplemented from the underlying comparison function for unrecognised types is now supported. NotImplemented Return a new partial object which when called will behave like func called with the positional arguments args and keyword arguments keywords. If more arguments are supplied to the call, they are appended to args. If additional keyword arguments are supplied, they extend and override keywords. Roughly equivalent to: def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc. func = func newfunc. args = args newfunc. keywords = keywords return newfunc The partial() is used for partial function application which “freezes” some portion of a function’s arguments and/or keywords resulting in a new object with a simplified signature. For example, partial() can be used to create a callable that behaves like the int() function where the base argument defaults to two: partial() partial() int() >>> from functools import partial >>> basetwo = partial(int, base=2) >>> basetwo. __doc__ = 'Convert base 2 string to an int. ' >>> basetwo('10010') 18 Return a new partialmethod descriptor which behaves like partial except that it is designed to be used as a method definition rather than being directly callable. partialmethod partial func must be a descriptor or a callable (objects which are both, like normal functions, are handled as descriptors). When func is a descriptor (such as a normal Python function, classmethod(), staticmethod(), abstractmethod() or another instance of partialmethod), calls to get are delegated to the underlying descriptor, and an appropriate partial object returned as the result. classmethod() staticmethod() abstractmethod() partialmethod __get__ When func is a non-descriptor callable, an appropriate bound method is created dynamically. This behaves like a normal Python function when used as a method: the self argument will be inserted as the first positional argument, even before the args and keywords supplied to the partialmethod constructor. partialmethod Example: >>> class Cell:.",
+  "title": "functools — Higher-order functions and operations on callable objects.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 5,
+  "start_char": 11240,
+  "end_char": 13698,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_8bb6cc8251877a19.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.501367"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_005.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_002",
+  "original_doc_id": "python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232",
+  "content": "Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e. g. 3+5j). int float Decimal Fraction j J 3+5j ### 3. 1. 2. Text¶ Python can manipulate text (represented by type str, so-called “strings”) as well as numbers. This includes characters “. ”, words “rabbit”, names “Paris”, sentences “Got your back. ”, etc. “Yay. :)”. They can be enclosed in single quotes ('. ') or double quotes (\". \") with the same result [2]. str. rabbit Paris Got your back. Yay. :) '. ' \". \" >>> 'spam eggs' # single quotes 'spam eggs' >>> \"Paris rabbit got your back :). Yay. \" # double quotes 'Paris rabbit got your back :). Yay. ' >>> '1975' # digits and numerals enclosed in quotes are also strings '1975' To quote a quote, we need to “escape” it, by preceding it with. Alternatively, we can use the other type of quotation marks: \\ >>> 'doesn\\'t' # use \\' to escape the single quote. \"doesn't\" >>> \"doesn't\" #. or use double quotes instead \"doesn't\" >>> '\"Yes,\" they said. ' '\"Yes,\" they said. ' >>> \"\\\"Yes,\\\" they said. \" '\"Yes,\" they said. ' >>> '\"Isn\\'t,\" they said. ' '\"Isn\\'t,\" they said. ' In the Python shell, the string definition and output string can look different. The print() function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters: print() >>> s = 'First line. \\nSecond line. ' # \\n means newline >>> s # without print(), special characters are included in the string 'First line. \\nSecond line. ' >>> print(s) # with print(), special characters are interpreted, so \\n produces new line First line. Second line. If you don’t want characters prefaced by \\ to be interpreted as special characters, you can use raw strings by adding an r before the first quote: \\ r >>> print('C:\\some\\name') # here \\n means newline.",
+  "title": "3. An Informal Introduction to Python.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 2,
+  "start_char": 3945,
+  "end_char": 5779,
+  "token_count": 477,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_d6b565a97491a980.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.160144"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_d6b565a97491a980_54cf775a3232_chunk_002.txt"
+}

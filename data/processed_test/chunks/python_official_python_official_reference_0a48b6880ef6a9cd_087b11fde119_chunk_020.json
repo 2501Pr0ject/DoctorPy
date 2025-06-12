@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_020",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "__mul__() __rmul__() The @ (at) operator is intended to be used for matrix multiplication. No builtin Python types implement this operator. @ This operation can be customized using the special matmul() and rmatmul() methods. __matmul__() __rmatmul__() Added in version 3. 5. The / (division) and // (floor division) operators yield the quotient of their arguments. The numeric arguments are first converted to a common type. Division of integers yields a float, while floor division of integers results in an integer; the result is that of mathematical division with the ‘floor’ function applied to the result. Division by zero raises the ZeroDivisionError exception. / // ZeroDivisionError The division operation can be customized using the special truediv() and rtruediv() methods. The floor division operation can be customized using the special floordiv() and rfloordiv() methods. __truediv__() __rtruediv__() __floordiv__() __rfloordiv__() The % (modulo) operator yields the remainder from the division of the first argument by the second. The numeric arguments are first converted to a common type. A zero right argument raises the ZeroDivisionError exception. The arguments may be floating-point numbers, e. g. , 3. 14%0. 7 equals 0. 34 (since 3. 14 equals 40. 7 + 0. 34. ) The modulo operator always yields a result with the same sign as its second operand (or zero); the absolute value of the result is strictly smaller than the absolute value of the second operand [1]. % ZeroDivisionError 3. 14%0. 7 0. 34 3. 14 4*0. 7 + 0. 34 The floor division and modulo operators are connected by the following identity: x == (x//y)y + (x%y). Floor division and modulo are also connected with the built-in function divmod(): divmod(x, y) == (x//y, x%y). [2].",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 20,
+  "start_char": 47400,
+  "end_char": 49156,
+  "token_count": 440,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.587896"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_020.txt"
+}

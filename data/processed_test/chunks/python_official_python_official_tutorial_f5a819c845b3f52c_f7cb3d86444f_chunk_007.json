@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_007",
+  "original_doc_id": "python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f",
+  "content": "f() f() Actually, you may have guessed the answer: the special thing about methods is that the instance object is passed as the first argument of the function. In our example, the call x. f() is exactly equivalent to MyClass. f(x). In general, calling a method with a list of n arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method’s instance object before the first argument. x. f() MyClass. f(x) In general, methods work as follows. When a non-data attribute of an instance is referenced, the instance’s class is searched. If the name denotes a valid class attribute that is a function object, references to both the instance object and the function object are packed into a method object. When the method object is called with an argument list, a new argument list is constructed from the instance object and the argument list, and the function object is called with this new argument list. ### 9. 3. 5. Class and Instance Variables¶ Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class: class Dog: kind = 'canine' # class variable shared by all instances def __init__(self, name): self. name = name # instance variable unique to each instance >>> d = Dog('Fido') >>> e = Dog('Buddy') >>> d. kind # shared by all dogs 'canine' >>> e. kind # shared by all dogs 'canine' >>> d. name # unique to d 'Fido' >>> e. name # unique to e 'Buddy' As discussed in A Word About Names and Objects, shared data can have possibly surprising effects with involving mutable objects such as lists and dictionaries. For example, the tricks list in the following code should not be used as a class variable because just a single list would be shared by all Dog instances: class Dog: tricks = [] # mistaken use of a class variable def __init__(self, name): self. name = name def add_trick(self, trick): self. tricks. append(trick) >>> d = Dog('Fido') >>> e = Dog('Buddy') >>> d. add_trick('roll over') >>> e. add_trick('play dead') >>> d.",
+  "title": "9. Classes.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 7,
+  "start_char": 15856,
+  "end_char": 17956,
+  "token_count": 478,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_f5a819c845b3f52c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:33.093617"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_f5a819c845b3f52c_f7cb3d86444f_chunk_007.txt"
+}

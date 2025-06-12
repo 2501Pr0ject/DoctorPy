@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_008",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "relative_to('/usr') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"pathlib. py\", line 941, in relative_to raise ValueError(error_message. format(str(self), str(formatted))) ValueError: '/etc/passwd' is not in the subpath of '/usr' OR one path is relative and the other is absolute. When walk_up is false (the default), the path must start with other. When the argument is true,. entries may be added to form the relative path. In all other cases, such as the paths referencing different drives, ValueError is raised. :. ValueError >>> p. relative_to('/usr', walk_up=True) PurePosixPath('. /etc/passwd') >>> p. relative_to('foo', walk_up=True) Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"pathlib. py\", line 941, in relative_to raise ValueError(error_message. format(str(self), str(formatted))) ValueError: '/etc/passwd' is not on the same drive as 'foo' OR one path is relative and the other is absolute. Warning This function is part of PurePath and works with strings. It does not check or access the underlying file structure. This can impact the walk_up option as it assumes that no symlinks are present in the path; call resolve() first if necessary to resolve symlinks. PurePath resolve() Changed in version 3. 12: The walk_up parameter was added (old behavior is the same as walk_up=False). walk_up=False Deprecated since version 3. 12, will be removed in version 3. 14: Passing additional positional arguments is deprecated; if supplied, they are joined with other. Return a new path with the name changed. If the original path doesn’t have a name, ValueError is raised: name >>> p = PureWindowsPath('c:/Downloads/pathlib. tar. gz') >>> p. with_name('setup. py') PureWindowsPath('c:/Downloads/setup. py') >>> p = PureWindowsPath('c:/') >>> p. with_name('setup. py') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"/home/antoine/cpython/default/Lib/pathlib.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 8,
+  "start_char": 15421,
+  "end_char": 17376,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.492146"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_008.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_004",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "Only the first pattern that matches gets executed and it can also extract components (sequence elements or object attributes) from the value into variables. match The simplest form compares a subject value against one or more literals: def http_error(status): match status: case 400: return \"Bad request\" case 404: return \"Not found\" case 418: return \"I'm a teapot\" case _: return \"Something's wrong with the internet\" Note the last block: the “variable name” _ acts as a wildcard and never fails to match. If no case matches, none of the branches is executed. _ You can combine several literals in a single pattern using | (“or”): | case 401 | 403 | 404: return \"Not allowed\" Patterns can look like unpacking assignments, and can be used to bind variables: # point is an (x, y) tuple match point: case (0, 0): print(\"Origin\") case (0, y): print(f\"Y={y}\") case (x, 0): print(f\"X={x}\") case (x, y): print(f\"X={x}, Y={y}\") case _: raise ValueError(\"Not a point\") Study that one carefully. The first pattern has two literals, and can be thought of as an extension of the literal pattern shown above. But the next two patterns combine a literal and a variable, and the variable binds a value from the subject (point). The fourth pattern captures two values, which makes it conceptually similar to the unpacking assignment (x, y) = point. point (x, y) = point If you are using classes to structure your data you can use the class name followed by an argument list resembling a constructor, but with the ability to capture attributes into variables: class Point: def __init__(self, x, y): self. x = x self. y = y def where_is(point): match point: case Point(x=0, y=0): print(\"Origin\") case Point(x=0, y=y): print(f\"Y={y}\") case Point(x=x, y=0): print(f\"X={x}\") case Point(): print(\"Somewhere else\") case _: print(\"Not a point\") You can use positional parameters with some builtin classes that provide an ordering for their attributes (e. g. dataclasses).",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 4,
+  "start_char": 7652,
+  "end_char": 9600,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.608226"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_004.txt"
+}

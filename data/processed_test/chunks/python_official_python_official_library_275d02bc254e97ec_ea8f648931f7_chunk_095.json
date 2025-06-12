@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_095",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "closerange(fd, INF) posix_spawn_file_actions_addopen() posix_spawn_file_actions_addclose() posix_spawn_file_actions_adddup2() posix_spawn_file_actions_addclosefrom_np() posix_spawn() POSIX_SPAWN_SETPGROUP True False POSIX_SPAWN_RESETIDS True posix_spawn POSIX_SPAWN_SETSID POSIX_SPAWN_SETSID_NP NotImplementedError POSIX_SPAWN_SETSIGMASK POSIX_SPAWN_SETSIGDEF sched_param None POSIX_SPAWN_SETSCHEDPARAM POSIX_SPAWN_SETSCHEDULER os. posix_spawn path argv env None os. POSIX_SPAWN_CLOSEFROM posix_spawn_file_actions_addclosefrom_np() posix_spawnp() posix_spawn() PATH execvp(3) os. posix_spawn path argv env posix_spawn() os. fork() subprocess fork() PyOS_BeforeFork() PyOS_AfterFork_Parent() PyOS_AfterFork_Child() subprocess P_NOWAIT P_WAIT -signal waitpid() -signal spawn* spawnl*() spawnlp() spawnlpe() spawnvp() spawnvpe() PATH spawn*e PATH spawnl() spawnle() spawnv() spawnve() PATH spawnle() spawnlpe() spawnve() spawnvpe() spawnl() spawnlp() spawnv() spawnvp() 127 spawnlp() spawnvpe() import os os. spawnlp(os. P_WAIT, 'cp', 'cp', 'index. html', '/dev/null') L = ['cp', 'index. html', '/dev/null'] os. spawnvpe(os. P_WAIT, 'cp', L, os. environ) os. spawn mode path args env spawnlp() spawnlpe() spawnvp() spawnvpe() spawnle() spawnve() subprocess spawn* spawn* spawn* spawn* -signal spawn* P_DETACH P_NOWAIT P_OVERLAY spawn* 'open' 'print' 'edit' 'explore' 'find' ShellExecute() startfile() '/' pathlib os. path. normpath() ShellExecute() NotImplementedError os. startfile path operation os. startfile/2 path operation arguments cwd show_cmd os. startfile/2 system() sys. stdin wait() COMSPEC subprocess subprocess waitstatus_to_exitcode() os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 95,
+  "start_char": 199548,
+  "end_char": 201198,
+  "token_count": 462,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.856245"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_095.txt"
+}

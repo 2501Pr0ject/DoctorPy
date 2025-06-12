@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4_chunk_006",
+  "original_doc_id": "python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4",
+  "content": "= b a. = b ne(a, b) ne(a, b) Ordering a >= b a >= b ge(a, b) ge(a, b) Ordering a > b a > b gt(a, b) gt(a, b) ## In-place Operators¶ Many operations have an “in-place” version. Listed below are functions providing a more primitive access to in-place operators than the usual syntax does; for example, the statement x += y is equivalent to x = operator. iadd(x, y). Another way to put it is to say that z = operator. iadd(x, y) is equivalent to the compound statement z = x; z += y. x += y x = operator. iadd(x, y) z = operator. iadd(x, y) z = x; z += y In those examples, note that when an in-place method is called, the computation and assignment are performed in two separate steps. The in-place functions listed below only do the first step, calling the in-place method. The second step, assignment, is not handled. For immutable targets such as strings, numbers, and tuples, the updated value is computed, but not assigned back to the input variable: >>> a = 'hello' >>> iadd(a, ' world') 'hello world' >>> a 'hello' For mutable targets such as lists and dictionaries, the in-place method will perform the update, so no subsequent assignment is necessary: >>> s = ['h', 'e', 'l', 'l', 'o'] >>> iadd(s, [' ', 'w', 'o', 'r', 'l', 'd']) ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] >>> s ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] a = iadd(a, b) is equivalent to a += b. a = iadd(a, b) a += b a = iand(a, b) is equivalent to a &= b. a = iand(a, b) a &= b a = iconcat(a, b) is equivalent to a += b for a and b sequences.",
+  "title": "operator — Standard operators as functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 6,
+  "start_char": 9346,
+  "end_char": 10889,
+  "token_count": 474,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9958fbb4ed3750db.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.459801"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9958fbb4ed3750db_8cd1a4d0f9f4_chunk_006.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_baa6e506ac0bdef6_66dc7e06d5ab_chunk_001",
+  "original_doc_id": "python_official_python_official_tutorial_baa6e506ac0bdef6_66dc7e06d5ab",
+  "content": "Once you begin releasing code, you can register it here so that others can find it. The Python Cookbook is a sizable collection of code examples, larger modules, and useful scripts. Particularly notable contributions are collected in a book also titled Python Cookbook (O’Reilly & Associates, ISBN 0-596-00797-3. )  The Python Cookbook is a sizable collection of code examples, larger modules, and useful scripts. Particularly notable contributions are collected in a book also titled Python Cookbook (O’Reilly & Associates, ISBN 0-596-00797-3. )  collects links to Python-related videos from conferences and user-group meetings. collects links to Python-related videos from conferences and user-group meetings. The Scientific Python project includes modules for fast array computations and manipulations plus a host of packages for such things as linear algebra, Fourier transforms, non-linear solvers, random number distributions, statistical analysis and the like. The Scientific Python project includes modules for fast array computations and manipulations plus a host of packages for such things as linear algebra, Fourier transforms, non-linear solvers, random number distributions, statistical analysis and the like. For Python-related questions and problem reports, you can post to the newsgroup comp. lang. python, or send them to the mailing list at python-list@python. org. The newsgroup and mailing list are gatewayed, so messages posted to one will automatically be forwarded to the other. There are hundreds of postings a day, asking (and answering) questions, suggesting new features, and announcing new modules. Mailing list archives are available at  Before posting, be sure to check the list of Frequently Asked Questions (also called the FAQ). The FAQ answers many of the questions that come up again and again, and may already contain the solution for your problem. Footnotes #### Previous topic 12. Virtual Environments and Packages #### Next topic 14. Interactive Input Editing and History Substitution ### This page Report a bug Show source.",
+  "title": "13. What Now?.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 1,
+  "start_char": 2560,
+  "end_char": 4624,
+  "token_count": 403,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_baa6e506ac0bdef6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.907047"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_baa6e506ac0bdef6_66dc7e06d5ab_chunk_001.txt"
+}

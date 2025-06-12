@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_029",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "drive '' >>> PurePosixPath('/etc'). drive '' >>> PureWindowsPath('//host/share/foo. txt'). drive '\\\\\\\\host\\\\share' >>> PureWindowsPath('c:/Program Files/'). root '\\\\' >>> PureWindowsPath('c:Program Files/'). root '' >>> PurePosixPath('/etc'). root '/' >>> PureWindowsPath('//host/share'). root '\\\\' PurePosixPath >>> PurePosixPath('//etc'). root '//' >>> PurePosixPath('///etc'). root '/' >>> PurePosixPath('////etc'). root '/' >>> PureWindowsPath('c:/Program Files/'). anchor 'c:\\\\' >>> PureWindowsPath('c:Program Files/'). anchor 'c:' >>> PurePosixPath('/etc'). anchor '/' >>> PureWindowsPath('//host/share'). anchor '\\\\\\\\host\\\\share\\\\' >>> p = PureWindowsPath('c:/foo/bar/setup. py') >>> p. parents[0] PureWindowsPath('c:/foo/bar') >>> p. parents[1] PureWindowsPath('c:/foo') >>> p. parents[2] PureWindowsPath('c:/') >>> p = PurePosixPath('/a/b/c/d') >>> p. parent PurePosixPath('/a/b/c') >>> p = PurePosixPath('/') >>> p. parent PurePosixPath('/') >>> p = PurePosixPath('. ') >>> p. parent PurePosixPath('. ') >>> p = PurePosixPath('foo/. ') >>> p. parent PurePosixPath('foo') Path. resolve() \". \" >>> PurePosixPath('my/library/setup. py'). name 'setup. py' >>> PureWindowsPath('//some/share/setup. py'). name 'setup. py' >>> PureWindowsPath('//some/share'). name '' >>> PurePosixPath('my/library/setup. py'). suffix '. py' >>> PurePosixPath('my/library. tar. gz'). suffix '. gz' >>> PurePosixPath('my/library'). suffix '' >>> PurePosixPath('my/library. tar. gar'). suffixes ['. tar', '. gar'] >>> PurePosixPath('my/library. tar. gz'). suffixes ['. tar', '. gz'] >>> PurePosixPath('my/library'). suffixes [] >>> PurePosixPath('my/library. tar. gz'). stem 'library. tar' >>> PurePosixPath('my/library. tar').",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 29,
+  "start_char": 58348,
+  "end_char": 60059,
+  "token_count": 493,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.511235"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_029.txt"
+}

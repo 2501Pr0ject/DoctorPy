@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_002",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "The Python UTF-8 Mode ignores the locale encoding and forces the usage of the UTF-8 encoding: Use UTF-8 as the filesystem encoding. Use UTF-8 as the filesystem encoding. sys. getfilesystemencoding() returns 'utf-8'. sys. getfilesystemencoding() returns 'utf-8'. sys. getfilesystemencoding() 'utf-8' locale. getpreferredencoding() returns 'utf-8' (the do_setlocale argument has no effect). locale. getpreferredencoding() returns 'utf-8' (the do_setlocale argument has no effect). locale. getpreferredencoding() 'utf-8' sys. stdin, sys. stdout, and sys. stderr all use UTF-8 as their text encoding, with the surrogateescape error handler being enabled for sys. stdin and sys. stdout (sys. stderr continues to use backslashreplace as it does in the default locale-aware mode) sys. stdin, sys. stdout, and sys. stderr all use UTF-8 as their text encoding, with the surrogateescape error handler being enabled for sys. stdin and sys. stdout (sys. stderr continues to use backslashreplace as it does in the default locale-aware mode) sys. stdin sys. stdout sys. stderr surrogateescape sys. stdin sys. stdout sys. stderr backslashreplace On Unix, os. device_encoding() returns 'utf-8' rather than the device encoding. On Unix, os. device_encoding() returns 'utf-8' rather than the device encoding. os. device_encoding() 'utf-8' Note that the standard stream settings in UTF-8 mode can be overridden by PYTHONIOENCODING (just as they can be in the default locale-aware mode). PYTHONIOENCODING As a consequence of the changes in those lower level APIs, other higher level APIs also exhibit different default behaviours: Command line arguments, environment variables and filenames are decoded to text using the UTF-8 encoding. Command line arguments, environment variables and filenames are decoded to text using the UTF-8 encoding. os. fsdecode() and os. fsencode() use the UTF-8 encoding. os. fsdecode() and os. fsencode() use the UTF-8 encoding. os. fsdecode() os. fsencode() open(), io. open(), and codecs. open() use the UTF-8 encoding by default.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 2,
+  "start_char": 4785,
+  "end_char": 6827,
+  "token_count": 482,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.773452"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_002.txt"
+}

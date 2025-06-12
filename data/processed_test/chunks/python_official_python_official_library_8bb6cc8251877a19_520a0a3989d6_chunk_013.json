@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_013",
+  "original_doc_id": "python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6",
+  "content": "lower())) NotImplemented def partial(func, /, *args, **keywords): def newfunc(*fargs, **fkeywords): newkeywords = {**keywords, **fkeywords} return func(*args, *fargs, **newkeywords) newfunc. func = func newfunc. args = args newfunc. keywords = keywords return newfunc partial() partial() int() >>> from functools import partial >>> basetwo = partial(int, base=2) >>> basetwo. __doc__ = 'Convert base 2 string to an int. ' >>> basetwo('10010') 18 partialmethod partial classmethod() staticmethod() abstractmethod() partialmethod __get__ partialmethod >>> class Cell:. def __init__(self):. self. _alive = False. @property. def alive(self):. return self. _alive. def set_state(self, state):. self. _alive = bool(state). set_alive = partialmethod(set_state, True). set_dead = partialmethod(set_state, False). >>> c = Cell() >>> c. alive False >>> c. set_alive() >>> c. alive True reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) ((((1+2)+3)+4)+5) initial_missing = object() def reduce(function, iterable, initial=initial_missing, /): it = iter(iterable) if initial is initial_missing: value = next(it) else: value = initial for element in it: value = function(value, element) return value itertools. accumulate() @singledispatch @singledispatch >>> from functools import singledispatch >>> @singledispatch. def fun(arg, verbose=False):. if verbose:. print(\"Let me just say,\", end=\" \"). print(arg) register() >>> @fun. register. def _(arg: int, verbose=False):. if verbose:. print(\"Strength in numbers, eh. \", end=\" \"). print(arg). >>> @fun. register. def _(arg: list, verbose=False):. if verbose:. print(\"Enumerate this:\"). for i, elem in enumerate(arg):. print(i, elem) types. UnionType typing. Union >>> @fun. register. def _(arg: int | float, verbose=False):. if verbose:. print(\"Strength in numbers, eh. \", end=\" \"). print(arg).",
+  "title": "functools — Higher-order functions and operations on callable objects.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 13,
+  "start_char": 28027,
+  "end_char": 29848,
+  "token_count": 492,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_8bb6cc8251877a19.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.508735"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_8bb6cc8251877a19_520a0a3989d6_chunk_013.txt"
+}

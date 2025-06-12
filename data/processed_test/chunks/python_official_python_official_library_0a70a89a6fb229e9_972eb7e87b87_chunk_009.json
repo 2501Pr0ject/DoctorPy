@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_009",
+  "original_doc_id": "python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87",
+  "content": "'e' p-1 exp m <= exp < p m Decimals 'f' p-1-exp 'e' p-1 '#' With no precision given, uses a precision of 6 significant digits for float. For Decimal, the coefficient of the result is formed from the coefficient digits of the value; scientific notation is used for values smaller than 1e-6 in absolute value and values where the place value of the least significant digit is larger than 1, and fixed-point notation is used otherwise. 6 float Decimal 1e-6 Positive and negative infinity, positive and negative zero, and nans, are formatted as inf, -inf, 0, -0 and nan respectively, regardless of the precision. inf -inf 0 -0 nan 'G' 'G' General format. Same as 'g' except switches to 'E' if the number gets too large. The representations of infinity and NaN are uppercased, too. 'g' 'E' 'n' 'n' Number. This is the same as 'g', except that it uses the current locale setting to insert the appropriate digit group separators for the integral part of a number. 'g' '%' '%' Percentage. Multiplies the number by 100 and displays in fixed ('f') format, followed by a percent sign. 'f' None For float this is like the 'g' type, except that when fixed-point notation is used to format the result, it always includes at least one digit past the decimal point, and switches to the scientific notation when exp >= p - 1. When the precision is not specified, the latter will be as large as needed to represent the given value faithfully. float 'g' exp >= p - 1 For Decimal, this is the same as either 'g' or 'G' depending on the value of context. capitals for the current decimal context. Decimal 'g' 'G' context. capitals The overall effect is to match the output of str() as altered by the other format modifiers. str() The result should be correctly rounded to a given precision p of digits after the decimal point. The rounding mode for float matches that of the round() builtin. For Decimal, the rounding mode of the current context will be used. p float round() Decimal The available presentation types for complex are the same as those for float ('%' is not allowed).",
+  "title": "string — Common string operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 9,
+  "start_char": 19692,
+  "end_char": 21753,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_0a70a89a6fb229e9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:09.220769"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_0a70a89a6fb229e9_972eb7e87b87_chunk_009.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_030",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "tzinfo if not isinstance(dt, datetime): raise TypeError(\"fromutc() requires a datetime argument\") if dt. tzinfo is not self: raise ValueError(\"dt. tzinfo is not self\") # A custom implementation is required for fromutc as # the input to this function is a datetime with utc values # but with a tzinfo set to self. # See datetime. astimezone or fromtimestamp. if dt. replace(tzinfo=timezone. utc) >= self. UTC_MOVE_DATE: return dt + timedelta(hours=4, minutes=30) else: return dt + timedelta(hours=4) def dst(self, dt): # Kabul does not observe daylight saving time. return timedelta(0) def tzname(self, dt): if dt >= self. UTC_MOVE_DATE: return \"+04:30\" return \"+04\" Usage of KabulTz from above: KabulTz >>> tz1 = KabulTz() >>> # Datetime before the change >>> dt1 = datetime(1900, 11, 21, 16, 30, tzinfo=tz1) >>> print(dt1. utcoffset()) 4:00:00 >>> # Datetime after the change >>> dt2 = datetime(2006, 6, 14, 13, 0, tzinfo=tz1) >>> print(dt2. utcoffset()) 4:30:00 >>> # Convert datetime to another time zone >>> dt3 = dt2. astimezone(timezone. utc) >>> dt3 datetime. datetime(2006, 6, 14, 8, 30, tzinfo=datetime. timezone. utc) >>> dt2 datetime. datetime(2006, 6, 14, 13, 0, tzinfo=KabulTz()) >>> dt2 == dt3 True ## time Objects¶ time A time object represents a (local) time of day, independent of any particular day, and subject to adjustment via a tzinfo object. time tzinfo All arguments are optional. tzinfo may be None, or an instance of a tzinfo subclass.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 30,
+  "start_char": 58752,
+  "end_char": 60213,
+  "token_count": 434,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.407036"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_030.txt"
+}

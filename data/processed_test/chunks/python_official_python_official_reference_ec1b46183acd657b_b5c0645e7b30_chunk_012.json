@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_012",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "Syntax: literal_pattern ::= signed_number | signed_number \"+\" NUMBER | signed_number \"-\" NUMBER | strings | \"None\" | \"True\" | \"False\" signed_number ::= [\"-\"] NUMBER signed_number signed_number signed_number strings The rule strings and the token NUMBER are defined in the standard Python grammar. Triple-quoted strings are supported. Raw strings and byte strings are supported. f-strings are not supported. strings NUMBER The forms signed_number '+' NUMBER and signed_number '-' NUMBER are for expressing complex numbers; they require a real number on the left and an imaginary number on the right. E. g. 3 + 4j. signed_number '+' NUMBER signed_number '-' NUMBER 3 + 4j In simple terms, LITERAL will succeed only if == LITERAL. For the singletons None, True and False, the is operator is used. LITERAL <subject> == LITERAL None True False is #### 8. 6. 4. 4. Capture Patterns¶ A capture pattern binds the subject value to a name. Syntax: capture_pattern ::=. '_' NAME A single underscore _ is not a capture pattern (this is what. '' expresses). It is instead treated as a wildcard_pattern. _. '_' wildcard_pattern In a given pattern, a given name can only be bound once. E. g. case x, x:. is invalid while case [x] | x:. is allowed. case x, x:. case [x] | x:. Capture patterns always succeed. The binding follows scoping rules established by the assignment expression operator in PEP 572; the name becomes a local variable in the closest containing function scope unless there’s an applicable global or nonlocal statement. global nonlocal In simple terms NAME will always succeed and it will set NAME =. NAME NAME = <subject> #### 8. 6. 4. 5. Wildcard Patterns¶ A wildcard pattern always succeeds (matches anything) and binds no name. Syntax: wildcard_pattern ::= '_' _ is a soft keyword within any pattern, but only within patterns. It is an identifier, as usual, even within match subject expressions, guards, and case blocks. _ match guard case In simple terms, _ will always succeed. _ #### 8. 6. 4. 6. Value Patterns¶ A value pattern represents a named value in Python. Syntax: value_pattern ::= attr attr ::= name_or_attr \".",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 12,
+  "start_char": 27800,
+  "end_char": 29930,
+  "token_count": 489,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.376752"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_012.txt"
+}

@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_007",
+  "original_doc_id": "python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c",
+  "content": "Using with is also much shorter than writing equivalent try-finally blocks: with with try finally >>> with open('workfile', encoding=\"utf-8\") as f:. read_data = f. read() >>> # We can check that the file has been automatically closed. >>> f. closed True If you’re not using the with keyword, then you should call f. close() to close the file and immediately free up any system resources used by it. with f. close() Warning Calling f. write() without using the with keyword or calling f. close() might result in the arguments of f. write() not being completely written to the disk, even if the program exits successfully. f. write() with f. close() f. write() After a file object is closed, either by a with statement or by calling f. close(), attempts to use the file object will automatically fail. with f. close() >>> f. close() >>> f. read() Traceback (most recent call last): File \"<stdin>\", line 1, in <module> ValueError: I/O operation on closed file. ### 7. 2. 1. Methods of File Objects¶ The rest of the examples in this section will assume that a file object called f has already been created. f To read a file’s contents, call f. read(size), which reads some quantity of data and returns it as a string (in text mode) or bytes object (in binary mode). size is an optional numeric argument. When size is omitted or negative, the entire contents of the file will be read and returned; it’s your problem if the file is twice as large as your machine’s memory. Otherwise, at most size characters (in text mode) or size bytes (in binary mode) are read and returned. If the end of the file has been reached, f. read() will return an empty string (''). f. read(size) f. read() '' >>> f. read() 'This is the entire file. \\n' >>> f. read() '' f. readline() reads a single line from the file; a newline character (\\n) is left at the end of the string, and is only omitted on the last line of the file if the file doesn’t end in a newline. This makes the return value unambiguous; if f.",
+  "title": "7. Input and Output.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 7,
+  "start_char": 13451,
+  "end_char": 15436,
+  "token_count": 477,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_b08b74d25282ad3e.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.888190"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_b08b74d25282ad3e_276820cda60c_chunk_007.txt"
+}

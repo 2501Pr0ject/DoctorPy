@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_003",
+  "original_doc_id": "python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58",
+  "content": "print(n, 'equals', x, '*', n//x). break. else:. # loop fell through without finding a factor. print(n, 'is a prime number'). 2 is a prime number 3 is a prime number 4 equals 2 * 2 5 is a prime number 6 equals 2 * 3 7 is a prime number 8 equals 2 * 4 9 equals 3 * 3 (Yes, this is the correct code. Look closely: the else clause belongs to the for loop, not the if statement. ) else for if One way to think of the else clause is to imagine it paired with the if inside the loop. As the loop executes, it will run a sequence like if/if/if/else. The if is inside the loop, encountered a number of times. If the condition is ever true, a break will happen. If the condition is never true, the else clause outside the loop will execute. if if break else When used with a loop, the else clause has more in common with the else clause of a try statement than it does with that of if statements: a try statement’s else clause runs when no exception occurs, and a loop’s else clause runs when no break occurs. For more on the try statement and exceptions, see Handling Exceptions. else else try if try else else break try ## 4. 6. pass Statements¶ pass The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example: pass >>> while True:. pass # Busy-wait for keyboard interrupt (Ctrl+C). This is commonly used for creating minimal classes: >>> class MyEmptyClass:. pass. Another place pass can be used is as a place-holder for a function or conditional body when you are working on new code, allowing you to keep thinking at a more abstract level. The pass is silently ignored: pass pass >>> def initlog(*args):. pass # Remember to implement this. ## 4. 7. match Statements¶ match A match statement takes an expression and compares its value to successive patterns given as one or more case blocks. This is superficially similar to a switch statement in C, Java or JavaScript (and many other languages), but it’s more similar to pattern matching in languages like Rust or Haskell.",
+  "title": "4. More Control Flow Tools.13.5",
+  "section": "python_official",
+  "subsection": "tutorial",
+  "chunk_index": 3,
+  "start_char": 5605,
+  "end_char": 7652,
+  "token_count": 479,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_tutorial_848a8fc839cddd7c.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.607336"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_tutorial_848a8fc839cddd7c_011b0462aa58_chunk_003.txt"
+}

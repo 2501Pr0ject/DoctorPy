@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_037",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "The values of the dictionary can be used to provide per-attribute docstrings that will be recognised by inspect. getdoc() and displayed in the output of help(). If a dictionary is used to assign slots, the dictionary keys will be used as the slot names. The values of the dictionary can be used to provide per-attribute docstrings that will be recognised by inspect. getdoc() and displayed in the output of help(). dictionary inspect. getdoc() help() class assignment works only if both classes have the same slots. class assignment works only if both classes have the same slots. __class__ Multiple inheritance with multiple slotted parent classes can be used, but only one parent is allowed to have attributes created by slots (the other bases must have empty slot layouts) - violations raise TypeError. Multiple inheritance with multiple slotted parent classes can be used, but only one parent is allowed to have attributes created by slots (the other bases must have empty slot layouts) - violations raise TypeError. TypeError If an iterator is used for slots then a descriptor is created for each of the iterator’s values. However, the slots attribute will be an empty iterator. If an iterator is used for slots then a descriptor is created for each of the iterator’s values. However, the slots attribute will be an empty iterator. ### 3. 3. 3. Customizing class creation¶ Whenever a class inherits from another class, init_subclass() is called on the parent class. This way, it is possible to write classes which change the behavior of subclasses. This is closely related to class decorators, but where class decorators only affect the specific class they’re applied to, init_subclass solely applies to future subclasses of the class defining the method. __init_subclass__() __init_subclass__ This method is called whenever the containing class is subclassed. cls is then the new subclass. If defined as a normal instance method, this method is implicitly converted to a class method. Keyword arguments which are given to a new class are passed to the parent class’s init_subclass. For compatibility with other classes using init_subclass, one should take out the needed keyword arguments and pass the others over to the base class, as in: __init_subclass__ __init_subclass__ class Philosopher: def __init_subclass__(cls, /, default_name, **kwargs): super(). __init_subclass__(**kwargs) cls.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 37,
+  "start_char": 85498,
+  "end_char": 87895,
+  "token_count": 489,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.727948"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_037.txt"
+}

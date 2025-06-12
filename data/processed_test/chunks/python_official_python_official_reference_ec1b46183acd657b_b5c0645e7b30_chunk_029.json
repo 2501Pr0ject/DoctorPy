@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_029",
+  "original_doc_id": "python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30",
+  "content": "Generic type aliases¶ The type statement can also be used to create a generic type alias: type type ListOrSet[T] = list[T] | set[T] Except for the lazy evaluation of the value, this is equivalent to: annotation-def TYPE_PARAMS_OF_ListOrSet(): T = typing. TypeVar(\"T\") annotation-def VALUE_OF_ListOrSet(): return list[T] | set[T] # In reality, the value is lazily evaluated return typing. TypeAliasType(\"ListOrSet\", VALUE_OF_ListOrSet(), type_params=(T,)) ListOrSet = TYPE_PARAMS_OF_ListOrSet() Here, annotation-def (not a real keyword) indicates an annotation scope. The capitalized names like TYPE_PARAMS_OF_ListOrSet are not actually bound at runtime. annotation-def TYPE_PARAMS_OF_ListOrSet Footnotes ### Table of Contents 8. Compound statements 8. 1. The if statement 8. 2. The while statement 8. 3. The for statement 8. 4. The try statement 8. 4. 1. except clause 8. 4. 2. except clause 8. 4. 3. else clause 8. 4. 4. finally clause 8. 5. The with statement 8. 6. The match statement 8. 6. 1. Overview 8. 6. 2. Guards 8. 6. 3. Irrefutable Case Blocks 8. 6. 4. Patterns 8. 6. 4. 1. OR Patterns 8. 6. 4. 2. AS Patterns 8. 6. 4. 3. Literal Patterns 8. 6. 4. 4. Capture Patterns 8. 6. 4. 5. Wildcard Patterns 8. 6. 4. 6. Value Patterns 8. 6. 4. 7. Group Patterns 8. 6. 4. 8. Sequence Patterns 8. 6. 4. 9. Mapping Patterns 8. 6. 4. 10. Class Patterns 8. 7. Function definitions 8. 8. Class definitions 8. 9. Coroutines 8. 9. 1. Coroutine function definition 8. 9.",
+  "title": "8. Compound statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 29,
+  "start_char": 67150,
+  "end_char": 68612,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_ec1b46183acd657b.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.391032"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_ec1b46183acd657b_b5c0645e7b30_chunk_029.txt"
+}

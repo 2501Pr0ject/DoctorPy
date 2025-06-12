@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_007",
+  "original_doc_id": "python_official_python_official_reference_99fb26420c3873aa_898565d1500b",
+  "content": "String and Bytes literals¶ String literals are described by the following lexical definitions: stringliteral ::= stringprefix stringprefix ::= \"r\" | \"u\" | \"R\" | \"U\" | \"f\" | \"F\" | \"fr\" | \"Fr\" | \"fR\" | \"FR\" | \"rf\" | \"rF\" | \"Rf\" | \"RF\" shortstring ::= \"'\" shortstringitem* \"'\" | '\"' shortstringitem* '\"' longstring ::= \"'''\" longstringitem* \"'''\" | '\"\"\"' longstringitem* '\"\"\"' shortstringitem ::= shortstringchar | stringescapeseq longstringitem ::= longstringchar | stringescapeseq shortstringchar ::= <any source character except \"\\\" or newline or the quote> longstringchar ::= <any source character except \"\\\"> stringescapeseq ::= \"\\\" <any source character> stringprefix shortstring longstring shortstringitem shortstringitem longstringitem longstringitem shortstringchar stringescapeseq longstringchar stringescapeseq bytesliteral ::= bytesprefix(shortbytes | longbytes) bytesprefix ::= \"b\" | \"B\" | \"br\" | \"Br\" | \"bR\" | \"BR\" | \"rb\" | \"rB\" | \"Rb\" | \"RB\" shortbytes ::= \"'\" shortbytesitem* \"'\" | '\"' shortbytesitem* '\"' longbytes ::= \"'''\" longbytesitem* \"'''\" | '\"\"\"' longbytesitem* '\"\"\"' shortbytesitem ::= shortbyteschar | bytesescapeseq longbytesitem ::= longbyteschar | bytesescapeseq shortbyteschar ::= <any ASCII character except \"\\\" or newline or the quote> longbyteschar ::= <any ASCII character except \"\\\"> bytesescapeseq ::= \"\\\" <any ASCII character> bytesprefix shortbytes longbytes shortbytesitem shortbytesitem longbytesitem longbytesitem shortbyteschar bytesescapeseq longbyteschar bytesescapeseq One syntactic restriction not indicated by these productions is that whitespace is not allowed between the stringprefix or bytesprefix and the rest of the literal. The source character set is defined by the encoding declaration; it is UTF-8 if no encoding declaration is given in the source file; see section Encoding declarations. stringprefix bytesprefix In plain English: Both types of literals can be enclosed in matching single quotes (') or double quotes (\").",
+  "title": "2. Lexical analysis.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 7,
+  "start_char": 14076,
+  "end_char": 16052,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_99fb26420c3873aa.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:25.397326"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_99fb26420c3873aa_898565d1500b_chunk_007.txt"
+}

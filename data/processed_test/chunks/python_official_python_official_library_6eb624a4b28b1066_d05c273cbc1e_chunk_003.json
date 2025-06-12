@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_003",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "timedelta(days=64, seconds=29156, microseconds=10) If any argument is a float and there are fractional microseconds, the fractional microseconds left over from all arguments are combined and their sum is rounded to the nearest microsecond using round-half-to-even tiebreaker. If no argument is a float, the conversion and normalization processes are exact (no information is lost). If the normalized value of days lies outside the indicated range, OverflowError is raised. OverflowError Note that normalization of negative values may be surprising at first. For example: >>> from datetime import timedelta >>> d = timedelta(microseconds=-1) >>> (d. days, d. seconds, d. microseconds) (-1, 86399, 999999) Since the string representation of timedelta objects can be confusing, use the following recipe to produce a more readable format: timedelta >>> def pretty_timedelta(td):. if td. days >= 0:. return str(td). return f'-({-td. s})'. >>> d = timedelta(hours=-1) >>> str(d) # not human-friendly '-1 day, 23:00:00' >>> pretty_timedelta(d) '-(1:00:00)' Class attributes: The most negative timedelta object, timedelta(-999999999). timedelta timedelta(-999999999) The most positive timedelta object, timedelta(days=999999999, hours=23, minutes=59, seconds=59, microseconds=999999). timedelta timedelta(days=999999999, hours=23, minutes=59, seconds=59, microseconds=999999) The smallest possible difference between non-equal timedelta objects, timedelta(microseconds=1). timedelta timedelta(microseconds=1) Note that, because of normalization, timedelta. max is greater than -timedelta. min. -timedelta. max is not representable as a timedelta object. timedelta. max -timedelta. min -timedelta. max timedelta Instance attributes (read-only): Between -999,999,999 and 999,999,999 inclusive. Between 0 and 86,399 inclusive. Caution It is a somewhat common bug for code to unintentionally use this attribute when it is actually intended to get a total_seconds() value instead: total_seconds() >>> from datetime import timedelta >>> duration = timedelta(seconds=11235813) >>> duration. days, duration. seconds (130, 3813) >>> duration. total_seconds() 11235813.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 3,
+  "start_char": 6938,
+  "end_char": 9089,
+  "token_count": 499,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.382068"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_003.txt"
+}

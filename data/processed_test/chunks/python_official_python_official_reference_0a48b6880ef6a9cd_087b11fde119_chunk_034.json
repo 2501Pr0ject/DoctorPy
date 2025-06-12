@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_034",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "Comparisons 6. 10. 1. Value comparisons 6. 10. 2. Membership test operations 6. 10. 3. Identity comparisons 6. 11. Boolean operations 6. 12. Assignment expressions 6. 13. Conditional expressions 6. 14. Lambdas 6. 15. Expression lists 6. 16. Evaluation order 6. 17. Operator precedence 6. 1. Arithmetic conversions 6. 2. Atoms 6. 2. 1. Identifiers (Names) 6. 2. 1. 1. Private name mangling 6. 2. 2. Literals 6. 2. 3. Parenthesized forms 6. 2. 4. Displays for lists, sets and dictionaries 6. 2. 5. List displays 6. 2. 6. Set displays 6. 2. 7. Dictionary displays 6. 2. 8. Generator expressions 6. 2. 9. Yield expressions 6. 2. 9. 1. Generator-iterator methods 6. 2. 9. 2. Examples 6. 2. 9. 3. Asynchronous generator functions 6. 2. 9. 4. Asynchronous generator-iterator methods 6. 2. 1. Identifiers (Names) 6. 2. 1. 1. Private name mangling 6. 2. 1. 1. Private name mangling 6. 2. 2. Literals 6. 2. 3. Parenthesized forms 6. 2. 4. Displays for lists, sets and dictionaries 6. 2. 5. List displays 6. 2. 6. Set displays 6. 2. 7. Dictionary displays 6. 2. 8. Generator expressions 6. 2. 9. Yield expressions 6. 2. 9. 1. Generator-iterator methods 6. 2. 9. 2. Examples 6. 2. 9. 3. Asynchronous generator functions 6. 2. 9. 4. Asynchronous generator-iterator methods 6.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 34,
+  "start_char": 75807,
+  "end_char": 77069,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.599913"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_034.txt"
+}

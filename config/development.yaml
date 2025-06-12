@@ -1,0 +1,118 @@
+# Configuration pour l'environnement de développement
+
+# Configuration de la base de données
+database:
+  url: "sqlite:///data/databases/dev_users.db"
+  echo: true  # Afficher les requêtes SQL en dev
+  pool_size: 5
+  max_overflow: 10
+
+# Configuration des modèles de langage
+llm:
+  provider: "ollama"  # ou "openai"
+  model_name: "llama3.1"
+  base_url: "http://localhost:11434"
+  temperature: 0.7
+  max_tokens: 2000
+  timeout: 30
+
+# Configuration du système RAG
+rag:
+  chunk_size: 1000
+  chunk_overlap: 200
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  vector_store_path: "chroma_db"
+  similarity_threshold: 0.7
+  max_results: 5
+
+# Configuration de sécurité (développement)
+security:
+  secret_key: "dev-secret-key-not-for-production"
+  session_lifetime: 7200  # 2 heures en dev
+  rate_limit_requests: 1000  # Plus permissif en dev
+  rate_limit_window: 3600
+  allowed_file_types:
+    - ".pdf"
+    - ".txt"
+    - ".docx"
+    - ".md"
+    - ".py"
+    - ".json"
+    - ".csv"
+  max_file_size: 50  # 50MB en dev
+
+# Configuration de l'interface utilisateur
+ui:
+  title: "Assistant Pédagogique IA - DEV"
+  version: "1.0.0-dev"
+  port: 8501
+  address: "localhost"
+  theme:
+    primaryColor: "#2E86AB"
+    backgroundColor: "#FFFFFF"
+    secondaryBackgroundColor: "#F0F2F6"
+    textColor: "#262730"
+
+# Configuration des quêtes
+quests:
+  auto_generate: true
+  difficulty_adjustment: true
+  max_attempts: 5
+  hint_system: true
+  categories:
+    - "python_basics"
+    - "python_intermediate"
+    - "python_advanced"
+    - "data_science"
+    - "web_development"
+
+# Configuration des logs (spécifique dev)
+logging:
+  level: "DEBUG"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(funcName)s:%(lineno)d - %(message)s"
+  console_output: true
+  file_output: true
+  max_size: "50MB"
+  backup_count: 3
+
+# Configuration du code executor
+code_execution:
+  enabled: true
+  timeout: 30
+  memory_limit: "256MB"
+  allowed_imports:
+    - "numpy"
+    - "pandas"
+    - "matplotlib"
+    - "seaborn"
+    - "requests"
+    - "json"
+    - "csv"
+    - "datetime"
+    - "random"
+    - "math"
+    - "statistics"
+
+# Configuration de développement spécifique
+development:
+  hot_reload: true
+  debug_mode: true
+  profiling: false
+  mock_llm: false  # Utiliser de vrais appels LLM
+  seed_data: true  # Charger des données de test
+
+# Configuration des agents
+agents:
+  tutor_agent:
+    max_context_length: 4000
+    response_style: "encouraging"
+    explanation_depth: "detailed"
+  
+  quest_generator:
+    creativity_level: 0.8
+    difficulty_progression: "adaptive"
+    
+  code_evaluator:
+    strict_mode: false  # Plus permissif en dev
+    provide_hints: true
+    auto_fix_suggestions: true

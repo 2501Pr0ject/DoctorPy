@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_018",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "__all__ An interface is also considered internal if any containing namespace (package, module or class) is considered internal. Imported names should always be considered an implementation detail. Other modules must not rely on indirect access to such imported names unless they are an explicitly documented part of the containing module’s API, such as os. path or a package’s init module that exposes functionality from submodules. os. path __init__ ## Programming Recommendations Code should be written in a way that does not disadvantage other implementations of Python (PyPy, Jython, IronPython, Cython, Psyco, and such). For example, do not rely on CPython’s efficient implementation of in-place string concatenation for statements in the form a += b or a = a + b. This optimization is fragile even in CPython (it only works for some types) and isn’t present at all in implementations that don’t use refcounting. In performance sensitive parts of the library, the ''. join() form should be used instead. This will ensure that concatenation occurs in linear time across various implementations. For example, do not rely on CPython’s efficient implementation of in-place string concatenation for statements in the form a += b or a = a + b. This optimization is fragile even in CPython (it only works for some types) and isn’t present at all in implementations that don’t use refcounting. In performance sensitive parts of the library, the ''. join() form should be used instead. This will ensure that concatenation occurs in linear time across various implementations. a += b a = a + b ''. join() Comparisons to singletons like None should always be done with is or is not, never the equality operators. Also, beware of writing if x when you really mean if x is not None – e. g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context. is is not Also, beware of writing if x when you really mean if x is not None – e. g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context. if x if x is not None Use is not operator rather than not. is.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 18,
+  "start_char": 38675,
+  "end_char": 40990,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.782255"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_018.txt"
+}

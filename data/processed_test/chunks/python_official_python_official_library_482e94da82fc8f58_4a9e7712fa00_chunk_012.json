@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_012",
+  "original_doc_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00",
+  "content": "except The nesting structure of the current exception is preserved in the result, as are the values of its message, traceback, cause, context and notes fields. Empty nested groups are omitted from the result. message __traceback__ __cause__ __context__ __notes__ The condition is checked for all exceptions in the nested exception group, including the top-level and any nested exception groups. If the condition is true for such an exception group, it is included in the result in full. Added in version 3. 13: condition can be any callable which is not a type object. condition Like subgroup(), but returns the pair (match, rest) where match is subgroup(condition) and rest is the remaining non-matching part. subgroup() (match, rest) match subgroup(condition) rest Returns an exception group with the same message, but which wraps the exceptions in excs. message excs This method is used by subgroup() and split(), which are used in various contexts to break up an exception group. A subclass needs to override it in order to make subgroup() and split() return instances of the subclass rather than ExceptionGroup. subgroup() split() subgroup() split() ExceptionGroup subgroup() and split() copy the traceback, cause, context and notes fields from the original exception group to the one returned by derive(), so these fields do not need to be updated by derive(). subgroup() split() __traceback__ __cause__ __context__ __notes__ derive() derive() >>> class MyGroup(ExceptionGroup):. def derive(self, excs):. return MyGroup(self. message, excs). >>> e = MyGroup(\"eg\", [ValueError(1), TypeError(2)]) >>> e. add_note(\"a note\") >>> e. __context__ = Exception(\"context\") >>> e. __cause__ = Exception(\"cause\") >>> try:. raise e. except Exception as e:. exc = e. >>> match, rest = exc. split(ValueError) >>> exc, exc. __context__, exc. __cause__, exc. __notes__ (MyGroup('eg', [ValueError(1), TypeError(2)]), Exception('context'), Exception('cause'), ['a note']) >>> match, match. __context__, match. __cause__, match. __notes__ (MyGroup('eg', [ValueError(1)]), Exception('context'), Exception('cause'), ['a note']) >>> rest, rest. __context__, rest.",
+  "title": "Built-in Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 12,
+  "start_char": 29324,
+  "end_char": 31470,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_482e94da82fc8f58.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:34.396404"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_012.txt"
+}

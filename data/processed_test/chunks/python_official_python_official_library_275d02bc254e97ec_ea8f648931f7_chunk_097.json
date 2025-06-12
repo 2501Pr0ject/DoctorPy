@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_097",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "EINVAL confstr() None process_cpu_count() -X cpu_count PYTHON_CPU_COUNT cpu_count() OSError None cpu_count() cpu_count() -X cpu_count PYTHON_CPU_COUNT process_cpu_count() sched_getaffinity() -1 confstr() sysconf_names sysconf() 'SC_MINSIGSTKSZ' os. path '. ' os. path '. ' os. path '/' '\\\\' os. path. split() os. path. join() os. path None '/' sep os. path '. ' os. py os. path PATH ':' ';' os. path exec*p* spawn*p* 'PATH' os. path '\\n' '\\r\\n' '\\n' '/dev/null' 'nul' os. path setdlopenflags() getdlopenflags() getrandom() /dev/random /dev/urandom os. GRND_RANDOM GRND_NONBLOCK getrandom() getrandom() GRND_NONBLOCK /dev/urandom /dev/urandom NotImplementedError BCryptGenRandom() secrets random. SystemRandom getrandom() getentropy() getrandom() /dev/urandom getrandom() BCryptGenRandom() CryptGenRandom() /dev/random getrandom() /dev/urandom GRND_NONBLOCK getrandom() BlockingIOError /dev/random /dev/urandom os io.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 97,
+  "start_char": 202737,
+  "end_char": 203653,
+  "token_count": 265,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.857881"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_097.txt"
+}

@@ -1,0 +1,316 @@
+{
+  "chat_responses": {
+    "greeting": {
+      "input": "Bonjour",
+      "output": {
+        "response": "Bonjour ! Je suis DoctorPy, votre assistant pour apprendre Python. Comment puis-je vous aider aujourd'hui ?",
+        "confidence": 1.0,
+        "intent": "greeting",
+        "entities": []
+      }
+    },
+    "variable_question": {
+      "input": "Comment créer une variable en Python ?",
+      "output": {
+        "response": "Pour créer une variable en Python, utilisez simplement le signe égal (=) pour assigner une valeur à un nom :\n\n```python\nnom = 'Alice'\nage = 25\ntemperature = 36.5\nest_actif = True\n```\n\nPython détermine automatiquement le type de la variable selon la valeur assignée. Pas besoin de déclarer le type à l'avance !",
+        "confidence": 0.95,
+        "intent": "explain_concept",
+        "entities": ["variable", "python"],
+        "code_blocks": [
+          {
+            "language": "python",
+            "code": "nom = 'Alice'\nage = 25\ntemperature = 36.5\nest_actif = True"
+          }
+        ]
+      }
+    },
+    "function_question": {
+      "input": "Explique-moi les fonctions Python",
+      "output": {
+        "response": "Les fonctions en Python permettent d'organiser votre code en blocs réutilisables. Voici la syntaxe de base :\n\n```python\ndef ma_fonction(parametre1, parametre2):\n    \"\"\"Docstring optionnelle.\"\"\"\n    # Code de la fonction\n    return resultat\n```\n\nExemple concret :\n\n```python\ndef saluer(nom):\n    return f'Bonjour {nom} !'\n\n# Utilisation\nmessage = saluer('Alice')\nprint(message)  # Affiche: Bonjour Alice !\n```",
+        "confidence": 0.92,
+        "intent": "explain_concept",
+        "entities": ["function", "python"],
+        "code_blocks": [
+          {
+            "language": "python",
+            "code": "def ma_fonction(parametre1, parametre2):\n    \"\"\"Docstring optionnelle.\"\"\"\n    # Code de la fonction\n    return resultat"
+          },
+          {
+            "language": "python", 
+            "code": "def saluer(nom):\n    return f'Bonjour {nom} !'\n\n# Utilisation\nmessage = saluer('Alice')\nprint(message)  # Affiche: Bonjour Alice !"
+          }
+        ]
+      }
+    },
+    "error_help": {
+      "input": "J'ai une erreur NameError: name 'x' is not defined",
+      "output": {
+        "response": "L'erreur `NameError: name 'x' is not defined` signifie que vous essayez d'utiliser une variable `x` qui n'a pas été définie.\n\nSolutions possibles :\n1. **Définissez la variable avant de l'utiliser** :\n   ```python\n   x = 5  # Définir x\n   print(x)  # Maintenant ça marche\n   ```\n\n2. **Vérifiez l'orthographe** - peut-être avez-vous défini `X` (majuscule) mais utilisé `x` (minuscule)\n\n3. **Vérifiez la portée** - la variable est-elle définie dans la bonne fonction/bloc ?",
+        "confidence": 0.88,
+        "intent": "debug_help",
+        "entities": ["NameError", "variable", "error"],
+        "error_type": "NameError"
+      }
+    },
+    "quest_request": {
+      "input": "Je veux faire une quête sur les variables",
+      "output": {
+        "response": "Parfait ! Je vais vous proposer une quête sur les variables Python. Voici les quêtes disponibles :\n\n🎯 **Variables Python - Niveau Débutant**\n- Durée estimée : 20 minutes\n- Récompense : 100 XP\n- Objectifs : Apprendre à créer et utiliser des variables\n\nVoulez-vous commencer cette quête ? Je vais vous guider étape par étape !",
+        "confidence": 0.9,
+        "intent": "quest_request",
+        "entities": ["quest", "variable"],
+        "suggested_quest": "python_basics_variables"
+      }
+    }
+  },
+  "quest_evaluations": {
+    "correct_variable": {
+      "user_answer": "nom = 'Alice'",
+      "expected": "nom = 'Alice'",
+      "evaluation": {
+        "is_correct": true,
+        "feedback": "Excellent ! Vous avez parfaitement créé une variable 'nom' avec la valeur 'Alice'. La syntaxe est correcte et vous avez bien utilisé les guillemets pour la chaîne de caractères.",
+        "hints": [],
+        "should_advance": true,
+        "score": 100,
+        "mistakes": []
+      }
+    },
+    "incorrect_variable_no_quotes": {
+      "user_answer": "nom = Alice",
+      "expected": "nom = 'Alice'",
+      "evaluation": {
+        "is_correct": false,
+        "feedback": "Presque ! Vous avez la bonne idée, mais il manque les guillemets autour de 'Alice'. En Python, les chaînes de caractères doivent être entourées de guillemets.",
+        "hints": [
+          "Les chaînes de caractères doivent être entre guillemets",
+          "Utilisez des guillemets simples ' ou doubles \"",
+          "Exemple : nom = 'Alice' ou nom = \"Alice\""
+        ],
+        "should_advance": false,
+        "score": 60,
+        "mistakes": ["missing_quotes"]
+      }
+    },
+    "correct_function": {
+      "user_answer": "def dire_bonjour():\n    print('Bonjour !')",
+      "expected": "def dire_bonjour():\n    print('Bonjour !')",
+      "evaluation": {
+        "is_correct": true,
+        "feedback": "Parfait ! Votre fonction est correctement définie. Vous avez utilisé le mot-clé 'def', donné un nom descriptif à la fonction, ajouté les parenthèses et les deux-points, et indenté le code correctement.",
+        "hints": [],
+        "should_advance": true,
+        "score": 100,
+        "mistakes": []
+      }
+    },
+    "incorrect_function_indentation": {
+      "user_answer": "def dire_bonjour():\nprint('Bonjour !')",
+      "expected": "def dire_bonjour():\n    print('Bonjour !')",
+      "evaluation": {
+        "is_correct": false,
+        "feedback": "Votre fonction est presque correcte, mais il y a un problème d'indentation. En Python, le code à l'intérieur d'une fonction doit être indenté.",
+        "hints": [
+          "Indentez le code à l'intérieur de la fonction avec 4 espaces",
+          "L'indentation est obligatoire en Python",
+          "Toutes les lignes du bloc doivent avoir la même indentation"
+        ],
+        "should_advance": false,
+        "score": 70,
+        "mistakes": ["incorrect_indentation"]
+      }
+    },
+    "partially_correct_list": {
+      "user_answer": "fruits = ['pomme', 'banane']",
+      "expected": "fruits = ['pomme', 'banane', 'orange']",
+      "evaluation": {
+        "is_correct": false,
+        "feedback": "Bonne syntaxe pour créer une liste ! Vous avez utilisé les crochets et les guillemets correctement. Il manque juste 'orange' dans votre liste selon l'exercice.",
+        "hints": [
+          "Votre syntaxe est correcte",
+          "Vérifiez que vous avez inclus tous les éléments demandés",
+          "Il devrait y avoir trois fruits : pomme, banane, et orange"
+        ],
+        "should_advance": false,
+        "score": 80,
+        "mistakes": ["incomplete_list"]
+      }
+    }
+  },
+  "code_reviews": {
+    "good_function": {
+      "code": "def calculer_moyenne(nombres):\n    \"\"\"Calcule la moyenne d'une liste de nombres.\"\"\"\n    if not nombres:\n        return 0\n    return sum(nombres) / len(nombres)",
+      "review": {
+        "overall_score": 9,
+        "quality_score": 9,
+        "performance_score": 8,
+        "security_score": 10,
+        "readability_score": 9,
+        "feedback": "Excellente fonction ! Le code est propre, bien documenté avec une docstring, et gère le cas de la liste vide. La logique est claire et efficace.",
+        "suggestions": [
+          "Considérez ajouter une vérification de type pour s'assurer que 'nombres' est une liste",
+          "Vous pourriez lever une exception plus spécifique pour une liste vide plutôt que retourner 0"
+        ],
+        "strengths": [
+          "Docstring claire et descriptive",
+          "Gestion du cas limite (liste vide)",
+          "Code concis et lisible",
+          "Nom de fonction descriptif"
+        ],
+        "issues": []
+      }
+    },
+    "problematic_code": {
+      "code": "def calcul(x,y):\nresult=x+y\nprint(result)\nreturn result",
+      "review": {
+        "overall_score": 4,
+        "quality_score": 3,
+        "performance_score": 7,
+        "security_score": 8,
+        "readability_score": 2,
+        "feedback": "Le code fonctionne mais il y a plusieurs problèmes de style et de structure qui rendent le code difficile à lire et maintenir.",
+        "suggestions": [
+          "Ajoutez une docstring pour expliquer ce que fait la fonction",
+          "Utilisez l'indentation correcte (4 espaces)",
+          "Ajoutez des espaces autour des opérateurs et après les virgules",
+          "Donnez des noms plus descriptifs aux variables et fonctions",
+          "Évitez de print() dans une fonction de calcul - retournez seulement le résultat"
+        ],
+        "strengths": [
+          "La logique de base est correcte",
+          "La fonction retourne bien une valeur"
+        ],
+        "issues": [
+          "Indentation manquante",
+          "Pas de docstring",
+          "Noms de variables peu descriptifs",
+          "Espacement incorrect",
+          "Print inutile dans une fonction de calcul"
+        ]
+      }
+    },
+    "security_issue": {
+      "code": "import os\ndef execute_command(cmd):\n    os.system(cmd)",
+      "review": {
+        "overall_score": 1,
+        "quality_score": 2,
+        "performance_score": 5,
+        "security_score": 1,
+        "readability_score": 6,
+        "feedback": "⚠️ ALERTE SÉCURITÉ : Ce code présente une vulnérabilité majeure ! L'utilisation d'os.system() avec une entrée non validée peut permettre l'injection de commandes.",
+        "suggestions": [
+          "Utilisez subprocess.run() au lieu d'os.system()",
+          "Validez et sanitisez toutes les entrées utilisateur",
+          "Utilisez une liste de commandes autorisées",
+          "Considérez si cette fonctionnalité est vraiment nécessaire"
+        ],
+        "strengths": [],
+        "issues": [
+          "Vulnérabilité d'injection de commande",
+          "Pas de validation d'entrée",
+          "Utilisation d'os.system() non sécurisée",
+          "Pas de gestion d'erreur"
+        ]
+      }
+    }
+  },
+  "system_responses": {
+    "session_started": {
+      "message": "Nouvelle session créée avec succès",
+      "session_id": "session_123456",
+      "user_id": 1,
+      "mode": "free_chat",
+      "timestamp": "2023-12-06T10:30:00Z"
+    },
+    "quest_completed": {
+      "message": "Félicitations ! Vous avez terminé la quête",
+      "quest_id": "python_basics_variables",
+      "xp_earned": 100,
+      "total_xp": 350,
+      "new_level": 2,
+      "completion_time": 1200,
+      "next_recommendations": [
+        "python_basics_functions",
+        "python_intermediate_lists"
+      ]
+    },
+    "error_generic": {
+      "error": "Une erreur inattendue s'est produite",
+      "code": "INTERNAL_ERROR",
+      "timestamp": "2023-12-06T10:30:00Z",
+      "suggestion": "Veuillez réessayer. Si le problème persiste, contactez le support."
+    },
+    "rate_limit": {
+      "error": "Trop de requêtes",
+      "code": "RATE_LIMIT_EXCEEDED", 
+      "retry_after": 60,
+      "suggestion": "Veuillez attendre une minute avant de réessayer."
+    }
+  },
+  "learning_analytics": {
+    "user_progress": {
+      "user_id": 1,
+      "total_quests": 5,
+      "completed_quests": 3,
+      "total_xp": 450,
+      "current_level": 3,
+      "streak_days": 7,
+      "average_session_time": 25.5,
+      "strengths": ["variables", "functions"],
+      "areas_for_improvement": ["classes", "error_handling"],
+      "recommended_quests": [
+        "python_intermediate_lists",
+        "debugging_basics"
+      ]
+    },
+    "quest_analytics": {
+      "quest_id": "python_basics_variables",
+      "total_attempts": 150,
+      "completion_rate": 0.87,
+      "average_completion_time": 18.5,
+      "common_mistakes": [
+        "missing_quotes",
+        "incorrect_variable_names"
+      ],
+      "difficulty_rating": 2.3,
+      "user_satisfaction": 4.2
+    }
+  },
+  "rag_contexts": {
+    "variables_context": [
+      {
+        "content": "Les variables en Python permettent de stocker des données. Utilisez le signe égal (=) pour assigner une valeur : nom = 'Alice'",
+        "source": "python_tutorial_variables.md",
+        "relevance_score": 0.95,
+        "metadata": {
+          "section": "basics",
+          "difficulty": "beginner",
+          "keywords": ["variable", "assignment", "python"]
+        }
+      },
+      {
+        "content": "Python est dynamiquement typé, ce qui signifie que vous n'avez pas besoin de déclarer le type d'une variable. Le type est déterminé automatiquement selon la valeur.",
+        "source": "python_concepts_typing.md",
+        "relevance_score": 0.89,
+        "metadata": {
+          "section": "concepts",
+          "difficulty": "intermediate",
+          "keywords": ["typing", "dynamic", "python"]
+        }
+      }
+    ],
+    "functions_context": [
+      {
+        "content": "Les fonctions en Python sont définies avec le mot-clé 'def' suivi du nom de la fonction et des parenthèses. Le code de la fonction doit être indenté.",
+        "source": "python_tutorial_functions.md",
+        "relevance_score": 0.92,
+        "metadata": {
+          "section": "basics",
+          "difficulty": "beginner",
+          "keywords": ["function", "def", "indentation"]
+        }
+      }
+    ]
+  }
+}

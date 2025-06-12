@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_003",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "These properties respect the flavour’s case-folding semantics: >>> PurePosixPath('foo') == PurePosixPath('FOO') False >>> PureWindowsPath('foo') == PureWindowsPath('FOO') True >>> PureWindowsPath('FOO') in { PureWindowsPath('foo') } True >>> PureWindowsPath('C:') < PureWindowsPath('d:') True Paths of a different flavour compare unequal and cannot be ordered: >>> PureWindowsPath('foo') == PurePosixPath('foo') False >>> PureWindowsPath('foo') < PurePosixPath('foo') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> TypeError: '<' not supported between instances of 'PureWindowsPath' and 'PurePosixPath' ### Operators¶ The slash operator helps create child paths, like os. path. join(). If the argument is an absolute path, the previous path is ignored. On Windows, the drive is not reset when the argument is a rooted relative path (e. g. , r'\\foo'): os. path. join() r'\\foo' >>> p = PurePath('/etc') >>> p PurePosixPath('/etc') >>> p / 'init. d' / 'apache2' PurePosixPath('/etc/init. d/apache2') >>> q = PurePath('bin') >>> '/usr' / q PurePosixPath('/usr/bin') >>> p / '/an_absolute_path' PurePosixPath('/an_absolute_path') >>> PureWindowsPath('c:/Windows', '/Program Files') PureWindowsPath('c:/Program Files') A path object can be used anywhere an object implementing os. PathLike is accepted: os. PathLike >>> import os >>> p = PurePath('/etc') >>> os. fspath(p) '/etc' The string representation of a path is the raw filesystem path itself (in native form, e. g. with backslashes under Windows), which you can pass to any function taking a file path as a string: >>> p = PurePath('/etc') >>> str(p) '/etc' >>> p = PureWindowsPath('c:/Program Files') >>> str(p) 'c:\\\\Program Files' Similarly, calling bytes on a path gives the raw filesystem path as a bytes object, as encoded by os. fsencode(): bytes os.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 3,
+  "start_char": 5708,
+  "end_char": 7540,
+  "token_count": 482,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.487523"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_003.txt"
+}

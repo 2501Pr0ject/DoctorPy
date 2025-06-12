@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_044",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "If the operating system reaches a reparse point that it is not able to follow, stat now returns the information for the original path as if follow_symlinks=False had been specified instead of raising an error. follow_symlinks=False follow_symlinks=False Object whose attributes correspond roughly to the members of the stat structure. It is used for the result of os. stat(), os. fstat() and os. lstat(). stat os. stat() os. fstat() os. lstat() Attributes: File mode: file type and file mode bits (permissions). Platform dependent, but if non-zero, uniquely identifies the file for a given value of st_dev. Typically: st_dev the inode number on Unix, the inode number on Unix, the file index on Windows the file index on Windows Identifier of the device on which this file resides. Number of hard links. User identifier of the file owner. Group identifier of the file owner. Size of the file in bytes, if it is a regular file or a symbolic link. The size of a symbolic link is the length of the pathname it contains, without a terminating null byte. Timestamps: Time of most recent access expressed in seconds. Time of most recent content modification expressed in seconds. Time of most recent metadata change expressed in seconds. Changed in version 3. 12: st_ctime is deprecated on Windows. Use st_birthtime for the file creation time. In the future, st_ctime will contain the time of the most recent metadata change, as for other platforms. st_ctime st_birthtime st_ctime Time of most recent access expressed in nanoseconds as an integer. Added in version 3. 3. Time of most recent content modification expressed in nanoseconds as an integer. Added in version 3. 3. Time of most recent metadata change expressed in nanoseconds as an integer. Added in version 3. 3. Changed in version 3. 12: st_ctime_ns is deprecated on Windows. Use st_birthtime_ns for the file creation time. In the future, st_ctime will contain the time of the most recent metadata change, as for other platforms. st_ctime_ns st_birthtime_ns st_ctime Time of file creation expressed in seconds. This attribute is not always available, and may raise AttributeError. AttributeError Changed in version 3. 12: st_birthtime is now available on Windows.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 44,
+  "start_char": 94196,
+  "end_char": 96415,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.810012"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_044.txt"
+}

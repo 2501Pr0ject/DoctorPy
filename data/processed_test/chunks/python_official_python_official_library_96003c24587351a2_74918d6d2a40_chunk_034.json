@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_034",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "In this case, type will be the enclosing class, and obj will be the first argument of the immediately enclosing function (typically self). (This means that zero-argument super() will not work as expected within nested functions, including generator expressions, which implicitly create nested functions. ) super() self super() There are two typical use cases for super. In a class hierarchy with single inheritance, super can be used to refer to parent classes without naming them explicitly, thus making the code more maintainable. This use closely parallels the use of super in other programming languages. The second use case is to support cooperative multiple inheritance in a dynamic execution environment. This use case is unique to Python and is not found in statically compiled languages or languages that only support single inheritance. This makes it possible to implement “diamond diagrams” where multiple base classes implement the same method. Good design dictates that such implementations have the same calling signature in every case (because the order of calls is determined at runtime, because that order adapts to changes in the class hierarchy, and because that order can include sibling classes that are unknown prior to runtime). For both use cases, a typical superclass call looks like this: class C(B): def method(self, arg): super(). method(arg) # This does the same thing as: # super(C, self). method(arg) In addition to method lookups, super() also works for attribute lookups. One possible use case for this is calling descriptors in a parent or sibling class. super() Note that super() is implemented as part of the binding process for explicit dotted attribute lookups such as super(). getitem(name). It does so by implementing its own getattribute() method for searching classes in a predictable order that supports cooperative multiple inheritance. Accordingly, super() is undefined for implicit lookups using statements or operators such as super()[name]. super() super(). __getitem__(name) __getattribute__() super() super()[name] Also note that, aside from the zero argument form, super() is not limited to use inside methods. The two argument form specifies the arguments exactly and makes the appropriate references. The zero argument form only works inside a class definition, as the compiler fills in the necessary details to correctly retrieve the class being defined, as well as accessing the current instance for ordinary methods. super() For practical suggestions on how to design cooperative classes using super(), see guide to using super().",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 34,
+  "start_char": 72958,
+  "end_char": 75544,
+  "token_count": 484,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.024546"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_034.txt"
+}

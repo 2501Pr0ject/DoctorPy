@@ -1,0 +1,267 @@
+{
+  "python_basics_variables": {
+    "id": "python_basics_variables",
+    "title": "Les variables en Python",
+    "description": "Apprenez à créer et utiliser des variables en Python",
+    "difficulty": "beginner",
+    "category": "python",
+    "estimated_time": 20,
+    "xp_reward": 100,
+    "prerequisites": [],
+    "learning_objectives": [
+      "Comprendre le concept de variable",
+      "Savoir déclarer une variable",
+      "Connaître les règles de nommage",
+      "Utiliser différents types de données"
+    ],
+    "content": {
+      "steps": [
+        {
+          "title": "Qu'est-ce qu'une variable ?",
+          "content": "Une variable est un conteneur qui stocke une valeur. En Python, vous pouvez créer une variable en lui assignant une valeur avec le signe égal (=).",
+          "exercise": "Créez une variable nommée 'nom' et assignez-lui votre prénom.",
+          "solution": "nom = 'Alice'",
+          "tips": [
+            "Utilisez des guillemets pour les chaînes de caractères",
+            "Pas d'espaces dans les noms de variables",
+            "Utilisez des noms descriptifs"
+          ]
+        },
+        {
+          "title": "Types de données",
+          "content": "Python supporte plusieurs types de données : chaînes (str), nombres entiers (int), nombres décimaux (float), et booléens (bool).",
+          "exercise": "Créez quatre variables : un nom (chaîne), un âge (entier), une taille (décimal), et un statut étudiant (booléen).",
+          "solution": "nom = 'Alice'\nage = 25\ntaille = 1.65\nest_etudiant = True",
+          "tips": [
+            "Les chaînes utilisent des guillemets",
+            "Les booléens sont True ou False (avec majuscule)",
+            "Les décimaux utilisent le point"
+          ]
+        },
+        {
+          "title": "Affichage des variables",
+          "content": "Utilisez la fonction print() pour afficher le contenu d'une variable.",
+          "exercise": "Affichez le contenu de la variable 'nom' que vous avez créée.",
+          "solution": "print(nom)",
+          "tips": [
+            "La fonction print() affiche la valeur",
+            "Pas de guillemets autour du nom de la variable dans print()",
+            "Vous pouvez afficher plusieurs variables : print(nom, age)"
+          ]
+        }
+      ]
+    }
+  },
+  "python_basics_functions": {
+    "id": "python_basics_functions",
+    "title": "Les fonctions en Python",
+    "description": "Apprenez à créer et utiliser des fonctions pour organiser votre code",
+    "difficulty": "beginner",
+    "category": "python",
+    "estimated_time": 30,
+    "xp_reward": 150,
+    "prerequisites": ["python_basics_variables"],
+    "learning_objectives": [
+      "Comprendre l'utilité des fonctions",
+      "Savoir définir une fonction",
+      "Utiliser des paramètres",
+      "Retourner des valeurs"
+    ],
+    "content": {
+      "steps": [
+        {
+          "title": "Définir une fonction simple",
+          "content": "Une fonction est un bloc de code réutilisable. Utilisez le mot-clé 'def' suivi du nom de la fonction et de parenthèses.",
+          "exercise": "Créez une fonction nommée 'dire_bonjour' qui affiche 'Bonjour !'",
+          "solution": "def dire_bonjour():\n    print('Bonjour !')",
+          "tips": [
+            "N'oubliez pas les deux-points après les parenthèses",
+            "Indentez le code à l'intérieur de la fonction",
+            "Utilisez 4 espaces pour l'indentation"
+          ]
+        },
+        {
+          "title": "Fonctions avec paramètres",
+          "content": "Les paramètres permettent de passer des informations à une fonction.",
+          "exercise": "Créez une fonction 'saluer' qui prend un paramètre 'nom' et affiche 'Bonjour [nom] !'",
+          "solution": "def saluer(nom):\n    print(f'Bonjour {nom} !')",
+          "tips": [
+            "Mettez le nom du paramètre entre les parenthèses",
+            "Utilisez f-strings pour formater le texte",
+            "Les f-strings commencent par f devant les guillemets"
+          ]
+        },
+        {
+          "title": "Retourner une valeur",
+          "content": "Utilisez 'return' pour qu'une fonction renvoie une valeur.",
+          "exercise": "Créez une fonction 'additionner' qui prend deux nombres et retourne leur somme.",
+          "solution": "def additionner(a, b):\n    return a + b",
+          "tips": [
+            "Le mot-clé return arrête l'exécution de la fonction",
+            "Vous pouvez stocker le résultat dans une variable",
+            "Une fonction peut avoir plusieurs paramètres"
+          ]
+        }
+      ]
+    }
+  },
+  "python_intermediate_lists": {
+    "id": "python_intermediate_lists",
+    "title": "Les listes en Python",
+    "description": "Maîtrisez les listes pour stocker et manipuler des collections de données",
+    "difficulty": "intermediate",
+    "category": "python",
+    "estimated_time": 25,
+    "xp_reward": 200,
+    "prerequisites": ["python_basics_variables", "python_basics_functions"],
+    "learning_objectives": [
+      "Créer et modifier des listes",
+      "Accéder aux éléments d'une liste",
+      "Utiliser les méthodes de liste",
+      "Parcourir une liste avec des boucles"
+    ],
+    "content": {
+      "steps": [
+        {
+          "title": "Créer une liste",
+          "content": "Une liste est une collection ordonnée d'éléments. Créez une liste en utilisant des crochets [].",
+          "exercise": "Créez une liste 'fruits' contenant 'pomme', 'banane', et 'orange'.",
+          "solution": "fruits = ['pomme', 'banane', 'orange']",
+          "tips": [
+            "Séparez les éléments par des virgules",
+            "Les chaînes doivent être entre guillemets",
+            "Une liste peut contenir différents types de données"
+          ]
+        },
+        {
+          "title": "Accéder aux éléments",
+          "content": "Utilisez l'index (position) pour accéder à un élément. L'indexation commence à 0.",
+          "exercise": "Affichez le premier fruit de votre liste.",
+          "solution": "print(fruits[0])",
+          "tips": [
+            "Le premier élément est à l'index 0",
+            "Utilisez des crochets après le nom de la liste",
+            "Un index négatif compte depuis la fin : fruits[-1] pour le dernier"
+          ]
+        },
+        {
+          "title": "Modifier une liste",
+          "content": "Vous pouvez ajouter, supprimer ou modifier des éléments d'une liste.",
+          "exercise": "Ajoutez 'kiwi' à la fin de votre liste de fruits.",
+          "solution": "fruits.append('kiwi')",
+          "tips": [
+            "append() ajoute à la fin",
+            "insert(index, element) ajoute à une position spécifique",
+            "remove(element) supprime un élément"
+          ]
+        }
+      ]
+    }
+  },
+  "python_advanced_classes": {
+    "id": "python_advanced_classes",
+    "title": "Les classes et objets",
+    "description": "Découvrez la programmation orientée objet avec les classes Python",
+    "difficulty": "advanced",
+    "category": "python",
+    "estimated_time": 45,
+    "xp_reward": 300,
+    "prerequisites": ["python_basics_functions", "python_intermediate_lists"],
+    "learning_objectives": [
+      "Comprendre les concepts de classe et objet",
+      "Définir une classe avec des attributs",
+      "Créer des méthodes de classe",
+      "Instancier des objets"
+    ],
+    "content": {
+      "steps": [
+        {
+          "title": "Définir une classe",
+          "content": "Une classe est un modèle pour créer des objets. Utilisez le mot-clé 'class'.",
+          "exercise": "Créez une classe 'Personne' avec un constructeur qui prend 'nom' et 'age'.",
+          "solution": "class Personne:\n    def __init__(self, nom, age):\n        self.nom = nom\n        self.age = age",
+          "tips": [
+            "__init__ est le constructeur",
+            "self représente l'instance de la classe",
+            "Utilisez self.attribut pour créer des attributs"
+          ]
+        },
+        {
+          "title": "Ajouter des méthodes",
+          "content": "Les méthodes sont des fonctions définies dans une classe qui opèrent sur les objets.",
+          "exercise": "Ajoutez une méthode 'se_presenter' qui affiche le nom et l'âge de la personne.",
+          "solution": "def se_presenter(self):\n    print(f'Je suis {self.nom} et j\\'ai {self.age} ans')",
+          "tips": [
+            "Toutes les méthodes prennent 'self' comme premier paramètre",
+            "Accédez aux attributs avec self.attribut",
+            "Indentez les méthodes dans la classe"
+          ]
+        },
+        {
+          "title": "Créer des objets",
+          "content": "Instanciez une classe en appelant son nom comme une fonction.",
+          "exercise": "Créez un objet 'personne1' de type Personne avec votre nom et âge.",
+          "solution": "personne1 = Personne('Alice', 25)",
+          "tips": [
+            "Passez les arguments requis par __init__",
+            "Stockez l'objet dans une variable",
+            "Vous pouvez créer plusieurs objets de la même classe"
+          ]
+        }
+      ]
+    }
+  },
+  "debugging_basics": {
+    "id": "debugging_basics",
+    "title": "Déboguer du code Python",
+    "description": "Apprenez les techniques de base pour identifier et corriger les erreurs",
+    "difficulty": "intermediate",
+    "category": "debugging",
+    "estimated_time": 20,
+    "xp_reward": 150,
+    "prerequisites": ["python_basics_variables", "python_basics_functions"],
+    "learning_objectives": [
+      "Identifier les types d'erreurs",
+      "Lire les messages d'erreur",
+      "Utiliser print() pour déboguer",
+      "Techniques de débogage systématique"
+    ],
+    "content": {
+      "steps": [
+        {
+          "title": "Types d'erreurs",
+          "content": "Il existe trois types principaux d'erreurs : syntaxe, runtime, et logique.",
+          "exercise": "Identifiez le type d'erreur dans ce code : print('Hello World'",
+          "solution": "Erreur de syntaxe - parenthèse fermante manquante",
+          "tips": [
+            "Erreurs de syntaxe : code mal écrit",
+            "Erreurs runtime : code s'arrête pendant l'exécution",
+            "Erreurs logique : code fonctionne mais résultat incorrect"
+          ]
+        },
+        {
+          "title": "Lire les tracebacks",
+          "content": "Python affiche des messages d'erreur détaillés appelés tracebacks.",
+          "exercise": "Dans un traceback, où trouvez-vous le numéro de ligne de l'erreur ?",
+          "solution": "À la fin du traceback, après 'line'",
+          "tips": [
+            "Lisez le traceback de bas en haut",
+            "La dernière ligne indique le type d'erreur",
+            "Le numéro de ligne vous aide à localiser le problème"
+          ]
+        },
+        {
+          "title": "Déboguer avec print()",
+          "content": "Utilisez print() pour afficher les valeurs des variables à différents moments.",
+          "exercise": "Ajoutez des print() pour déboguer cette fonction qui ne fonctionne pas correctement.",
+          "solution": "def calculer(x, y):\n    print(f'x = {x}, y = {y}')\n    resultat = x * y\n    print(f'resultat = {resultat}')\n    return resultat",
+          "tips": [
+            "Affichez les valeurs des variables importantes",
+            "Vérifiez les conditions dans les if/else",
+            "Enlevez les print() après avoir trouvé l'erreur"
+          ]
+        }
+      ]
+    }
+  }
+}

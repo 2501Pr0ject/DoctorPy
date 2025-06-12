@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_040",
+  "original_doc_id": "python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119",
+  "content": "y opN z a op1 b and b op2 c and. y opN z a op1 b op2 c x < y > z < > == >= <=. = object object __lt__() ==. = x is y x == y < > <= >= TypeError fractions. Fraction decimal. Decimal float('NaN') decimal. Decimal('NaN') x = float('NaN') 3 < x x < 3 x == x x. = x None NotImplemented is is not bytes bytearray str ord() tuple list range TypeError [1,2] == (1,2) [1,2,x] <= [1,2,y] x <= y [1,2] < [1,2,3] dict (key, value) < > <= >= TypeError set frozenset {1,2} {2,3} min() max() sorted() x is y x == y x == y y == x x. = y y. = x x < y y > x x <= y y >= x x > y and y > z x > z x < y and y <= z x < z x == y not x. = y x < y not x >= y x > y not x <= y total_ordering() hash() in not in x in s True False x not in s x in s in x in y any(x is e or x == e for e in y) x in y True y. find(x). = -1 \"\" in \"abc\" True __contains__() x in y True y. __contains__(x) False __contains__() __iter__() x in y True z x is z or x == z y in __getitem__() x in y True x is y[i] or x == y[i] IndexError in not in in is is not x is y id() x is not y or_test ::= and_test | or_test \"or\" and_test and_test ::= not_test | and_test \"and\" not_test not_test ::= comparison | \"not\" not_test and_test or_test and_test not_test and_test not_test comparison not_test False None __bool__() not True False x and y x or y and or False True s s or 'foo' not not 'foo' False '' assignment_expression ::= [identifier \":=\"] expression identifier expression expression identifier expression if matching := pattern. search(data): do_something(matching) while chunk := file.",
+  "title": "6. Expressions.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 40,
+  "start_char": 85834,
+  "end_char": 87368,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_0a48b6880ef6a9cd.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:08.604950"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_0a48b6880ef6a9cd_087b11fde119_chunk_040.txt"
+}

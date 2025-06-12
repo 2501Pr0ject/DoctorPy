@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_024",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "'surrogateescape' will represent any incorrect bytes as low surrogate code units ranging from U+DC80 to U+DCFF. These surrogate code units will then be turned back into the same bytes when the surrogateescape error handler is used when writing data. This is useful for processing files in an unknown encoding. 'surrogateescape' surrogateescape 'xmlcharrefreplace' is only supported when writing to a file. Characters not supported by the encoding are replaced with the appropriate XML character reference &#nnn;. 'xmlcharrefreplace' is only supported when writing to a file. Characters not supported by the encoding are replaced with the appropriate XML character reference &#nnn;. 'xmlcharrefreplace' &#nnn; 'backslashreplace' replaces malformed data by Python’s backslashed escape sequences. 'backslashreplace' replaces malformed data by Python’s backslashed escape sequences. 'backslashreplace' 'namereplace' (also only supported when writing) replaces unsupported characters with \\N{. } escape sequences. 'namereplace' (also only supported when writing) replaces unsupported characters with \\N{. } escape sequences. 'namereplace' \\N{. } newline determines how to parse newline characters from the stream. It can be None, '', '\\n', '\\r', and '\\r\\n'. It works as follows: None '' '\\n' '\\r' '\\r\\n' When reading input from the stream, if newline is None, universal newlines mode is enabled. Lines in the input can end in '\\n', '\\r', or '\\r\\n', and these are translated into '\\n' before being returned to the caller. If it is '', universal newlines mode is enabled, but line endings are returned to the caller untranslated. If it has any of the other legal values, input lines are only terminated by the given string, and the line ending is returned to the caller untranslated. When reading input from the stream, if newline is None, universal newlines mode is enabled. Lines in the input can end in '\\n', '\\r', or '\\r\\n', and these are translated into '\\n' before being returned to the caller. If it is '', universal newlines mode is enabled, but line endings are returned to the caller untranslated. If it has any of the other legal values, input lines are only terminated by the given string, and the line ending is returned to the caller untranslated.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 24,
+  "start_char": 51750,
+  "end_char": 54004,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.015819"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_024.txt"
+}

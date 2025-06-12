@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_025",
+  "original_doc_id": "python_official_python_official_library_96003c24587351a2_74918d6d2a40",
+  "content": "None '\\n' '\\r' '\\r\\n' '\\n' '' When writing output to the stream, if newline is None, any '\\n' characters written are translated to the system default line separator, os. linesep. If newline is '' or '\\n', no translation takes place. If newline is any of the other legal values, any '\\n' characters written are translated to the given string. When writing output to the stream, if newline is None, any '\\n' characters written are translated to the system default line separator, os. linesep. If newline is '' or '\\n', no translation takes place. If newline is any of the other legal values, any '\\n' characters written are translated to the given string. None '\\n' os. linesep '' '\\n' '\\n' If closefd is False and a file descriptor rather than a filename was given, the underlying file descriptor will be kept open when the file is closed. If a filename is given closefd must be True (the default); otherwise, an error will be raised. False True A custom opener can be used by passing a callable as opener. The underlying file descriptor for the file object is then obtained by calling opener with (file, flags). opener must return an open file descriptor (passing os. open as opener results in functionality similar to passing None). os. open None The newly created file is non-inheritable. The following example uses the dir_fd parameter of the os. open() function to open a file relative to a given directory: os. open() >>> import os >>> dir_fd = os. open('somedir', os. O_RDONLY) >>> def opener(path, flags):. return os. open(path, flags, dir_fd=dir_fd). >>> with open('spamspam. txt', 'w', opener=opener) as f:. print('This will be written to somedir/spamspam. txt', file=f). >>> os. close(dir_fd) # don't leak a file descriptor The type of file object returned by the open() function depends on the mode. When open() is used to open a file in a text mode ('w', 'r', 'wt', 'rt', etc. ), it returns a subclass of io. TextIOBase (specifically io. TextIOWrapper). When used to open a file in a binary mode with buffering, the returned class is a subclass of io.",
+  "title": "Built-in Functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 25,
+  "start_char": 54004,
+  "end_char": 56067,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_96003c24587351a2.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:31.016760"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_96003c24587351a2_74918d6d2a40_chunk_025.txt"
+}

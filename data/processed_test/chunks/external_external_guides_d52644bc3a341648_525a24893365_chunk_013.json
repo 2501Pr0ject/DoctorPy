@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_013",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "New modules and packages (including third party frameworks) should be written to these standards, but where an existing library has a different style, internal consistency is preferred. ### Overriding Principle Names that are visible to the user as public parts of the API should follow conventions that reflect usage rather than implementation. ### Descriptive: Naming Styles There are a lot of different naming styles. It helps to be able to recognize what naming style is being used, independently from what they are used for. The following naming styles are commonly distinguished: b (single lowercase letter) b B (single uppercase letter) B lowercase lowercase lower_case_with_underscores lower_case_with_underscores UPPERCASE UPPERCASE UPPER_CASE_WITH_UNDERSCORES UPPER_CASE_WITH_UNDERSCORES CapitalizedWords (or CapWords, or CamelCase – so named because of the bumpy look of its letters [4]). This is also sometimes known as StudlyCaps. Note: When using acronyms in CapWords, capitalize all the letters of the acronym. Thus HTTPServerError is better than HttpServerError. CapitalizedWords Note: When using acronyms in CapWords, capitalize all the letters of the acronym. Thus HTTPServerError is better than HttpServerError. mixedCase (differs from CapitalizedWords by initial lowercase character. ) mixedCase Capitalized_Words_With_Underscores (ugly. ) Capitalized_Words_With_Underscores There’s also the style of using a short unique prefix to group related names together. This is not used much in Python, but it is mentioned for completeness. For example, the os. stat() function returns a tuple whose items traditionally have names like st_mode, st_size, st_mtime and so on. (This is done to emphasize the correspondence with the fields of the POSIX system call struct, which helps programmers familiar with that. ) os. stat() st_mode st_size st_mtime The X11 library uses a leading X for all its public functions. In Python, this style is generally deemed unnecessary because attribute and method names are prefixed with an object, and function names are prefixed with a module name. In addition, the following special forms using leading or trailing underscores are recognized (these can generally be combined with any case convention): single_leading_underscore: weak “internal use” indicator. E. g. from M import * does not import objects whose names start with an underscore.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 13,
+  "start_char": 26413,
+  "end_char": 28804,
+  "token_count": 488,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.778086"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_013.txt"
+}

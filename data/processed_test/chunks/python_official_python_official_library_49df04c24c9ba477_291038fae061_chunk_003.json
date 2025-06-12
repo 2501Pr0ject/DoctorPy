@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_003",
+  "original_doc_id": "python_official_python_official_library_49df04c24c9ba477_291038fae061",
+  "content": "TypeError The weights or cum_weights can use any numeric type that interoperates with the float values returned by random() (that includes integers, floats, and fractions but excludes decimals). Weights are assumed to be non-negative and finite. A ValueError is raised if all weights are zero. float random() ValueError For a given seed, the choices() function with equal weighting typically produces a different sequence than repeated calls to choice(). The algorithm used by choices() uses floating-point arithmetic for internal consistency and speed. The algorithm used by choice() defaults to integer arithmetic with repeated selections to avoid small biases from round-off error. choices() choice() choices() choice() Added in version 3. 6. Changed in version 3. 9: Raises a ValueError if all weights are zero. ValueError Shuffle the sequence x in place. To shuffle an immutable sequence and return a new shuffled list, use sample(x, k=len(x)) instead. sample(x, k=len(x)) Note that even for small len(x), the total number of permutations of x can quickly grow larger than the period of most random number generators. This implies that most permutations of a long sequence can never be generated. For example, a sequence of length 2080 is the largest that can fit within the period of the Mersenne Twister random number generator. len(x) Changed in version 3. 11: Removed the optional parameter random. Return a k length list of unique elements chosen from the population sequence. Used for random sampling without replacement. Returns a new list containing elements from the population while leaving the original population unchanged. The resulting list is in selection order so that all sub-slices will also be valid random samples. This allows raffle winners (the sample) to be partitioned into grand prize and second place winners (the subslices). Members of the population need not be hashable or unique. If the population contains repeats, then each occurrence is a possible selection in the sample. Repeated elements can be specified one at a time or with the optional keyword-only counts parameter. For example, sample(['red', 'blue'], counts=[4, 2], k=5) is equivalent to sample(['red', 'red', 'red', 'red', 'blue', 'blue'], k=5).",
+  "title": "random — Generate pseudo-random numbers.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 3,
+  "start_char": 6759,
+  "end_char": 9003,
+  "token_count": 460,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_49df04c24c9ba477.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:27.610983"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_49df04c24c9ba477_291038fae061_chunk_003.txt"
+}

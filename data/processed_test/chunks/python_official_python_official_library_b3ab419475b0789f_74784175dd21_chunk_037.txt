@@ -1,0 +1,1 @@
+readlink() os. rename() Path. rename() os. replace() Path. replace() os. remove() os. unlink() Path. unlink() os. rmdir() Path. rmdir() os. chmod() Path. chmod() os. lchmod() Path. lchmod() pathlib glob os os. path os. path.

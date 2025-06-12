@@ -1,0 +1,218 @@
+{
+  "id": "python_basics_functions",
+  "title": "Les fonctions en Python",
+  "description": "Maîtrisez la création et l'utilisation des fonctions en Python : définition, paramètres, valeurs de retour et bonnes pratiques.",
+  "difficulty": "beginner",
+  "category": "python_basics", 
+  "estimated_time": 35,
+  "prerequisites": ["python_basics_variables"],
+  "learning_objectives": [
+    "Comprendre l'utilité des fonctions",
+    "Savoir définir une fonction avec def",
+    "Utiliser les paramètres et arguments",
+    "Comprendre les valeurs de retour",
+    "Appliquer les bonnes pratiques de documentation"
+  ],
+  "tags": ["functions", "def", "parameters", "return", "python"],
+  "xp_reward": 150,
+  "steps": [
+    {
+      "id": "step_1",
+      "title": "Introduction aux fonctions",
+      "content": "Une fonction est un bloc de code réutilisable qui effectue une tâche spécifique. Elle évite la répétition et structure le code.",
+      "explanation": "Les fonctions permettent de diviser un programme complexe en petites parties manageable. Elles rendent le code plus lisible et maintenable.",
+      "example": "def saluer():\n    print(\"Bonjour !\")\n\n# Appeler la fonction\nsaluer()  # Affiche : Bonjour !",
+      "exercise": {
+        "instruction": "Créez une fonction appelée 'dire_bienvenue' qui affiche 'Bienvenue dans DoctorPy !'",
+        "initial_code": "# Définissez votre fonction ici\ndef dire_bienvenue():\n    # Votre code ici\n    pass\n\n# Testez votre fonction\ndire_bienvenue()",
+        "solution": "def dire_bienvenue():\n    print('Bienvenue dans DoctorPy !')\n\ndire_bienvenue()",
+        "test_cases": [
+          {
+            "input": "",
+            "expected_output": "Bienvenue dans DoctorPy !",
+            "description": "La fonction doit afficher le message de bienvenue"
+          }
+        ]
+      },
+      "hints": [
+        "Utilisez le mot-clé 'def' pour définir une fonction",
+        "N'oubliez pas les deux-points (:) après le nom",
+        "L'indentation est importante en Python",
+        "Appelez la fonction en écrivant son nom suivi de ()"
+      ]
+    },
+    {
+      "id": "step_2",
+      "title": "Fonctions avec paramètres",
+      "content": "Les paramètres permettent de passer des informations à une fonction pour la rendre plus flexible et réutilisable.",
+      "explanation": "Un paramètre est une variable définie dans la fonction. Un argument est la valeur réelle passée lors de l'appel.",
+      "example": "def saluer_personne(nom):\n    print(f\"Bonjour {nom} !\")\n\n# Appels avec différents arguments\nsaluer_personne(\"Alice\")  # Bonjour Alice !\nsaluer_personne(\"Bob\")    # Bonjour Bob !",
+      "exercise": {
+        "instruction": "Créez une fonction 'calculer_age' qui prend une année de naissance et affiche l'âge approximatif (2024 - année)",
+        "initial_code": "def calculer_age(annee_naissance):\n    # Calculez et affichez l'âge\n    pass\n\n# Testez avec différentes années\ncalculer_age(1995)\ncalculer_age(2000)",
+        "solution": "def calculer_age(annee_naissance):\n    age = 2024 - annee_naissance\n    print(f\"Vous avez approximativement {age} ans\")\n\ncalculer_age(1995)\ncalculer_age(2000)",
+        "test_cases": [
+          {
+            "input": "1995",
+            "expected_output": "Vous avez approximativement 29 ans",
+            "description": "Doit calculer l'âge correctement pour 1995"
+          }
+        ]
+      },
+      "hints": [
+        "Utilisez 2024 comme année de référence",
+        "Soustrayez l'année de naissance de 2024",
+        "Utilisez print() pour afficher le résultat",
+        "Les f-strings permettent d'insérer des variables dans du texte"
+      ]
+    },
+    {
+      "id": "step_3",
+      "title": "Valeurs de retour avec return",
+      "content": "Les fonctions peuvent renvoyer des valeurs avec 'return'. Cela permet de récupérer le résultat d'un calcul pour l'utiliser ailleurs.",
+      "explanation": "'return' termine l'exécution de la fonction et renvoie une valeur. Sans 'return', une fonction renvoie None.",
+      "example": "def additionner(a, b):\n    resultat = a + b\n    return resultat\n\n# Utiliser la valeur retournée\nsomme = additionner(5, 3)\nprint(somme)  # Affiche : 8",
+      "exercise": {
+        "instruction": "Créez une fonction 'calculer_tva' qui prend un prix et retourne le prix avec TVA (prix * 1.20)",
+        "initial_code": "def calculer_tva(prix_ht):\n    # Calculez et retournez le prix TTC\n    pass\n\n# Test\nprix_ttc = calculer_tva(100)\nprint(f\"Prix TTC : {prix_ttc}€\")",
+        "solution": "def calculer_tva(prix_ht):\n    prix_ttc = prix_ht * 1.20\n    return prix_ttc\n\nprix_ttc = calculer_tva(100)\nprint(f\"Prix TTC : {prix_ttc}€\")",
+        "test_cases": [
+          {
+            "input": "100",
+            "expected_output": "120.0",
+            "description": "Doit retourner 120.0 pour un prix HT de 100"
+          }
+        ]
+      },
+      "hints": [
+        "Multipliez le prix par 1.20 pour ajouter 20% de TVA",
+        "Utilisez 'return' pour renvoyer le résultat",
+        "Stockez le résultat dans une variable lors de l'appel",
+        "Testez avec différentes valeurs"
+      ]
+    },
+    {
+      "id": "step_4",
+      "title": "Paramètres par défaut",
+      "content": "Python permet de définir des valeurs par défaut pour les paramètres, rendant certains arguments optionnels lors de l'appel.",
+      "explanation": "Les paramètres avec valeurs par défaut doivent venir après les paramètres obligatoires dans la définition.",
+      "example": "def presenter(nom, age=25, ville=\"Paris\"):\n    return f\"{nom}, {age} ans, habite à {ville}\"\n\n# Différents appels possibles\nprint(presenter(\"Alice\"))                    # Utilise les défauts\nprint(presenter(\"Bob\", 30))                  # Spécifie l'âge\nprint(presenter(\"Charlie\", 28, \"Lyon\"))      # Spécifie tout",
+      "exercise": {
+        "instruction": "Créez une fonction 'calculer_remise' avec prix (obligatoire) et pourcentage_remise (défaut: 10). Elle retourne le prix après remise.",
+        "initial_code": "def calculer_remise(prix, pourcentage_remise=10):\n    # Calculez le prix après remise\n    pass\n\n# Tests\nprint(calculer_remise(100))      # Remise de 10% par défaut\nprint(calculer_remise(100, 20))  # Remise de 20%",
+        "solution": "def calculer_remise(prix, pourcentage_remise=10):\n    remise = prix * (pourcentage_remise / 100)\n    prix_final = prix - remise\n    return prix_final\n\nprint(calculer_remise(100))\nprint(calculer_remise(100, 20))",
+        "test_cases": [
+          {
+            "input": "100",
+            "expected_output": "90.0",
+            "description": "Doit retourner 90.0 avec remise par défaut de 10%"
+          },
+          {
+            "input": "100, 20",
+            "expected_output": "80.0", 
+            "description": "Doit retourner 80.0 avec remise de 20%"
+          }
+        ]
+      },
+      "hints": [
+        "Remise = prix × (pourcentage ÷ 100)",
+        "Prix final = prix - remise",
+        "Le paramètre par défaut se met après le =",
+        "Testez les deux cas d'appel"
+      ]
+    },
+    {
+      "id": "step_5",
+      "title": "Documentation avec docstrings",
+      "content": "Les docstrings documentent ce que fait une fonction, ses paramètres et sa valeur de retour. C'est une bonne pratique essentielle.",
+      "explanation": "Une docstring est une chaîne de caractères placée juste après la définition de la fonction. Elle est accessible via help() ou __doc__.",
+      "example": "def calculer_surface_rectangle(longueur, largeur):\n    \"\"\"\n    Calcule la surface d'un rectangle.\n    \n    Args:\n        longueur (float): La longueur du rectangle\n        largeur (float): La largeur du rectangle\n    \n    Returns:\n        float: La surface du rectangle\n    \"\"\"\n    return longueur * largeur",
+      "exercise": {
+        "instruction": "Créez une fonction documentée 'convertir_celsius_fahrenheit' qui convertit des degrés Celsius en Fahrenheit (F = C * 9/5 + 32)",
+        "initial_code": "def convertir_celsius_fahrenheit(celsius):\n    \"\"\"\n    # Ajoutez votre documentation ici\n    \"\"\"\n    # Votre code ici\n    pass\n\n# Test\nprint(convertir_celsius_fahrenheit(0))   # Doit retourner 32\nprint(convertir_celsius_fahrenheit(100)) # Doit retourner 212",
+        "solution": "def convertir_celsius_fahrenheit(celsius):\n    \"\"\"\n    Convertit une température de Celsius vers Fahrenheit.\n    \n    Args:\n        celsius (float): Température en degrés Celsius\n    \n    Returns:\n        float: Température en degrés Fahrenheit\n    \"\"\"\n    fahrenheit = celsius * 9/5 + 32\n    return fahrenheit\n\nprint(convertir_celsius_fahrenheit(0))\nprint(convertir_celsius_fahrenheit(100))",
+        "test_cases": [
+          {
+            "input": "0",
+            "expected_output": "32.0",
+            "description": "0°C doit donner 32°F"
+          },
+          {
+            "input": "100", 
+            "expected_output": "212.0",
+            "description": "100°C doit donner 212°F"
+          }
+        ]
+      },
+      "hints": [
+        "Formule : F = C × 9/5 + 32",
+        "Utilisez des triple guillemets pour la docstring",
+        "Documentez les paramètres et la valeur de retour",
+        "Testez avec les points de congélation et d'ébullition de l'eau"
+      ]
+    },
+    {
+      "id": "step_6",
+      "title": "Projet final : Calculateur de notes",
+      "content": "Créez un système complet pour calculer des moyennes d'étudiants avec plusieurs fonctions qui travaillent ensemble.",
+      "explanation": "Ce projet combine tout ce que vous avez appris : fonctions avec paramètres, valeurs de retour, paramètres par défaut et documentation.",
+      "example": "# Structure suggérée\ndef calculer_moyenne(notes):\n    # Calcule la moyenne d'une liste de notes\n    pass\n\ndef attribuer_mention(moyenne):\n    # Retourne la mention selon la moyenne\n    pass",
+      "exercise": {
+        "instruction": "Créez deux fonctions : 1) 'calculer_moyenne_ponderee(notes, coefficients)' qui calcule une moyenne pondérée, 2) 'obtenir_mention(moyenne)' qui retourne la mention (Excellent ≥16, Bien ≥14, Assez bien ≥12, Passable ≥10, Insuffisant <10)",
+        "initial_code": "def calculer_moyenne_ponderee(notes, coefficients):\n    \"\"\"\n    Calcule la moyenne pondérée des notes.\n    \"\"\"\n    # Votre code ici\n    pass\n\ndef obtenir_mention(moyenne):\n    \"\"\"\n    Détermine la mention selon la moyenne.\n    \"\"\"\n    # Votre code ici\n    pass\n\n# Test du système\nnotes = [15, 12, 18, 14]\ncoeffs = [2, 1, 3, 2]\nmoyenne = calculer_moyenne_ponderee(notes, coeffs)\nmention = obtenir_mention(moyenne)\nprint(f\"Moyenne : {moyenne:.2f}\")\nprint(f\"Mention : {mention}\")",
+        "solution": "def calculer_moyenne_ponderee(notes, coefficients):\n    \"\"\"\n    Calcule la moyenne pondérée des notes.\n    \n    Args:\n        notes (list): Liste des notes\n        coefficients (list): Liste des coefficients\n    \n    Returns:\n        float: Moyenne pondérée\n    \"\"\"\n    total_points = sum(note * coeff for note, coeff in zip(notes, coefficients))\n    total_coeffs = sum(coefficients)\n    return total_points / total_coeffs\n\ndef obtenir_mention(moyenne):\n    \"\"\"\n    Détermine la mention selon la moyenne.\n    \n    Args:\n        moyenne (float): La moyenne de l'étudiant\n    \n    Returns:\n        str: La mention correspondante\n    \"\"\"\n    if moyenne >= 16:\n        return \"Excellent\"\n    elif moyenne >= 14:\n        return \"Bien\"\n    elif moyenne >= 12:\n        return \"Assez bien\"\n    elif moyenne >= 10:\n        return \"Passable\"\n    else:\n        return \"Insuffisant\"\n\n# Test du système\nnotes = [15, 12, 18, 14]\ncoeffs = [2, 1, 3, 2]\nmoyenne = calculer_moyenne_ponderee(notes, coeffs)\nmention = obtenir_mention(moyenne)\nprint(f\"Moyenne : {moyenne:.2f}\")\nprint(f\"Mention : {mention}\")",
+        "test_cases": [
+          {
+            "input": "[15, 12, 18, 14], [2, 1, 3, 2]",
+            "expected_output": "15.0",
+            "description": "La moyenne pondérée doit être 15.0"
+          }
+        ]
+      },
+      "hints": [
+        "Moyenne pondérée = Σ(note × coefficient) / Σ(coefficients)",
+        "Utilisez zip() pour itérer sur les deux listes simultanément",
+        "Les conditions if/elif/else permettent de déterminer la mention",
+        "Testez avec différents jeux de données"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Que fait le mot-clé 'return' dans une fonction ?",
+      "options": ["Affiche une valeur", "Termine la fonction et renvoie une valeur", "Définit un paramètre", "Appelle une autre fonction"],
+      "correct": 1,
+      "explanation": "'return' termine l'exécution de la fonction et renvoie la valeur spécifiée."
+    },
+    {
+      "question": "Dans 'def ma_fonction(a, b=5):', que vaut b si on appelle 'ma_fonction(10)' ?",
+      "options": ["None", "0", "5", "10"],
+      "correct": 2,
+      "explanation": "b a une valeur par défaut de 5, utilisée quand aucun argument n'est fourni."
+    },
+    {
+      "question": "Comment documenter une fonction en Python ?",
+      "options": ["# commentaire", "/* commentaire */", "\"\"\"docstring\"\"\"", "-- commentaire"],
+      "correct": 2,
+      "explanation": "Les docstrings avec triple guillemets sont la méthode standard pour documenter les fonctions."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Documentation Python - Fonctions",
+      "url": "https://docs.python.org/fr/3/tutorial/controlflow.html#defining-functions",
+      "type": "documentation"
+    },
+    {
+      "title": "PEP 257 - Docstring Conventions",
+      "url": "https://peps.python.org/pep-0257/",
+      "type": "guide"
+    }
+  ],
+  "next_quests": ["python_basics_loops", "python_basics_lists"],
+  "certification_criteria": {
+    "min_score": 85,
+    "required_exercises": ["step_2", "step_3", "step_5", "step_6"],
+    "time_limit_minutes": 60
+  }
+}

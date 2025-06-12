@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_039",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "astimezone() implementation. When called from that, dt. tzinfo is self, and dt’s date and time data are to be viewed as expressing a UTC time. The purpose of fromutc() is to adjust the date and time data, returning an equivalent datetime in self’s local time. datetime. astimezone() dt. tzinfo fromutc() Most tzinfo subclasses should be able to inherit the default fromutc() implementation without problems. It’s strong enough to handle fixed-offset time zones, and time zones accounting for both standard and daylight time, and the latter even if the DST transition times differ in different years. An example of a time zone the default fromutc() implementation may not handle correctly in all cases is one where the standard offset (from UTC) depends on the specific date and time passed, which can happen for political reasons. The default implementations of astimezone() and fromutc() may not produce the result you want if the result is one of the hours straddling the moment the standard offset changes. tzinfo fromutc() fromutc() astimezone() fromutc() Skipping code for error cases, the default fromutc() implementation acts like: fromutc() def fromutc(self, dt): # raise ValueError error if dt. tzinfo is not self dtoff = dt. utcoffset() dtdst = dt. dst() # raise ValueError if dtoff is None or dtdst is None delta = dtoff - dtdst # this is self's standard offset if delta: dt += delta # convert to standard local time dtdst = dt. dst() # raise ValueError if dtdst is None if dtdst: return dt + dtdst else: return dt In the following tzinfo_examples. py file there are some examples of tzinfo classes: tzinfo_examples. py tzinfo from datetime import tzinfo, timedelta, datetime ZERO = timedelta(0) HOUR = timedelta(hours=1) SECOND = timedelta(seconds=1) # A class capturing the platform's idea of local time. # (May result in wrong values on historical times in # timezones where UTC offset and/or the DST rules had # changed in the past. ) import time as _time STDOFFSET = timedelta(seconds = -_time. timezone) if _time. daylight: DSTOFFSET = timedelta(seconds = -_time.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 39,
+  "start_char": 75957,
+  "end_char": 78037,
+  "token_count": 482,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.416415"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_039.txt"
+}

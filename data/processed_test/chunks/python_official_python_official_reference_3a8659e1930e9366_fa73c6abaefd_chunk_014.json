@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_014",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "__path__ file and cached are both optional attributes that may or may not be set. Both attributes should be a str when they are available. __file__ __cached__ str file indicates the pathname of the file from which the module was loaded (if loaded from a file), or the pathname of the shared library file for extension modules loaded dynamically from a shared library. It might be missing for certain types of modules, such as C modules that are statically linked into the interpreter, and the import system may opt to leave it unset if it has no semantic meaning (for example, a module loaded from a database). __file__ If file is set then the cached attribute might also be set, which is the path to any compiled version of the code (for example, a byte-compiled file). The file does not need to exist to set this attribute; the path can simply point to where the compiled file would exist (see PEP 3147). __file__ __cached__ Note that cached may be set even if file is not set. However, that scenario is quite atypical. Ultimately, the loader is what makes use of the module spec provided by the finder (from which file and cached are derived). So if a loader can load from a cached module but otherwise does not load from a file, that atypical scenario may be appropriate. __cached__ __file__ __file__ __cached__ It is strongly recommended that you use module. spec. cached instead of module. cached. module. __spec__. cached module. __cached__ Deprecated since version 3. 13, will be removed in version 3. 15: Setting cached on a module while failing to set spec. cached is deprecated. In Python 3. 15, cached will cease to be set or taken into consideration by the import system or standard library. __cached__ __spec__. cached __cached__ #### 3. 2. 9. 2. Other writable attributes on module objects¶ As well as the import-related attributes listed above, module objects also have the following writable attributes: The module’s documentation string, or None if unavailable. See also: doc attributes. None __doc__ attributes A dictionary containing variable annotations collected during module body execution. For best practices on working with annotations, please see Annotations Best Practices. __annotations__ #### 3. 2. 9. 3.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 14,
+  "start_char": 31738,
+  "end_char": 33972,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.706215"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_014.txt"
+}

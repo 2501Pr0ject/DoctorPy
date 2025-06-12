@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_041",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "This allows the zero argument form of super() to correctly identify the class being defined based on lexical scoping, while the class or instance that was used to make the current call is identified based on the first argument passed to the method. super() __class__ __class__ super super() CPython implementation detail: In CPython 3. 6 and later, the class cell is passed to the metaclass as a classcell entry in the class namespace. If present, this must be propagated up to the type. new call in order for the class to be initialised correctly. Failing to do so will result in a RuntimeError in Python 3. 8. __class__ __classcell__ type. __new__ RuntimeError When using the default metaclass type, or any metaclass that ultimately calls type. new, the following additional customization steps are invoked after creating the class object: type type. __new__ The type. new method collects all of the attributes in the class namespace that define a set_name() method; The type. new method collects all of the attributes in the class namespace that define a set_name() method; type. __new__ __set_name__() Those set_name methods are called with the class being defined and the assigned name of that particular attribute; Those set_name methods are called with the class being defined and the assigned name of that particular attribute; __set_name__ The init_subclass() hook is called on the immediate parent of the new class in its method resolution order. The init_subclass() hook is called on the immediate parent of the new class in its method resolution order. __init_subclass__() After the class object is created, it is passed to the class decorators included in the class definition (if any) and the resulting object is bound in the local namespace as the defined class. When a new class is created by type. new, the object provided as the namespace parameter is copied to a new ordered mapping and the original object is discarded. The new copy is wrapped in a read-only proxy, which becomes the dict attribute of the class object. type. __new__ __dict__ See also Describes the implicit class closure reference __class__ #### 3. 3. 3. 7. Uses for metaclasses¶ The potential uses for metaclasses are boundless.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 41,
+  "start_char": 94359,
+  "end_char": 96576,
+  "token_count": 473,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.731429"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_041.txt"
+}

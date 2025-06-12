@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_016",
+  "original_doc_id": "python_official_python_official_library_9696fac185a46f7d_fca9d84d248c",
+  "content": "\" # unique([[1, 2], [3, 4], [1, 2]]) → [1, 2] [3, 4] sequenced = sorted(iterable, key=key, reverse=reverse) return unique_justseen(sequenced, key=key) def sliding_window(iterable, n): \"Collect data into overlapping fixed-length chunks or blocks. \" # sliding_window('ABCDEFG', 4) → ABCD BCDE CDEF DEFG iterator = iter(iterable) window = deque(islice(iterator, n - 1), maxlen=n) for x in iterator: window. append(x) yield tuple(window) def grouper(iterable, n, *, incomplete='fill', fillvalue=None): \"Collect data into non-overlapping fixed-length chunks or blocks. \" # grouper('ABCDEFG', 3, fillvalue='x') → ABC DEF Gxx # grouper('ABCDEFG', 3, incomplete='strict') → ABC DEF ValueError # grouper('ABCDEFG', 3, incomplete='ignore') → ABC DEF iterators = [iter(iterable)] * n match incomplete: case 'fill': return zip_longest(*iterators, fillvalue=fillvalue) case 'strict': return zip(*iterators, strict=True) case 'ignore': return zip(*iterators) case _: raise ValueError('Expected fill, strict, or ignore') def roundrobin(*iterables): \"Visit input iterables in a cycle until each is exhausted. \" # roundrobin('ABC', 'D', 'EF') → A D E B F C # Algorithm credited to George Sakkis iterators = map(iter, iterables) for num_active in range(len(iterables), 0, -1): iterators = cycle(islice(iterators, num_active)) yield from map(next, iterators) def subslices(seq): \"Return all contiguous non-empty subslices of a sequence. \" # subslices('ABCD') → A AB ABC ABCD B BC BCD C CD D slices = starmap(slice, combinations(range(len(seq) + 1), 2)) return map(getitem, repeat(seq), slices) def iter_index(iterable, value, start=0, stop=None): \"Return indices where a value occurs in a sequence or iterable.",
+  "title": "itertools — Functions creating iterators for efficient looping.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 16,
+  "start_char": 28420,
+  "end_char": 30111,
+  "token_count": 468,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_9696fac185a46f7d.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:02.107733"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_9696fac185a46f7d_fca9d84d248c_chunk_016.txt"
+}

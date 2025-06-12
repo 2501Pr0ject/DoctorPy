@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_d52644bc3a341648_525a24893365_chunk_025",
+  "original_doc_id": "external_external_guides_d52644bc3a341648_525a24893365",
+  "content": "If an assignment has a right hand side, then the equality sign should have exactly one space on both sides:# Correct: code: int class Point: coords: Tuple[int, int] label: str = '' # Wrong: code:int # No space after colon code : int # Space before colon class Test: result: int=0 # No spaces around equality sign # Correct: code: int class Point: coords: Tuple[int, int] label: str = '<unknown>' # Wrong: code:int # No space after colon code : int # Space before colon class Test: result: int=0 # No spaces around equality sign Although the PEP 526 is accepted for Python 3. 6, the variable annotation syntax is the preferred syntax for stub files on all versions of Python (see PEP 484 for details). Footnotes ## References ## Copyright This document has been placed in the public domain. Source:  Last modified: 2025-04-04 00:19:04 GMT # Correct: # Aligned with opening delimiter. foo = long_function_name(var_one, var_two, var_three, var_four) # Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest. def long_function_name( var_one, var_two, var_three, var_four): print(var_one) # Hanging indents should add a level. foo = long_function_name( var_one, var_two, var_three, var_four) # Wrong: # Arguments on first line forbidden when not using vertical alignment. foo = long_function_name(var_one, var_two, var_three, var_four) # Further indentation required as indentation is not distinguishable. def long_function_name( var_one, var_two, var_three, var_four): print(var_one) # Hanging indents *may* be indented to other than 4 spaces. foo = long_function_name( var_one, var_two, var_three, var_four) if if if if # No extra indentation. if (this_is_one_thing and that_is_another_thing): do_something() # Add a comment, which will provide some distinction in editors # supporting syntax highlighting. if (this_is_one_thing and that_is_another_thing): # Since both conditions are true, we can frobnicate. do_something() # Add some extra indentation on the conditional continuation line.",
+  "title": "PEP 8 – Style Guide for Python Code | peps.python.org",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 25,
+  "start_char": 54291,
+  "end_char": 56308,
+  "token_count": 485,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_d52644bc3a341648.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.788458"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_d52644bc3a341648_525a24893365_chunk_025.txt"
+}

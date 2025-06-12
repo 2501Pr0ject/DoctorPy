@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_009",
+  "original_doc_id": "python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c",
+  "content": "All the same constraints apply, with some additional clarification: load_module() If there is an existing module object with the given name in sys. modules, the loader must use that existing module. (Otherwise, importlib. reload() will not work correctly. ) If the named module does not exist in sys. modules, the loader must create a new module object and add it to sys. modules. If there is an existing module object with the given name in sys. modules, the loader must use that existing module. (Otherwise, importlib. reload() will not work correctly. ) If the named module does not exist in sys. modules, the loader must create a new module object and add it to sys. modules. sys. modules importlib. reload() sys. modules sys. modules The module must exist in sys. modules before the loader executes the module code, to prevent unbounded recursion or multiple loading. The module must exist in sys. modules before the loader executes the module code, to prevent unbounded recursion or multiple loading. sys. modules If loading fails, the loader must remove any modules it has inserted into sys. modules, but it must remove only the failing module(s), and only if the loader itself has loaded the module(s) explicitly. If loading fails, the loader must remove any modules it has inserted into sys. modules, but it must remove only the failing module(s), and only if the loader itself has loaded the module(s) explicitly. sys. modules Changed in version 3. 5: A DeprecationWarning is raised when exec_module() is defined but create_module() is not. DeprecationWarning exec_module() create_module() Changed in version 3. 6: An ImportError is raised when exec_module() is defined but create_module() is not. ImportError exec_module() create_module() Changed in version 3. 10: Use of load_module() will raise ImportWarning. load_module() ImportWarning ### 5. 4. 2. Submodules¶ When a submodule is loaded using any mechanism (e. g. importlib APIs, the import or import-from statements, or built-in import()) a binding is placed in the parent module’s namespace to the submodule object. For example, if package spam has a submodule foo, after importing spam. foo, spam will have an attribute foo which is bound to the submodule.",
+  "title": "5. The import system.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 9,
+  "start_char": 20897,
+  "end_char": 23122,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_d33d7142ec98a66a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.010149"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_d33d7142ec98a66a_04aff2e9a15c_chunk_009.txt"
+}

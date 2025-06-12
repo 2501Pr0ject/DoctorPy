@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_026",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "del() can be invoked when arbitrary code is being executed, including from any arbitrary thread. If del() needs to take a lock or invoke any other blocking resource, it may deadlock as the resource may already be taken by the code that gets interrupted to execute del(). __del__() __del__() __del__() del() can be executed during interpreter shutdown. As a consequence, the global variables it needs to access (including other modules) may already have been deleted or set to None. Python guarantees that globals whose name begins with a single underscore are deleted from their module before other globals are deleted; if no other references to such globals exist, this may help in assuring that imported modules are still available at the time when the del() method is called. del() can be executed during interpreter shutdown. As a consequence, the global variables it needs to access (including other modules) may already have been deleted or set to None. Python guarantees that globals whose name begins with a single underscore are deleted from their module before other globals are deleted; if no other references to such globals exist, this may help in assuring that imported modules are still available at the time when the del() method is called. __del__() None __del__() Called by the repr() built-in function to compute the “official” string representation of an object. If at all possible, this should look like a valid Python expression that could be used to recreate an object with the same value (given an appropriate environment). If this is not possible, a string of the form <. some useful description. > should be returned. The return value must be a string object. If a class defines repr() but not str(), then repr() is also used when an “informal” string representation of instances of that class is required. repr() <. some useful description. > __repr__() __str__() __repr__() This is typically used for debugging, so it is important that the representation is information-rich and unambiguous. A default implementation is provided by the object class itself. object Called by str(object), the default format() implementation, and the built-in function print(), to compute the “informal” or nicely printable string representation of an object. The return value must be a str object. str(object) __format__() print() This method differs from object. repr() in that there is no expectation that str() return a valid Python expression: a more convenient or concise representation can be used. object.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 26,
+  "start_char": 59587,
+  "end_char": 62109,
+  "token_count": 498,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.717859"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_026.txt"
+}

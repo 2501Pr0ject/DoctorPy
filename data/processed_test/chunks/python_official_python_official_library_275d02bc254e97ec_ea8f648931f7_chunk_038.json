@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_038",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "6: Accepts a path-like object for old and new. Rename the file or directory src to dst. If dst is a non-empty directory, OSError will be raised. If dst exists and is a file, it will be replaced silently if the user has permission. The operation may fail if src and dst are on different filesystems. If successful, the renaming will be an atomic operation (this is a POSIX requirement). OSError This function can support specifying src_dir_fd and/or dst_dir_fd to supply paths relative to directory descriptors. Raises an auditing event os. rename with arguments src, dst, src_dir_fd, dst_dir_fd. os. rename src dst src_dir_fd dst_dir_fd Added in version 3. 3. Changed in version 3. 6: Accepts a path-like object for src and dst. Remove (delete) the directory path. If the directory does not exist or is not empty, a FileNotFoundError or an OSError is raised respectively. In order to remove whole directory trees, shutil. rmtree() can be used. FileNotFoundError OSError shutil. rmtree() This function can support paths relative to directory descriptors. Raises an auditing event os. rmdir with arguments path, dir_fd. os. rmdir path dir_fd Changed in version 3. 3: Added the dir_fd parameter. Changed in version 3. 6: Accepts a path-like object. Return an iterator of os. DirEntry objects corresponding to the entries in the directory given by path. The entries are yielded in arbitrary order, and the special entries '. ' and '. ' are not included. If a file is removed from or added to the directory after creating the iterator, whether an entry for that file be included is unspecified. os. DirEntry '. ' '. ' Using scandir() instead of listdir() can significantly increase the performance of code that also needs file type or file attribute information, because os. DirEntry objects expose this information if the operating system provides it when scanning a directory. All os. DirEntry methods may perform a system call, but is_dir() and is_file() usually only require a system call for symbolic links; os. DirEntry. stat() always requires a system call on Unix but only requires one for symbolic links on Windows. scandir() listdir() os. DirEntry os. DirEntry is_dir() is_file() os. DirEntry. stat() path may be a path-like object.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 38,
+  "start_char": 81551,
+  "end_char": 83788,
+  "token_count": 494,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.804795"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_038.txt"
+}

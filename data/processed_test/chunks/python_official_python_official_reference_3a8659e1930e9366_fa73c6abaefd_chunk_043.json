@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_043",
+  "original_doc_id": "python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd",
+  "content": "As such, there is no need for it to be decorated with @classmethod when it is defined. __class_getitem__() @classmethod #### 3. 3. 5. 1. The purpose of class_getitem¶ The purpose of class_getitem() is to allow runtime parameterization of standard-library generic classes in order to more easily apply type hints to these classes. __class_getitem__() To implement custom generic classes that can be parameterized at runtime and understood by static type-checkers, users should either inherit from a standard library class that already implements class_getitem(), or inherit from typing. Generic, which has its own implementation of class_getitem(). __class_getitem__() typing. Generic __class_getitem__() Custom implementations of class_getitem() on classes defined outside of the standard library may not be understood by third-party type-checkers such as mypy. Using class_getitem() on any class for purposes other than type hinting is discouraged. __class_getitem__() __class_getitem__() #### 3. 3. 5. 2. class_getitem versus getitem¶ Usually, the subscription of an object using square brackets will call the getitem() instance method defined on the object’s class. However, if the object being subscribed is itself a class, the class method class_getitem() may be called instead. class_getitem() should return a GenericAlias object if it is properly defined. __getitem__() __class_getitem__() __class_getitem__() Presented with the expression obj[x], the Python interpreter follows something like the following process to decide whether getitem() or class_getitem() should be called: obj[x] __getitem__() __class_getitem__() from inspect import isclass def subscribe(obj, x): \"\"\"Return the result of the expression 'obj[x]'\"\"\" class_of_obj = type(obj) # If the class of obj defines __getitem__, # call class_of_obj. __getitem__(obj, x) if hasattr(class_of_obj, '__getitem__'): return class_of_obj. __getitem__(obj, x) # Else, if obj is a class and defines __class_getitem__, # call obj. __class_getitem__(x) elif isclass(obj) and hasattr(obj, '__class_getitem__'): return obj. __class_getitem__(x) # Else, raise an exception else: raise TypeError( f\"'{class_of_obj.",
+  "title": "3. Data model.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 43,
+  "start_char": 99023,
+  "end_char": 101192,
+  "token_count": 490,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_3a8659e1930e9366.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:42.733221"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_3a8659e1930e9366_fa73c6abaefd_chunk_043.txt"
+}

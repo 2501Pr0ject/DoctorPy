@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_009",
+  "original_doc_id": "python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149",
+  "content": "-d -d -i -i -i -i -I -I -O or -OO -O -OO -B -B -s -s -S -S -E -E -v -v -b -b -q -q -R -R -X dev (Python Development Mode) -X dev -X utf8 -X utf8 -P -P -X int_max_str_digits (integer string conversion length limitation) -X int_max_str_digits -X warn_default_encoding -X warn_default_encoding Changed in version 3. 2: Added quiet attribute for the new -q flag. quiet -q Added in version 3. 2. 3: The hash_randomization attribute. hash_randomization Changed in version 3. 3: Removed obsolete division_warning attribute. division_warning Changed in version 3. 4: Added isolated attribute for -I isolated flag. isolated -I isolated Changed in version 3. 7: Added the dev_mode attribute for the new Python Development Mode and the utf8_mode attribute for the new -X utf8 flag. dev_mode utf8_mode -X utf8 Changed in version 3. 10: Added warn_default_encoding attribute for -X warn_default_encoding flag. warn_default_encoding -X warn_default_encoding Changed in version 3. 11: Added the safe_path attribute for -P option. safe_path -P Changed in version 3. 11: Added the int_max_str_digits attribute. int_max_str_digits A named tuple holding information about the float type. It contains low level information about the precision and internal representation. The values correspond to the various floating-point constants defined in the standard header file float. h for the ‘C’ programming language; see section 5. 2. 4. 2. 2 of the 1999 ISO/IEC C standard [C99], ‘Characteristics of floating types’, for details. float. h float_info attribute float. h macro explanation DBL_EPSILON DBL_EPSILON difference between 1. 0 and the least value greater than 1. 0 that is representable as a float. See also math. ulp(). math. ulp() DBL_DIG DBL_DIG The maximum number of decimal digits that can be faithfully represented in a float; see below.",
+  "title": "sys — System-specific parameters and functions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 9,
+  "start_char": 20589,
+  "end_char": 22417,
+  "token_count": 478,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_d437b47da32ff4cc.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:04.426817"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_d437b47da32ff4cc_9385f6f8e149_chunk_009.txt"
+}

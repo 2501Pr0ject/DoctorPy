@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_004",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0. Also referred to as integer division. For operands of type int, the result has type int. For operands of type float, the result has type float. In general, the result is a whole integer, though the result’s type is not necessarily int. The result is always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0. int int float float int 1//2 0 (-1)//2 -1 1//(-2) -1 (-1)//(-2) 0 Not for complex numbers. Instead convert to floats using abs() if appropriate. Not for complex numbers. Instead convert to floats using abs() if appropriate. abs() Conversion from float to int truncates, discarding the fractional part. See functions math. floor() and math. ceil() for alternative conversions. Conversion from float to int truncates, discarding the fractional part. See functions math. floor() and math. ceil() for alternative conversions. float int math. floor() math. ceil() float also accepts the strings “nan” and “inf” with an optional prefix “+” or “-” for Not a Number (NaN) and positive or negative infinity. float also accepts the strings “nan” and “inf” with an optional prefix “+” or “-” for Not a Number (NaN) and positive or negative infinity. Python defines pow(0, 0) and 0 ** 0 to be 1, as is common for programming languages. Python defines pow(0, 0) and 0 ** 0 to be 1, as is common for programming languages. pow(0, 0) 0 ** 0 1 The numeric literals accepted include the digits 0 to 9 or any Unicode equivalent (code points with the Nd property). See the Unicode Standard for a complete list of code points with the Nd property. The numeric literals accepted include the digits 0 to 9 or any Unicode equivalent (code points with the Nd property). 0 9 Nd See the Unicode Standard for a complete list of code points with the Nd property.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 4,
+  "start_char": 7836,
+  "end_char": 9736,
+  "token_count": 501,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.183060"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_004.txt"
+}

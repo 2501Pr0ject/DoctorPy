@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ac8c5a4a74040ab8_16efee389a40_chunk_028",
+  "original_doc_id": "external_external_guides_ac8c5a4a74040ab8_16efee389a40",
+  "content": "brew 'homebrew' 'home-brew' {m,n} a/{1,3}b 'a/b' 'a//b' 'a///b' 'ab' 'a////b' {m} a/{2}b 'a//b' {0,} * {1,} + {0,1}. * +. re >>> import re >>> p = re. compile('ab*') >>> p re. compile('ab*') re. compile() >>> p = re. compile('ab*', re. IGNORECASE) re. compile() re socket zlib '\\' \\section \\\\section re. compile() \\\\section \\section \\\\section re. compile() \"\\\\\\\\section\" '\\\\\\\\' \\\\ \\\\ 'r' r\"\\n\" '\\' 'n' \"\\n\" DeprecationWarning SyntaxError \"ab*\" r\"ab*\" \"\\\\\\\\section\" r\"\\\\section\" \"\\\\w+\\\\s+\\\\1\" r\"\\w+\\s+\\1\" re match() search() findall() finditer() match() search() None re re >>> import re >>> p = re. compile('[a-z]+') >>> p re. compile('[a-z]+') [a-z]+ + match() None match() >>> p. match(\"\") >>> print(p. match(\"\")) None tempo match() >>> m = p. match('tempo') >>> m <re. Match object; span=(0, 5), match='tempo'> group() start() end() span() >>> m. group() 'tempo' >>> m. start(), m. end() (0, 5) >>> m. span() (0, 5) group() start() end() span() match() start() search() >>> print(p. match('::: message')) None >>> m = p. search('::: message'); print(m) <re. Match object; span=(4, 11), match='message'> >>> m. group() 'message' >>> m. span() (4, 11) None p = re. compile(. ) m = p. match( 'string goes here' ) if m: print('Match found: ', m. group()) else: print('No match') findall() >>> p = re. compile(r'\\d+') >>> p.",
+  "title": "Regular Expression HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 28,
+  "start_char": 56585,
+  "end_char": 57907,
+  "token_count": 474,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ac8c5a4a74040ab8.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:41.054248"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ac8c5a4a74040ab8_16efee389a40_chunk_028.txt"
+}

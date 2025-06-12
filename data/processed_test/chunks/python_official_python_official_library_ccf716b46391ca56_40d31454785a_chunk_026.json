@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_026",
+  "original_doc_id": "python_official_python_official_library_ccf716b46391ca56_40d31454785a",
+  "content": "group(1) 'Malcolm' >>> m. group(2) 'Reynolds' If a group matches multiple times, only the last match is accessible: >>> m = re. match(r\"(. )+\", \"a1b2c3\") # Matches 3 times. >>> m. group(1) # Returns only the last match. 'c3' This is identical to m. group(g). This allows easier access to an individual group from a match: m. group(g) >>> m = re. match(r\"(\\w+) (\\w+)\", \"Isaac Newton, physicist\") >>> m[0] # The entire match 'Isaac Newton' >>> m[1] # The first parenthesized subgroup. 'Isaac' >>> m[2] # The second parenthesized subgroup. 'Newton' Named groups are supported as well: >>> m = re. match(r\"(. P<first_name>\\w+) (. P<last_name>\\w+)\", \"Isaac Newton\") >>> m['first_name'] 'Isaac' >>> m['last_name'] 'Newton' Added in version 3. 6. Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern. The default argument is used for groups that did not participate in the match; it defaults to None. None For example: >>> m = re. match(r\"(\\d+)\\. (\\d+)\", \"24. 1632\") >>> m. groups() ('24', '1632') If we make the decimal place and everything after it optional, not all groups might participate in the match. These groups will default to None unless the default argument is given: None >>> m = re. match(r\"(\\d+)\\. (\\d+). \", \"24\") >>> m. groups() # Second group defaults to None. ('24', None) >>> m. groups('0') # Now, the second group defaults to '0'. ('24', '0') Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name. The default argument is used for groups that did not participate in the match; it defaults to None. For example: None >>> m = re. match(r\"(. P<first_name>\\w+) (. P<last_name>\\w+)\", \"Malcolm Reynolds\") >>> m.",
+  "title": "re — Regular expression operations.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 26,
+  "start_char": 51314,
+  "end_char": 53031,
+  "token_count": 491,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_ccf716b46391ca56.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:36.824442"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_ccf716b46391ca56_40d31454785a_chunk_026.txt"
+}

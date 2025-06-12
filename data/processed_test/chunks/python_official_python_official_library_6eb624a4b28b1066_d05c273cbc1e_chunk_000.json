@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_000",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "datetime — Basic date and time types. 13. 5 Source:  datetime — Basic date and time types¶ datetime Source code: Lib/datetime. py The datetime module supplies classes for manipulating dates and times. datetime While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation. Tip Skip to the format codes. See also calendar General calendar related functions. time Time access and conversions. zoneinfo Concrete time zones representing the IANA time zone database. Third-party library with expanded time zone and parsing support. Third-party library that introduces distinct static types to e. g. allow static type checkers to differentiate between naive and aware datetimes. ## Aware and Naive Objects¶ Date and time objects may be categorized as “aware” or “naive” depending on whether or not they include time zone information. With sufficient knowledge of applicable algorithmic and political time adjustments, such as time zone and daylight saving time information, an aware object can locate itself relative to other aware objects. An aware object represents a specific moment in time that is not open to interpretation. [1] A naive object does not contain enough information to unambiguously locate itself relative to other date/time objects. Whether a naive object represents Coordinated Universal Time (UTC), local time, or time in some other time zone is purely up to the program, just like it is up to the program whether a particular number represents metres, miles, or mass. Naive objects are easy to understand and to work with, at the cost of ignoring some aspects of reality. For applications requiring aware objects, datetime and time objects have an optional time zone information attribute, tzinfo, that can be set to an instance of a subclass of the abstract tzinfo class. These tzinfo objects capture information about the offset from UTC time, the time zone name, and whether daylight saving time is in effect. datetime time tzinfo tzinfo tzinfo Only one concrete tzinfo class, the timezone class, is supplied by the datetime module. The timezone class can represent simple time zones with fixed offsets from UTC, such as UTC itself or North American EST and EDT time zones. Supporting time zones at deeper levels of detail is up to the application. The rules for time adjustment across the world are more political than rational, change frequently, and there is no standard suitable for every application aside from UTC.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2531,
+  "token_count": 483,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.378273"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_000.txt"
+}

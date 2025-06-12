@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_011",
+  "original_doc_id": "python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00",
+  "content": "Base class for warnings about probable mistakes in module imports. Ignored by the default warning filters. Enabling the Python Development Mode shows this warning. Base class for warnings related to Unicode. Base class for warnings related to encodings. See Opt-in EncodingWarning for details. Added in version 3. 10. Base class for warnings related to bytes and bytearray. bytes bytearray Base class for warnings related to resource usage. Ignored by the default warning filters. Enabling the Python Development Mode shows this warning. Added in version 3. 2. ## Exception groups¶ The following are used when it is necessary to raise multiple unrelated exceptions. They are part of the exception hierarchy so they can be handled with except like all other exceptions. In addition, they are recognised by except*, which matches their subgroups based on the types of the contained exceptions. except except* Both of these exception types wrap the exceptions in the sequence excs. The msg parameter must be a string. The difference between the two classes is that BaseExceptionGroup extends BaseException and it can wrap any exception, while ExceptionGroup extends Exception and it can only wrap subclasses of Exception. This design is so that except Exception catches an ExceptionGroup but not BaseExceptionGroup. excs msg BaseExceptionGroup BaseException ExceptionGroup Exception Exception except Exception ExceptionGroup BaseExceptionGroup The BaseExceptionGroup constructor returns an ExceptionGroup rather than a BaseExceptionGroup if all contained exceptions are Exception instances, so it can be used to make the selection automatic. The ExceptionGroup constructor, on the other hand, raises a TypeError if any contained exception is not an Exception subclass. BaseExceptionGroup ExceptionGroup BaseExceptionGroup Exception ExceptionGroup TypeError Exception The msg argument to the constructor. This is a read-only attribute. msg A tuple of the exceptions in the excs sequence given to the constructor. This is a read-only attribute. excs Returns an exception group that contains only the exceptions from the current group that match condition, or None if the result is empty. None The condition can be an exception type or tuple of exception types, in which case each exception is checked for a match using the same check that is used in an except clause. The condition can also be a callable (other than a type object) that accepts an exception as its single argument and returns true for the exceptions that should be in the subgroup.",
+  "title": "Built-in Exceptions.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 11,
+  "start_char": 26781,
+  "end_char": 29324,
+  "token_count": 472,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_482e94da82fc8f58.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:34.395535"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_482e94da82fc8f58_4a9e7712fa00_chunk_011.txt"
+}

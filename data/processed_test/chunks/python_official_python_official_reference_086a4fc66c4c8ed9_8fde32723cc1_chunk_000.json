@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_000",
+  "original_doc_id": "python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1",
+  "content": "7. Simple statements. 13. 5 Source:  7. Simple statements¶ A simple statement is comprised within a single logical line. Several simple statements may occur on a single line separated by semicolons. The syntax for simple statements is: simple_stmt ::= expression_stmt | assert_stmt | assignment_stmt | augmented_assignment_stmt | annotated_assignment_stmt | pass_stmt | del_stmt | return_stmt | yield_stmt | raise_stmt | break_stmt | continue_stmt | import_stmt | future_stmt | global_stmt | nonlocal_stmt | type_stmt expression_stmt assert_stmt assignment_stmt augmented_assignment_stmt annotated_assignment_stmt pass_stmt del_stmt return_stmt yield_stmt raise_stmt break_stmt continue_stmt import_stmt future_stmt global_stmt nonlocal_stmt type_stmt ## 7. 1. Expression statements¶ Expression statements are used (mostly interactively) to compute and write a value, or (usually) to call a procedure (a function that returns no meaningful result; in Python, procedures return the value None). Other uses of expression statements are allowed and occasionally useful. The syntax for an expression statement is: None expression_stmt ::= starred_expression starred_expression An expression statement evaluates the expression list (which may be a single expression). In interactive mode, if the value is not None, it is converted to a string using the built-in repr() function and the resulting string is written to standard output on a line by itself (except if the result is None, so that procedure calls do not cause any output. ) None repr() None ## 7. 2. Assignment statements¶ Assignment statements are used to (re)bind names to values and to modify attributes or items of mutable objects: assignment_stmt ::= (target_list \"=\")+ (starred_expression | yield_expression) target_list ::= target (\",\" target)* [\",\"] target ::= identifier | \"(\" [target_list] \")\" | \"[\" [target_list] \"]\" | attributeref | subscription | slicing | \"*\" target target_list starred_expression yield_expression target target identifier target_list target_list attributeref subscription slicing target (See section Primaries for the syntax definitions for attributeref, subscription, and slicing. ) An assignment statement evaluates the expression list (remember that this can be a single expression or a comma-separated list, the latter yielding a tuple) and assigns the single resulting object to each of the target lists, from left to right. Assignment is defined recursively depending on the form of the target (list).",
+  "title": "7. Simple statements.13.5",
+  "section": "python_official",
+  "subsection": "reference",
+  "chunk_index": 0,
+  "start_char": 0,
+  "end_char": 2495,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_reference_086a4fc66c4c8ed9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:05.255047"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_reference_086a4fc66c4c8ed9_8fde32723cc1_chunk_000.txt"
+}

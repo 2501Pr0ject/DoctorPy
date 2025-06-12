@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_010",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "session_id = session_id def with_segments(self, *pathsegments): return type(self)(*pathsegments, session_id=self. session_id) etc = MyPath('/etc', session_id=42) hosts = etc / 'hosts' print(hosts. session_id) # 42 Added in version 3. 12. ## Concrete paths¶ Concrete paths are subclasses of the pure path classes. In addition to operations provided by the latter, they also provide methods to do system calls on path objects. There are three ways to instantiate concrete paths: A subclass of PurePath, this class represents concrete paths of the system’s path flavour (instantiating it creates either a PosixPath or a WindowsPath): PurePath PosixPath WindowsPath >>> Path('setup. py') PosixPath('setup. py') pathsegments is specified similarly to PurePath. PurePath A subclass of Path and PurePosixPath, this class represents concrete non-Windows filesystem paths: Path PurePosixPath >>> PosixPath('/etc/hosts') PosixPath('/etc/hosts') pathsegments is specified similarly to PurePath. PurePath Changed in version 3. 13: Raises UnsupportedOperation on Windows. In previous versions, NotImplementedError was raised instead. UnsupportedOperation NotImplementedError A subclass of Path and PureWindowsPath, this class represents concrete Windows filesystem paths: Path PureWindowsPath >>> WindowsPath('c:/', 'Users', 'Ximénez') WindowsPath('c:/Users/Ximénez') pathsegments is specified similarly to PurePath. PurePath Changed in version 3. 13: Raises UnsupportedOperation on non-Windows platforms. In previous versions, NotImplementedError was raised instead. UnsupportedOperation NotImplementedError You can only instantiate the class flavour that corresponds to your system (allowing system calls on non-compatible path flavours could lead to bugs or failures in your application): >>> import os >>> os. name 'posix' >>> Path('setup. py') PosixPath('setup. py') >>> PosixPath('setup. py') PosixPath('setup. py') >>> WindowsPath('setup. py') Traceback (most recent call last): File \"<stdin>\", line 1, in <module> File \"pathlib. py\", line 798, in __new__ % (cls.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 10,
+  "start_char": 19257,
+  "end_char": 21314,
+  "token_count": 465,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.493792"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_010.txt"
+}

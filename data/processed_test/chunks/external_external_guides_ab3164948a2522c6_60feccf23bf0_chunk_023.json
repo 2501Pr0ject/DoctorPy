@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_023",
+  "original_doc_id": "external_external_guides_ab3164948a2522c6_60feccf23bf0",
+  "content": "py 2005-03-19 15:10:26,618 - simple_example - DEBUG - debug message 2005-03-19 15:10:26,620 - simple_example - INFO - info message 2005-03-19 15:10:26,695 - simple_example - WARNING - warn message 2005-03-19 15:10:26,697 - simple_example - ERROR - error message 2005-03-19 15:10:26,773 - simple_example - CRITICAL - critical message import logging import logging. config logging. config. fileConfig('logging. conf') # create logger logger = logging. getLogger('simpleExample') # 'application' code logger. debug('debug message') logger. info('info message') logger. warning('warn message') logger. error('error message') logger. critical('critical message') [loggers] keys=root,simpleExample [handlers] keys=consoleHandler [formatters] keys=simpleFormatter [logger_root] level=DEBUG handlers=consoleHandler [logger_simpleExample] level=DEBUG handlers=consoleHandler qualname=simpleExample propagate=0 [handler_consoleHandler] class=StreamHandler level=DEBUG formatter=simpleFormatter args=(sys. stdout,) [formatter_simpleFormatter] format=%(asctime)s - %(name)s - %(levelname)s - %(message)s $ python simple_logging_config. py 2005-03-19 15:38:55,977 - simpleExample - DEBUG - debug message 2005-03-19 15:38:55,979 - simpleExample - INFO - info message 2005-03-19 15:38:56,054 - simpleExample - WARNING - warn message 2005-03-19 15:38:56,055 - simpleExample - ERROR - error message 2005-03-19 15:38:56,130 - simpleExample - CRITICAL - critical message fileConfig() disable_existing_loggers True fileConfig() False dictConfig() disable_existing_loggers True False WatchedFileHandler mypackage. mymodule. MyHandler mypackage mymodule mypackage version: 1 formatters: simple: format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s' handlers: console: class: logging. StreamHandler level: DEBUG formatter: simple stream: ext://sys.",
+  "title": "Logging HOWTO.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 23,
+  "start_char": 53620,
+  "end_char": 55454,
+  "token_count": 497,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_ab3164948a2522c6.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:42.540235"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_ab3164948a2522c6_60feccf23bf0_chunk_023.txt"
+}

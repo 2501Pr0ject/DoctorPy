@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_012",
+  "original_doc_id": "python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9",
+  "content": "### Implementation Limitations¶ Some JSON deserializer implementations may set limits on: the size of accepted JSON texts the size of accepted JSON texts the maximum level of nesting of JSON objects and arrays the maximum level of nesting of JSON objects and arrays the range and precision of JSON numbers the range and precision of JSON numbers the content and maximum length of JSON strings the content and maximum length of JSON strings This module does not impose any such limits beyond those of the relevant Python datatypes themselves or the Python interpreter itself. When serializing to JSON, beware any such limitations in applications that may consume your JSON. In particular, it is common for JSON numbers to be deserialized into IEEE 754 double precision numbers and thus subject to that representation’s range and precision limitations. This is especially relevant when serializing Python int values of extremely large magnitude, or when serializing instances of “exotic” numerical types such as decimal. Decimal. int decimal. Decimal ## Command Line Interface¶ Source code: Lib/json/tool. py The json. tool module provides a simple command line interface to validate and pretty-print JSON objects. json. tool If the optional infile and outfile arguments are not specified, sys. stdin and sys. stdout will be used respectively: infile outfile sys. stdin sys. stdout $ echo '{\"json\": \"obj\"}' | python -m json. tool { \"json\": \"obj\" } $ echo '{1. 2:3. 4}' | python -m json. tool Expecting property name enclosed in double quotes: line 1 column 2 (char 1) Changed in version 3. 5: The output is now in the same order as the input. Use the --sort-keys option to sort the output of dictionaries alphabetically by key. --sort-keys ### Command line options¶ The JSON file to be validated or pretty-printed: $ python -m json. tool mp_films. json [ { \"title\": \"And Now for Something Completely Different\", \"year\": 1971 }, { \"title\": \"Monty Python and the Holy Grail\", \"year\": 1975 } ] If infile is not specified, read from sys. stdin. sys. stdin Write the output of the infile to the given outfile. Otherwise, write it to sys. stdout. sys. stdout Sort the output of dictionaries alphabetically by key. Added in version 3. 5. Disable escaping of non-ascii characters, see json.",
+  "title": "json — JSON encoder and decoder.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 12,
+  "start_char": 25315,
+  "end_char": 27595,
+  "token_count": 496,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_5d5c28b4535c3ee9.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:37.149469"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_5d5c28b4535c3ee9_06d74d2595f9_chunk_012.txt"
+}

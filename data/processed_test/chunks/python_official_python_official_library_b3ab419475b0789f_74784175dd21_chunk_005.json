@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_005",
+  "original_doc_id": "python_official_python_official_library_b3ab419475b0789f_74784175dd21",
+  "content": "anchor 'c:' >>> PurePosixPath('/etc'). anchor '/' >>> PureWindowsPath('//host/share'). anchor '\\\\\\\\host\\\\share\\\\' An immutable sequence providing access to the logical ancestors of the path: >>> p = PureWindowsPath('c:/foo/bar/setup. py') >>> p. parents[0] PureWindowsPath('c:/foo/bar') >>> p. parents[1] PureWindowsPath('c:/foo') >>> p. parents[2] PureWindowsPath('c:/') Changed in version 3. 10: The parents sequence now supports slices and negative index values. The logical parent of the path: >>> p = PurePosixPath('/a/b/c/d') >>> p. parent PurePosixPath('/a/b/c') You cannot go past an anchor, or empty path: >>> p = PurePosixPath('/') >>> p. parent PurePosixPath('/') >>> p = PurePosixPath('. ') >>> p. parent PurePosixPath('. ') Note This is a purely lexical operation, hence the following behaviour: >>> p = PurePosixPath('foo/. ') >>> p. parent PurePosixPath('foo') If you want to walk an arbitrary filesystem path upwards, it is recommended to first call Path. resolve() so as to resolve symlinks and eliminate \". \" components. Path. resolve() \". \" A string representing the final path component, excluding the drive and root, if any: >>> PurePosixPath('my/library/setup. py'). name 'setup. py' UNC drive names are not considered: >>> PureWindowsPath('//some/share/setup. py'). name 'setup. py' >>> PureWindowsPath('//some/share'). name '' The last dot-separated portion of the final component, if any: >>> PurePosixPath('my/library/setup. py'). suffix '. py' >>> PurePosixPath('my/library. tar. gz'). suffix '. gz' >>> PurePosixPath('my/library'). suffix '' This is commonly called the file extension. A list of the path’s suffixes, often called file extensions: >>> PurePosixPath('my/library. tar. gar'). suffixes ['. tar', '. gar'] >>> PurePosixPath('my/library. tar. gz'). suffixes ['. tar', '. gz'] >>> PurePosixPath('my/library'). suffixes [] The final path component, without its suffix: >>> PurePosixPath('my/library. tar.",
+  "title": "pathlib — Object-oriented filesystem paths.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 5,
+  "start_char": 9606,
+  "end_char": 11547,
+  "token_count": 500,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_b3ab419475b0789f.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:32.489527"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_b3ab419475b0789f_74784175dd21_chunk_005.txt"
+}

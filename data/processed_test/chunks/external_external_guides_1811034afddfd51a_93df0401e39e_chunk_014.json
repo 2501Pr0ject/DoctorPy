@@ -1,0 +1,19 @@
+{
+  "chunk_id": "external_external_guides_1811034afddfd51a_93df0401e39e_chunk_014",
+  "original_doc_id": "external_external_guides_1811034afddfd51a_93df0401e39e",
+  "content": "py -a value1 +a value2 Namespace(a=[('-', 'value1'), ('+', 'value2')]) In this example, we: Created a parser with custom prefix characters using the prefix_chars parameter. Created a parser with custom prefix characters using the prefix_chars parameter. prefix_chars Defined two arguments, -a and +a, which used the type parameter to create custom type converters to store the value in a tuple with the prefix. Defined two arguments, -a and +a, which used the type parameter to create custom type converters to store the value in a tuple with the prefix. -a +a type Without the custom type converters, the arguments would have treated the -a and +a as the same argument, which would have been undesirable. By using custom type converters, we were able to differentiate between the two arguments. -a +a ## Conclusion¶ The argparse module offers a lot more than shown here. Its docs are quite detailed and thorough, and full of examples. Having gone through this tutorial, you should easily digest them without feeling overwhelmed. argparse ### Table of Contents Argparse Tutorial Concepts The basics Introducing Positional arguments Introducing Optional arguments Short options Combining Positional and Optional arguments Getting a little more advanced Specifying ambiguous arguments Conflicting options How to translate the argparse output Custom type converters Conclusion Concepts The basics Introducing Positional arguments Introducing Optional arguments Short options Short options Combining Positional and Optional arguments Getting a little more advanced Specifying ambiguous arguments Conflicting options Specifying ambiguous arguments Conflicting options How to translate the argparse output Custom type converters Conclusion #### Previous topic argparse — Parser for command-line options, arguments and subcommands argparse #### Next topic Migrating optparse code to argparse optparse argparse ### This page Report a bug Show source argparse optparse argparse getopt getopt() argparse optparse optparse $ ls cpython devguide prog. py pypy rm-unused-function. patch $ ls pypy ctypes_configure demo dotviewer include lib_pypy lib-python. $ ls -l total 20 drwxr-xr-x 19 wena wena 4096 Feb 18 18:51 cpython drwxr-xr-x 4 wena wena 4096 Feb 8 12:04 devguide -rwxr-xr-x 1 wena wena 535 Feb 19 00:05 prog.",
+  "title": "Argparse Tutorial.13.5",
+  "section": "external",
+  "subsection": "guides",
+  "chunk_index": 14,
+  "start_char": 28531,
+  "end_char": 30837,
+  "token_count": 479,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/external/external_guides_1811034afddfd51a.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:39.495608"
+  },
+  "file_path": "data/processed_test/chunks/external_external_guides_1811034afddfd51a_93df0401e39e_chunk_014.txt"
+}

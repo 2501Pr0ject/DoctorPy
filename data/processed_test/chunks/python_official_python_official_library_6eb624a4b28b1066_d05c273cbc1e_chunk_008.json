@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_008",
+  "original_doc_id": "python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e",
+  "content": "ValueError 1 <= ordinal <= date. max. toordinal() d date. fromordinal(d. toordinal()) == d Return a date corresponding to a date_string given in any valid ISO 8601 format, with the following exceptions: date Reduced precision dates are not currently supported (YYYY-MM, YYYY). Reduced precision dates are not currently supported (YYYY-MM, YYYY). YYYY-MM YYYY Extended date representations are not currently supported (±YYYYYY-MM-DD). Extended date representations are not currently supported (±YYYYYY-MM-DD). ±YYYYYY-MM-DD Ordinal dates are not currently supported (YYYY-OOO). Ordinal dates are not currently supported (YYYY-OOO). YYYY-OOO Examples: >>> from datetime import date >>> date. fromisoformat('2019-12-04') datetime. date(2019, 12, 4) >>> date. fromisoformat('20191204') datetime. date(2019, 12, 4) >>> date. fromisoformat('2021-W01-1') datetime. date(2021, 1, 4) Added in version 3. 7. Changed in version 3. 11: Previously, this method only supported the format YYYY-MM-DD. YYYY-MM-DD Return a date corresponding to the ISO calendar date specified by year, week and day. This is the inverse of the function date. isocalendar(). date date. isocalendar() Added in version 3. 8. Class attributes: The earliest representable date, date(MINYEAR, 1, 1). date(MINYEAR, 1, 1) The latest representable date, date(MAXYEAR, 12, 31). date(MAXYEAR, 12, 31) The smallest possible difference between non-equal date objects, timedelta(days=1). timedelta(days=1) Instance attributes (read-only): Between MINYEAR and MAXYEAR inclusive. MINYEAR MAXYEAR Between 1 and 12 inclusive. Between 1 and the number of days in the given month of the given year. Supported operations: Operation Result date2 = date1 + timedelta date2 = date1 + timedelta date2 will be timedelta. days days after date1. (1) date2 timedelta. days date1 date2 = date1 - timedelta date2 = date1 - timedelta Computes date2 such that date2 + timedelta == date1.",
+  "title": "datetime — Basic date and time types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 8,
+  "start_char": 16495,
+  "end_char": 18415,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_6eb624a4b28b1066.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:01.386563"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_6eb624a4b28b1066_d05c273cbc1e_chunk_008.txt"
+}

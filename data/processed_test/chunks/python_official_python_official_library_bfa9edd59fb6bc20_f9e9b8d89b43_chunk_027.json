@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_027",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "str(object) type(object). __str__(object) __str__() str() repr(object) If at least one of encoding or errors is given, object should be a bytes-like object (e. g. bytes or bytearray). In this case, if object is a bytes (or bytearray) object, then str(bytes, encoding, errors) is equivalent to bytes. decode(encoding, errors). Otherwise, the bytes object underlying the buffer object is obtained before calling bytes. decode(). See Binary Sequence Types — bytes, bytearray, memoryview and Buffer Protocol for information on buffer objects. bytes bytearray bytes bytearray str(bytes, encoding, errors) bytes. decode(encoding, errors) bytes. decode() Passing a bytes object to str() without the encoding or errors arguments falls under the first case of returning the informal string representation (see also the -b command-line option to Python). For example: bytes str() -b >>> str(b'Zoot. ') \"b'Zoot. '\" For more information on the str class and its methods, see Text Sequence Type — str and the String Methods section below. To output formatted strings, see the f-strings and Format String Syntax sections. In addition, see the Text Processing Services section. str ### String Methods¶ Strings implement all of the common sequence operations, along with the additional methods described below. Strings also support two styles of string formatting, one providing a large degree of flexibility and customization (see str. format(), Format String Syntax and Custom String Formatting) and the other based on C printf style formatting that handles a narrower range of types and is slightly harder to use correctly, but is often faster for the cases it can handle (printf-style String Formatting). str. format() printf The Text Processing Services section of the standard library covers a number of other modules that provide various text related utilities (including regular expression support in the re module). re Return a copy of the string with its first character capitalized and the rest lowercased. Changed in version 3. 8: The first character is now put into titlecase rather than uppercase. This means that characters like digraphs will only have their first letter capitalized, instead of the full character. Return a casefolded copy of the string. Casefolded strings may be used for caseless matching. Casefolding is similar to lowercasing but more aggressive because it is intended to remove all case distinctions in a string.",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 27,
+  "start_char": 53690,
+  "end_char": 56124,
+  "token_count": 486,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.203878"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_027.txt"
+}

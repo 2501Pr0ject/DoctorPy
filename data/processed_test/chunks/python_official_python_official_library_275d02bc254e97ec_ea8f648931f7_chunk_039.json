@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_039",
+  "original_doc_id": "python_official_python_official_library_275d02bc254e97ec_ea8f648931f7",
+  "content": "If path is of type bytes (directly or indirectly through the PathLike interface), the type of the name and path attributes of each os. DirEntry will be bytes; in all other circumstances, they will be of type str. bytes PathLike name path os. DirEntry bytes str This function can also support specifying a file descriptor; the file descriptor must refer to a directory. Raises an auditing event os. scandir with argument path. os. scandir path The scandir() iterator supports the context manager protocol and has the following method: scandir() Close the iterator and free acquired resources. This is called automatically when the iterator is exhausted or garbage collected, or when an error happens during iterating. However it is advisable to call it explicitly or use the with statement. with Added in version 3. 6. The following example shows a simple use of scandir() to display all the files (excluding directories) in the given path that don’t start with '. '. The entry. is_file() call will generally not make an additional system call: scandir() '. ' entry. is_file() with os. scandir(path) as it: for entry in it: if not entry. name. startswith('. ') and entry. is_file(): print(entry. name) Note On Unix-based systems, scandir() uses the system’s opendir() and readdir() functions. On Windows, it uses the Win32 FindFirstFileW and FindNextFileW functions. scandir() Added in version 3. 5. Changed in version 3. 6: Added support for the context manager protocol and the close() method. If a scandir() iterator is neither exhausted nor explicitly closed a ResourceWarning will be emitted in its destructor. close() scandir() ResourceWarning The function accepts a path-like object. Changed in version 3. 7: Added support for file descriptors on Unix. Object yielded by scandir() to expose the file path and other file attributes of a directory entry. scandir() scandir() will provide as much of this information as possible without making additional system calls. When a stat() or lstat() system call is made, the os. DirEntry object will cache the result. scandir() stat() lstat() os. DirEntry os.",
+  "title": "os — Miscellaneous operating system interfaces.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 39,
+  "start_char": 83788,
+  "end_char": 85894,
+  "token_count": 465,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_275d02bc254e97ec.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:57:24.805706"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_275d02bc254e97ec_ea8f648931f7_chunk_039.txt"
+}

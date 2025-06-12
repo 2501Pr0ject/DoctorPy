@@ -1,0 +1,19 @@
+{
+  "chunk_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_071",
+  "original_doc_id": "python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43",
+  "content": "Dictionaries can be created by several means: Use a comma-separated list of key: value pairs within braces: {'jack': 4098, 'sjoerd': 4127} or {4098: 'jack', 4127: 'sjoerd'} Use a comma-separated list of key: value pairs within braces: {'jack': 4098, 'sjoerd': 4127} or {4098: 'jack', 4127: 'sjoerd'} key: value {'jack': 4098, 'sjoerd': 4127} {4098: 'jack', 4127: 'sjoerd'} Use a dict comprehension: {}, {x: x ** 2 for x in range(10)} Use a dict comprehension: {}, {x: x ** 2 for x in range(10)} {} {x: x ** 2 for x in range(10)} Use the type constructor: dict(), dict([('foo', 100), ('bar', 200)]), dict(foo=100, bar=200) Use the type constructor: dict(), dict([('foo', 100), ('bar', 200)]), dict(foo=100, bar=200) dict() dict([('foo', 100), ('bar', 200)]) dict(foo=100, bar=200) If no positional argument is given, an empty dictionary is created. If a positional argument is given and it defines a keys() method, a dictionary is created by calling getitem() on the argument with each returned key from the method. Otherwise, the positional argument must be an iterable object. Each item in the iterable must itself be an iterable with exactly two elements. The first element of each item becomes a key in the new dictionary, and the second element the corresponding value. If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary. keys() __getitem__() If keyword arguments are given, the keyword arguments and their values are added to the dictionary created from the positional argument. If a key being added is already present, the value from the keyword argument replaces the value from the positional argument. Providing keyword arguments as in the first example only works for keys that are valid Python identifiers. Otherwise, any valid keys can be used. Dictionaries compare equal if and only if they have the same (key, value) pairs (regardless of ordering).",
+  "title": "Built-in Types.13.5",
+  "section": "python_official",
+  "subsection": "library",
+  "chunk_index": 71,
+  "start_char": 144604,
+  "end_char": 146528,
+  "token_count": 495,
+  "metadata": {
+    "original_file": "data/raw/documentation_test/python_official/python_official_library_bfa9edd59fb6bc20.md",
+    "chunk_method": "paragraph_based",
+    "overlap_chars": 100,
+    "processing_date": "2025-06-11T23:56:56.243389"
+  },
+  "file_path": "data/processed_test/chunks/python_official_python_official_library_bfa9edd59fb6bc20_f9e9b8d89b43_chunk_071.txt"
+}
